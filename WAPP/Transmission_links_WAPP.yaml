@@ -1,0 +1,137 @@
+# WAPP Transmission Grid#
+
+# energy_cap_equals: Installed transmission capacity [kW]
+# energy_eff_per_distance: Energy efficiency per distance [1/(10s km)]
+# distance: Length of transmission line [10s km]
+
+links:
+
+    BEN,NGA_W:
+        techs:
+            300-330_kV:
+                constraints:
+                    energy_cap_equals: 686000                   # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 7.5                                   # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+
+    BEN,TGO:
+        techs:
+            132-161_kV:
+                constraints:
+                    energy_cap_equals: 345000                   # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+                    energy_eff_per_distance: 0.92               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 6.5                                   # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+
+            300-330_kV:
+                constraints:
+                    energy_cap_equals: 655200                   # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 20.8                                  # https://www.au-pida.org/view-project/2006/
+
+    BFA,CIV:
+        techs:
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 327000                   # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+                    energy_eff_per_distance: 0.988              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 22.2                                  # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+
+    BFA,GHA:
+        techs:
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 100000                   # https://energymin.gov.gh/president-akufo-addo-inaugurates-225kv-bolgatanga-ouagadougou-power-interconnection-project
+                    energy_eff_per_distance: 0.988              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 18.8                                  # http://pipes.ecowapp.org/en/project/finalised-projects/225-kv-bolgatanga-ghana-ouagadougou-burkina-faso-interconnection-project
+
+    CIV,GHA:
+        techs:
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 327000                   # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+                    energy_eff_per_distance: 0.988              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 22.0                                  # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+
+    CIV,MLI:
+        techs:
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 319700                   # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+                    energy_eff_per_distance: 0.988              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 37.0                                  # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+
+    GHA,TGO:
+        techs:
+            132-161_kV:
+                constraints:
+                    energy_cap_equals: 438000                   # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+                    energy_eff_per_distance: 0.929              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 9.1                                   # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+
+            300-330_kV:
+                constraints:
+                    energy_cap_equals: 655200                   # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power 
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 14.0                                  # https://www.au-pida.org/view-project/2006/
+
+    MLI,SEN:
+        techs:
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 100000                   # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+                    energy_eff_per_distance: 0.988              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 120.0                                 # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+
+    NER,NGA_CNW:
+        techs:
+            132-161_kV:
+                constraints:
+                    energy_cap_equals: 169000                   # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+                    energy_eff_per_distance: 0.965              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 16.2                                  # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+
+    NGA_CNW,NGA_E:
+        techs:
+            300-330_kV:
+                constraints:
+                    energy_cap_equals: 720000                   # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 19.6                                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+
+    NGA_CNW,NGA_S:
+        techs:
+            132-161_kV:
+                constraints:
+                    energy_cap_equals: 91000                    # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+                    energy_eff_per_distance: 0.965              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 18.3                                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+
+            300-330_kV:
+                constraints:
+                    energy_cap_equals: 1554000                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 19.5                                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+
+    NGA_CNW,NGA_W:
+        techs:
+            300-330_kV:
+                constraints:
+                    energy_cap_equals: 2160000                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 15.7                                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+
+    NGA_E,NGA_S:
+        techs:
+            132-161_kV:
+                constraints:
+                    energy_cap_equals: 91000                    # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+                    energy_eff_per_distance: 0.965              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 15.6                                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+
+    NGA_S,NGA_W:
+        techs:
+            300-330_kV:
+                constraints:
+                    energy_cap_equals: 2331000                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 28.0                                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pd

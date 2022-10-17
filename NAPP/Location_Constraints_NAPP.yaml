@@ -1,0 +1,574 @@
+# The North African Power Pool is divided into 5 regions, which are the countries in the Power Pool, named according to
+# the ISO 3166-1 Alpha-3 code
+
+#1. Algeria: DZA
+#2. Libya: LBY
+#3. Mauritania: MRT
+#4. Morocco: MAR
+#5. Tunisia: TUN
+
+# energy_cap_equals: Installed energy capacity [kW]
+# storage_cap_equals: Storage capacity [kWh]
+
+locations:
+
+
+#################### Algeria ####################
+
+    DZA:
+
+        coordinates:
+            lat: 28.033886
+            lon: 1.659626
+
+        techs:
+
+            CCGT_pp:                
+                constraints:                                 
+                    energy_cap_equals: 15225000       
+
+            OCGT_pp:                 
+                constraints:                                 
+                    energy_cap_equals: 10491000      
+
+            Steam_Gas_pp:                   
+                constraints:
+                    energy_cap_equals: 2435000      
+
+            ISCC_pp:                                           
+                constraints:                                 
+                    energy_cap_equals: 150000          
+
+            Hydro_Large1:                                    # Ighil Emda (1954), Dam
+                constraints:                                 
+                    energy_cap_equals: 24000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_NAPP.csv:DZA1       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large2:                                    # Erraguene (1963), Dam
+                constraints:                                 
+                    energy_cap_equals: 14400                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_NAPP.csv:DZA2       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large3:                                    # Mansouria (1963), Ror
+                constraints:                                 
+                    energy_cap_equals: 100000                # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_NAPP.csv:DZA3       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large4:                                    # Darguina (1980), Ror
+                constraints:                                 
+                    energy_cap_equals: 70200                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_NAPP.csv:DZA4       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_other:                               # Assumed to be small                                           
+                constraints:                                 
+                    energy_cap_equals: 20600                 # http://pxweb.irena.org/pxweb/en/IRENASTAT/IRENASTAT__Power%20Capacity%20and%20Generation/ELECCAP_2021_cycle2.px/table/tableViewLayout1/
+                    resource: file=Hydro_NAPP.csv:DZA_other  # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+               
+            Demand_power:
+                constraints:
+                    resource: file=Demand_NAPP.csv:DZA       # https://doi.org/10.1016/j.energy.2021.120623
+
+
+#################### Libya ####################
+
+    LBY:
+
+        coordinates:
+            lat: 26.3351
+            lon: 17.228331
+
+        techs:
+
+            CCGT_pp:                         
+                constraints:
+                    energy_cap_equals: 3240000      
+
+            OCGT_pp:                       
+                constraints:
+                    energy_cap_equals: 3127000        
+
+            OCGT_Oil_pp:                        
+                constraints:
+                    energy_cap_equals: 435000     
+
+            HFO_pp:                      
+                constraints:
+                    energy_cap_equals: 3681000     
+
+            Demand_power:
+                constraints:
+                    resource: file=Demand_NAPP.csv:LBY       # https://doi.org/10.1016/j.energy.2021.120623
+
+      
+#################### Mauritania ####################
+
+    MRT:
+
+        coordinates:
+            lat: 21.00789
+            lon: -10.940835
+
+        techs:                
+
+            Diesel_Engine:                
+                constraints:
+                    energy_cap_equals: 257750         
+       
+            PV1:                                             # Sheikh Zayed (2012)
+                constraints:
+                    energy_cap_equals: 15000                 # https://masdar.ae/en/Masdar-Clean-Energy/Projects/The-Sheikh-Zayed-Solar-Power-Plant
+                    resource: file=Solar_NAPP.csv:MRT1              
+                    resource_unit: energy_per_cap
+
+            PV2:                                             # Toujounine (2017)
+                constraints:
+                    energy_cap_equals: 50000                 # https://www.afrik21.africa/en/morocco-mauritania-how-solar-and-wind-power-are-boosting-electricity-supply/#:~:text=Mauritania's%20largest%20photovoltaic%20solar%20power,the%20capital%20and%20in%20Nouadhibou.
+                    resource: file=Solar_NAPP.csv:MRT2              
+                    resource_unit: energy_per_cap
+
+            Wind1:                                           # Nouakchott (2016)
+                constraints:
+                    energy_cap_equals: 30000                 # World Resources Institute, 2021, Global Power Plant Database
+                    resource: file=Wind_NAPP.csv:MRT1              
+                    resource_unit: energy_per_cap 
+
+            Demand_power:
+                constraints:
+                    resource: file=Demand_NAPP.csv:MRT       # https://doi.org/10.1016/j.energy.2021.120623  
+
+
+#################### Morocco ####################
+
+    MAR:
+
+        coordinates:
+            lat: 31.791702
+            lon: -7.09262
+
+        techs:
+
+            Coal_pp:              
+                constraints:
+                    energy_cap_equals: 4092000      
+
+            CCGT_pp:                
+                constraints:
+                    energy_cap_equals: 394000        
+
+            OCGT_Oil_pp:                         
+                constraints:
+                    energy_cap_equals: 1332900     
+   
+            HFO_pp:                           
+                constraints:
+                    energy_cap_equals: 621000        
+
+            ISCC_pp:                 
+                constraints:
+                    energy_cap_equals: 472000       
+
+            Hydro_Large1:                                    # Afourer (1955)
+                constraints:                                 
+                    energy_cap_equals: 93600                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_NAPP.csv:MA1        # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large2:                                    # Bine El Ouidane (1955), Dam
+                constraints:                                 
+                    energy_cap_equals: 135000                # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_NAPP.csv:MA2        # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large3:                                    # Al Missara (1980), Dam
+                constraints:                                 
+                    energy_cap_equals: 128000                # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_NAPP.csv:MA3        # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large4:                                    # Imfout (1949), Dam
+                constraints:                                 
+                    energy_cap_equals: 31200                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_NAPP.csv:MA4        # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large5:                                    # Daourat (1950), Dam
+                constraints:
+                    energy_cap_equals: 17000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_NAPP.csv:MA5        # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large6:                                    # Sidi Said Maachou (1929), Dam
+                constraints:                                 
+                    energy_cap_equals: 20800                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_NAPP.csv:MA6        # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large7:                                    # Moulay Youssef (1974), Dam
+                constraints:                                 
+                    energy_cap_equals: 24000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_NAPP.csv:MA7        # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large8:                                    # Hassan 1er (1991), Dam
+                constraints:                                 
+                    energy_cap_equals: 67000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_NAPP.csv:MA8        # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large9:                                    # Allal El Fassi (1994), Dam
+                constraints:                                 
+                    energy_cap_equals: 240000                # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_NAPP.csv:MA9        # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large10:                                   # Al Wahda (1998), Dam
+                constraints:
+                    energy_cap_equals: 240000                # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_NAPP.csv:MA10       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large11:                                   # Lalla Takerkoust (1938), Dam
+                constraints:                                 
+                    energy_cap_equals: 12000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_NAPP.csv:MA13       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large12:                                   # Mohamed V (1967), Dam
+                constraints:                                 
+                    energy_cap_equals: 23200                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_NAPP.csv:MA14       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large13:                                   # Idriss 1er (1978), Dam
+                constraints:                                 
+                    energy_cap_equals: 40600                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_NAPP.csv:MA16       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large14:                                   # Oued El Makhazine (1979), Dam
+                constraints:                                 
+                    energy_cap_equals: 36000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_NAPP.csv:MA17       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large15:                                   # El Kansera (1935), Dam
+                constraints:                                 
+                    energy_cap_equals: 14400                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_NAPP.csv:MA18       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large16:                                   # Ahmed El Hansali (2003), Dam
+                constraints:                                 
+                    energy_cap_equals: 92000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_NAPP.csv:MA19       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large17:                                   # Tanafnit-El Borj (2009), Ror
+                constraints:                                 
+                    energy_cap_equals: 40000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_NAPP.csv:MA21       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Small1:                                    # Kasba Zidania (1936)
+                constraints:                                 
+                    energy_cap_equals: 7100                  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_NAPP.csv:MA11       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Small2:                                    # El Mansour Eddahbi (1973), Dam
+                constraints:                                 
+                    energy_cap_equals: 10000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_NAPP.csv:MA12       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Small3:                                    # Bou Areg (1969)
+                constraints:
+                    energy_cap_equals: 6400                  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_NAPP.csv:MA15       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Small4:                                    # Ait Messaoud (2003), Ror
+                constraints:                                 
+                    energy_cap_equals: 6000                  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_NAPP.csv:MA20       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_other:                               # Assumed to be small                                           
+                constraints:                                 
+                    energy_cap_equals: 21230                 # http://pxweb.irena.org/pxweb/en/IRENASTAT/IRENASTAT__Power%20Capacity%20and%20Generation/ELECCAP_2021_cycle2.px/table/tableViewLayout1/
+                    resource: file=Hydro_NAPP.csv:MA_other   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Pumped1:                                   # Afourer STEP (2005)  
+                constraints:
+                    energy_cap_equals: 464000                # IRENA, 2021, Renewable Capacity Statistics
+                    storage_cap_equals: 5216304              # Calculated from the volume of the basin and hydraulic head, assuming water density to be equal to 997 kg/m^3, http://globalenergyobservatory.org/geoid/41620
+
+            PV1:                                             # Ouarzazate IV (2017)
+                constraints:
+                    energy_cap_equals: 72000                 # https://www.climatebonds.net/files/files/Masen_NOOR%20PVI_GreenBond_Reporting_2019%20%28public%29.pdf
+                    resource: file=Solar_NAPP.csv:MA1              
+                    resource_unit: energy_per_cap
+
+            PV2:                                             # Noor Laayoune (2018)
+                constraints:
+                    energy_cap_equals: 84500                 # https://www.power-technology.com/marketdata/noor-laayoune-solar-pv-park-morocco/
+                    resource: file=Solar_NAPP.csv:MA2              
+                    resource_unit: energy_per_cap
+
+            PV3:                                             # Boujdour (2017)
+                constraints:
+                    energy_cap_equals: 20000                 # https://www.masen.ma/sites/default/files/documents_rapport/2_6.pdf
+                    resource: file=Solar_NAPP.csv:MA3              
+                    resource_unit: energy_per_cap
+
+            CSP1:                                            # Centrale Solaire Noor Ouarzazate I (2015)
+                constraints:
+                    energy_cap_equals: 160000                # World Resources Institute, 2021, Global Power Plant Database
+                    storage_cap_equals: 480000               # https://solarpaces.nrel.gov/project/noor-i
+                    resource_area_equals: 1308000            # https://solarpaces.nrel.gov/project/noor-i
+                    resource: file=Solar_NAPP.csv:MA4              
+                    resource_unit: energy_per_area
+
+            CSP2:                                            # Centrale Solaire Noor Ouarzazate II (2018)
+                constraints:
+                    energy_cap_equals: 200000                # World Resources Institute, 2021, Global Power Plant Database
+                    storage_cap_equals: 1400000              # https://solarpaces.nrel.gov/project/noor-ii
+                    resource_area_equals: 1779900            # https://solarpaces.nrel.gov/project/noor-ii
+                    resource: file=Solar_NAPP.csv:MA4              
+                    resource_unit: energy_per_area
+
+            CSP3:                                            # Centrale Solaire Noor Ouarzazate III (2018)
+                constraints:
+                    energy_cap_equals: 150000                # World Resources Institute, 2021, Global Power Plant Database
+                    storage_cap_equals: 1050000              # https://solarpaces.nrel.gov/project/noor-iii
+                    resource_area_equals: 1312000            # https://solarpaces.nrel.gov/project/noor-iii
+                    resource: file=Solar_NAPP.csv:MA4              
+                    resource_unit: energy_per_area
+
+            CSP4:                                            # Ait-Baha (2014)
+                constraints:
+                    energy_cap_equals: 3000                  # World Resources Institute, 2021, Global Power Plant Database
+                    storage_cap_equals: 15000                # https://solarpaces.nrel.gov/project/airlight-energy-ait-baha-pilot-plant
+                    resource_area_equals: 6159               # https://solarpaces.nrel.gov/project/airlight-energy-ait-baha-pilot-plant
+                    resource: file=Solar_NAPP.csv:MA5              
+                    resource_unit: energy_per_area
+
+            Wind1:                                           # Tarfaya (2014)
+                constraints:
+                    energy_cap_equals: 301300                # https://www.thewindpower.net/windfarms_list_en.php?country=MA
+                    resource: file=Wind_NAPP.csv:MA1              
+                    resource_unit: energy_per_cap   
+
+            Wind2:                                           # Akhfenir 1 (2013)
+                constraints:
+                    energy_cap_equals: 101870                # https://www.thewindpower.net/windfarms_list_en.php?country=MA
+                    resource: file=Wind_NAPP.csv:MA2              
+                    resource_unit: energy_per_cap
+
+            Wind3:                                           # Akhfenir 2 (2016)
+                constraints:
+                    energy_cap_equals: 79800                 # https://www.thewindpower.net/windfarms_list_en.php?country=MA
+                    resource: file=Wind_NAPP.csv:MA3              
+                    resource_unit: energy_per_cap     
+
+
+            Wind4:                                           # Midelt (2021)
+                constraints:
+                    energy_cap_equals: 210000                # https://www.thewindpower.net/windfarms_list_en.php?country=MA
+                    resource: file=Wind_NAPP.csv:MA4             
+                    resource_unit: energy_per_cap   
+
+            Wind5:                                           # Tanger (2010)
+                constraints:
+                    energy_cap_equals: 140250                # https://www.thewindpower.net/windfarms_list_en.php?country=MA
+                    resource: file=Wind_NAPP.csv:MA5              
+                    resource_unit: energy_per_cap   
+ 
+            Wind6:                                           # Khalladi (2017)
+                constraints:
+                    energy_cap_equals: 120000                # https://www.thewindpower.net/windfarms_list_en.php?country=MA
+                    resource: file=Wind_NAPP.csv:MA6              
+                    resource_unit: energy_per_cap   
+ 
+            Wind7:                                           # Tarfayer (2007)
+                constraints:
+                    energy_cap_equals: 60350                 # https://www.thewindpower.net/windfarms_list_en.php?country=MA
+                    resource: file=Wind_NAPP.csv:MA7              
+                    resource_unit: energy_per_cap   
+ 
+            Wind8:                                           # Al Koudia Al Baida (Abdelkhalek Torres) 1 (2000)
+                constraints:
+                    energy_cap_equals: 50400                 # https://www.thewindpower.net/windfarms_list_en.php?country=MA
+                    resource: file=Wind_NAPP.csv:MA8              
+                    resource_unit: energy_per_cap  
+
+            Wind9:                                           # Al Koudia Al Baida (Abdelkhalek Torres) 2 (2001)
+                constraints:
+                    energy_cap_equals: 3500                  # https://www.thewindpower.net/windfarms_list_en.php?country=MA
+                    resource: file=Wind_NAPP.csv:MA9              
+                    resource_unit: energy_per_cap   
+  
+            Wind10:                                          # Foum El Oued (2013)
+                constraints:
+                    energy_cap_equals: 50600                 # https://www.thewindpower.net/windfarms_list_en.php?country=MA
+                    resource: file=Wind_NAPP.csv:MA10              
+                    resource_unit: energy_per_cap   
+  
+            Wind11:                                          # Haouma (2013)
+                constraints:
+                    energy_cap_equals: 50600                 # https://www.thewindpower.net/windfarms_list_en.php?country=MA
+                    resource: file=Wind_NAPP.csv:MA11              
+                    resource_unit: energy_per_cap   
+ 
+            Wind12:                                          # Lafarge Tetouan 1 (2009)
+                constraints:
+                    energy_cap_equals: 22000                 # https://www.thewindpower.net/windfarms_list_en.php?country=MA
+                    resource: file=Wind_NAPP.csv:MA12              
+                    resource_unit: energy_per_cap  
+
+            Wind13:                                          # Lafarge Tetouan 2 (2005)
+                constraints:
+                    energy_cap_equals: 10200                 # https://www.thewindpower.net/windfarms_list_en.php?country=MA
+                    resource: file=Wind_NAPP.csv:MA13              
+                    resource_unit: energy_per_cap 
+
+            Wind14:                                          # Oualidia 1 (2021)
+                constraints:
+                    energy_cap_equals: 15000                 # https://www.thewindpower.net/windfarms_list_en.php?country=MA
+                    resource: file=Wind_NAPP.csv:MA14              
+                    resource_unit: energy_per_cap 
+
+            Wind15:                                          # Oualidia 2 (2021)
+                constraints:
+                    energy_cap_equals: 3600                  # https://www.thewindpower.net/windfarms_list_en.php?country=MA
+                    resource: file=Wind_NAPP.csv:MA15              
+                    resource_unit: energy_per_cap 
+
+            Wind16:                                          # Oualidia 3 (2021)
+                constraints:
+                    energy_cap_equals: 15000                 # https://www.thewindpower.net/windfarms_list_en.php?country=MA
+                    resource: file=Wind_NAPP.csv:MA16              
+                    resource_unit: energy_per_cap 
+
+            Wind_other:
+                constraints:
+                    energy_cap_equals: 165730                # Calculated using http://pxweb.irena.org/pxweb/en/IRENASTAT/IRENASTAT__Power%20Capacity%20and%20Generation/ELECCAP_2021_cycle2.px/table/tableViewLayout1/ and https://www.thewindpower.net/windfarms_list_en.php?country=MA
+                    resource: file=Wind_NAPP.csv:MA_other              
+                    resource_unit: energy_per_cap 
+
+            Bioenergy:                                         
+                constraints:                                 
+                    energy_cap_equals: 7400       
+
+            Demand_power: 
+                constraints:
+                    resource: file=Demand_NAPP.csv:MA        # https://doi.org/10.1016/j.energy.2021.120623
+
+
+#################### Tunisia ####################
+
+    TUN:
+
+        coordinates:
+            lat: 33.886917
+            lon: 9.537499
+
+        techs:
+
+            CCGT_pp:           
+                constraints:
+                    energy_cap_equals: 2097000       
+
+            OCGT_pp:                 
+                constraints:
+                    energy_cap_equals: 1654000     
+
+            OCGT_Diesel_pp:              
+                constraints:
+                    energy_cap_equals: 146000  
+
+            Steam_Gas_pp:          
+                constraints:
+                    energy_cap_equals: 1171000       
+
+            Hydro_Large1:                                    # Nebeur / Mellegue (1954), Ror
+                constraints:                                 
+                    energy_cap_equals: 13000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_NAPP.csv:TUN1       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large2:                                    # Sidi Salem (1981), Dam
+                constraints:
+                    energy_cap_equals: 36000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_NAPP.csv:TUN5       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Small1:                                    # Ben Metir (1954)
+                constraints:                                 
+                    energy_cap_equals: 9000                  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_NAPP.csv:TUN2       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Small2:                                    # El Aroussia (1957), Ror
+                constraints:                                 
+                    energy_cap_equals: 4800                  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_NAPP.csv:TUN3       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Small3:                                    # Kasseb (1969), Ror
+                constraints:                                 
+                    energy_cap_equals: 700                   # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_NAPP.csv:TUN4       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Small4:                                    # Bouhertma / Sejnane (1976), Ror
+                constraints:
+                    energy_cap_equals: 1800                  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_NAPP.csv:TUN6       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            PV1:                                             # Tozeur (2019)
+                constraints:
+                    energy_cap_equals: 20000                 # Calculated using IRENA, 2021, Renewable Capacity Statistics and World Resources Institute, 2021, Global Power Plant Database
+                    resource: file=Solar_NAPP.csv:TUN1              
+                    resource_unit: energy_per_cap
+
+            Wind1:                                           # Bizerte 1 and 2 (2012-2013)
+                constraints:
+                    energy_cap_equals: 188760                # https://www.thewindpower.net/windfarms_list_en.php?country=TN
+                    resource: file=Wind_NAPP.csv:TUN1              
+                    resource_unit: energy_per_cap
+
+            Wind2:                                           # Sidi Daoued 1 (2000)
+                constraints:
+                    energy_cap_equals: 10560                 # https://www.thewindpower.net/windfarms_list_en.php?country=TN
+                    resource: file=Wind_NAPP.csv:TUN2              
+                    resource_unit: energy_per_cap 
+
+            Wind3:                                           # Sidi Daoued 2 (2003)
+                constraints:
+                    energy_cap_equals: 6600                  # https://www.thewindpower.net/windfarms_list_en.php?country=TN
+                    resource: file=Wind_NAPP.csv:TUN2              
+                    resource_unit: energy_per_cap 
+
+            Wind4:                                           # Sidi Daoued 3 (2003)
+                constraints:
+                    energy_cap_equals: 800                   # https://www.thewindpower.net/windfarms_list_en.php?country=TN
+                    resource: file=Wind_NAPP.csv:TUN2              
+                    resource_unit: energy_per_cap 
+
+            Wind5:                                           # Sidi Daoued 4 (2003-2007)
+                constraints:
+                    energy_cap_equals: 35640                 # https://www.thewindpower.net/windfarms_list_en.php?country=TN
+                    resource: file=Wind_NAPP.csv:TUN2              
+                    resource_unit: energy_per_cap 
+
+            Demand_power:
+                constraints:
+                    resource: file=Demand_NAPP.csv:TUN       # https://doi.org/10.1016/j.energy.2021.120623  

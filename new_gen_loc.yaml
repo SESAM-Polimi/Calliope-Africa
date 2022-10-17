@@ -1,0 +1,3352 @@
+locations:
+
+############################### CAPP ###############################
+
+# CSP potential unknown
+
+    AGO:
+        techs:   
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+    
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:    
+                    energy_cap_max: 13717600          # https://www.hydropower.org/country-profiles/angola                       
+                    resource: file=Hydro_New.csv:AO   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 788400            # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                           
+                    resource: file=Hydro_New.csv:AO   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:       
+                    energy_cap_max: 2669000           # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa                     
+                    resource: file=PV_New.csv:AO              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:AO
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:    
+                    energy_cap_max: 3900000             # https://www.trade.gov/country-commercial-guides/angola-energy#:~:text=Angola%20holds%20great%20potential%20for,in%20hydropower%20throughout%20the%20country.         
+                    resource: file=Wind_New.csv:AO             
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: 449000              # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full 
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 0                   # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full 
+
+    BDI:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf  
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:           
+                    energy_cap_max: 1682000            # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                 
+                    resource: file=Hydro_New.csv:BDI   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 33000              # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                            
+                    resource: file=Hydro_New.csv:BDI   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:  
+                    energy_cap_max: 291200             # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa                              
+                    resource: file=PV_New.csv:BDI              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:BDI
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:           
+                    energy_cap_max: inf                # Unknown  
+                    resource: file=Wind_New.csv:BDI            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: 308000             # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: inf                # Unknown
+
+    CMR:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf  
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:         
+                    energy_cap_max: 22245500           # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                        
+                    resource: file=Hydro_New.csv:CMR   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 592500             # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                           
+                    resource: file=Hydro_New.csv:CMR   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:           
+                    energy_cap_max: inf                # Unknown                      
+                    resource: file=PV_New.csv:CMR             
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:CMR
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:
+                    energy_cap_max: inf                # Unknown
+                    resource: file=Wind_New.csv:CMR            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: inf                # Unknown
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: inf                # Unknown, but relevant https://www.sciencedirect.com/science/article/pii/S0960148114008143
+
+    CAF:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf  
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:         
+                    energy_cap_max: 2959000            # https://www.andritz.com/resource/blob/237912/1b0d5ae2970a9060a2afafa377ea5171/hydro-news-africa-05-central-africa-data.pdf                                             
+                    resource: file=Hydro_New.csv:CAF   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 22350              # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                       
+                    resource: file=Hydro_New.csv:CAF   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:          
+                    energy_cap_max: inf                # Unknown                      
+                    resource: file=PV_New.csv:CAF              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:CAF
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints: 
+                    energy_cap_max: inf                # Unknown            
+                    resource: file=Wind_New.csv:CAF           
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: inf                # Unknown
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 0                  # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full 
+
+    TCD:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf  
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:        
+                    energy_cap_max: 0                  # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                  
+                    resource: file=Hydro_New.csv:TCD   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 30000              # https://www.andritz.com/resource/blob/237912/1b0d5ae2970a9060a2afafa377ea5171/hydro-news-africa-05-central-africa-data.pdf                    
+                    resource: file=Hydro_New.csv:TCD   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:                
+                    energy_cap_max: inf                # Unknown                
+                    resource: file=PV_New.csv:TCD              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:TCD
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:     
+                    energy_cap_max: inf                # Unknown        
+                    resource: file=Wind_New.csv:TCD            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: inf                # Unknown
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 0                  # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full 
+
+    COD:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:       
+                    energy_cap_max: 97519880           # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                         
+                    resource: file=Hydro_New.csv:COD   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 0                  # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                     
+                    resource: file=Hydro_New.csv:COD   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:            
+                    energy_cap_max: 4478000            # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa                    
+                    resource: file=PV_New.csv:COD              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:COD
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:        
+                    energy_cap_max: 1284000            # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa  
+                    resource: file=Wind_New.csv:COD            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: 500000             # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: inf                # Unknown
+
+    COG:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf  
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:       
+                    energy_cap_max: 3892000            # https://www.andritz.com/hydro-en/hydronews/hydropower-africa/rep-of-congo              
+                    resource: file=Hydro_New.csv:COG   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 50000              # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                        
+                    resource: file=Hydro_New.csv:COG   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:    
+                    energy_cap_max: inf                # Unknown                            
+                    resource: file=PV_New.csv:COG              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:COG
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:             
+                    energy_cap_max: inf                # Unknown 
+                    resource: file=Wind_New.csv:COG           
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: inf                # Unknown
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 0                  # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full 
+
+    GNQ:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf  
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:       
+                    energy_cap_max: 2473000            # https://wedocs.unep.org/bitstream/handle/20.500.11822/20489/Energy_profile_EquatorialGuinea.pdf?sequence=1&isAllowed=y             
+                    resource: file=Hydro_New.csv:GNQ   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 3800               # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                    
+                    resource: file=Hydro_New.csv:GNQ   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:    
+                    energy_cap_max: inf                # Unknown                             
+                    resource: file=PV_New.csv:GNQ              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:GNQ
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:              
+                    energy_cap_max: inf                # Unknown
+                    resource: file=Wind_New.csv:GNQ            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: inf                # Unknown
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 0                  # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full 
+
+    GAB:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf 
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:        
+                    energy_cap_max: 7670000            # https://www.andritz.com/resource/blob/237912/1b0d5ae2970a9060a2afafa377ea5171/hydro-news-africa-05-central-africa-data.pdf             
+                    resource: file=Hydro_New.csv:GAB   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 6000               # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                     
+                    resource: file=Hydro_New.csv:GAB   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:  
+                    energy_cap_max: inf                # Unknown                              
+                    resource: file=PV_New.csv:GAB              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:GAB
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:       
+                    energy_cap_max: inf                # Unknown       
+                    resource: file=Wind_New.csv:GAB            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: inf                # Unknown
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 0                  # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full 
+
+
+############################### EAPP ###############################
+
+# CSP potential, unknown but relevant
+
+    DJI:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf  
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:   
+                    energy_cap_max: 0                  # https://wedocs.unep.org/bitstream/handle/20.500.11822/20491/Energy_profile_Djibouti.pdf?sequence=1&isAllowed=y#:~:text=Djibouti%20has%20no%20hydroelectric%20potential%20(REEEP%2C%202012).&text=Djibouti%20has%20no%20indigenous%20sources,natural%20gas%2C%20hydropower%20or%20coal.&text=Coal-,Djibouti%20has%20no%20indigenous%20sources%20of,natural%20gas%2C%20hydropower%20or%20coal.                              
+                    resource: file=Hydro_New.csv:DJI   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 0                  # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full              
+                    resource: file=Hydro_New.csv:DJI   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:
+                    energy_cap_max: 1270000            # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa                                
+                    resource: file=PV_New.csv:DJI             
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:DJI
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:   
+                    energy_cap_max: 824000              # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa          
+                    resource: file=Wind_New.csv:DJI            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                   energy_cap_max: 3000                 # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 1000000             # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full 
+
+    EGY:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf  
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:    
+                    energy_cap_max: 832265             # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                         
+                    resource: file=Hydro_New.csv:EGY   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 52000              # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                     
+                    resource: file=Hydro_New.csv:EGY   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:         
+                    energy_cap_max: 62315000           # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa                       
+                    resource: file=PV_New.csv:EGY              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:EGY
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints: 
+                    energy_cap_max: 57135680           # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa             
+                    resource: file=Wind_New.csv:EGY            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: 2557000            # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: inf                # Unknown
+
+    ERI:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf  
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:     
+                    energy_cap_max: inf                # Unknown                            
+                    resource: file=Hydro_New.csv:ERI   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 0                  # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                 
+                    resource: file=Hydro_New.csv:ERI   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:       
+                    energy_cap_max: inf                # Unknown                          
+                    resource: file=PV_New.csv:ERI              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:ERI
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:   
+                    energy_cap_max: inf                # Unknown          
+                    resource: file=Wind_New.csv:ERI           
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: inf                # Unknown
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: inf                # Unknown
+
+    ETH:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf  
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:     
+                    energy_cap_max: 40816000           # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                         
+                    resource: file=Hydro_New.csv:ETH   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 1239000            # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                       
+                    resource: file=Hydro_New.csv:ETH   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:   
+                    energy_cap_max: 16491000           # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa                              
+                    resource: file=PV_New.csv:ETH              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:ETH
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:        
+                    energy_cap_max: 5604820             # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa    
+                    resource: file=Wind_New.csv:ETH            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: 3797500             # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 5000000             # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full 
+
+    KEN_NBOR:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:                                 
+                    resource: file=Hydro_New.csv:KEN_NBOR   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:                             
+                    resource: file=Hydro_New.csv:KEN_NBOR   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:                                 
+                    resource: file=PV_New.csv:KEN_NBOR             
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:KEN_NBOR
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:              
+                    resource: file=Wind_New.csv:KEN_NBOR            
+                    resource_unit: energy_per_cap
+
+    KEN_CSTR:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:                                 
+                    resource: file=Hydro_New.csv:KEN_CSTR   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:                             
+                    resource: file=Hydro_New.csv:KEN_CSTR   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:                                 
+                    resource: file=PV_New.csv:KEN_CSTR              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:KEN_CSTR
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:              
+                    resource: file=Wind_New.csv:KEN_CSTR            
+                    resource_unit: energy_per_cap
+
+    KEN_WSTR:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:                                 
+                    resource: file=Hydro_New.csv:KEN_WSTR   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:                             
+                    resource: file=Hydro_New.csv:KEN_WSTR   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:                                 
+                    resource: file=PV_New.csv:KEN_WSTR              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:KEN_WSTR
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:              
+                    resource: file=Wind_New.csv:KEN_WSTR            
+                    resource_unit: energy_per_cap
+
+    KEN_MTKR:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:                                 
+                    resource: file=Hydro_New.csv:KEN_MTKR   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:                             
+                    resource: file=Hydro_New.csv:KEN_MTKR   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:                                 
+                    resource: file=PV_New.csv:KEN_MTKR              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:KEN_MTKR
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:              
+                    resource: file=Wind_New.csv:KEN_MTKR           
+                    resource_unit: energy_per_cap
+
+    RWA:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:      
+                    energy_cap_max: 448500             # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                     
+                    resource: file=Hydro_New.csv:RWA   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 0                  # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                  
+                    resource: file=Hydro_New.csv:RWA   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:      
+                    energy_cap_max: 321500             # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa                         
+                    resource: file=PV_New.csv:RWA              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:RWA
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:        
+                    energy_cap_max: inf                # Unknown    
+                    resource: file=Wind_New.csv:RWA            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: 210165             # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 700000             # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full 
+
+    SOM:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:    
+                    energy_cap_max: 100000             # https://wedocs.unep.org/bitstream/handle/20.500.11822/20514/Energy_profile_Somalia.pdf?sequence=1&isAllowed=y#:~:text=The%20in%2Dcountry%20potential%20for,river%20(REEEP%2C%202012).&text=A%20dam%20at%20Bardhere%2C%20in,the%20seasonality%20of%20the%20rivers.                               
+                    resource: file=Hydro_New.csv:SOM   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 0                  # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+                    resource: file=Hydro_New.csv:SOM   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:     
+                    energy_cap_max: inf                # Unknown                            
+                    resource: file=PV_New.csv:SOM             
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:SOM
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:    
+                    energy_cap_max: inf                # Unknown         
+                    resource: file=Wind_New.csv:SOM            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: inf                # Unknown
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 0                  # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full 
+
+    SSD:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:      
+                    energy_cap_max: 2927000            # https://energycapitalpower.com/hydropower-a-top-solution-for-south-sudans-electricity-expansion-2/#:~:text=South%20Sudan%20holds%20the%20potential,generate%202%2C927%20MW%20of%20power. and https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full      
+                    resource: file=Hydro_New.csv:SSD   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 0                  # Assumption based on https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                        
+                    resource: file=Hydro_New.csv:SSD   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:          
+                    energy_cap_max: inf                # Unknown                     
+                    resource: file=PV_New.csv:SSD              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:SSD
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:             
+                    energy_cap_max: inf                # Unknown
+                    resource: file=Wind_New.csv:SSD           
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: inf                # Unknown
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: inf                # Unknown
+
+    SDN:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:      
+                    energy_cap_max: 2301000            # https://www.hindawi.com/journals/jen/2016/5082678/
+                    resource: file=Hydro_New.csv:SDN   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 17000              # Assumption based on https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                                                
+                    resource: file=Hydro_New.csv:SDN   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:          
+                    energy_cap_max: 2160000            # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa                      
+                    resource: file=PV_New.csv:SDN              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:SDN
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:      
+                    energy_cap_max: 5778000            # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa      
+                    resource: file=Wind_New.csv:SDN            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: 1867000            # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: inf                # Unknown
+
+    TZA:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf  
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf    
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:       
+                    energy_cap_max: 3247000            # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                        
+                    resource: file=Hydro_New.csv:TZA   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 368000             # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                         
+                    resource: file=Hydro_New.csv:TZA   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:      
+                    energy_cap_max: 8744000            # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa                          
+                    resource: file=PV_New.csv:TZA              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:TZA
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:              
+                    energy_cap_max: 6005000            # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa
+                    resource: file=Wind_New.csv:TZA            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: 954600             # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full 
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 650000             # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full 
+
+    UGA:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:      
+                    energy_cap_max: 3592500            # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                       
+                    resource: file=Hydro_New.csv:UGA   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 114000             # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                         
+                    resource: file=Hydro_New.csv:UGA   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:       
+                    energy_cap_max: 1657000            # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa                      
+                    resource: file=PV_New.csv:UGA              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:UGA
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:       
+                    energy_cap_max: 1228000             # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa      
+                    resource: file=Wind_New.csv:UGA            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: 4209300             # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 450000              # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full 
+
+############################### NAPP ###############################
+
+    DZA:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: 0   
+
+            Hydro_Large_New:
+                constraints:  
+                    energy_cap_max: inf                # Unknown                               
+                    resource: file=Hydro_New.csv:DZA   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: inf                # Unknown                          
+                    resource: file=Hydro_New.csv:DZA   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:      
+                    energy_cap_max: inf                # Unknown                          
+                    resource: file=PV_New.csv:DZA              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:DZA
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:          
+                    energy_cap_max: inf                # Unknown    
+                    resource: file=Wind_New.csv:DZA            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: inf                # Unknown
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 700000             # https://wedocs.unep.org/bitstream/handle/20.500.11822/20485/Energy_profile_Algeria.pdf?sequence=1&isAllowed=y
+
+    LBY:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: 0   
+
+            Hydro_Large_New:
+                constraints:  
+                    energy_cap_max: 0                  # https://www.andritz.com/hydro-en/hydronews/hydropower-africa/north-africa             
+                    resource: file=Hydro_New.csv:LBY   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 0                  # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                  
+                    resource: file=Hydro_New.csv:LBY   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:    
+                    energy_cap_max: inf                # Unknown                            
+                    resource: file=PV_New.csv:LBY              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:LBY
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints: 
+                    energy_cap_max: inf                # Unknown            
+                    resource: file=Wind_New.csv:LBY            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: inf                # Unknown
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 0                # Unknown
+
+    MRT:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: 0   
+
+            Hydro_Large_New:
+                constraints: 
+                    energy_cap_max: inf                # Unknown                                
+                    resource: file=Hydro_New.csv:MRT   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 0                  # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                      
+                    resource: file=Hydro_New.csv:MRT   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:     
+                    energy_cap_max: inf                # Unknown                           
+                    resource: file=PV_New.csv:MRT              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:MRT
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints: 
+                    energy_cap_max: inf                # Unknown             
+                    resource: file=Wind_New.csv:MRT            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: inf                # Unknown
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 0                  # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full 
+
+    MAR:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf 
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf     
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: 0   
+
+            Hydro_Large_New:
+                constraints:    
+                    energy_cap_max: 2027200            # https://www.res4med.org/wp-content/uploads/2018/06/Country-profile-Marocco-2.pdf                 
+                    resource: file=Hydro_New.csv:MA    # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 3270               # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                    
+                    resource: file=Hydro_New.csv:MA    # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:    
+                    energy_cap_max: inf                # Unknown                           
+                    resource: file=PV_New.csv:MA              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:MA
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:  
+                    energy_cap_max: inf                # Unknown           
+                    resource: file=Wind_New.csv:MA            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: inf                # Unknown
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 0                # Unknown
+
+    TUN:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: 0   
+
+            Hydro_Large_New:
+                constraints:   
+                    energy_cap_max: inf                # Unknown                               
+                    resource: file=Hydro_New.csv:TUN   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 39700              # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                       
+                    resource: file=Hydro_New.csv:TUN   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:    
+                    energy_cap_max: inf                # Unknown                             
+                    resource: file=PV_New.csv:TUN              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:TUN
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints: 
+                    energy_cap_max: inf                # Unknown             
+                    resource: file=Wind_New.csv:TUN            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: inf                # Unknown
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 0                # Unknown
+
+############################### SAPP ###############################
+
+# CSP resource unknown
+
+    BWA:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:    
+                    energy_cap_max: 0                  # https://www.se4all-africa.org/seforall-in-africa/country-data/botswana/#:~:text=Botswana%20has%20no%20perennial%20rivers,areas%20with%20the%20highest%20DNI.          
+                    resource: file=Hydro_New.csv:BWA   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 1000               # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                        
+                    resource: file=Hydro_New.csv:BWA   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints: 
+                    energy_cap_max: 1384450            # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa                                
+                    resource: file=PV_New.csv:BWA              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:BWA
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints: 
+                    energy_cap_max: 1440000            # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa             
+                    resource: file=Wind_New.csv:BWA            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: 10000               # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 0                   # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+    SWZ:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:   
+                    energy_cap_max: 137200              # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa               
+                    resource: file=Hydro_New.csv:SWZ    # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 10400               # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                     
+                    resource: file=Hydro_New.csv:SWZ    # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:                   
+                    energy_cap_max: 542000              # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa              
+                    resource: file=PV_New.csv:SWZ              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:SWZ
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:       
+                    energy_cap_max: 327000               # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa       
+                    resource: file=Wind_New.csv:SWZ            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: 94000                # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 0                    # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+    LSO:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf  
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf    
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:   
+                    energy_cap_max: 375430              # https://www.lndc.org.ls/content/hydro-power                             
+                    resource: file=Hydro_New.csv:LSO    # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 20000               # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                       
+                    resource: file=Hydro_New.csv:LSO    # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:       
+                    energy_cap_max: 312000              # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa                          
+                    resource: file=PV_New.csv:LSO              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:LSO
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:         
+                    energy_cap_max: 336000              # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa
+                    resource: file=Wind_New.csv:LSO            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: 10000                # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 0                    # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+    MWI:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf  
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf    
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:     
+                    energy_cap_max: 1492500             # https://eneken.ieej.or.jp/data/5006.pdf             
+                    resource: file=Hydro_New.csv:MWI    # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 135650              # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                        
+                    resource: file=Hydro_New.csv:MWI    # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:              
+                    energy_cap_max: 1194000             # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa                 
+                    resource: file=PV_New.csv:MWI              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:MWI
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:        
+                    energy_cap_max: 1001000              # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa    
+                    resource: file=Wind_New.csv:MWI            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: 188000               # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 4000000              # https://www.afrik21.africa/en/malawi-public-electricity-company-at-geothermal-school-in-kenya/
+
+    MOZ_NC:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:                             
+                    resource: file=Hydro_New.csv:MOZ_NC   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:                             
+                    resource: file=Hydro_New.csv:MOZ_NC   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:                                 
+                    resource: file=PV_New.csv:MOZ_NC              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:MOZ_NC
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:              
+                    resource: file=Wind_New.csv:MOZ_NC            
+                    resource_unit: energy_per_cap
+
+    MOZ_S:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:                            
+                    resource: file=Hydro_New.csv:MOZ_S   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:                             
+                    resource: file=Hydro_New.csv:MOZ_S   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:                                 
+                    resource: file=PV_New.csv:MOZ_S              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:MOZ_S
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:              
+                    resource: file=Wind_New.csv:MOZ_S            
+                    resource_unit: energy_per_cap
+
+    NAM:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:    
+                    energy_cap_max: 1794800             # https://www.hydropower-dams.com/news/namibia-country-profile/#:~:text=The%20hydropower%20potential%20of%20Namibia,per%20cent%20has%20been%20developed.                             
+                    resource: file=Hydro_New.csv:NAM    # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 108000              # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                       
+                    resource: file=Hydro_New.csv:NAM    # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:         
+                    energy_cap_max: 1961500             # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa                    
+                    resource: file=PV_New.csv:NAM              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:NAM
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:         
+                    energy_cap_max: 1367780             # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa    
+                    resource: file=Wind_New.csv:NAM            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: 50000                # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 0                    # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+    ZAF:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:     
+                    energy_cap_max: 6264000             # https://www.researchgate.net/publication/271561298_Hydrokinetic_power_generation_for_rural_electricity_supply_Case_of_South_Africa/download                                                   
+                    resource: file=Hydro_New.csv:ZAF    # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 234900              # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                    
+                    resource: file=Hydro_New.csv:ZAF    # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:        
+                    energy_cap_max: 35754790            # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa                         
+                    resource: file=PV_New.csv:ZAF              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:ZAF
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:          
+                    energy_cap_max: 21360600             # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa    
+                    resource: file=Wind_New.csv:ZAF            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: 2916000              # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 0                    # http://sustainable.org.za/userfiles/geothermal.pdf
+
+    ZMB:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:      
+                    energy_cap_max: 3594200            # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                       
+                    resource: file=Hydro_New.csv:ZMB   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 32000              # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                      
+                    resource: file=Hydro_New.csv:ZMB   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:     
+                    energy_cap_max: 4037000            # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa                         
+                    resource: file=PV_New.csv:ZMB              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:ZMB
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:           
+                    energy_cap_max: 3067000              # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa
+                    resource: file=Wind_New.csv:ZMB            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: 996000               # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: inf                  # Unknown, but relevant
+
+    ZWE:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:       
+                    energy_cap_max: 2430000             # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa
+                    resource: file=Hydro_New.csv:ZWE    # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 90550               # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                   
+                    resource: file=Hydro_New.csv:ZWE    # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:     
+                    energy_cap_max: 4329800             # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa                          
+                    resource: file=PV_New.csv:ZWE              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:ZWE
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:           
+                    energy_cap_max: 2884000              # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa
+                    resource: file=Wind_New.csv:ZWE            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: 900700              # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 0                   # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+                
+
+############################## WAPP ###############################
+
+    BEN:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:   
+                    energy_cap_max: 562000             # http://www.ecowrex.org/sites/default/files/country_report_01_benin.pdf                               
+                    resource: file=Hydro_New.csv:BEN   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 187000             # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                      
+                    resource: file=Hydro_New.csv:BEN   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:     
+                    energy_cap_max: 3530750            # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power                         
+                    resource: file=PV_New.csv:BEN              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: 0                # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power            
+                    resource: file=CSP_New.csv:BEN
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:     
+                    energy_cap_max: 322000              # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power                               
+                    resource: file=Wind_New.csv:BEN            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: 761000              # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 0                   # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+    BFA:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:  
+                    energy_cap_max: 227600             # http://www.ecowrex.org/system/files/country_report_02_burkina_faso.pdf                 
+                    resource: file=Hydro_New.csv:BFA   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 17000              # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                    
+                    resource: file=Hydro_New.csv:BFA   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:   
+                    energy_cap_max: 82521900           # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power                      
+                    resource: file=PV_New.csv:BFA              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: 0                # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power            
+                    resource: file=CSP_New.csv:BFA
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:              
+                    energy_cap_max: 9881000             # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power                       
+                    resource: file=Wind_New.csv:BFA            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: 1074000              # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 0                    # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+    CIV:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:    
+                    energy_cap_max: 1024400            # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                              
+                    resource: file=Hydro_New.csv:CIV   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 35700              # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                     
+                    resource: file=Hydro_New.csv:CIV   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:    
+                    energy_cap_max: 28919000           # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power                           
+                    resource: file=PV_New.csv:CIV              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: 213000          # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power            
+                    resource: file=CSP_New.csv:CIV
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:              
+                    energy_cap_max: 2548000            # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power                       
+                    resource: file=Wind_New.csv:CIV            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: 3260000             # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 0                   # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+    GMB:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:   
+                    energy_cap_max: 0                  # https://wedocs.unep.org/bitstream/handle/20.500.11822/20510/Energy_profile_Gambia.pdf?sequence=1&isAllowed=y                              
+                    resource: file=Hydro_New.csv:GMB   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 12000              # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                      
+                    resource: file=Hydro_New.csv:GMB   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:      
+                    energy_cap_max: 428000             # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power                          
+                    resource: file=PV_New.csv:GMB              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: 953000          # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power            
+                    resource: file=CSP_New.csv:GMB
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:            
+                    energy_cap_max: 42950              # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power                        
+                    resource: file=Wind_New.csv:GMB            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: 60000               # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 0                   # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+    GHA:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:   
+                    energy_cap_max: 900000             # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                               
+                    resource: file=Hydro_New.csv:GHA   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 1245000            # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                   
+                    resource: file=Hydro_New.csv:GHA   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:     
+                    energy_cap_max: 20201500           # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power                         
+                    resource: file=PV_New.csv:GHA              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: 229000           # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power            
+                    resource: file=CSP_New.csv:GHA
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:        
+                    energy_cap_max: 2014000             # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power                            
+                    resource: file=Wind_New.csv:GHA            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: 4449000             # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 0                   # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+    GIN:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:     
+                    energy_cap_max: 5030000            # https://www.hydropower.org/country-profiles/guinea                                 
+                    resource: file=Hydro_New.csv:GIN   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 189600             # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                    
+                    resource: file=Hydro_New.csv:GIN   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:     
+                    energy_cap_max: 37569000           # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power                       
+                    resource: file=PV_New.csv:GIN              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: 2774000          # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power            
+                    resource: file=CSP_New.csv:GIN
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:   
+                    energy_cap_max: 2114000             # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power                                 
+                    resource: file=Wind_New.csv:GIN            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: 1732000             # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 0                   # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+    GNB:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:      
+                    energy_cap_max: 184000             # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                          
+                    resource: file=Hydro_New.csv:GNB   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 0                  # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                   
+                    resource: file=Hydro_New.csv:GNB   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:     
+                    energy_cap_max: 1043000            # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power                         
+                    resource: file=PV_New.csv:GNB              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: 2583000         # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power            
+                    resource: file=CSP_New.csv:GNB
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:              
+                    energy_cap_max: 101000             # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power                       
+                    resource: file=Wind_New.csv:GNB            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: 205000             # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 0                  # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+    LBR:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:       
+                    energy_cap_max: 2212000            # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                     
+                    resource: file=Hydro_New.csv:LBR   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 65900              # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                     
+                    resource: file=Hydro_New.csv:LBR   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:  
+                    energy_cap_max: 2871000            # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power                            
+                    resource: file=PV_New.csv:LBR              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: 41000           # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power            
+                    resource: file=CSP_New.csv:LBR
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:          
+                    energy_cap_max: 192000             # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power                          
+                    resource: file=Wind_New.csv:LBR            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: 1375000             # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 0                  # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+    MLI:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:     
+                    energy_cap_max: 840100             # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                           
+                    resource: file=Hydro_New.csv:MLI   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 111300             # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                    
+                    resource: file=Hydro_New.csv:MLI   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:        
+                    energy_cap_max: 298762000          # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power                       
+                    resource: file=PV_New.csv:MLI              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: 103658000       # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power            
+                    resource: file=CSP_New.csv:MLI
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:      
+                    energy_cap_max: 7962000            # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power                             
+                    resource: file=Wind_New.csv:MLI            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: 447000             # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 0                  # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+    NER:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:    
+                    energy_cap_max: 280500             # https://www.energycharter.org/fileadmin/DocumentsMedia/Occasional/Niger_Energy_Sector.pdf                 
+                    resource: file=Hydro_New.csv:NER   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 0                  # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                  
+                    resource: file=Hydro_New.csv:NER   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:          
+                    energy_cap_max: 442924000          # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power                     
+                    resource: file=PV_New.csv:NER              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: 171136000       # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power            
+                    resource: file=CSP_New.csv:NER
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:         
+                    energy_cap_max: 54156000           # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power                           
+                    resource: file=Wind_New.csv:NER            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: 266000             # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 0                  # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+    NGA_CNW:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf  
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf    
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:                                 
+                    resource: file=Hydro_New.csv:NGA_CNW   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:                             
+                    resource: file=Hydro_New.csv:NGA_CNW   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:                                 
+                    resource: file=PV_New.csv:NGA_CNW              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:NGA_CNW
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:              
+                    resource: file=Wind_New.csv:NGA_CNW            
+                    resource_unit: energy_per_cap
+
+    NGA_E:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf  
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf    
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:                                 
+                    resource: file=Hydro_New.csv:NGA_E   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:                             
+                    resource: file=Hydro_New.csv:NGA_E   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:                                 
+                    resource: file=PV_New.csv:NGA_E              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:NGA_E
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:              
+                    resource: file=Wind_New.csv:NGA_E            
+                    resource_unit: energy_per_cap
+
+    NGA_S:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:                                 
+                    resource: file=Hydro_New.csv:NGA_S   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:                             
+                    resource: file=Hydro_New.csv:NGA_S   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:                                 
+                    resource: file=PV_New.csv:NGA_S              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:NGA_S
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:              
+                    resource: file=Wind_New.csv:NGA_S            
+                    resource_unit: energy_per_cap
+
+    NGA_W:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:                                 
+                    resource: file=Hydro_New.csv:NGA_W   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:                             
+                    resource: file=Hydro_New.csv:NGA_W   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:                                 
+                    resource: file=PV_New.csv:NGA_W              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:NGA_W
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:              
+                    resource: file=Wind_New.csv:NGA_W            
+                    resource_unit: energy_per_cap
+
+    SEN:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:       
+                    energy_cap_max: 248000             # http://www.ecowrex.org/sites/default/files/country_report_12_senegal.pdf                        
+                    resource: file=Hydro_New.csv:SEN   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 5000                # http://www.ecowrex.org/sites/default/files/country_report_12_senegal.pdf     
+                    resource: file=Hydro_New.csv:SEN    # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:         
+                    energy_cap_max: 37035800            # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power                       
+                    resource: file=PV_New.csv:SEN              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: 5424000          # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power            
+                    resource: file=CSP_New.csv:SEN
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:              
+                    energy_cap_max: 4372300             # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power                       
+                    resource: file=Wind_New.csv:SEN           
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: 441000              # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 0                   # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+    SLE:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:         
+                    energy_cap_max: 200000              # https://www.rvo.nl/sites/default/files/2018/07/sector-scan-the-energy-sector-in-sierra-leone.pdf                      
+                    resource: file=Hydro_New.csv:SLE    # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 1311000             # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full and https://www.rvo.nl/sites/default/files/2018/07/sector-scan-the-energy-sector-in-sierra-leone.pdf                 
+                    resource: file=Hydro_New.csv:SLE    # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:        
+                    energy_cap_max: 1885000             # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power                      
+                    resource: file=PV_New.csv:SLE              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: 111000           # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power            
+                    resource: file=CSP_New.csv:SLE
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:         
+                    energy_cap_max: 131000              # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power                         
+                    resource: file=Wind_New.csv:SLE            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: 555000              # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 0                   # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+    TGO:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf  
+
+            HFO_pp_New:
+                constraints:    
+                    energy_cap_max: inf    
+
+            ISCC_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:          
+                    energy_cap_max: 0                  # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                
+                    resource: file=Hydro_New.csv:TGO   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 142400             # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                   
+                    resource: file=Hydro_New.csv:TGO   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:       
+                    energy_cap_max: 2636000            # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power                       
+                    resource: file=PV_New.csv:TGO              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: 0                # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power            
+                    resource: file=CSP_New.csv:TGO
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:        
+                    energy_cap_max: 73000               # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power                          
+                    resource: file=Wind_New.csv:TGO            
+                    resource_unit: energy_per_cap
+
+            Bioenergy_New:
+                constraints:
+                    energy_cap_max: 378000              # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 0                   # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+
+group_constraints:
+
+    Hydro_Large_New_max_KEN:
+        techs: ['Hydro_Large_New']
+        locs: ['KEN_NBOR', 'KEN_CSTR', 'KEN_WSTR','KEN_MTKR']
+        energy_cap_max: 5217000                         # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+    Hydro_Small_New_max_KEN:
+        techs: ['Hydro_Small_New']
+        locs: ['KEN_NBOR', 'KEN_CSTR', 'KEN_WSTR','KEN_MTKR']
+        energy_cap_max: 2992600                         # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+    PV_KEN:
+        techs: ['PV_New']
+        locs: ['KEN_NBOR', 'KEN_CSTR', 'KEN_WSTR','KEN_MTKR']
+        energy_cap_max: 2949000                         # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa
+
+    Wind_KEN:
+        techs: ['Wind_New']
+        locs: ['KEN_NBOR', 'KEN_CSTR', 'KEN_WSTR','KEN_MTKR']
+        energy_cap_max: 4532500                         # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa
+
+    Geothermal_New_max_KEN:
+        techs: ['Geothermal_New']
+        locs: ['KEN_NBOR', 'KEN_CSTR', 'KEN_WSTR','KEN_MTKR']
+        energy_cap_max: 9174660
+
+    Bioenergy_New_max_KEN:
+        techs: ['Bioenergy_New']
+        locs: ['KEN_NBOR', 'KEN_CSTR', 'KEN_WSTR','KEN_MTKR']
+        energy_cap_max: 1853000                         # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa
+
+    Hydro_Large_New_max_MOZ:
+        techs: ['Hydro_Large_New']
+        locs: ['MOZ_NC', 'MOZ_S']
+        energy_cap_max: 3421400                         # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+    Hydro_Small_New_max_MOZ:
+        techs: ['Hydro_Small_New']
+        locs: ['MOZ_NC', 'MOZ_S']
+        energy_cap_max: 976070                          # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+    PV_MOZ:
+        techs: ['PV_New']
+        locs: ['MOZ_NC', 'MOZ_S']
+        energy_cap_max: 3476500                         # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa
+
+    Wind_MOZ:
+        techs: ['Wind_New']
+        locs: ['MOZ_NC', 'MOZ_S']
+        energy_cap_max: 2259000                         # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa
+
+    Geothermal_New_max_MOZ:
+        techs: ['Geothermal_New']
+        locs: ['MOZ_NC', 'MOZ_S']
+        energy_cap_max: inf                             # Unknown, but relevant geothermal potential
+
+    Bioenergy_New_max_MOZ:
+        techs: ['Bioenergy_New']
+        locs: ['MOZ_NC', 'MOZ_S']
+        energy_cap_max: 1000000                         # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa
+
+    Hydro_Large_New_max_NGA:
+        techs: ['Hydro_Large_New']
+        locs: ['NGA_CNW', 'NGA_E', 'NGA_S', 'NGA_W']
+        energy_cap_max: 12037600                        # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+    Hydro_Small_New_max_NGA:
+        techs: ['Hydro_Small_New']
+        locs: ['NGA_CNW', 'NGA_E', 'NGA_S', 'NGA_W']
+        energy_cap_max: 696000                          # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+    PV_NGA:
+        techs: ['PV_New']
+        locs: ['NGA_CNW', 'NGA_E', 'NGA_S', 'NGA_W']
+        energy_cap_max: 492469800                         # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+
+    CSP_NGA:
+        techs: ['CSP_New']
+        locs: ['NGA_CNW', 'NGA_E', 'NGA_S', 'NGA_W']
+        energy_cap_max: 36683000                          # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+
+    Wind_NGA:
+        techs: ['Wind_New']
+        locs: ['NGA_CNW', 'NGA_E', 'NGA_S', 'NGA_W']
+        energy_cap_max: 44024000                          # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+
+    Geothermal_New_max_NGA:
+        techs: ['Geothermal_New']
+        locs: ['NGA_CNW', 'NGA_E', 'NGA_S', 'NGA_W']
+        energy_cap_max: inf                               # Unknown, but relevant geothermal potential
+
+    Bioenergy_New_max_NGA:
+        techs: ['Bioenergy_New']
+        locs: ['NGA_CNW', 'NGA_E', 'NGA_S', 'NGA_W']
+        energy_cap_max: 7291000                           # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power

@@ -1,0 +1,71 @@
+# NAPP Transmission Grid#
+
+# energy_cap_equals: Installed transmission capacity [kW]
+# energy_eff_per_distance: Energy efficiency per distance [1/(10s km)]
+# distance: Length of transmission line [10s km]
+
+links:
+
+    DZA,MAR:
+        techs:
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 720000                   # https://www.entsoe.eu/data/map/ and https://www.med-tso.com/publications/Objective_2030_-_Outlook_of_the_Tasks_and_Deliverables_final.pdf, Power assumed for one of the 3 existing lines using https://www.researchgate.net/figure/Transmission-line-X-R-ratio-and-MVA-limit-for-EI_tbl3_319205712
+                    energy_eff_per_distance: 0.988              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 11.5                                  # Calculated using Google Earth Pro, knowing the approximate position of the substations. Approximated.
+
+            400_kV:
+                constraints:
+                    energy_cap_equals: 100000                   # https://www.entsoe.eu/data/map/ and https://www.med-tso.com/publications/Objective_2030_-_Outlook_of_the_Tasks_and_Deliverables_final.pdf
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 16.5                                  # https://www.med-tso.com/publications/Objective_2030_-_Outlook_of_the_Tasks_and_Deliverables_final.pdf
+
+    DZA,TUN:
+        techs:
+            132-161_kV:
+                constraints:
+                    energy_cap_equals: 160000                   # https://www.entsoe.eu/data/map/ and https://www.med-tso.com/publications/Objective_2030_-_Outlook_of_the_Tasks_and_Deliverables_final.pdf
+                    energy_eff_per_distance: 0.951              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 6.2                                   # https://www.med-tso.com/publications/Objective_2030_-_Outlook_of_the_Tasks_and_Deliverables_final.pdf
+
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 250000                   # https://www.entsoe.eu/data/map/ and https://www.med-tso.com/publications/Objective_2030_-_Outlook_of_the_Tasks_and_Deliverables_final.pdf
+                    energy_eff_per_distance: 0.988              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 5.9                                   # https://www.med-tso.com/publications/Objective_2030_-_Outlook_of_the_Tasks_and_Deliverables_final.pdf
+
+            400_kV:
+                constraints:
+                    energy_cap_equals: 1067000                  # https://www.entsoe.eu/data/map/ and https://www.med-tso.com/publications/Objective_2030_-_Outlook_of_the_Tasks_and_Deliverables_final.pdf
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 16.0                                  # https://www.med-tso.com/publications/Objective_2030_-_Outlook_of_the_Tasks_and_Deliverables_final.pdf
+
+    LBY,EGY:
+        techs:
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 180000                   # https://www.entsoe.eu/data/map/ and https://www.med-tso.com/publications/Objective_2030_-_Outlook_of_the_Tasks_and_Deliverables_final.pdf
+                    energy_eff_per_distance: 0.988              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 13.0                                  # Calculated using Google Earth Pro, knowing the approximate position of the substations. Approximated.
+
+    LBY,TUN:
+        techs:
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 500000                   # https://www.med-tso.com/publications/DZ-TN-LY_project_sheet.pdf
+                    energy_eff_per_distance: 0.988              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 12.4                                  # Calculated using Google Earth Pro, knowing the approximate position of the substations. Approximated.
+
+    MRT,SEN:
+        techs:
+            70-110_kV:
+                constraints:
+                    energy_cap_equals: 180000                   # https://africa-energy-portal.org/country/mauritania and https://fr.ami.mr/Depeche-12907.html, Power assumed using https://www.researchgate.net/figure/Transmission-line-X-R-ratio-and-MVA-limit-for-EI_tbl3_319205712
+                    energy_eff_per_distance: 0.92               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 6.5                                   # Calculated using Google Earth Pro, knowing the approximate position of the substations. Approximated.
+
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 150000                   # https://www.afdb.org/en/documents/document/senegal-electrical-interconnection-study-senegal-mauritania-morocco-spain-preliminary-analysis-28932
+                    energy_eff_per_distance: 0.988              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 4.0                                   # https://www.afdb.org/en/documents/document/senegal-electrical-interconnection-study-senegal-mauritania-morocco-spain-preliminary-analysis-28932

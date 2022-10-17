@@ -1,0 +1,140 @@
+# SAPP Transmission Grid#
+
+# energy_cap_equals: Installed transmission capacity [kW]
+# energy_eff_per_distance: Energy efficiency per distance [1/(10s km)]
+# distance: Length of transmission line [10s km]     
+                                  
+links:
+
+    BWA,ZAF:
+        techs:
+            132-161_kV:
+                constraints:
+                    energy_cap_equals: 1135000                  # https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.951              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 12.0                                  # Calculated using Google Earth Pro, knowing the approximate position of the substations. Approximated.
+
+            400_kV:
+                constraints:
+                    energy_cap_equals: 190000                   # https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 19.0                                  # Calculated using Google Earth Pro, knowing the approximate position of the substations. Approximated.                            
+
+    BWA,ZWE:
+        techs:   
+            220-275_kV: 
+                constraints:
+                    energy_cap_equals: 200000                   # https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.988              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 17.0                                  # Calculated using Google Earth Pro, knowing the approximate position of the substations. Approximated.
+                          
+            400_kV:
+                constraints:
+                    energy_cap_equals: 220000                   # https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 23.5                                  # Calculated using Google Earth Pro, knowing the approximate position of the substations. Approximated.
+
+    SWZ,MOZ_S:
+        techs:                             
+            400_kV:
+                constraints:
+                    energy_cap_equals: 1000000                  # https://www.sapp.co.zw/transfer-limits 
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 15.5                                  # Calculated using Google Earth Pro, knowing the approximate position of the substations. Approximated.
+
+    SWZ,ZAF:
+        techs:  
+            132-161_kV:
+                constraints:
+                    energy_cap_equals: 76000                    # https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.965              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 3.5                                   # Calculated using Google Earth Pro, knowing the approximate position of the substations. Approximated.
+                           
+            400_kV:
+                constraints:
+                    energy_cap_equals: 1100000                  # https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 13.0                                  # Calculated using Google Earth Pro, knowing the approximate position of the substations. Approximated.
+
+    LSO,ZAF:
+        techs:                             
+            132-161_kV:
+                constraints:
+                    energy_cap_equals: 180000                   # https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.965              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 3.5                                   # Calculated using Google Earth Pro, knowing the approximate position of the substations. Approximated.
+
+    MOZ_NC,ZWE:
+        techs:
+            300-330_kV:
+                constraints:
+                    energy_cap_equals: 220000                   # https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 24.5                                  # Calculated using Google Earth Pro, knowing the approximate position of the substations. Approximated.
+                              
+    MOZ_S,ZAF:
+        techs:
+            70-110_kV:
+                constraints:
+                    energy_cap_equals: 67000                    # https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.92               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 3.5                                   # Calculated using Google Earth Pro, knowing the approximate position of the substations. Approximated.
+
+            220-275_kV: 
+                constraints:
+                    energy_cap_equals: 133000                   # https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.988              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 9.0                                   # Calculated using Google Earth Pro, knowing the approximate position of the substations. Approximated.
+
+            400_kV:
+                constraints:
+                    energy_cap_equals: 1100000                  # https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 30.0                                  # Calculated using Google Earth Pro, knowing the approximate position of the substations. Approximated.                                  
+
+    MOZ_NC,ZAF:
+        techs:
+
+            500-533_kV_DC:
+                constraints:
+                    energy_cap_equals: 700000                   # https://www.sapp.co.zw/transfer-limits and https://new.siemens.com/global/en/company/about/history/stories/siemens-supplies-south-africa-with-electricity.html
+                    energy_eff_per_distance: 0.9995             # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 142.0                                 # Calculated using Google Earth Pro, knowing the approximate position of the substations. Approximated.                                  
+
+    NAM,ZAF:
+        techs:
+            220-275_kV: 
+                constraints:
+                    energy_cap_equals: 390000                   # https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.988              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 32.0                                  # Calculated using Google Earth Pro, knowing the approximate position of the substations. Approximated.
+
+            400_kV:
+                constraints:
+                    energy_cap_equals: 380000                   # https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 44.5                                  # Calculated using Google Earth Pro, knowing the approximate position of the substations. Approximated.   
+
+    NAM,ZMB:
+        techs:
+            350_kV_DC: 
+                constraints:
+                    energy_cap_equals: 300000                   # https://www.nampower.com.na/Page.aspx?p=147
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 97.0                                  # https://www.globaltransmission.info/archive.php?id=32396
+
+    ZAF,ZWE:
+        techs:
+            132-161_kV:
+                constraints:
+                    energy_cap_equals: 15000                   # https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.965             # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 3.1                                  # Calculated using Google Earth Pro, knowing the approximate position of the substations. Approximated.
+                         
+    ZMB,ZWE:
+        techs:
+            300-330_kV:
+                constraints:
+                    energy_cap_equals: 856000                   # https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 23.0                                  # Calculated using Google Earth Pro, knowing the approximate position of the substations. Approximated.

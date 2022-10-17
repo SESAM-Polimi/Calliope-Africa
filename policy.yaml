@@ -1,0 +1,108 @@
+group_constraints:
+
+######### Africa 1.5 °C  #########
+
+    # systemwide_co2_cap:
+    #     cost_max:
+    #         co2: 850000000000                      # https://publications.jrc.ec.europa.eu/repository/bitstream/JRC118432/jrc118432_jrc118432_reviewed_by_ipo.pdf
+
+######### Africa 2.0 °C  #########
+
+    # systemwide_co2_cap:
+    #     cost_max:
+    #         co2: 1420000000000                     # https://publications.jrc.ec.europa.eu/repository/bitstream/JRC118432/jrc118432_jrc118432_reviewed_by_ipo.pdf
+
+#######################################################  1.5 °C Power pool policies AC  ##############################################################################
+
+######### CAPP #########
+
+    # systemwide_co2_cap:
+    #     cost_max:
+    #         co2: 83356834595                      # https://publications.jrc.ec.europa.eu/repository/bitstream/JRC118432/jrc118432_jrc118432_reviewed_by_ipo.pdf
+
+######### EAPP #########
+
+    # systemwide_co2_cap:
+    #     cost_max:
+    #         co2: 309694891553                     # https://publications.jrc.ec.europa.eu/repository/bitstream/JRC118432/jrc118432_jrc118432_reviewed_by_ipo.pdf
+
+######### NAPP #########
+
+    systemwide_co2_cap:
+        cost_max:
+            co2: 165844867604                     # https://publications.jrc.ec.europa.eu/repository/bitstream/JRC118432/jrc118432_jrc118432_reviewed_by_ipo.pdf
+
+######### SAPP #########
+
+    # systemwide_co2_cap:
+    #     cost_max:
+    #         co2: 164001232482                     # https://publications.jrc.ec.europa.eu/repository/bitstream/JRC118432/jrc118432_jrc118432_reviewed_by_ipo.pdf
+
+######### WAPP #########
+
+    # systemwide_co2_cap:
+    #     cost_max:
+    #         co2: 127102173768                     # https://publications.jrc.ec.europa.eu/repository/bitstream/JRC118432/jrc118432_jrc118432_reviewed_by_ipo.pdf
+
+
+####################################################### 1.5 °C Power pool policies STEPS  ##############################################################################
+
+######### CAPP #########
+
+    # systemwide_co2_cap:
+    #     cost_max:
+    #         co2: 66110309973                      # https://publications.jrc.ec.europa.eu/repository/bitstream/JRC118432/jrc118432_jrc118432_reviewed_by_ipo.pdf
+
+######### EAPP #########
+
+    # systemwide_co2_cap:
+    #     cost_max:
+    #         co2: 286906964320                     # https://publications.jrc.ec.europa.eu/repository/bitstream/JRC118432/jrc118432_jrc118432_reviewed_by_ipo.pdf
+
+######### NAPP #########
+
+    # systemwide_co2_cap:
+    #     cost_max:
+    #         co2: 167520926477                     # https://publications.jrc.ec.europa.eu/repository/bitstream/JRC118432/jrc118432_jrc118432_reviewed_by_ipo.pdf
+
+######### SAPP #########
+
+    # systemwide_co2_cap:
+    #     cost_max:
+    #         co2: 219941217888                     # https://publications.jrc.ec.europa.eu/repository/bitstream/JRC118432/jrc118432_jrc118432_reviewed_by_ipo.pdf
+
+######### WAPP #########
+
+    # systemwide_co2_cap:
+    #     cost_max:
+    #         co2: 109520581342                     # https://publications.jrc.ec.europa.eu/repository/bitstream/JRC118432/jrc118432_jrc118432_reviewed_by_ipo.pdf
+
+    # systemwide_co2_cap:
+    #     cost_max:
+    #         co2: 300056387
+
+
+
+
+
+
+
+
+
+
+
+
+############################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
+
+    # renewable_minimum_share:
+
+    # # Considering Hydro
+
+    #     techs: ['Hydro_Large1','Hydro_Large2','Hydro_Large3','Hydro_Large4','Hydro_Large5','Hydro_Large6','Hydro_Large7','Hydro_Large8','Hydro_Large9','Hydro_Large10','Hydro_Large11','Hydro_Large12','Hydro_Large13','Hydro_Large14','Hydro_Large15','Hydro_Large16','Hydro_Large17','Hydro_Small1','Hydro_Small2','Hydro_Small3','Hydro_Small4','Hydro_Small5','Hydro_Small6','Hydro_Small7','Hydro_Small8','Hydro_Small9','Hydro_Small10','Hydro_Small11','Hydro_Small_other','PV1','PV2','PV3','PV4','PV5','PV6','PV7','PV8','PV9','PV10','PV11','PV12','PV13','PV14','PV15','PV16','PV17','PV18','PV19','PV20','PV21','PV22','PV23','PV24','PV25','PV26','PV27','PV28','PV29','PV30','PV31','PV32','PV33','PV34','PV35','PV36','PV37','PV38','PV39','PV40','PV41','PV42','PV43','PV44','CSP1','CSP2','CSP3','CSP4','CSP5','CSP6','Wind1','Wind2','Wind3','Wind4','Wind5','Wind6','Wind7','Wind8','Wind9','Wind10','Wind11','Wind12','Wind13','Wind14','Wind15','Wind16','Wind17','Wind18','Wind19','Wind20','Wind21','Wind22','Wind23','Wind24','Wind25','Wind26','Wind27','Wind28','Wind29','Wind30','Wind31','Wind32','Wind33','Wind34','Wind_other','Bioenergy','Geothermal','Hydro_Large_New','PV_New','CSP_New','Wind_New','Bioenergy_New','Geothermal_New']
+
+    # Not considering Hydro
+
+#        techs: ['PV1','PV2','PV3','PV4','PV5','PV6','PV7','PV8','PV9','PV10','PV11','PV12','PV13','PV14','PV15','PV16','PV17','PV18','PV19','PV20','PV21','PV22','PV23','PV24','PV25','PV26','PV27','PV28','PV29','PV30','PV31','PV32','PV33','PV34','PV35','PV36','PV37','PV38','PV39','PV40','PV41','PV42','PV43','PV44','CSP1','CSP2','CSP3','CSP4','CSP5','CSP6','Wind1','Wind2','Wind3','Wind4','Wind5','Wind6','Wind7','Wind8','Wind9','Wind10','Wind11','Wind12','Wind13','Wind14','Wind15','Wind16','Wind17','Wind18','Wind19','Wind20','Wind21','Wind22','Wind23','Wind24','Wind25','Wind26','Wind27','Wind28','Wind29','Wind30','Wind31','Wind32','Wind33','Wind34','Wind_other','Bioenergy','Geothermal','Hydro_Large_New','PV_New','CSP_New','Wind_New','Bioenergy_New','Geothermal_New']
+
+        # demand_share_min:
+        #     electricity: 0.4

@@ -1,0 +1,958 @@
+# The Eastern African Power Pool is divided into 11 regions, which are the countries in the Power Pool, named according to
+# the ISO 3166-1 Alpha-3 code
+
+#1. Djibouti: DJI
+#2. Egypt: EGY
+#3. Eritrea: ERI
+#4. Ethiopia: ETH
+#5. Kenya Nairobi Region: KEN_NBOR
+#6. Kenya Coast Region: KEN_CSTR
+#7. Kenya Western Region: KEN_WSTR
+#8. Kenya Mount Kenya Region: KEN_MTKR
+#9. Rwanda: RWA
+#10. Somalia: SOM
+#11. South Sudan: SSD
+#12. Sudan: SDN
+#13. Tanzania: TZA
+#14. Uganda: UGA
+
+# energy_cap_equals: Installed energy capacity [kW]
+
+locations:
+
+
+#################### Djibouti ####################
+
+    DJI:
+
+        coordinates:
+            lat: 11.825138 
+            lon: 42.590275
+        
+        techs:
+            
+            HFO_pp:                                           
+                constraints:                                 
+                    energy_cap_equals: 122600      
+ 
+            Demand_power:
+                constraints:
+                    resource: file=Demand_EAPP.csv:DJI       # https://doi.org/10.1016/j.energy.2021.120623
+
+
+#################### Egypt ####################
+
+    EGY:
+
+        coordinates:
+            lat: 26.820553
+            lon: 30.802498
+        
+        techs:
+
+            CCGT_pp:            
+                constraints:                                 
+                    energy_cap_equals: 32266700     
+
+            OCGT_pp:                          
+                constraints:                                 
+                    energy_cap_equals: 3267000      
+
+            OCGT_Oil_pp:               
+                constraints:                                 
+                    energy_cap_equals: 569000     
+
+            HFO_pp:                    
+                constraints:                                 
+                    energy_cap_equals: 16751500      
+
+            Steam_Gas_pp:                   
+                constraints:                                 
+                    energy_cap_equals: 126000              
+
+            ISCC_pp:                                                               
+                constraints:                                 
+                    energy_cap_equals: 140000            
+
+            Hydro_Large1:                                    # High Aswan Dam (2010), Dam
+                constraints:                                 
+                    energy_cap_equals: 2100000               # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:EGY1       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large2:                                    # Aswan 1 (2010), Dam
+                constraints:                                 
+                    energy_cap_equals: 280000                # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:EGY2       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large3:                                    # Aswan 2 (2010), Dam
+                constraints:                                 
+                    energy_cap_equals: 270000                # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:EGY3       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large4:                                    # Esna (2010), Ror
+                constraints:                                 
+                    energy_cap_equals: 86000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:EGY4       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large5:                                    # Naga Hamadi (2010), Ror
+                constraints:                                 
+                    energy_cap_equals: 64000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:EGY5       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large6:                                    # New Assiut Barrage (2018), Dam
+                constraints:                                 
+                    energy_cap_equals: 31735                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:EGY6       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            PV1:                                             # Benban (2019)                                           
+                constraints:                                 
+                    energy_cap_equals: 1465000               # http://www.moee.gov.eg/english_new/EEHC_Rep/finalaEN19-20.pdf 
+                    resource: file=Solar_EAPP.csv:EGY1              
+                    resource_unit: energy_per_cap
+
+            PV2:                                             # Kom Ombo (2020)                                            
+                constraints:                                 
+                    energy_cap_equals: 26000                 # http://www.moee.gov.eg/english_new/EEHC_Rep/finalaEN19-20.pdf
+                    resource: file=Solar_EAPP.csv:EGY2              
+                    resource_unit: energy_per_cap
+
+            Wind1:                                           # Zafarana 1 (2001)
+                constraints:
+                    energy_cap_equals: 63000                 # https://www.thewindpower.net/windfarms_list_en.php?country=EG
+                    resource: file=Wind_EAPP.csv:EGY1              
+                    resource_unit: energy_per_cap
+
+            Wind2:                                           # Zafarana 2 (2004)
+                constraints:
+                    energy_cap_equals: 77220                 # https://www.thewindpower.net/windfarms_list_en.php?country=EG
+                    resource: file=Wind_EAPP.csv:EGY2              
+                    resource_unit: energy_per_cap
+
+            Wind3:                                           # Zafarana 3 (2006-2008)
+                constraints:
+                    energy_cap_equals: 404600                # https://www.thewindpower.net/windfarms_list_en.php?country=EG
+                    resource: file=Wind_EAPP.csv:EGY3              
+                    resource_unit: energy_per_cap
+
+            Wind4:                                           # Gulf of El-Zayt (2015-2018)
+                constraints:
+                    energy_cap_equals: 580000                # https://www.thewindpower.net/windfarms_list_en.php?country=EG and https://sustainabledevelopment.un.org/partnership/?p=29586
+                    resource: file=Wind_EAPP.csv:EGY4              
+                    resource_unit: energy_per_cap
+
+            Wind5:                                           # Ras Gharib (2019)
+                constraints:
+                    energy_cap_equals: 262500                # https://www.thewindpower.net/windfarms_list_en.php?country=EG
+                    resource: file=Wind_EAPP.csv:EGY5              
+                    resource_unit: energy_per_cap
+
+            Wind6:                                           # West Bankr (2021)
+                constraints:
+                    energy_cap_equals: 252000                # https://www.zawya.com/mena/en/story/Lekela_Power_starts_commercial_operation_of_250MW_West_Bakr_Wind_Farm_in_Egypt-SNG_265657892/
+                    resource: file=Wind_EAPP.csv:EGY6              
+                    resource_unit: energy_per_cap
+
+            Bioenergy:                                                           
+                constraints:                                 
+                    energy_cap_equals: 79000        
+
+            Demand_power:
+                constraints:
+                    resource: file=Demand_EAPP.csv:EGY       # https://doi.org/10.1016/j.energy.2021.120623
+
+
+#################### Eritrea ####################
+
+    ERI:
+
+        coordinates:
+            lat: 15.179384
+            lon: 39.782334
+        
+        techs:
+
+            HFO_pp:                                                   
+                constraints:                                 
+                    energy_cap_equals: 75100         
+
+            Demand_power:
+                constraints:
+                    resource: file=Demand_EAPP.csv:ERI       # https://doi.org/10.1016/j.energy.2021.120623
+
+
+#################### Ethiopia ####################
+
+    ETH:
+
+        coordinates:
+            lat: 9.145
+            lon: 40.489673
+        
+        techs:
+
+            Diesel_Engine:                                        
+                constraints:                                 
+                    energy_cap_equals: 104000     
+
+            Hydro_Large1:                                    # Maleka Wakana (2014), Dam
+                constraints:                                 
+                    energy_cap_equals: 153000                # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:ETH1       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large2:                                    # Tekeze 1 (2010), Dam
+                constraints:                                 
+                    energy_cap_equals: 300000                # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:ETH2       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large3:                                    # Gilgel Gibe 1 (2004), Dam
+                constraints:                                 
+                    energy_cap_equals: 184000                # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:ETH3       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large4:                                    # Gilgel Gibe 2 (2010), Ror
+                constraints:                                 
+                    energy_cap_equals: 420000                # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:ETH4       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large5:                                    # Gilgel Gibe 3 (2017), Dam
+                constraints:                                 
+                    energy_cap_equals: 1870000               # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:ETH5       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large6:                                    # Tis Abay 1 (2000), Ror
+                constraints:                                 
+                    energy_cap_equals: 11000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:ETH6       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large7:                                    # Tis Abay 2 (2010), Ror
+                constraints:                                 
+                    energy_cap_equals: 78000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:ETH7       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large8:                                    # Koka (1960, 2000), Dam
+                constraints:                                 
+                    energy_cap_equals: 43000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:ETH8       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large9:                                    # Awash 2 (1966), Ror
+                constraints:                                 
+                    energy_cap_equals: 32000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:ETH9       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large10:                                   # Awash 3 (1971), Ror
+                constraints:                                 
+                    energy_cap_equals: 32000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:ETH10      # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large11:                                   # Finchaa (1973), Dam
+                constraints:                                 
+                    energy_cap_equals: 128000                # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:ETH11      # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large12:                                   # Beles (2010), Ror
+                constraints:                                 
+                    energy_cap_equals: 460000                # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:ETH12      # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large13:                                   # Amarti-Neshe (2013), Dam
+                constraints:                                 
+                    energy_cap_equals: 98000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:ETH13      # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large14:                                   # Grand Renaissance Dam (First turbine) (2022), Dam
+                constraints:                                 
+                    energy_cap_equals: 375000                # https://www.africanews.com/2022/02/20/ethiopia-s-grand-renaissance-dam-starts-generating-power/
+                    resource: file=Hydro_EAPP.csv:ETH14      # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Small1:                                    # Sor (2014), Ror
+                constraints:                                 
+                    energy_cap_equals: 5000                  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:ETH15      # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_other:                               # Assumed to be small
+                constraints:                                 
+                    energy_cap_equals: 256000                # http://pxweb.irena.org/pxweb/en/IRENASTAT/IRENASTAT__Power%20Capacity%20and%20Generation/ELECCAP_2021_cycle2.px/table/tableViewLayout1/
+                    resource: file=Hydro_EAPP.csv:ETH_other  # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Wind1:                                           # Adama 1 (2012)
+                constraints:
+                    energy_cap_equals: 51000                 # https://www.thewindpower.net/windfarms_list_en.php?country=ET
+                    resource: file=Wind_EAPP.csv:ETH1              
+                    resource_unit: energy_per_cap
+
+            Wind2:                                           # Adama 2 (2015)
+                constraints:
+                    energy_cap_equals: 153000                # https://www.thewindpower.net/windfarms_list_en.php?country=ET
+                    resource: file=Wind_EAPP.csv:ETH2              
+                    resource_unit: energy_per_cap
+
+            Wind3:                                           # Ashegoda 1 (2012)
+                constraints:
+                    energy_cap_equals: 90180                 # https://www.thewindpower.net/windfarms_list_en.php?country=ET
+                    resource: file=Wind_EAPP.csv:ETH3              
+                    resource_unit: energy_per_cap
+
+            Wind4:                                           # Ashegoda 2 (2011)
+                constraints:
+                    energy_cap_equals: 30000                 # https://www.thewindpower.net/windfarms_list_en.php?country=ET
+                    resource: file=Wind_EAPP.csv:ETH4              
+                    resource_unit: energy_per_cap
+
+            Bioenergy:                
+                constraints:                                 
+                    energy_cap_equals: 183500        
+
+            Demand_power:
+                constraints:
+                    resource: file=Demand_EAPP.csv:ETH       # https://doi.org/10.1016/j.energy.2021.120623
+
+
+#################### Kenya Nairobi Region ####################
+
+    KEN_NBOR:
+
+        coordinates:
+            lat: -1.2833
+            lon: 36.8172
+        
+        techs:
+
+            Diesel_Engine:                                      
+                constraints:                                 
+                    energy_cap_equals: 100000       
+
+            HFO_pp:                                       
+                constraints:                                 
+                    energy_cap_equals: 276320     
+
+            Hydro_Large1:                                    # Masinga (1981, 2018), Dam
+                constraints:                                 
+                    energy_cap_equals: 40000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:KEN_NBOR1  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large2:                                    # Kamburu (1974, 2005-2007), Dam
+                constraints:                                 
+                    energy_cap_equals: 90000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:KEN_NBOR2  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large3:                                    # Gitaru (1998), Dam
+                constraints:                                 
+                    energy_cap_equals: 216000                # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:KEN_NBOR3  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Wind1:                                           # Ngong 1 (2009)
+                constraints:
+                    energy_cap_equals: 5100                  # https://www.thewindpower.net/windfarms_list_en.php?country=KE
+                    resource: file=Wind_EAPP.csv:KEN_NBOR1              
+                    resource_unit: energy_per_cap
+
+            Wind2:                                           # Ngong 2 (2014-2015)
+                constraints:
+                    energy_cap_equals: 20400                 # https://www.thewindpower.net/windfarms_list_en.php?country=KE
+                    resource: file=Wind_EAPP.csv:KEN_NBOR2              
+                    resource_unit: energy_per_cap
+
+            Wind3:                                           # Kipeto (2021)
+                constraints:
+                    energy_cap_equals: 102000                # https://www.thewindpower.net/windfarms_list_en.php?country=KE
+                    resource: file=Wind_EAPP.csv:KEN_NBOR3              
+                    resource_unit: energy_per_cap
+
+            Geothermal:          
+                constraints:                                 
+                    energy_cap_equals: 822900    
+
+            Demand_power:
+                constraints:
+                    resource: file=Demand_EAPP.csv:KEN_NBOR  # https://doi.org/10.1016/j.energy.2021.120623 and https://github.com/SESAM-Polimi/Calliope-Kenya
+
+
+#################### Kenya Coast Region ####################
+
+    KEN_CSTR:
+
+        coordinates:
+            lat: -1.910164
+            lon: 40.588417
+        
+        techs:
+
+            HFO_pp:                                       
+                constraints:                                 
+                    energy_cap_equals: 281500         
+
+            Diesel_Engine:                                     
+                constraints:                                 
+                    energy_cap_equals: 73500        
+
+            Bioenergy:                                       
+                constraints:                                 
+                    energy_cap_equals: 18000     
+
+            Demand_power:
+                constraints:
+                    resource: file=Demand_EAPP.csv:KEN_CSTR  # https://doi.org/10.1016/j.energy.2021.120623 and https://github.com/SESAM-Polimi/Calliope-Kenya
+
+
+#################### Kenya Western Region ####################
+
+    KEN_WSTR:
+
+        coordinates:
+            lat: 1.91667
+            lon: 35.3333
+        
+        techs:
+
+            OCGT_Oil_pp:                                  
+                constraints:                                 
+                    energy_cap_equals: 56000        
+
+            Hydro_Large1:                                    # Turkwell (1991), Dam
+                constraints:                                 
+                    energy_cap_equals: 105000                # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:KEN_WSTR1  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large2:                                    # Sondu Miriu (2008), Ror
+                constraints:                                 
+                    energy_cap_equals: 60000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:KEN_WSTR2  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large3:                                    # Sang'oro (2012), Ror
+                constraints:                                 
+                    energy_cap_equals: 20000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:KEN_WSTR3  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Geothermal:                                         
+                constraints:                                 
+                    energy_cap_equals: 2440        
+
+            Bioenergy:                                                   
+                constraints:                                 
+                    energy_cap_equals: 60000       
+
+            Demand_power:
+                constraints:
+                    resource: file=Demand_EAPP.csv:KEN_WSTR  # https://doi.org/10.1016/j.energy.2021.120623 and https://github.com/SESAM-Polimi/Calliope-Kenya
+
+
+#################### Kenya Mont Kenya Region ####################
+
+    KEN_MTKR:
+
+        coordinates:
+            lat: 0.07100
+            lon: 37.6900
+        
+        techs:
+
+            Hydro_Large1:                                    # Kiambere (1988, 2009), Dam
+                constraints:                                 
+                    energy_cap_equals: 164000                # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:KEN_MTKR1  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large2:                                    # Kindaruma (1968, 2013), Dam
+                constraints:                                 
+                    energy_cap_equals: 44000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:KEN_MTKR2  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large3:                                    # Kindaruma opt (2015), Dam
+                constraints:                                 
+                    energy_cap_equals: 24000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:KEN_MTKR3  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large4:                                    # Tana (1955, 2007), Ror
+                constraints:                                 
+                    energy_cap_equals: 20000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:KEN_MTKR4  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Small1:                                    # Wanjii (1952, 2018), Ror
+                constraints:                                 
+                    energy_cap_equals: 7400                  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:KEN_MTKR5  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            PV1:                                             # Garissa ("Off-Grid Region"  but connected to Mount Kenya Region) (2018)                                       
+                constraints:                                 
+                    energy_cap_equals: 56000                 # World Resources Institute, 2021, Global Power Plant Database
+                    resource: file=Solar_EAPP.csv:KEN_MTKR1              
+                    resource_unit: energy_per_cap
+
+            Wind1:                                           # Lake Turkana ("Off-Grid Region" but connected to Mount Kenya Region) (2019)
+                constraints:
+                    energy_cap_equals: 310000                # https://www.thewindpower.net/windfarms_list_en.php?country=KE
+                    resource: file=Wind_EAPP.csv:KEN_MTKR1              
+                    resource_unit: energy_per_cap
+
+            Demand_power:
+                constraints:
+                    resource: file=Demand_EAPP.csv:KEN_MTKR  # https://doi.org/10.1016/j.energy.2021.120623 and https://github.com/SESAM-Polimi/Calliope-Kenya
+
+
+#################### Rwanda ####################
+
+    RWA:
+
+        coordinates:
+            lat: -1.940278
+            lon: 29.873888
+        
+        techs:
+
+            Coal_pp:                                     
+                constraints:                                 
+                    energy_cap_equals: 15000           
+
+            Gas_Engine:                                  
+                constraints:                                 
+                    energy_cap_equals: 26190  
+
+            Diesel_Engine:                    
+                constraints:                                 
+                    energy_cap_equals: 67800        
+
+            Hydro_Large1:                                    # Ntaruka (1959), Ror
+                constraints:                                 
+                    energy_cap_equals: 11500                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:RWA1       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large2:                                    # Mukungwa 1-2 (1982, 2018), Ror
+                constraints:                                 
+                    energy_cap_equals: 12000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:RWA2       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large3:                                    # Nyabarongo 1 (2014), Ror
+                constraints:                                 
+                    energy_cap_equals: 28000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:RWA4       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Small1:                                    # Rukarara (2010), Ror
+                constraints:                                 
+                    energy_cap_equals: 9500                  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:RWA3       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_other:                               # Assumed to be small
+                constraints:                                 
+                    energy_cap_equals: 46340                 # http://pxweb.irena.org/pxweb/en/IRENASTAT/IRENASTAT__Power%20Capacity%20and%20Generation/ELECCAP_2021_cycle2.px/table/tableViewLayout1/
+                    resource: file=Hydro_EAPP.csv:RWA_other  # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV1:                                             # Rwamagana (2014)                                             
+                constraints:                                 
+                    energy_cap_equals: 8500                  # https://www.reg.rw/what-we-do/generation/solar/ and https://www.theguardian.com/environment/2015/nov/23/how-africas-fastest-solar-power-project-is-lighting-up-rwanda
+                    resource: file=Solar_EAPP.csv:RWA1              
+                    resource_unit: energy_per_cap
+
+            Bioenergy:                                        
+                constraints:                                 
+                    energy_cap_equals: 835       
+
+            Demand_power:
+                constraints:
+                    resource: file=Demand_EAPP.csv:RWA       # https://doi.org/10.1016/j.energy.2021.120623
+
+
+#################### Somalia ####################
+
+    SOM:
+
+        coordinates:
+            lat: 5.152149
+            lon: 46.199616
+        
+        techs:
+
+            # No on-grid power plants http://pxweb.irena.org/pxweb/en/IRENASTAT/IRENASTAT__Power%20Capacity%20and%20Generation/ELECCAP_2021_cycle2.px/table/tableViewLayout1/
+            Diesel_Engine:                                                                  
+                constraints:                                 
+                    energy_cap_equals: 0
+
+            Demand_power:
+                constraints:
+                    resource: file=Demand_EAPP.csv:SOM       # https://doi.org/10.1016/j.energy.2021.120623
+
+
+#################### South Sudan ####################
+
+    SSD:
+
+        coordinates:
+            lat: 7.533926
+            lon: 30.028715
+        
+        techs:
+
+            Diesel_Engine:                                          
+                constraints:                                 
+                    energy_cap_equals: 100000       
+
+            Demand_power:
+                constraints:
+                    resource: file=Demand_EAPP.csv:SSD       # https://doi.org/10.1016/j.energy.2021.120623
+
+
+#################### Sudan ####################
+
+    SDN:
+
+        coordinates:
+            lat: 12.862807
+            lon: 30.217636
+        
+        techs:
+
+            CCGT_Oil_pp:                                    
+                constraints:                                 
+                    energy_cap_equals: 460000        
+
+            OCGT_Oil_pp:                                          
+                constraints:                                 
+                    energy_cap_equals: 337000      
+
+            Diesel_Engine:                
+                constraints:                                 
+                    energy_cap_equals: 22600         
+
+            HFO_pp:             
+                constraints:                                 
+                    energy_cap_equals: 1193400          
+
+            Hydro_Large1:                                    # Jebel Aulia (2003), Dam
+                constraints:                                 
+                    energy_cap_equals: 19000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:SDN1       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large2:                                    # Roseires (1966, 2009-2013), Dam
+                constraints:                                 
+                    energy_cap_equals: 270000                # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:SDN2       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large3:                                    # Merowe (2009), Dam
+                constraints:                                 
+                    energy_cap_equals: 1240000               # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:SDN4       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large4:                                    # Sennar (1962), Dam
+                constraints:                                 
+                    energy_cap_equals: 26000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:SDN5       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large5:                                    # Upper Atbara (2017), Dam
+                constraints:                                 
+                    energy_cap_equals: 320000                # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:SDN6       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Small1:                                    # Khashm El Girba (1964, 2004), Dam
+                constraints:                                 
+                    energy_cap_equals: 10000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:SDN3       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Bioenergy:                    
+                constraints:                                 
+                    energy_cap_equals: 244580         
+
+            Demand_power:
+                constraints:
+                    resource: file=Demand_EAPP.csv:SDN       # https://doi.org/10.1016/j.energy.2021.120623
+
+
+#################### Tanzania ####################
+
+    TZA:
+
+        coordinates:
+            lat: -6.369028 
+            lon: 34.888822
+        
+        techs:
+
+            CCGT_pp:                                    
+                constraints:                                 
+                    energy_cap_equals: 240000        
+
+            OCGT_pp:                  
+                constraints:                                 
+                    energy_cap_equals: 733500         
+
+            Gas_Engine:             
+                constraints:
+                    energy_cap_equals: 18000       
+
+            HFO_pp:               
+                constraints:                                 
+                    energy_cap_equals: 63000
+
+            Diesel_Engine:                  
+                constraints:                                 
+                    energy_cap_equals: 239000         
+
+            Hydro_Large1:                                    # Kidatu (1975, 1993-1994, 1999-2003), Dam
+                constraints:                                 
+                    energy_cap_equals: 204000                # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:TZA1       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large2:                                    # Pangani Falls (1995), Ror
+                constraints:                                 
+                    energy_cap_equals: 68000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:TZA2       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large3:                                    # Hale (1967, 2009), Dam
+                constraints:                                 
+                    energy_cap_equals: 21000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:TZA3       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large4:                                    # Mtera (1988), Dam
+                constraints:                                 
+                    energy_cap_equals: 80000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:TZA5       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large5:                                    # Kihansi (2000), Ror
+                constraints:                                 
+                    energy_cap_equals: 180000                # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:TZA6       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Small1:                                    # Nyumba Ya Mungu (1968), Dam
+                constraints:                                 
+                    energy_cap_equals: 8000                  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:TZA4       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Small2:                                    # Mwenga (2012), Ror
+                constraints:                                 
+                    energy_cap_equals: 4000                  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:TZA7       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Small3:                                    # EA Power (2013), Ror
+                constraints:                                 
+                    energy_cap_equals: 10000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:TZA8       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Small4:                                    # Mapembasi (2014), Ror
+                constraints:                                 
+                    energy_cap_equals: 10000                  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:TZA9       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Bioenergy:                                                        
+                constraints:                                 
+                    energy_cap_equals: 45400    
+
+            Demand_power:
+                constraints:
+                    resource: file=Demand_EAPP.csv:TZA       # https://doi.org/10.1016/j.energy.2021.120623
+
+
+#################### Uganda ####################
+
+    UGA:
+
+        coordinates:
+            lat: 1.373333
+            lon: 32.290275
+        
+        techs:
+
+            HFO_pp:                                       
+                constraints:                                 
+                    energy_cap_equals: 92000             
+
+            Hydro_Large1:                                    # Kira (2010), Ror
+                constraints:                                 
+                    energy_cap_equals: 200000                # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:UGA1       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large2:                                    # Isimba (2019), Ror
+                constraints:                                 
+                    energy_cap_equals: 183000                # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:UGA2       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large3:                                    # Nalubaale (2018), Dam
+                constraints:                                 
+                    energy_cap_equals: 180000                # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:UGA3       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large4:                                    # Bujagali (2010), Ror
+                constraints:                                 
+                    energy_cap_equals: 250000                # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:UGA4       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large5:                                    # Bugoye (2009), Ror
+                constraints:                                 
+                    energy_cap_equals: 13000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:UGA5       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large6:                                    # Mpanga (2011), Ror
+                constraints:                                 
+                    energy_cap_equals: 18000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:UGA6       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large7:                                    # Siti (2017), Ror
+                constraints:                                 
+                    energy_cap_equals: 21500                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:UGA9       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large8:                                    # Achwa (2019), Ror
+                constraints:                                 
+                    energy_cap_equals: 42000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:UGA16      # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Small1:                                    # Mubuku 1 (1950), Ror
+                constraints:                                 
+                    energy_cap_equals: 5000                  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:UGA7       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Small2:                                    # Mubuku 3 (2009), Ror
+                constraints:                                 
+                    energy_cap_equals: 9500                  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:UGA8       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Small3:                                    # Muvumbe (2017), Ror
+                constraints:                                 
+                    energy_cap_equals: 6500                  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:UGA10      # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Small4:                                    # Rwimi (2017), Ror
+                constraints:                                 
+                    energy_cap_equals: 5500                  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:UGA11      # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Small5:                                    # Mahoma (2018), Ror
+                constraints:
+                    energy_cap_equals: 2700                  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:UGA12      # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Small6:                                    # Nyamwamba (2018), Ror
+                constraints:                                 
+                    energy_cap_equals: 9200                  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:UGA13      # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Small7:                                    # Nkusi (2018), Ror
+                constraints:                                 
+                    energy_cap_equals: 9600                  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:UGA14      # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Small8:                                    # Lubilia (2018), Ror
+                constraints:                                 
+                    energy_cap_equals: 5400                  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:UGA15      # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Small9:                                    # Kyambura (2019), Ror
+                constraints:                                 
+                    energy_cap_equals: 7600                  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:UGA17      # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Small10:                                   # Ndugutu (2019), Ror
+                constraints:                                 
+                    energy_cap_equals: 5900                  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:UGA18      # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Small11:                                   # Sindila (2019), Ror
+                constraints:                                 
+                    energy_cap_equals: 5300                  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro_EAPP.csv:UGA19      # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_other:                               # Assumed to be small
+                constraints:
+                    energy_cap_equals: 13800                 # http://pxweb.irena.org/pxweb/en/IRENASTAT/IRENASTAT__Power%20Capacity%20and%20Generation/ELECCAP_2021_cycle2.px/table/tableViewLayout1/
+                    resource: file=Hydro_EAPP.csv:UGA_other  # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV1:                                             # Kabulasoke (2018)                                          
+                constraints:                                 
+                    energy_cap_equals: 24000                 # World Resources Institute, 2021, Global Power Plant Database
+                    resource: file=Solar_EAPP.csv:UGA1              
+                    resource_unit: energy_per_cap
+
+            PV2:                                             # Access Solar Soroti (2016)                                            
+                constraints:                                 
+                    energy_cap_equals: 10000                 # https://www.era.go.ug/index.php/media-centre/what-s-new/276-uganda-s-grid-connected-solar-portfolio-increases 
+                    resource: file=Solar_EAPP.csv:UGA2              
+                    resource_unit: energy_per_cap
+
+            PV3:                                             # Tororo (2017)                                        
+                constraints:                                 
+                    energy_cap_equals: 10000                 # https://www.era.go.ug/index.php/media-centre/what-s-new/276-uganda-s-grid-connected-solar-portfolio-increases
+                    resource: file=Solar_EAPP.csv:UGA3              
+                    resource_unit: energy_per_cap
+
+            PV4:                                             # Bufulubi (2019)                                          
+                constraints:                                 
+                    energy_cap_equals: 10000                 # https://www.era.go.ug/index.php/media-centre/what-s-new/276-uganda-s-grid-connected-solar-portfolio-increases 
+                    resource: file=Solar_EAPP.csv:UGA4              
+                    resource_unit: energy_per_cap
+
+            Bioenergy:           
+                constraints:                                 
+                    energy_cap_equals: 111700     
+
+            Demand_power:
+                constraints:
+                    resource: file=Demand_EAPP.csv:UGA       # https://doi.org/10.1016/j.energy.2021.120623
