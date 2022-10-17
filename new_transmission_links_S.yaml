@@ -1,0 +1,62 @@
+links:
+
+############################### CAPP-EAPP ###############################
+
+    CAPP,EAPP:
+        techs:
+            New_Transmission_AC:
+                distance: 28.4         # https://openinframap.org/
+
+            New_Transmission_DC:
+                distance: 28.4         # https://openinframap.org/
+
+############################### CAPP-SAPP ###############################
+
+    CAPP,SAPP:
+        techs:
+            New_Transmission_AC:
+                distance: 64.1        # https://openinframap.org/
+
+            New_Transmission_DC:
+                distance: 64.1        # https://openinframap.org/
+
+
+############################### CAPP-WAPP ###############################
+
+    CAPP,WAPP:
+        techs:
+            New_Transmission_AC:
+                distance: 16.8        # https://openinframap.org/
+
+            New_Transmission_DC:
+                distance: 16.8        # https://openinframap.org/
+
+############################### EAPP-SAPP ###############################
+
+    EAPP,SAPP:
+        techs:
+            New_Transmission_AC:
+                distance: 12.6        # https://openinframap.org/
+
+            New_Transmission_DC:
+                distance: 12.6        # https://openinframap.org/
+
+############################### NAPP-WAPP ###############################
+
+    NAPP,WAPP:
+        techs:
+            New_Transmission_AC:
+                distance: 4.0        # https://openinframap.org/
+
+            New_Transmission_DC:
+                distance: 4.0        # https://openinframap.org/
+
+# ############################### NAPP-EAPP ###############################
+
+    NAPP,EAPP:
+        techs:
+            New_Transmission_AC:
+                distance: 13.0        # https://openinframap.org/
+
+            New_Transmission_DC:
+                distance: 13.0        # https://openinframap.org/

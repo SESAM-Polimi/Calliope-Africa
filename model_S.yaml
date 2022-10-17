@@ -1,0 +1,42 @@
+import:  
+
+    - 'Technologies/Technologies_Generation.yaml'    
+    - 'Technologies/Technologies_Transmission_and_Demand.yaml'
+    - 'CAPP/Location_Constraints_CAPP_S.yaml' 
+    - 'EAPP/Location_Constraints_EAPP_S.yaml' 
+    - 'NAPP/Location_Constraints_NAPP_S.yaml'
+    - 'SAPP/Location_Constraints_SAPP_S.yaml' 
+    - 'WAPP/Location_Constraints_WAPP_S.yaml' 
+    - 'CAPP/Transmission_links_CAPP_S.yaml'
+    - 'NAPP/Transmission_links_NAPP_S.yaml'
+    - 'overrides_S.yaml'
+    
+
+model:
+    name: Calliope_Africa
+    calliope_version: 0.6.7
+
+
+    timeseries_data_path: 'Timeseries'
+    timeseries_dateformat: '%d/%m/%Y %H:%M'
+    subset_time: ['2019-01-01', '2019-12-31']     
+   
+
+run:
+    solver: gurobi
+    solver_options:
+        NumericFocus: 1
+
+    ensure_feasibility: true 
+
+    zero_threshold: 1e-20
+    
+    objective_options: {'cost_class': {'monetary': 1, 'co2': 0}, 'sense': minimize}
+    
+    cyclic_storage: true
+
+    mode: plan
+    
+    operation:
+        horizon: 48 
+        window: 24

@@ -1,0 +1,160 @@
+# om_prod: Variable annual O&M costs [$/kWh]
+
+techs:  
+
+############################### TRANSMISSION ###############################
+
+
+############################### High Voltage 70-110 kV Grid ############################### 
+
+    70-110_kV:
+        essentials:
+            name: 'High Voltage Grid 70-110 kV'
+            parent: transmission
+            carrier: power
+            color: '#4169E1'  
+        constraints:
+            lifetime: 40                                     # https://portal.ct.gov/lib/csc/lifecycle-2001.pdf
+        costs:
+            monetary:
+                om_prod: 0.0076                              # https://doi.org/10.5281/zenodo.5242926
+
+
+############################### High Voltage 132-161 kV Grid ############################### 
+
+    132-161_kV:
+        essentials:
+            name: 'High Voltage Grid 132-161 kV'
+            parent: transmission
+            carrier: power
+            color: '#8FCE00'
+        constraints:
+            lifetime: 40                                     # https://portal.ct.gov/lib/csc/lifecycle-2001.pdf 
+        costs:
+            monetary:
+                om_prod: 0.0076                              # https://doi.org/10.5281/zenodo.5242926
+
+
+############################### High Voltage 220-275 kV Grid ############################### 
+
+    220-275_kV:
+        essentials:
+            name: 'High Voltage Grid 220-275 kV'
+            parent: transmission
+            carrier: power
+            color: '#E69138' 
+        constraints:
+            lifetime: 40                                     # https://portal.ct.gov/lib/csc/lifecycle-2001.pdf
+        costs:
+            monetary:
+                om_prod: 0.0076                              # https://doi.org/10.5281/zenodo.5242926 
+
+
+############################### High Voltage 300-330 kV Grid ############################### 
+
+    300-330_kV:
+        essentials:
+            name: 'High Voltage Grid 300-330 kV'
+            parent: transmission
+            carrier: power
+            color: '#F44336'
+        constraints:
+            lifetime: 40                                     # https://portal.ct.gov/lib/csc/lifecycle-2001.pdf
+        costs:
+            monetary:
+                om_prod: 0.0076                              # https://doi.org/10.5281/zenodo.5242926
+
+
+############################### High Voltage 350 kV DC Grid ############################### 
+
+    350_kV_DC:
+        essentials:
+            name: 'High Voltage Grid 350 kV DC'
+            parent: transmission
+            carrier: power
+            color: '#B45F06'
+        constraints:
+            lifetime: 40                                     # https://portal.ct.gov/lib/csc/lifecycle-2001.pdf
+        costs:
+            monetary:
+                om_prod: 0.0076                              # https://doi.org/10.5281/zenodo.5242926
+
+
+############################### High Voltage 400 kV Grid ############################### 
+
+    400_kV:
+        essentials:
+            name: 'High Voltage Grid 400 kV'
+            parent: transmission
+            carrier: power
+            color: '#000000'
+        constraints:
+            lifetime: 40                                     # https://portal.ct.gov/lib/csc/lifecycle-2001.pdf
+        costs:
+            monetary:
+                om_prod: 0.0076                              # https://doi.org/10.5281/zenodo.5242926 
+
+
+############################### High Voltage 500-533 kV DC Grid ############################### 
+
+    500-533_kV_DC:
+        essentials:
+            name: 'High Voltage Grid 500-533 kV DC'
+            parent: transmission
+            carrier: power
+            color: '#C90076'
+        constraints:
+            lifetime: 40                                     # https://portal.ct.gov/lib/csc/lifecycle-2001.pdf
+        costs:
+            monetary:
+                om_prod: 0.0076                              # https://doi.org/10.5281/zenodo.5242926 
+
+
+############################### New Transmission line AC ############################### 
+
+    New_Transmission_AC:
+        essentials:
+            name: 'New Transmission line AC'
+            parent: transmission
+            carrier: power
+            color: '#08fcf8'
+        constraints:
+            energy_cap_max: inf
+            energy_eff_per_distance: 0.995                   # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+            lifetime: 40                                     # https://portal.ct.gov/lib/csc/lifecycle-2001.pdf
+        costs:
+            monetary:
+                energy_cap: 17.350                            # https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf , Arithmetic average, considering two substations (one at each endpoint).
+                energy_cap_per_distance: 40.64             # https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf , Double circuit
+                om_prod: 0.0076                              # https://doi.org/10.5281/zenodo.5242926
+                interest_rate: 0.10  
+
+
+############################### New Transmission line DC ############################### 
+
+    New_Transmission_DC:
+        essentials:
+            name: 'New Transmission line DC'
+            parent: transmission
+            carrier: power
+            color: '#aa18ed'
+        constraints:
+            energy_cap_max: inf
+            energy_eff_per_distance: 0.9995                  # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+            lifetime: 40                                     # https://portal.ct.gov/lib/csc/lifecycle-2001.pdf
+        costs:
+            monetary:
+                energy_cap: 247.350                           # https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf , Arithmetic average, considering two substations (one at each endpoint) and AC-DC-AC interconnection.
+                energy_cap_per_distance: 20.32             # https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                om_prod: 0.0076                              # https://doi.org/10.5281/zenodo.5242926
+                interest_rate: 0.10  
+
+
+############################### DEMAND ###############################
+
+    Demand_power:
+        essentials:
+            name: 'Power demand'
+            color: '#46CF3A'
+            parent: demand
+            carrier: power

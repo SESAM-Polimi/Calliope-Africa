@@ -1,0 +1,43 @@
+scenarios:
+
+    new_links: ["new_transmission_links"]
+
+    2040_STEPS_old_gen_old_links: ["new_demand_STEPS"]
+
+    2040_AC_old_gen_old_links: ["new_demand_AC"]
+
+    2040_STEPS_old_links: ["new_demand_STEPS", "new_generation", "new_gen_loc"]
+
+    2040_AC_old_links: ["new_demand_AC", "new_generation", "new_gen_loc"]
+
+    2040_STEPS_old_gen: ["new_demand_STEPS", "new_transmission_links"]
+
+    2040_AC_old_gen: ["new_demand_AC", "new_transmission_links"]
+
+    2040_STEPS: ["new_demand_STEPS", "new_generation", "new_gen_loc", "new_transmission_links"]
+
+    2040_AC: ["new_demand_AC", "new_generation", "new_gen_loc", "new_transmission_links"]
+
+    2040_STEPS_policy: ["new_demand_STEPS", "new_generation", "new_gen_loc", "new_transmission_links", "policy"]
+
+    2040_AC_policy: ["new_demand_AC", "new_generation", "new_gen_loc", "new_transmission_links", "policy"]
+
+overrides:
+
+    new_transmission_links:
+        import: [new_transmission_links_S.yaml]
+
+    new_demand_STEPS:
+        import: [new_demand_STEPS_S.yaml]
+
+    new_demand_AC:
+        import: [new_demand_AC_S.yaml]
+    
+    new_generation:
+         import: [new_generation.yaml]
+
+    new_gen_loc:
+         import: [new_gen_loc_S.yaml]
+
+    policy:
+        import: [policy.yaml]

@@ -1,0 +1,31 @@
+locations:
+
+    CAPP:
+        techs:
+            Demand_power:
+                constraints:
+                    resource: file=Demand_2040_AC.csv:CAPP       # https://doi.org/10.1016/j.energy.2021.120623 , https://www.iea.org/reports/africa-energy-outlook-2019 and https://databank.worldbank.org/source/population-estimates-and-projections
+
+    EAPP:
+        techs:
+            Demand_power:
+                constraints:
+                    resource: file=Demand_2040_AC.csv:EAPP       # https://doi.org/10.1016/j.energy.2021.120623 , https://www.iea.org/reports/africa-energy-outlook-2019 and https://databank.worldbank.org/source/population-estimates-and-projections
+
+    NAPP:
+        techs:
+            Demand_power:
+                constraints:
+                    resource: file=Demand_2040_AC.csv:NAPP       # https://doi.org/10.1016/j.energy.2021.120623 , https://www.iea.org/reports/africa-energy-outlook-2019 and https://databank.worldbank.org/source/population-estimates-and-projections
+
+    SAPP:
+        techs:
+            Demand_power:
+                constraints:
+                    resource: file=Demand_2040_AC.csv:SAPP       # https://doi.org/10.1016/j.energy.2021.120623 , https://www.iea.org/reports/africa-energy-outlook-2019 and https://databank.worldbank.org/source/population-estimates-and-projections
+
+    WAPP:
+        techs:
+            Demand_power:
+                constraints:
+                    resource: file=Demand_2040_AC.csv:WAPP       # https://doi.org/10.1016/j.energy.2021.120623 , https://www.iea.org/reports/africa-energy-outlook-2019 and https://databank.worldbank.org/source/population-estimates-and-projections

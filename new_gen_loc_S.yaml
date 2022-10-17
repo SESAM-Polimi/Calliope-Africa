@@ -1,0 +1,263 @@
+locations:
+
+############################### CAPP ###############################
+
+# CSP potential unknown
+
+    CAPP:
+        techs:   
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Hydro_Large_New:
+                constraints:    
+                    energy_cap_max: 152158980          # https://www.hydropower.org/country-profiles/angola                       
+                    resource: file=Hydro_New.csv:CAPP  # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 1526050           # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                           
+                    resource: file=Hydro_New.csv:CAPP # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:       
+                    energy_cap_max: inf               # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa                     
+                    resource: file=PV_New.csv:CAPP             
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:CAPP
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:    
+                    energy_cap_max: inf             # https://www.trade.gov/country-commercial-guides/angola-energy#:~:text=Angola%20holds%20great%20potential%20for,in%20hydropower%20throughout%20the%20country.         
+                    resource: file=Wind_New.csv:CAPP             
+                    resource_unit: energy_per_cap
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 0                   # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full 
+
+############################### EAPP ###############################
+
+# CSP potential, unknown but relevant
+
+    EAPP:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf 
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf  
+
+            Hydro_Large_New:
+                constraints:   
+                    energy_cap_max: inf                 # Unknown
+                    resource: file=Hydro_New.csv:EAPP
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 4782600               # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full              
+                    resource: file=Hydro_New.csv:EAPP     # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:       
+                    energy_cap_max: inf                # Unknown                          
+                    resource: file=PV_New.csv:EAPP              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:EAPP
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:   
+                    energy_cap_max: inf                # Unknown          
+                    resource: file=Wind_New.csv:EAPP         
+                    resource_unit: energy_per_cap
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 17374660                # Unknown
+
+############################### NAPP ###############################
+
+    NAPP:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf  
+
+            Hydro_Large_New:
+                constraints:  
+                    energy_cap_max: inf                # Unknown                               
+                    resource: file=Hydro_New.csv:NAPP   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: inf                # Unknown                          
+                    resource: file=Hydro_New.csv:NAPP   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:      
+                    energy_cap_max: inf                # Unknown                          
+                    resource: file=PV_New.csv:NAPP              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:NAPP
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:          
+                    energy_cap_max: inf                # Unknown    
+                    resource: file=Wind_New.csv:NAPP            
+                    resource_unit: energy_per_cap
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 700000             # https://wedocs.unep.org/bitstream/handle/20.500.11822/20485/Energy_profile_Algeria.pdf?sequence=1&isAllowed=y
+
+
+# ############################### SAPP ###############################
+
+# # CSP resource unknown
+
+    SAPP:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf  
+
+            Hydro_Large_New:
+                constraints:    
+                    energy_cap_max: 19509530                # https://www.se4all-africa.org/seforall-in-africa/country-data/botswana/#:~:text=Botswana%20has%20no%20perennial%20rivers,areas%20with%20the%20highest%20DNI.          
+                    resource: file=Hydro_New.csv:SAPP   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 1608520                  # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                        
+                    resource: file=Hydro_New.csv:SAPP   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints: 
+                    energy_cap_max: 52992040                  # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa                                
+                    resource: file=PV_New.csv:SAPP              
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: inf
+                    resource: file=CSP_New.csv:SAPP
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints: 
+                    energy_cap_max: 34042380                  # https://www.irena.org/publications/2021/Apr/Planning-and-prospects-for-renewable-power-Eastern-and-Southern-Africa             
+                    resource: file=Wind_New.csv:SAPP            
+                    resource_unit: energy_per_cap
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 0                   # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full
+
+# ############################### WAPP ###############################
+
+    WAPP:
+        techs:
+
+            CCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf   
+
+            OCGT_pp_New:
+                constraints:    
+                    energy_cap_max: inf    
+
+            Nuclear_New:
+                constraints:    
+                    energy_cap_max: inf  
+
+            Hydro_Large_New:
+                constraints:   
+                    energy_cap_max: 23746200                 # http://www.ecowrex.org/sites/default/files/country_report_01_benin.pdf                               
+                    resource: file=Hydro_New.csv:WAPP   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            Hydro_Small_New:
+                constraints:    
+                    energy_cap_max: 4017900                  # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full                      
+                    resource: file=Hydro_New.csv:WAPP   # https://africa-knowledge-platform.ec.europa.eu/dataset/ep16pid
+                    resource_unit: energy_per_cap
+
+            PV_New:                                     
+                constraints:     
+                    energy_cap_max: 1452796750               # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power                         
+                    resource: file=PV_New.csv:WAPP             
+                    resource_unit: energy_per_cap
+
+            CSP_New:
+                constraints:
+                    resource_area_max: 779591800             # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power            
+                    resource: file=CSP_New.csv:WAPP
+                    resource_unit: energy_per_area
+
+            Wind_New:
+                constraints:     
+                    energy_cap_max: 127933250                # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power                               
+                    resource: file=Wind_New.csv:WAPP            
+                    resource_unit: energy_per_cap
+
+            Geothermal_New:
+                constraints:
+                    energy_cap_max: 0                        # https://publications.jrc.ec.europa.eu/repository/handle/JRC118432?mode=full

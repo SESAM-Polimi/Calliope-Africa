@@ -1,0 +1,29 @@
+# CAPP Transmission Grid#
+
+# energy_cap_equals: Installed transmission capacity [kW]
+# energy_eff_per_distance: Energy efficiency per distance [1/(10s km)]
+# distance: Length of transmission line [10s km]
+
+links:
+
+    CAPP,EAPP:
+        techs:
+            70-110_kV:
+                constraints:
+                    energy_cap_equals: 180000                   # https://www.peac-sig.org/en/systeme-d-information-3.html, Power assumed using https://www.researchgate.net/figure/Transmission-line-X-R-ratio-and-MVA-limit-for-EI_tbl3_319205712
+                    energy_eff_per_distance: 0.92               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 5.5                                   # Calculated using Google Earth Pro, the approximate position of the substations was derived from https://openinframap.org/#9.87/-2.6977/28.8695 . Approximated.                            
+
+    CAPP,SAPP:
+        techs:
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 494000                   # http://www.sapp.co.zw/transfer-limits 
+                    energy_eff_per_distance: 0.988              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 40.0                                  # Calculated using Google Earth Pro, knowing the approximate position of the substations. Approximated.
+
+            300-330_kV:
+                constraints:
+                    energy_cap_equals: 333000                   # http://www.sapp.co.zw/transfer-limits 
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 18.5                                  # Calculated using Google Earth Pro, knowing the approximate position of the substations. Approximated.
