@@ -1,0 +1,207 @@
+
+#REGIONS:
+
+#EGY_CR: Cairo Region
+#EGY_NE: North Egypt Region
+#EGY_AL: Alexandria Region
+#EGY_ME: Middle Egypt Region
+#EGY_UE: Upper Egyprt_Region
+#EGY_CN: Canal Regiom
+
+
+locations:
+
+################### Alexandria Region ####################
+
+    EGY_AL:
+        coordinates:
+            lat: 31.2
+            lon: 29.9
+
+        techs:
+        
+            CCGT_pp:
+                constraints:
+                    energy_cap_equals: 1740000
+
+            Steam_Gas_pp:
+                constraints:
+                    energy_cap_equals: 1832500
+
+            Demand_power:
+                constraints:
+                    resource: file=Demand.csv:EGY_AL 
+
+
+################### North Egypt Region ####################
+
+    EGY_NE:
+        coordinates:
+            lat: 31.0
+            lon: 31.3
+
+        techs:
+
+            CCGT_pp:
+                constraints:
+                    energy_cap_equals: 12178000
+
+            Steam_Gas_pp:
+                constraints:
+                    energy_cap_equals: 7260000
+
+            OCGT_pp:
+                constraints:
+                    energy_cap_equals: 1325000
+
+            Demand_power:
+                constraints:
+                    resource: file=Demand.csv:EGY_NE
+
+
+################### Canal Region ####################
+
+    EGY_CN:
+        coordinates:
+            lat: 30.0
+            lon: 32.6
+
+        techs:
+        
+            CCGT_pp:
+                constraints:
+                    energy_cap_equals: 8000000
+
+            Steam_Gas_pp:
+                constraints:
+                    energy_cap_equals: 7400000
+
+            OCGT_pp:
+                constraints:
+                    energy_cap_equals: 2500000
+
+            OCGT_Oil_pp:
+                constraints:
+                    energy_cap_equals: 769000
+
+            Wind_Small:
+                constraints:                                 
+                    energy_cap_equals: 140220                 
+                    resource: file=Wind.csv:CN_Wind_Small   
+                    resource_unit: energy_per_cap
+
+            Wind_Large:
+                constraints:                                 
+                    energy_cap_equals: 1499100                 
+                    resource: file=Wind.csv:CN_Wind_Large   
+                    resource_unit: energy_per_cap
+                    
+            Hydro_Large:
+                constraints:                                 
+                    energy_cap_equals: 2100000                 
+                    resource: file=Hydropower.csv:EGY_CN_Large
+                    resource_unit: energy_per_cap
+                    
+            Hydro_Small:
+                constraints:                                 
+                    energy_cap_equals: 700000                 
+                    resource: file=Hydropower.csv:EGY_CN_Small   
+                    resource_unit: energy_per_cap
+
+                    
+            Bioenergy:
+                constraints:
+                    energy_cap_equals: 45000
+
+            Demand_power:
+                constraints:
+                    resource: file=Demand.csv:EGY_CN
+
+
+
+
+################### Middle Egypt Region ####################
+    EGY_ME:
+
+        coordinates:
+            lat: 27.8
+            lon: 30.7
+
+        techs:
+
+            CCGT_pp:
+                constraints:
+                    energy_cap_equals: 300000
+                        
+            Bioenergy:
+                constraints:
+                    energy_cap_equals: 6000
+
+            Demand_power:
+                constraints:
+                    resource: file=Demand.csv:EGY_ME
+
+
+################### Upper Egypt Region ####################
+
+    EGY_UE:
+
+        coordinates:
+            lat: 25.4
+            lon: 30.6
+
+        techs:
+
+            PV:
+                constraints:                                 
+                    energy_cap_equals: 1826000            
+                    resource: file=Solar.csv:EGY_UE
+                    resource_unit: energy_per_cap
+
+            Demand_power:
+                constraints:
+                    resource: file=Demand.csv:EGY_UE
+
+
+################### Cairo Region ####################
+
+    EGY_CR:
+        coordinates:
+            lat: 30.0
+            lon: 31.2
+
+        techs:
+
+            CCGT_pp:
+                constraints:
+                    energy_cap_equals: 12999000
+
+            Steam_Gas_pp:
+                constraints:
+                    energy_cap_equals: 4014000
+
+            OCGT_pp:
+                constraints:
+                    energy_cap_equals: 1005000
+
+            OCGT_Oil_pp:
+                constraints:
+                    energy_cap_equals: 150000
+
+            ISCC_pp:
+                constraints:
+                    energy_cap_equals: 140000
+
+            Hydro_Small:
+                constraints:                                 
+                    energy_cap_equals: 31735                 
+                    resource: file=Hydropower.csv:EGY_CR_Small   
+                    resource_unit: energy_per_cap
+
+            Bioenergy:
+                constraints:
+                    energy_cap_equals: 16000
+
+            Demand_power:
+                constraints:
+                    resource: file=Demand.csv:EGY_CR

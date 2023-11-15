@@ -1,0 +1,281 @@
+
+# energy_eff: Energy efficiency [-] 
+# lifetime: Technology lifetime [Years]
+# energy_cap_min_use: Minimum carrier production [-]
+# energy_ramping: Ramping rate [1/h]
+# energy_cap: Capital costs [$/kW]
+# om_annual: Fixed annual O&M costs [$/kW]
+# om_prod (monetary): Variable annual O&M costs [$/kWh]
+# om_prod (co2): Co2 production [kgco2/kWh]
+# om_con: Variable annual cost of fuel [$/kWh]
+# storage_discharge_depth: Storage depth of discharge [-]
+# storage_cap: Storage capital costs [$/kWh]
+
+techs:
+
+############################### GENERATION TECHNOLOGIES###############################
+
+############################### Open Cycle Gas Turbine ###############################
+
+    OCGT_pp:
+        essentials:
+            name: 'Open Cycle Gas Turbine Power Plant'
+            parent: supply                 
+            carrier_out: power                     
+                  
+        constraints:
+            energy_eff: 0.45                      # Dallmann et al. - 2022 - Between path dependencies and renewable energy potentialspotentials: A case study of the Egyptian power system
+            resource: inf                                                    
+            lifetime: 30                          # Dallmann et al. - 2022 - Between path dependencies and renewable energy potentialspotentials: A case study of the Egyptian power system
+
+        costs:
+            monetary:   
+                energy_cap: 750                   # Dallmann et al. - 2022 - Between path dependencies and renewable energy potentialspotentials: A case study of the  Egyptian power system
+                om_annual: 11                     # Motta, https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values
+                om_prod: 0.0035                   # Motta, https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values
+                om_con: 0.0205                    # https://www.ise.fraunhofer.de/content/dam/ise/en/documents/publications/studies/Dec2016_Fraunhofer-ISE_LCOE_Renewable_Energy_Technologies_EN_v20_ns.pdf
+                interest_rate: 0.10
+
+############################### Combined Cycle Gas Turbine ###############################
+
+    CCGT_pp:
+            essentials:
+                name: 'Combined Cycle Gas Turbine Power Plant'
+                parent: supply                 
+                carrier_out: power                     
+                  
+            constraints:
+                energy_eff: 0.45                      # Dallmann et al. - 2022 - Between path dependencies and renewable energy potentialspotentials: A case study of the Egyptian power system
+                resource: inf                                                    
+                lifetime: 30                          # Dallmann et al. - 2022 - Between path dependencies and renewable energy potentialspotentials: A case study of the Egyptian power system
+
+            costs:
+                monetary:   
+                    energy_cap: 900                   # https://www.ise.fraunhofer.de/content/dam/ise/en/documents/publications/studies/Dec2016_Fraunhofer-ISE_LCOE_Renewable_Energy_Technologies_EN_v20_ns.pdf        
+                    om_annual: 22                     # https://www.ise.fraunhofer.de/content/dam/ise/en/documents/publications/studies/Dec2016_Fraunhofer-ISE_LCOE_Renewable_Energy_Technologies_EN_v20_ns.pdf                         
+                    om_prod: 0.02                     # https://www.ise.fraunhofer.de/content/dam/ise/en/documents/publications/studies/Dec2016_Fraunhofer-ISE_LCOE_Renewable_Energy_Technologies_EN_v20_ns.pdf        
+                    om_con: 0.0205                    # https://www.ise.fraunhofer.de/content/dam/ise/en/documents/publications/studies/Dec2016_Fraunhofer-ISE_LCOE_Renewable_Energy_Technologies_EN_v20_ns.pdf        
+                    interest_rate: 0.10 
+
+############################### Combined Cycle Gas Turbine with Heavy Fuel Oil ###############################
+
+    OCGT_Oil_pp:
+        essentials:
+            name: 'Open Cycle Gas Turbine Power Plant fuelled with Oil'
+            parent: supply                 
+            carrier_out: power                     
+                  
+        constraints:
+            energy_eff: 0.40                      # Motta, https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf
+            resource: inf                                                    
+            lifetime: 30                          # Motta, https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf                            
+
+        costs:
+            monetary:
+                energy_cap: 900                   # Motta, https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf, Typical value 
+                om_annual: 11                     # Motta, https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values 
+                om_prod: 0.0035                   # Motta, https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values 
+                om_con: 0.02197                   # https://www.ise.fraunhofer.de/content/dam/ise/en/documents/publications/studies/Dec2016_Fraunhofer-ISE_LCOE_Renewable_Energy_Technologies_EN_v20_ns.pdf
+                interest_rate: 0.10
+  
+############################### Steam Gas Turbine ###############################
+                
+    Steam_Gas_pp:
+            essentials:
+                name: 'Steam Turbine Gas Power Plant'
+                parent: supply                 
+                carrier_out: power                     
+                  
+            constraints:
+                energy_eff: 0.475                    #https://www.ge.com/content/dam/gepower-new/global/en_US/downloads/gas-new-site/resources/reference/ger-3644d-perf-economics-repower-steam-power-plants.pdf, arithmetic mean of a 114 MW power plant efficiency range
+                resource: inf                                                    
+                lifetime: 50
+
+            costs:
+                monetary:  
+                    energy_cap: 1350                  # Motta, https://doi.org/10.5281/zenodo.5242926            
+                    om_annual: 26.5                   # Motta, https://www.eia.gov/analysis/studies/powerplants/generationcost/pdf/full_report.pdf                                       
+                    om_prod: 0.001                    # Motta, https://www.eia.gov/analysis/studies/powerplants/generationcost/pdf/full_report.pdf
+                    om_con: 0.0205                    # https://www.ise.fraunhofer.de/content/dam/ise/en/documents/publications/studies/Dec2016_Fraunhofer-ISE_LCOE_Renewable_Energy_Technologies_EN_v20_ns.pdf
+                    interest_rate: 0.10
+
+############################### Hydropower ###############################
+
+    Hydro_Small:
+            essentials:
+                name: 'Small Hydro Power Plant'
+                parent: supply
+                carrier_out: power                     
+                   
+            constraints:
+                energy_eff: 1                         #  https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+                resource: inf                     
+                lifetime: 30                          # https://www.sciencedirect.com/topics/earth-and-planetary-sciences/small-scale-hydropower#:~:text=Typical%20lifetime%20for%20large%20hydropower,40%20years%20or%20even%20less.        
+                                     
+            costs:
+                monetary:   
+                    energy_cap: 4500                  # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+                    om_prod: 0.083                    # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+                    interest_rate: 0.10  
+               
+    Hydro_Large:
+            essentials:
+                name: 'Small Hydro Power Plant'
+                parent: supply
+                carrier_out: power                     
+                   
+            constraints:
+                energy_eff: 1                         #  https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+                resource: inf                     
+                lifetime: 30                          # https://www.sciencedirect.com/topics/earth-and-planetary-sciences/small-scale-hydropower#:~:text=Typical%20lifetime%20for%20large%20hydropower,40%20years%20or%20even%20less.        
+                                     
+            costs:
+                monetary:   
+                    energy_cap: 4000                  # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+                    om_prod: 0.075                    # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+                    interest_rate: 0.10    
+                    
+############################### Solar ###############################
+
+    PV:
+        essentials:
+            name: 'PV Power Plant'
+            parent: supply
+            carrier_out: power                     
+               
+        constraints:
+            resource: inf                        
+            lifetime: 25                             # https://www.ise.fraunhofer.de/content/dam/ise/en/documents/publications/studies/Dec2016_Fraunhofer-ISE_LCOE_Renewable_Energy_Technologies_EN_v20_ns.pdf
+                               
+        costs:
+            monetary:  
+                energy_cap: 1300                     # https://www.ise.fraunhofer.de/content/dam/ise/en/documents/publications/studies/Dec2016_Fraunhofer-ISE_LCOE_Renewable_Energy_Technologies_EN_v20_ns.pdf
+                om_annual: 26                        # https://www.ise.fraunhofer.de/content/dam/ise/en/documents/publications/studies/Dec2016_Fraunhofer-ISE_LCOE_Renewable_Energy_Technologies_EN_v20_ns.pdf
+                interest_rate: 0.10
+
+############################### Wind ###############################
+
+    Wind_Small:
+        essentials:
+            name: 'Wind Power Plant'
+            parent: supply
+            carrier_out: power                     
+               
+        constraints:
+            resource: inf                        
+            lifetime: 25                             # https://www.ise.fraunhofer.de/content/dam/ise/en/documents/publications/studies/Dec2016_Fraunhofer-ISE_LCOE_Renewable_Energy_Technologies_EN_v20_ns.pdf
+                               
+        costs:
+            monetary:  
+                energy_cap: 1100                     # https://www.ise.fraunhofer.de/content/dam/ise/en/documents/publications/studies/Dec2016_Fraunhofer-ISE_LCOE_Renewable_Energy_Technologies_EN_v20_ns.pdf
+                om_annual: 42.6                       
+                interest_rate: 0.10
+
+    Wind_Large1:
+        essentials:
+            name: 'Wind Power Plant'
+            parent: supply
+            carrier_out: power                     
+               
+        constraints:
+            resource: inf                        
+            lifetime: 25                             # https://www.ise.fraunhofer.de/content/dam/ise/en/documents/publications/studies/Dec2016_Fraunhofer-ISE_LCOE_Renewable_Energy_Technologies_EN_v20_ns.pdf
+                               
+        costs:
+            monetary:  
+                energy_cap: 1100                     # https://www.ise.fraunhofer.de/content/dam/ise/en/documents/publications/studies/Dec2016_Fraunhofer-ISE_LCOE_Renewable_Energy_Technologies_EN_v20_ns.pdf
+                om_annual: 42.6                       
+                interest_rate: 0.10
+    Wind_Large2:
+        essentials:
+            name: 'Wind Power Plant'
+            parent: supply
+            carrier_out: power                     
+               
+        constraints:
+            resource: inf                        
+            lifetime: 25                             # https://www.ise.fraunhofer.de/content/dam/ise/en/documents/publications/studies/Dec2016_Fraunhofer-ISE_LCOE_Renewable_Energy_Technologies_EN_v20_ns.pdf
+                               
+        costs:
+            monetary:  
+                energy_cap: 1100                     # https://www.ise.fraunhofer.de/content/dam/ise/en/documents/publications/studies/Dec2016_Fraunhofer-ISE_LCOE_Renewable_Energy_Technologies_EN_v20_ns.pdf
+                om_annual: 42.6                       
+                interest_rate: 0.10
+
+############################### Bioenergy ###############################
+
+    Bioenergy:
+        essentials:
+            name: 'Bioenergy Power Plant'
+            parent: supply                 
+            carrier_out: power                     
+                  
+        constraints:
+            energy_eff: 0.2263                    # Motta, https://iea-etsap.org/E-TechDS/PDF/E05-Biomass%20for%20HP-GS-AD-gct_FINAL.pdf, Geometric mean of the indicated values for the less efficient technology  
+            resource: inf                                                    
+            lifetime: 25                          # Motta, https://iea-etsap.org/E-TechDS/PDF/E05-Biomass%20for%20HP-GS-AD-gct_FINAL.pdf   
+
+        costs:
+            monetary:   
+                energy_cap: 2750                  # https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2018/Oct/IRENA_Outlook_Egypt_2018_En.pdf
+                om_annual: 70                     # https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2018/Oct/IRENA_Outlook_Egypt_2018_En.pdf                    
+                om_prod: 0.0075                   # Motta, https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values                   
+                om_con: 0.0113                    # Motta, https://iea-etsap.org/E-TechDS/PDF/E05-Biomass%20for%20HP-GS-AD-gct_FINAL.pdf ,  Arithmetic mean of the indicated values              
+                interest_rate: 0.1
+
+############################### Integrated Solar Combined Cycle Power Plant ###############################
+
+    ISCC_pp:
+        essentials:
+            color: '#ABEBC6' 
+            name: 'Integrated Solar Combined Cycle Power Plant'
+            parent: supply                 
+            carrier_out: power                     
+                  
+        constraints:
+            energy_eff: 0.59                      # Motta, https://www.researchgate.net/publication/280082334_Prediction_of_the_annual_performance_and_perspective_of_Hassi_R'Mel_solar_power_plant_SPP1, ((0.7*CCGT_pp efficiency) + (0.3*(CCGT with functioning CSP) efficiency) (Conservative average as the ISCC in Morocco should have lower benefits, as the solar capacity is lower with respect to the CCGT capacity)                    
+            resource: inf                                                   
+            lifetime: 30                          # Motta, https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf, https://www.solarpaces.org/what-are-the-pros-and-cons-of-longer-solar-contracts/        
+            energy_ramping: 0.4                   # Motta, https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2019/Sep/IRENA_Flexibility_in_CPPs_2019.pdf?la=en&hash=AF60106EA083E492638D8FA9ADF7FD099259F5A1
+
+        costs:
+            monetary:   
+                energy_cap: 1834                  # Motta, Calculated considering the average fraction of solar in installed ISCCs, using CCGT investment cost for CCGT fraction and CSP investment cost for CSP fraction                                                                     
+                om_annual: 13.9                   # Motta, https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values  
+                om_prod: 0.0025                   # Motta, https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values
+                om_con: 0.0210                    # Motta, https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf, Arithmetic mean of the indicated values                 
+                interest_rate: 0.10
+
+######################## Pumped Hydro ###########################
+
+    Hydro_Pumped_Small:
+        essentials:
+            name: 'Pumped Hydro Storage'
+            parent: storage
+            carrier: power
+        constraints:
+            energy_efficiency:  0.9487      #https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2017/Oct/IRENA_Electricity_Storage_Costs_2017
+            storage_loss: 0
+            lifetime: 40                   #https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2020/Jul/IRENA_Innovative_PHS_operation_2020.pdf
+            storage_discharge_depth: 0.2  #https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2017/Oct/IRENA_Electricity_Storage_Costs_2017.pdf?rev=a264707cb8034a52b6f6123d5f1b114      
+            storage_initial: 0.2                 
+
+        costs:
+            monetary:        
+                om_annual: 17.82 #https://atb.nrel.gov/electricity/2022/utility-scale_pv
+                om_prod: 0.000513 #https://atb.nrel.gov/electricity/2022/pumped_storage_hydropower
+                interest_rate: 0.10
+
+
+
+############################### CONSUMPTION TECHNOLOGIES###############################
+
+
+############################### Demand ###############################################
+
+    Demand_power:
+        essentials:
+            name: 'Power demand'
+            color: '#46CF3A'
+            parent: demand
+            carrier: power

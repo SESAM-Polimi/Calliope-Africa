@@ -1,0 +1,134 @@
+
+# Model configuration: all settings that affect the built model
+
+########################################################################
+#                              IMPORTS                                 #
+# All the files that define the model configuration should be imported #
+########################################################################
+
+#MODELLO PER OTTIMIZZZAZIONE LINEE
+
+import: 
+    
+    - 'Model_config/Location_Constraints/Location_Constraints_Base_S.yaml' 
+    - 'Model_config/Transmission_Links.yaml'
+    - 'Model_config/Technologies.yaml'
+    
+########################################################################
+#                                MODEL                                 #
+#                      General settings of the model                   #
+########################################################################
+
+overrides:
+
+
+    Original:
+        group_constraints:
+            NG:
+                techs: ['OCGT_pp', 'CCGT_pp', 'OCGT_Oil_pp', 'Steam_Gas_pp']
+                demand_share_min:
+                    power: 0.85
+                                                
+    500MW:
+        locations.EGY_CN.techs.PV.constraints.energy_cap_equals: 500000    
+
+    1000MW:
+        locations.EGY_CN.techs.PV.constraints.energy_cap_equals: 1000000            
+
+    5000MW:
+        locations.EGY_CN.techs.PV.constraints.energy_cap_equals: 5000000  
+        
+    7500MW:
+        locations.EGY_CN.techs.PV.constraints.energy_cap_equals: 7500000  
+
+
+    10000MW:
+        locations.EGY_CN.techs.PV.constraints.energy_cap_equals: 10000000            
+          
+    15000MW:
+        locations.EGY_CN.techs.PV.constraints.energy_cap_equals: 15000000            
+
+    20000MW:
+        locations.EGY_CN.techs.PV.constraints.energy_cap_equals: 20000000            
+
+    25000MW:
+        locations.EGY_CN.techs.PV.constraints.energy_cap_equals: 25000000
+
+    30000MW:
+        locations.EGY_CN.techs.PV.constraints.energy_cap_equals: 30000000
+
+    35000MW:
+        locations.EGY_CN.techs.PV.constraints.energy_cap_equals: 35000000   
+
+    40000MW:
+        locations.EGY_CN.techs.PV.constraints.energy_cap_equals: 40000000   
+                 
+    45000MW:
+        locations.EGY_CN.techs.PV.constraints.energy_cap_equals: 45000000            
+                                      
+    50000MW:
+        locations.EGY_CN.techs.PV.constraints.energy_cap_equals: 50000000            
+
+    60000MW:
+        locations.EGY_CN.techs.PV.constraints.energy_cap_equals: 60000000  
+        
+    70000MW:
+        locations.EGY_CN.techs.PV.constraints.energy_cap_equals: 70000000  
+                                        
+    75000MW:
+        locations.EGY_CN.techs.PV.constraints.energy_cap_equals: 75000000      
+
+    80000MW:
+        locations.EGY_CN.techs.PV.constraints.energy_cap_equals: 80000000  
+
+    90000MW:
+        locations.EGY_CN.techs.PV.constraints.energy_cap_equals: 90000000  
+                              
+    100000MW:
+        locations.EGY_CN.techs.PV.constraints.energy_cap_equals: 100000000  
+        
+    125000MW:
+        locations.EGY_CN.techs.PV.constraints.energy_cap_equals: 125000000  
+                                
+    150000MW:
+        locations.EGY_CN.techs.PV.constraints.energy_cap_equals: 150000000  
+model:
+
+    name: 'Egypt 6 Nodes Model (2022)'           # Defining the name of the model
+    calliope_version: 0.6.5                      # What version of Calliope this model is intended for
+    timeseries_data_path: 'Timeseries'           # Time series data path
+    timeseries_dateformat: '%Y-%m-%d %H:%M'
+    subset_time: ['2019-01-01','2019-12-31']    # shows the a subset of time to represent the results, 3 days, real:['2019-01-01', '2019-12-31'] 
+
+########################################################################
+#                                RUN                                   #
+#          All settings that affect how the built model is run         #
+########################################################################
+
+
+run:
+
+    mode: operate  # Choices: plan, operate
+
+    operation:
+        horizon: 48
+        window: 24
+                
+        ####################################
+        #        Defining the solver       #
+        #         glpk: free solver        #             
+        ####################################
+        
+    solver: gurobi        
+    ensure_feasibility: False  # Switches on the "unmet demand" constraint        
+    bigM: 1e6                  # Sets the scale of unmet demand, which cannot be too high,
+                               # otherwise the optimisation will not converge
+    zero_threshold: 1e-20      # Any value coming out of the backend that is smaller than this, will be set to zero        
+        
+
+    
+        
+        
+        
+        
+        
