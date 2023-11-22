@@ -1,0 +1,145 @@
+
+# Model configuration: all settings that affect the built model
+
+########################################################################
+#                              IMPORTS                                 #
+# All the files that define the model configuration should be imported #
+########################################################################
+
+import: 
+    - 'Model_config/Location_Constraints_PH_min_new.yaml'
+    - 'Model_config/Transmission_links.yaml'
+    - 'Model_config/Technologies.yaml'
+    
+########################################################################
+#                                MODEL                                 #
+#                      General settings of the model                   #
+########################################################################
+scenarios:
+
+    Energy: ["Energy_constraint"]
+
+overrides:
+        
+    Energy_constraint:
+        group_constraints:
+            HFO_Energy_min:
+                techs: ['HFO_pp']
+                carrier_prod_min: 
+                    electricity: 0
+
+            Hydro_Small_Energy_min:
+                techs: ['Hydro_Small']
+                carrier_prod_min: 
+                    electricity: 0
+
+            GST_Energy_min:
+                techs: ['GST_pp']
+                carrier_prod_min: 
+                    electricity: 0
+
+            Hydro_Large_Energy_min:
+                techs: ['Hydro_Large']
+                carrier_prod_min: 
+                    electricity: 0
+
+            OCGT_Energy_min:
+                techs: ['OCGT_pp']
+                carrier_prod_min: 
+                    electricity: 0
+
+            CCGT_Energy_min:
+                techs: ['CCGT_pp']
+                carrier_prod_min: 
+                    electricity: 0
+                    
+            PV_Energy_min:
+                techs: ['PV_utility']
+                carrier_prod_min: 
+                    electricity: 0
+                    
+            Wind_Energy_min:
+                techs: ['Wind']
+                carrier_prod_min: 
+                    electricity: 0
+
+
+            HFO_Energy_max:
+                techs: ['HFO_pp']
+                carrier_prod_max: 
+                    electricity: 0
+
+            Hydro_Small_Energy_max:
+                techs: ['Hydro_Small']
+                carrier_prod_max: 
+                    electricity: 0
+
+            GST_Energy_max:
+                techs: ['GST_pp']
+                carrier_prod_max: 
+                    electricity: 0
+
+            Hydro_Large_Energy_max:
+                techs: ['Hydro_Large']
+                carrier_prod_max: 
+                    electricity: 0
+                    
+            OCGT_Energy_max:
+                techs: ['OCGT_pp']
+                carrier_prod_max: 
+                    electricity: 0
+
+            CCGT_Energy_max:
+                techs: ['CCGT_pp']
+                carrier_prod_max: 
+                    electricity: 0
+
+            PV_Energy_max:
+                techs: ['PV_utility']
+                carrier_prod_max: 
+                    electricity: 0
+                
+            Wind_Energy_max:
+                techs: ['Wind']
+                carrier_prod_max: 
+                    electricity: 0
+                
+
+model:
+
+    name: 'Nigeria 4 Nodes Model (2022)'         # Defining the name of the model
+    calliope_version: 0.6.10                     # What version of Calliope this model is intended for
+    timeseries_data_path: 'Time_series_data'     # Time series data path
+    subset_time: ['2019-01-01', '2019-12-31']    # shows the a subset of time to represent the results, 3 days, real:['2019-01-01', '2019-12-31'] 
+
+########################################################################
+#                                RUN                                   #
+#          All settings that affect how the built model is run         #
+########################################################################
+
+run:
+
+    mode: plan  # Choices: plan, operate
+
+    operation:
+        horizon: 48
+        window: 24
+                
+        ####################################
+        #        Defining the solver       #
+        #         glpk: free solver        #             
+        ####################################
+        
+    solver: gurobi        
+    ensure_feasibility: False  # Switches on the "unmet demand" constraint        
+    bigM: 1e6                  # Sets the scale of unmet demand, which cannot be too high,
+                               # otherwise the optimisation will not converge
+    zero_threshold: 1e-20      # Any value coming out of the backend that is smaller than this, will be set to zero        
+        
+
+    
+        
+        
+        
+        
+        

@@ -35,7 +35,8 @@ techs:
                 om_prod: 0.0035                   # Motta, https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values
                 om_con: 0.0205                    # https://www.ise.fraunhofer.de/content/dam/ise/en/documents/publications/studies/Dec2016_Fraunhofer-ISE_LCOE_Renewable_Energy_Technologies_EN_v20_ns.pdf
                 interest_rate: 0.10
-
+            co2:
+                om_prod: 0.528                    # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf
 ############################### Combined Cycle Gas Turbine ###############################
 
     CCGT_pp:
@@ -56,7 +57,8 @@ techs:
                     om_prod: 0.02                     # https://www.ise.fraunhofer.de/content/dam/ise/en/documents/publications/studies/Dec2016_Fraunhofer-ISE_LCOE_Renewable_Energy_Technologies_EN_v20_ns.pdf        
                     om_con: 0.0205                    # https://www.ise.fraunhofer.de/content/dam/ise/en/documents/publications/studies/Dec2016_Fraunhofer-ISE_LCOE_Renewable_Energy_Technologies_EN_v20_ns.pdf        
                     interest_rate: 0.10 
-
+            co2:
+                om_prod: 0.370                    # https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-iii.pdf
 ############################### Combined Cycle Gas Turbine with Heavy Fuel Oil ###############################
 
     OCGT_Oil_pp:
@@ -77,7 +79,8 @@ techs:
                 om_prod: 0.0035                   # Motta, https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values 
                 om_con: 0.02197                   # https://www.ise.fraunhofer.de/content/dam/ise/en/documents/publications/studies/Dec2016_Fraunhofer-ISE_LCOE_Renewable_Energy_Technologies_EN_v20_ns.pdf
                 interest_rate: 0.10
-  
+            co2:
+                om_prod: 0.7381                   # https://www.isprambiente.gov.it/files2020/pubblicazioni/rapporti/Rapporto317_2020.pdf  
 ############################### Steam Gas Turbine ###############################
                 
     Steam_Gas_pp:
@@ -98,7 +101,8 @@ techs:
                     om_prod: 0.001                    # Motta, https://www.eia.gov/analysis/studies/powerplants/generationcost/pdf/full_report.pdf
                     om_con: 0.0205                    # https://www.ise.fraunhofer.de/content/dam/ise/en/documents/publications/studies/Dec2016_Fraunhofer-ISE_LCOE_Renewable_Energy_Technologies_EN_v20_ns.pdf
                     interest_rate: 0.10
-
+            co2:
+                om_prod: 0.528                    # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf
 ############################### Hydropower ###############################
 
     Hydro_Small:
@@ -248,7 +252,7 @@ techs:
 
 ######################## Pumped Hydro ###########################
 
-    Hydro_Pumped_Small:
+    PHES:
         essentials:
             name: 'Pumped Hydro Storage'
             parent: storage

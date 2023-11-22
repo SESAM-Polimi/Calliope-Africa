@@ -112,6 +112,13 @@ locations:
                 constraints:                                 
                     energy_cap_equals: 700000                 
                     resource: file=Hydropower.csv:EGY_CN_Small   
+                    
+            PHES:
+                constraints:
+                    energy_cap_max: 200000000
+                    energy_cap_per_storage_cap_equals: 0.16666666667
+                    
+                        
             PV:
                 constraints:                                 
                     energy_cap_equals: 0          

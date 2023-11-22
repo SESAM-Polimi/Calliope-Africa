@@ -1,0 +1,93 @@
+
+# Transmission Grid and the connections Definition #
+
+# Parameters and Units:
+
+    # energy_cap_equals:  Capacity of Grid          [kW]
+    # distance:           Distance Between 2 Nodes  [hundreds of km]   
+
+techs:
+
+############################### High Voltage(132) Grid ############################### 
+    hvdc_132:
+        essentials:
+            name: 'High Voltage Grid_132'
+            parent: transmission
+            carrier: electricity
+            color: '#00BFFF'
+        constraints:
+            energy_eff_per_distance: 0.95 
+        costs:
+            monetary:
+                om_prod: 0.00013156
+                
+############################### High Voltage(330) Grid ############################### 
+    hvdc_330:
+        essentials:
+            name: 'High Voltage Grid_330'
+            parent: transmission
+            carrier: electricity
+            color: '#4169E1'
+        constraints:
+            energy_eff_per_distance: 0.95 
+        costs:
+            monetary:
+                om_prod: 0.000120348 
+                
+links:                             
+
+    NGA_E,NGA_S:
+        techs:
+            hvdc_330:
+                constraints:
+                    energy_cap_equals: 825000
+                distance: 13.472  
+            hvdc_132:
+                constraints:
+                    energy_cap_equals: 330000 
+                distance: 2.04
+                                 
+
+
+    NGA_CNW,NGA_E: 
+        techs:
+            hvdc_132:
+                constraints:
+                    energy_cap_equals: 660000 
+                distance: 11.2       
+            hvdc_330:
+                constraints:
+                    energy_cap_equals: 1237500 
+                distance: 8.928  
+           
+
+    NGA_CNW,NGA_W:
+        techs:
+            hvdc_132: 
+                constraints:
+                    energy_cap_equals: 660000 
+                distance: 0.71568             
+            hvdc_330: 
+                constraints:
+                    energy_cap_equals: 2062500
+                distance: 11.152                     
+                
+
+    NGA_S,NGA_W: 
+        techs:
+            hvdc_132:
+                constraints:
+                    energy_cap_equals: 495000
+                distance: 1.7272           
+                
+            hvdc_330:
+                constraints:
+                    energy_cap_equals: 1650000 
+                distance: 7.888           
+
+#export e import?
+
+
+
+
+ 

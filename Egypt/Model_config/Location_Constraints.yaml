@@ -90,11 +90,18 @@ locations:
                     resource: file=Wind.csv:CN_Wind_Small   
                     resource_unit: energy_per_cap
 
-            Wind_Large:
+            Wind_Large1:
                 constraints:                                 
                     energy_cap_equals: 1499100                 
                     resource: file=Wind.csv:CN_Wind_Large   
                     resource_unit: energy_per_cap
+                    
+            Wind_Large2:
+                constraints:                                 
+                    energy_cap_equals: 0                
+                    resource: file=Wind.csv:CN_Wind_Large_new  
+                    resource_unit: energy_per_cap
+                    
                     
             Hydro_Large:
                 constraints:                                 
@@ -119,7 +126,10 @@ locations:
                 constraints:
                     resource: file=Demand.csv:EGY_CN
 
-
+            PHES:
+                constraints:
+                    energy_cap_equals: 0
+                    storage_cap_equals: 0
 
 
 ################### Middle Egypt Region ####################
