@@ -1,0 +1,221 @@
+
+
+
+################### LOCATION CONSTRAINTS ###################
+
+#from Motta's Thesis
+  
+#study to compare with PH, looking at the Global Solar Atlas and Wind Atlas on Kenya
+#Wind potential is the strongest in the off grid region
+#Solar potential is strong in all regions, a but stronger in MTKR 
+#For the study I select susequenty higher installed capacities of PV in MTKR
+
+#1. Kenya Nairobi Region: KEN_NBOR
+#2. Kenya Coast Region: KEN_CSTR
+#3. Kenya Western Region: KEN_WSTR
+#4. Kenya Mount Kenya Region: KEN_MTKR
+
+locations:
+
+################### Kenya Nairobi Region ####################
+
+    KEN_NBOR:
+
+        coordinates:
+            lat: -1.2833
+            lon: 36.8172
+        
+        techs:
+
+            Diesel_Engine:                                      
+                constraints:                                 
+                    energy_cap_equals: 100000       
+
+            HFO_pp:                                       
+                constraints:                                 
+                    energy_cap_equals: 276320     
+
+            Hydro_Large1:                                    # Masinga (1981, 2018), Dam
+                constraints:                                 
+                    energy_cap_equals: 40000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro.csv:KEN_NBOR1  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large2:                                    # Kamburu (1974, 2005-2007), Dam
+                constraints:                                 
+                    energy_cap_equals: 90000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro.csv:KEN_NBOR2  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large3:                                    # Gitaru (1998), Dam
+                constraints:                                 
+                    energy_cap_equals: 216000                # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro.csv:KEN_NBOR3  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Wind1:                                           # Ngong 1 (2009)
+                constraints:
+                    energy_cap_equals: 5100                  # https://www.thewindpower.net/windfarms_list_en.php?country=KE
+                    resource: file=Wind.csv:KEN_NBOR1              
+                    resource_unit: energy_per_cap
+
+            Wind2:                                           # Ngong 2 (2014-2015)
+                constraints:
+                    energy_cap_equals: 20400                 # https://www.thewindpower.net/windfarms_list_en.php?country=KE
+                    resource: file=Wind.csv:KEN_NBOR2              
+                    resource_unit: energy_per_cap
+
+            Wind3:                                           # Kipeto (2021)
+                constraints:
+                    energy_cap_equals: 102000                # https://www.thewindpower.net/windfarms_list_en.php?country=KE
+                    resource: file=Wind.csv:KEN_NBOR3              
+                    resource_unit: energy_per_cap
+
+            Geothermal:          
+                constraints:                                 
+                    energy_cap_equals: 822900    
+
+            Demand_power:
+                constraints:
+                    resource: file=Demand.csv:KEN_NBOR  # https://doi.org/10.1016/j.energy.2021.120623 and https://github.com/SESAM-Polimi/Calliope-Kenya
+#################### Kenya Coast Region ####################
+
+    KEN_CSTR:
+
+        coordinates:
+            lat: -1.910164
+            lon: 40.588417
+        
+        techs:
+
+            HFO_pp:                                       
+                constraints:                                 
+                    energy_cap_equals: 281500         
+
+            Diesel_Engine:                                     
+                constraints:                                 
+                    energy_cap_equals: 73500        
+
+            Bioenergy:                                       
+                constraints:                                 
+                    energy_cap_equals: 18000     
+
+            Demand_power:
+                constraints:
+                    resource: file=Demand.csv:KEN_CSTR  # https://doi.org/10.1016/j.energy.2021.120623 and https://github.com/SESAM-Polimi/Calliope-Kenya
+
+
+#################### Kenya Western Region ####################
+
+    KEN_WSTR:
+
+        coordinates:
+            lat: 1.91667
+            lon: 35.3333
+        
+        techs:
+
+            OCGT_Oil_pp:                                  
+                constraints:                                 
+                    energy_cap_equals: 56000        
+
+            Hydro_Large1:                                    # Turkwell (1991), Dam
+                constraints:                                 
+                    energy_cap_equals: 105000                # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro.csv:KEN_WSTR1  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large2:                                    # Sondu Miriu (2008), Ror
+                constraints:                                 
+                    energy_cap_equals: 60000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro.csv:KEN_WSTR2  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large3:                                    # Sang'oro (2012), Ror
+                constraints:                                 
+                    energy_cap_equals: 20000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro.csv:KEN_WSTR3  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Geothermal:                                         
+                constraints:                                 
+                    energy_cap_equals: 2440        
+
+            Bioenergy:                                                   
+                constraints:                                 
+                    energy_cap_equals: 60000       
+
+            PV1:                                                        
+                constraints:                                 
+                    energy_cap_equals: 0              #PV variating   
+                    resource: file=Solar.csv:KEN_WSTR1              
+                    resource_unit: energy_per_cap
+
+            PHES:
+                constraints:
+                    energy_cap_equals: 0
+                    storage_cap_equals: 0
+
+
+            Demand_power:
+                constraints:
+                    resource: file=Demand.csv:KEN_WSTR  # https://doi.org/10.1016/j.energy.2021.120623 and https://github.com/SESAM-Polimi/Calliope-Kenya
+
+
+#################### Kenya Mont Kenya Region ####################
+
+    KEN_MTKR:
+
+        coordinates:
+            lat: 0.07100
+            lon: 37.6900
+        
+        techs:
+
+            Hydro_Large1:                                    # Kiambere (1988, 2009), Dam
+                constraints:                                 
+                    energy_cap_equals: 164000                # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro.csv:KEN_MTKR1  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large2:                                    # Kindaruma (1968, 2013), Dam
+                constraints:                                 
+                    energy_cap_equals: 44000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro.csv:KEN_MTKR2  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large3:                                    # Kindaruma opt (2015), Dam
+                constraints:                                 
+                    energy_cap_equals: 24000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro.csv:KEN_MTKR3  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Large4:                                    # Tana (1955, 2007), Ror
+                constraints:                                 
+                    energy_cap_equals: 20000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro.csv:KEN_MTKR4  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            Hydro_Small1:                                    # Wanjii (1952, 2018), Ror
+                constraints:                                 
+                    energy_cap_equals: 7400                  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource: file=Hydro.csv:KEN_MTKR5  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+                    resource_unit: energy_per_cap
+
+            PV1:                                             # Garissa ("Off-Grid Region"  but connected to Mount Kenya Region) (2018)                                       
+                constraints:                                 
+                    energy_cap_equals: 56000                 # World Resources Institute, 2021, Global Power Plant Database
+                    resource: file=Solar.csv:KEN_MTKR1              
+                    resource_unit: energy_per_cap
+
+            Wind1:                                          
+
+                constraints:
+                    energy_cap_equals: 0                
+                    resource: file=Wind.csv:KEN_MTKR1              
+                    resource_unit: energy_per_cap
+
+
+            Demand_power:
+                constraints:
+                    resource: file=Demand.csv:KEN_MTKR  # https://doi.org/10.1016/j.energy.2021.120623 and https://github.com/SESAM-Polimi/Calliope-Kenya

@@ -1,0 +1,252 @@
+
+# Model configuration: all settings that affect the built model
+
+########################################################################
+#                              IMPORTS                                 #
+# All the files that define the model configuration should be imported #
+########################################################################
+
+import: 
+    - 'Model_config/Location_Constraints_PH_min_new.yaml'
+    - 'Model_config/Transmission_links.yaml'
+    - 'Model_config/Technologies.yaml'
+    
+########################################################################
+#                                MODEL                                 #
+#                      General settings of the model                   #
+########################################################################
+scenarios:
+
+    Energy: ["Energy_constraint"]
+
+overrides:
+        
+    Energy_constraint:
+        group_constraints:
+
+            Diesel_Energy_min:
+                techs: ['Diesel_Engine']
+                carrier_prod_min: 
+                    power: 0
+
+            HFO_Energy_min:
+                techs: ['HFO_pp']
+                carrier_prod_min: 
+                    power: 0
+                    
+            OCGT_Energy_min:
+                techs: ['OCGT_Oil_pp']
+                carrier_prod_min: 
+                    power: 0
+                    
+            Geo_Energy_min:
+                techs: ['Geothermal']
+                carrier_prod_min: 
+                    power: 0
+
+            Hydro1_Energy_min:
+                techs: ['Hydro_Large1']
+                carrier_prod_min: 
+                    power: 0
+                    
+            Hydro2_Energy_min:
+                techs: ['Hydro_Large2']
+                carrier_prod_min: 
+                    power: 0
+                    
+            Hydro3_Energy_min:
+                techs: ['Hydro_Large3']
+                carrier_prod_min: 
+                    power: 0
+                    
+            Hydro4_Energy_min:
+                techs: ['Hydro_Large4']
+                carrier_prod_min: 
+                    power: 0
+                    
+            HydroS1_Energy_min:
+                techs: ['Hydro_Small1']
+                carrier_prod_min: 
+                    power: 0
+                    
+            Wind1_Energy_min:
+                techs: ['Wind1']
+                carrier_prod_min: 
+                    power: 0
+                    
+            Wind2_Energy_min:
+                techs: ['Wind2']
+                carrier_prod_min: 
+                    power: 0
+                    
+            Wind3_Energy_min:
+                techs: ['Wind3']
+                carrier_prod_min: 
+                    power: 0
+
+            Wind4_Energy_min:
+                techs: ['Wind4']
+                carrier_prod_min: 
+                    power: 0
+
+            Hydro_dam_Energy_min:
+                techs: ['Hydro_dam']
+                carrier_prod_min: 
+                    power: 0
+
+            OCGT_Energy_min:
+                techs: ['OCGT_pp']
+                carrier_prod_min: 
+                    power: 0
+
+            CCGT_Energy_min:
+                techs: ['CCGT_pp']
+                carrier_prod_min: 
+                    power: 0
+                    
+            Bio_Energy_min:
+                techs: ['Bioenergy']
+                carrier_prod_min: 
+                    power: 0
+                    
+            PV_Energy_min:
+                techs: ['PV1']
+                carrier_prod_min: 
+                    power: 0
+
+
+                
+            Diesel_Energy_max:
+                techs: ['Diesel_Engine']
+                carrier_prod_max: 
+                    power: 0
+
+            HFO_Energy_max:
+                techs: ['HFO_pp']
+                carrier_prod_max: 
+                    power: 0
+                    
+            OCGT_Energy_max:
+                techs: ['OCGT_Oil_pp']
+                carrier_prod_max: 
+                    power: 0
+                    
+            Geo_Energy_max:
+                techs: ['Geothermal']
+                carrier_prod_max: 
+                    power: 0
+
+            Hydro1_Energy_max:
+                techs: ['Hydro_Large1']
+                carrier_prod_max: 
+                    power: 0
+                    
+            Hydro2_Energy_max:
+                techs: ['Hydro_Large2']
+                carrier_prod_max: 
+                    power: 0
+                    
+            Hydro3_Energy_max:
+                techs: ['Hydro_Large3']
+                carrier_prod_max: 
+                    power: 0
+                    
+            Hydro4_Energy_max:
+                techs: ['Hydro_Large4']
+                carrier_prod_max: 
+                    power: 0
+                    
+            HydroS1_Energy_max:
+                techs: ['Hydro_Small1']
+                carrier_prod_max: 
+                    power: 0
+                    
+            Wind1_Energy_max:
+                techs: ['Wind1']
+                carrier_prod_max: 
+                    power: 0
+                    
+            Wind2_Energy_max:
+                techs: ['Wind2']
+                carrier_prod_max: 
+                    power: 0
+                    
+            Wind3_Energy_max:
+                techs: ['Wind3']
+                carrier_prod_max: 
+                    power: 0
+
+            Wind4_Energy_max:
+                techs: ['Wind4']
+                carrier_prod_max: 
+                    power: 0
+
+            Hydro_dam_Energy_max:
+                techs: ['Hydro_dam']
+                carrier_prod_max: 
+                    power: 0
+
+            OCGT_Energy_max:
+                techs: ['OCGT_pp']
+                carrier_prod_max: 
+                    power: 0
+
+            CCGT_Energy_max:
+                techs: ['CCGT_pp']
+                carrier_prod_max: 
+                    power: 0
+                    
+            Bio_Energy_max:
+                techs: ['Bioenergy']
+                carrier_prod_max: 
+                    power: 0
+                    
+            PV_Energy_max:
+                techs: ['PV1']
+                carrier_prod_max: 
+                    power: 0
+
+model:
+
+    name: 'Kenya 4 Nodes Model (2022)'           # Defining the name of the model
+    calliope_version: 0.6.5                      # What version of Calliope this model is intended for
+    timeseries_data_path: 'Timeseries'           # Time series data path
+    timeseries_dateformat: '%d/%m/%Y %H:%M'      # Time series data path
+    subset_time: ['2019-01-01', '2019-12-31']    
+
+########################################################################
+#                                RUN                                   #
+#          All settings that affect how the built model is run         #
+########################################################################
+
+run:
+
+    mode: plan  # Choices: plan, operate
+
+    operation:
+        horizon: 48
+        window: 24
+                
+        ####################################
+        #        Defining the solver       #
+        #         glpk: free solver        #             
+        ####################################
+        
+    solver: gurobi
+    solver_options:
+        NumericFocus: 1
+    ensure_feasibility: False  # Switches on the "unmet demand" constraint        
+    bigM: 1e6                  # Sets the scale of unmet demand, which cannot be too high,
+                                # otherwise the optimisation will not converge
+    zero_threshold: 1e-20      # Any value coming out of the backend that is smaller than this, will be set to zero        
+    objective_options: {'cost_class': {'monetary': 1, 'co2': 0}, 'sense': minimize}
+        
+        
+        
+
+    
+        
+        
+        
+        
+        
