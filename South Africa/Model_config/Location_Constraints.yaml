@@ -1,0 +1,184 @@
+
+# Location Definition #
+
+# In this model, SOUTH AFRICA is divided into 4 different regions which are:
+
+        #1. Capitol Region: CPTL
+        #2. Northen Region: NRTN 
+        #3. Western Region: WSTR
+        #4. Coast Region: CSTR
+
+# Parameters:
+
+    # lat: Latitude of the location
+    # lon: Longtitude of the location 
+    # energy_cap_equals: Real Capacity [kW]
+
+# Defining the locations 
+
+locations:
+
+################################### CPTL ##################################                                                   
+    SA_CPTL:
+        coordinates:
+            lat: -26.2321            
+            lon: 28.0737      
+        
+        # Available Technologies
+        techs:
+                     
+            Coal_pp:
+                constraints:
+                     energy_cap_equals: 927000  
+                       
+            demand_power:
+                constraints:
+                    resource: file=Demand.csv:CPTL
+                    
+                    
+################################### WSTR ##################################                                                                                                   
+    SA_WSTR:
+    
+        coordinates:
+            lat: -29.3871           
+            lon: 21.0918 
+         
+        techs:
+                      
+            Coal_pp:
+                constraints:
+                    energy_cap_equals: 3778000
+                    
+            PV1:
+                constraints:
+                    energy_cap_equals: 1654960 
+                    resource: file=Solar.csv:SA_WSTR1
+                    resource_unit: energy_per_cap          # Resource Unit: [kW/kW]
+            PV2:
+                constraints:
+                    energy_cap_equals: 0                    #added solar
+                    resource: file=Solar.csv:SA_WSTR2
+                    resource_unit: energy_per_cap     
+            CSP_pp:
+                constraints:
+                    energy_cap_equals: 500000 
+                    resource: file=Solar.csv:SA_WSTR1 
+                    resource_unit: energy_per_cap          # Resource Unit: [kW/kW]        
+
+            Wind1:
+                constraints:
+                    energy_cap_equals: 1046600 
+                    resource: file=Wind.csv:SA_WSTR
+                    resource_unit: energy_per_cap          # Resource Unit: [kW/kW]
+
+            Hydro_Dam:
+                constraints:
+                    energy_cap_equals: 240000
+                    resource: file=Hydro.csv:dam_WSTR
+
+
+            Hydro_Ror:
+                constraints:
+                    energy_cap_equals: 94000
+                    resource: file=Hydro.csv:ror_WSTR
+
+
+            demand_power:
+                constraints:
+                    resource: file=Demand.csv:WSTR
+                    
+################################### NRTN ##################################                                                                                                                                                      
+    SA_NRTN:
+ 
+        coordinates:
+            lat: -24.0186            
+            lon: 29.4361          
+
+        techs:
+        
+            Coal_pp:
+                constraints:
+                    energy_cap_equals: 32888000
+
+            PV1:
+                constraints:
+                    energy_cap_equals: 392830 
+                    resource: file=Solar.csv:SA_NRTN
+                    resource_unit: energy_per_cap          # Resource Unit: [kW/kW]
+
+            Bio_pp:
+                constraints:
+                    energy_cap_equals: 44000
+                    
+            demand_power:
+                constraints:
+                    resource: file=Demand.csv:NRTN
+
+################################### CSTR ##################################                                                                                                                                                      
+    SA_CSTR:
+ 
+        coordinates:
+            lat: -33.0854           
+            lon: 24.0965          
+
+        techs:
+            OCGT_pp:
+                constraints:
+                    energy_cap_equals: 3414000
+
+            Nuclear_pp:
+                constraints:
+                    energy_cap_equals: 1940000
+
+            PV1:
+                constraints:
+                    energy_cap_equals: 203420 
+                    resource: file=Solar.csv:SA_CSTR
+                    resource_unit: energy_per_cap          # Resource Unit: [kW/kW]
+                    
+            Wind1:
+                constraints:
+                    energy_cap_equals: 1969900 
+                    resource: file=Wind.csv:SA_CSTR1
+                    resource_unit: energy_per_cap          # Resource Unit: [kW/kW]
+                    
+            Wind2:
+                constraints:
+                    energy_cap_equals: 0                    #added wind
+                    resource: file=Wind.csv:SA_CSTR2
+                    resource_unit: energy_per_cap          # Resource Unit: [kW/kW]
+                    
+            Bio_pp:
+                constraints:
+                    energy_cap_equals: 23500
+
+            Hydro_Dam:
+                constraints:
+                    energy_cap_equals: 402000
+                    resource: file=Hydro.csv:dam_CSTR
+
+
+            Hydro_Ror:
+                constraints:
+                    energy_cap_equals: 2100
+                    resource: file=Hydro.csv:ror_CSTR
+                    resource_unit: energy_per_cap
+
+            PHES:                         #added PHES
+                constraints:
+                    energy_cap_equals: 0
+                    storage_cap_equals: 0
+                    
+            Hydro_pumped_open:
+                constraints:
+                    energy_cap_equals: 2892000
+                    resource: file=Hydro.csv:pumped_CSTR
+
+
+            demand_power:
+                constraints:
+                    resource: file=Demand.csv:CSTR
+
+
+
+                    
