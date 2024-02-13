@@ -1,0 +1,276 @@
+
+# Technology Definition #
+
+# Parameters and Units:
+
+    # resource:      limitation over the power output
+    # resource_unit: Defines the unit of numbers provided in resource
+    # energy_eff:    efficiency of power plant             [-]
+    # lifetime:      Life time of the power plant          [year]
+    # energy_cap:    Capital investment of the technology  [$/kW]
+    # om_annual:     Fixed annual O&M cost                 [$/kW]
+    # om_prod:       Variable cost of production           [$/kWh]
+    # om_con:        Variable cost of fuel                 [$/kWh]
+    # om_prod (co2): Co2 production                        [kgco2/kWh]
+    # energy_cap:    Investment Cost of Technology         [$/kW]
+    # lifetime:      Life time of the Technology           [years]
+    # interest_rate: Interest rate                         [-]
+
+   
+
+techs: 
+
+# Supply and Conversion Technologies #
+############################### Hydro Power Plant Ror ###############################
+
+    Hydro_Large:
+        essentials:
+            color: '#5AE8EF' 
+            name: 'Large Hydro Power Plant'
+            parent: supply
+            carrier_out: power                     
+                   
+        constraints:
+            energy_eff: 1                          # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+            resource: inf                     
+            lifetime: 50                           # https://www.eia.gov/energyexplained/hydropower/hydropower-and-the-environment.php          
+                                     
+        costs:
+            monetary:
+                energy_cap: 0  
+                om_annual: 60                      # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf, Arithmetic mean of the indicated values               
+                interest_rate: 0.10
+            co2:
+                om_prod: 0
+
+############################### Hydro Power Plant Dam ###############################
+    Hydro_Small:
+        essentials:
+            color: '#9BB4B9' 
+            name: 'Small Hydro Power Plant'
+            parent: supply
+            carrier_out: power                     
+                   
+        constraints:
+            energy_eff: 1                         #  https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+            resource: inf                     
+            lifetime: 30                           # https://www.sciencedirect.com/topics/earth-and-planetary-sciences/small-scale-hydropower#:~:text=Typical%20lifetime%20for%20large%20hydropower,40%20years%20or%20even%20less.        
+                                     
+        costs:
+            monetary:   
+                energy_cap: 0 
+                om_annual: 65                      # https://iea-etsap.org/E-TechDS/PDF/E06-hydropower-GS-gct_ADfina_gs.pdf
+                interest_rate: 0.10
+            co2:
+                om_prod: 0
+
+################################ PV Power Plant ################################ 
+    PV:
+        essentials:
+            color: '#FFA52B' 
+            name: 'PV Power Plant 1'
+            parent: supply
+            carrier_out: power                     
+               
+        constraints:
+            resource: inf                        
+            lifetime: 25                          # https://iea-etsap.org/E-TechDS/PDF/E11IR_PV_GSMT_Jan2013_final_GSOK.pdf                                 
+                               
+        costs:
+            monetary:  
+                energy_cap: 0
+                om_annual: 16.60                  # https://iea-etsap.org/E-TechDS/PDF/E11IR_PV_GSMT_Jan2013_final_GSOK.pdf   
+                interest_rate: 0.10
+            co2:
+                om_prod: 0
+
+
+    PV_added:
+        essentials:
+            color: '#FFA52B' 
+            name: 'PV Power Plant 1'
+            parent: supply
+            carrier_out: power                     
+               
+        constraints:
+            resource: inf                        
+            lifetime: 25                          # https://iea-etsap.org/E-TechDS/PDF/E11IR_PV_GSMT_Jan2013_final_GSOK.pdf                                 
+                               
+        costs:
+            monetary:  
+                energy_cap: 0
+                om_annual: 16.60                  # https://iea-etsap.org/E-TechDS/PDF/E11IR_PV_GSMT_Jan2013_final_GSOK.pdf   
+                interest_rate: 0.10
+            co2:
+                om_prod: 0 
+############################### Open Cycle Gas Turbine Power Plant ###############################                                      
+    OCGT:
+        essentials:
+            color: '#B7950B' 
+            name: 'Open Cycle Gas Turbine Power Plant'
+            parent: supply                 
+            carrier_out: power                     
+                  
+        constraints:
+            energy_eff: 0.40                      # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf
+            resource: inf                                                    
+            lifetime: 30                          # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf                            
+
+        costs:
+            monetary:   
+                energy_cap: 0
+                om_annual: 11                     # https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values 
+                om_prod: 0.0035                   # https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values 
+                om_con: 0.021                     # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf, Arithmetic mean of the indicated values multiplied by efficiency           
+                interest_rate: 0.10
+            co2:
+                om_prod: 0.528                    # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf
+       
+############################### Combined Cycle Gas Turbine Power Plant ###############################                                      
+                                     
+
+    CCGT:
+        essentials:
+            color: '#FFF300'
+            name: 'Combined Cycle Gas Turbine Power Plant'
+            parent: supply                 
+            carrier_out: power                     
+                  
+        constraints:
+            energy_eff: 0.56                      # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf, Geometric mean of the indicated values                                        
+            resource: inf                                                    
+            lifetime: 30                          # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf                                                                      
+            energy_ramping: 0.4                   # https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2019/Sep/IRENA_Flexibility_in_CPPs_2019.pdf?la=en&hash=AF60106EA083E492638D8FA9ADF7FD099259F5A1            
+
+        costs:
+            monetary:   
+                energy_cap: 0
+                om_annual: 13.9                   # https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values  
+                om_prod: 0.0025                   # https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values
+                om_con: 0.021                     # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf, Arithmetic mean of the indicated values                
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0.370                    # https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-iii.pdf
+
+############################# Gas Steam Turbine Power Plant #############################                               
+    GST:
+        essentials:
+            color: '#99A3A4'
+            name: 'Steam Turbine Gas Power Plant'
+            parent: supply                 
+            carrier_out: power                     
+                  
+        constraints:
+            energy_eff: 0.35                     
+            resource: inf                                                    
+            lifetime: 50
+            energy_ramping: 0.3                   # https://www.sciencedirect.com/science/article/pii/S1364032117309206
+
+        costs:
+            monetary:  
+                energy_cap: 0 
+                om_annual: 26.5                   # https://www.eia.gov/analysis/studies/powerplants/generationcost/pdf/full_report.pdf                                       
+                om_prod: 0.001                    # https://www.eia.gov/analysis/studies/powerplants/generationcost/pdf/full_report.pdf
+                om_con: 0.021                     # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf, Arithmetic mean of the indicated values         
+                interest_rate: 0.10
+            co2:
+                om_prod: 0.528                    # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf
+
+                 
+############################## Heavy Fuel Oil Power Plant ##############################                  
+    HFO:
+        essentials:
+            color: '#99A3A4'
+            name: 'HFO Power Plant'
+            parent: supply                 
+            carrier_out: power                     
+                  
+        constraints:
+            energy_eff: 0.35                     
+            resource: inf                                                    
+            lifetime: 50
+            energy_ramping: 0.3                   # https://www.sciencedirect.com/science/article/pii/S1364032117309206
+                
+        costs:
+            monetary:  
+                energy_cap: 0 
+                om_annual: 26.5                   # https://www.eia.gov/analysis/studies/powerplants/generationcost/pdf/full_report.pdf                                       
+                om_prod: 0.001                    # https://www.eia.gov/analysis/studies/powerplants/generationcost/pdf/full_report.pdf                                    
+                om_con: 0.0139                    # https://doi.org/10.5281/zenodo.5242926                             
+                interest_rate: 0.10
+            co2:
+                om_prod: 0.7381                   # https://www.isprambiente.gov.it/files2020/pubblicazioni/rapporti/Rapporto317_2020.pdf
+
+################################ Wind Turbines ################################ 
+    Wind:
+        essentials:
+            color: '#E32E18' 
+            name: 'Wind Power Plant 1'
+            parent: supply
+            carrier_out: power                     
+               
+        constraints:
+            resource: inf                         
+            lifetime: 20                          # https://nepis.epa.gov/Exe/ZyNET.exe/P100IL8K.txt?ZyActionD=ZyDocument&Client=EPA&Index=2011%20Thru%202015&Docs=&Query=%2820%29%20OR%20FNAME%3D%22P100IL8K.txt%22%20AND%20FNAME%3D%22P100IL8K.txt%22&Time=&EndTime=&SearchMethod=1&TocRestrict=n&Toc=&TocEntry=&QField=&QFieldYear=&QFieldMonth=&QFieldDay=&UseQField=&IntQFieldOp=0&ExtQFieldOp=0&XmlQuery=&File=D%3A%5CZYFILES%5CINDEX%20DATA%5C11THRU15%5CTXT%5C00000010%5CP100IL8K.txt&User=ANONYMOUS&Password=anonymous&SortMethod=h%7C-&MaximumDocuments=1&FuzzyDegree=0&ImageQuality=r75g8/r75g8/x150y150g16/i425&Display=hpfr&DefSeekPage=x&SearchBack=ZyActionL&Back=ZyActionS&BackDesc=Results%20page&MaximumPages=1&ZyEntry=2&SeekPage=f                                  
+                               
+        costs:
+            monetary: 
+                energy_cap: 0
+                om_annual: 38                      # https://www.irena.org/publications/2021/Jun/Renewable-Power-Costs-in-2020                  
+                interest_rate: 0.10
+            co2:
+                om_prod: 0            
+
+
+    Wind_added:
+        essentials:
+            color: '#E32E18' 
+            name: 'Wind Power Plant 1'
+            parent: supply
+            carrier_out: power                   
+               
+        constraints:
+            resource: inf                         
+            lifetime: 20                          # https://nepis.epa.gov/Exe/ZyNET.exe/P100IL8K.txt?ZyActionD=ZyDocument&Client=EPA&Index=2011%20Thru%202015&Docs=&Query=%2820%29%20OR%20FNAME%3D%22P100IL8K.txt%22%20AND%20FNAME%3D%22P100IL8K.txt%22&Time=&EndTime=&SearchMethod=1&TocRestrict=n&Toc=&TocEntry=&QField=&QFieldYear=&QFieldMonth=&QFieldDay=&UseQField=&IntQFieldOp=0&ExtQFieldOp=0&XmlQuery=&File=D%3A%5CZYFILES%5CINDEX%20DATA%5C11THRU15%5CTXT%5C00000010%5CP100IL8K.txt&User=ANONYMOUS&Password=anonymous&SortMethod=h%7C-&MaximumDocuments=1&FuzzyDegree=0&ImageQuality=r75g8/r75g8/x150y150g16/i425&Display=hpfr&DefSeekPage=x&SearchBack=ZyActionL&Back=ZyActionS&BackDesc=Results%20page&MaximumPages=1&ZyEntry=2&SeekPage=f                                  
+                               
+        costs:
+            monetary: 
+                energy_cap: 0
+                om_annual: 38                      # https://www.irena.org/publications/2021/Jun/Renewable-Power-Costs-in-2020                  
+                interest_rate: 0.10
+            co2:
+                om_prod: 0            
+
+############################ PHES ###############
+
+
+    PHES:
+        essentials:
+            name: 'Pumped Hydro Storage'
+            parent: storage
+            carrier: power
+        constraints:
+            energy_efficiency:  0.9        #https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2017/Oct/IRENA_Electricity_Storage_Costs_2017
+            lifetime: 40                   #https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2020/Jul/IRENA_Innovative_PHS_operation_2020.pdf
+            storage_discharge_depth: 0.2   #https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2017/Oct/IRENA_Electricity_Storage_Costs_2017.pdf?rev=a264707cb8034a52b6f6123d5f1b114      
+            storage_initial: 0.2                 
+
+        costs:
+            monetary:        
+                om_annual: 17.82           #https://atb.nrel.gov/electricity/2022/utility-scale_pv
+                om_prod: 0.000513          #https://atb.nrel.gov/electricity/2022/pumped_storage_hydropower
+                interest_rate: 0.10
+                
+# Consuming Technologies #
+
+#################################### Electricity ####################################
+    demand_power:
+        essentials:
+            name: 'Power demand'
+            color: '#800080' #viola
+            parent: demand
+            carrier: power
+            
+
+                
+

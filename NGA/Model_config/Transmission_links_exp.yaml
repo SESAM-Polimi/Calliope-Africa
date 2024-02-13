@@ -1,0 +1,93 @@
+
+# Transmission Grid and the connections Definition #
+
+# Parameters and Units:
+
+    # energy_cap_equals:  Capacity of Grid          [kW]
+    # distance:           Distance Between 2 Nodes  [hundreds of km]   
+
+techs:
+
+############################### High Voltage(132kV) Grid ############################### 
+    hvdc_132kV:
+        essentials:
+            name: 'High Voltage Grid_132kV'
+            parent: transmission
+            carrier: power
+            color: '#00BFFF'
+        constraints:
+            energy_eff_per_distance: 0.926    #https://nerc.gov.ng/index.php/home/nesi/404-transmission
+        costs:
+            monetary:
+                om_prod: 0.0076                              # https://doi.org/10.5281/zenodo.5242926
+                
+############################### High Voltage(330kV) Grid ############################### 
+    hvdc_330kV:
+        essentials:
+            name: 'High Voltage Grid_330kV'
+            parent: transmission
+            carrier: power
+            color: '#4169E1'
+            energy_eff_per_distance: 0.926    #https://nerc.gov.ng/index.php/home/nesi/404-transmission
+        costs:
+            monetary:
+                om_prod: 0.0076                              # https://doi.org/10.5281/zenodo.5242926
+                
+links:                             
+
+    NGA_E,NGA_S:
+        techs:
+            hvdc_330kV:
+                constraints:
+                    energy_cap_equals: 825000
+                distance: 13.472  
+            hvdc_132kV:
+                constraints:
+                    energy_cap_equals: 330000 
+                distance: 2.04
+                                 
+
+
+    NGA_CNW,NGA_E: 
+        techs:
+            hvdc_132kV:
+                constraints:
+                    energy_cap_equals: 660000 
+                distance: 11.2       
+            hvdc_330kV:
+                constraints:
+                    energy_cap_equals: 1237500 
+                distance: 8.928  
+           
+
+    NGA_CNW,NGA_W:
+        techs:
+            hvdc_132kV: 
+                constraints:
+                    energy_cap_equals: 660000 
+                distance: 0.71568             
+            hvdc_330kV: 
+                constraints:
+                    energy_cap_equals: 2062500
+                distance: 11.152                     
+                
+
+    NGA_S,NGA_W: 
+        techs:
+            hvdc_132kV:
+                constraints:
+                    energy_cap_equals: 495000
+                distance: 1.7272           
+                
+            hvdc_330kV:
+                constraints:
+                    energy_cap_equals: 1650000 
+                distance: 7.888           
+
+
+
+
+
+
+
+ 
