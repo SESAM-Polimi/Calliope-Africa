@@ -1,0 +1,134 @@
+locations:
+  SA_CPTL:
+    coordinates:
+      lat: -26.2321
+      lon: 28.0737
+    techs:
+      Coal:
+        constraints:
+          energy_cap_equals: 927000
+      demand_power:
+        constraints:
+          resource: file=Demand.csv:CPTL
+  SA_CSTR:
+    coordinates:
+      lat: -33.0854
+      lon: 24.0965
+    techs:
+      Bioenergy:
+        constraints:
+          energy_cap_equals: 23500
+      Hydro_Large:
+        constraints:
+          energy_cap_equals: 402000
+          resource: file=Hydro.csv:Hydro_Large_CSTR
+          resource_unit: energy_per_cap
+      Hydro_Small:
+        constraints:
+          energy_cap_equals: 2100
+          resource: file=Hydro.csv:Hydro_Small_CSTR
+          resource_unit: energy_per_cap
+      Nuclear:
+        constraints:
+          energy_cap_equals: 1940000
+      OCGT:
+        constraints:
+          energy_cap_equals: 3414000
+      PHES1:
+        constraints:
+          energy_cap_equals: 1000000
+          storage_cap_equals: 43136660.62
+      PHES2:
+        constraints:
+          energy_cap_equals: 400000
+          storage_cap_equals: 14975356.75
+      PHES3:
+        constraints:
+          energy_cap_equals: 1332000
+          storage_cap_equals: 29211302.4
+      PHES4:
+        constraints:
+          energy_cap_equals: 160000
+          storage_cap_equals: 23733979.44
+      PHES_added:
+        constraints:
+          energy_cap_equals: 150000000
+          storage_cap_equals: 900000000
+      PV:
+        constraints:
+          energy_cap_equals: 203420
+          resource: file=Solar.csv:SA_CSTR
+          resource_unit: energy_per_cap
+      Wind:
+        constraints:
+          energy_cap_equals: 1969900
+          resource: file=Wind.csv:SA_CSTR1
+          resource_unit: energy_per_cap
+      Wind_added:
+        constraints:
+          energy_cap_equals: 75000000.0
+          resource: file=Wind.csv:SA_CSTR1
+          resource_unit: energy_per_cap
+      demand_power:
+        constraints:
+          resource: file=Demand.csv:CSTR
+  SA_NRTN:
+    coordinates:
+      lat: -24.0186
+      lon: 29.4361
+    techs:
+      Bioenergy:
+        constraints:
+          energy_cap_equals: 44000
+      Coal:
+        constraints:
+          energy_cap_equals: 32888000
+      PV:
+        constraints:
+          energy_cap_equals: 392830
+          resource: file=Solar.csv:SA_NRTN
+          resource_unit: energy_per_cap
+      demand_power:
+        constraints:
+          resource: file=Demand.csv:NRTN
+  SA_WSTR:
+    coordinates:
+      lat: -29.3871
+      lon: 21.0918
+    techs:
+      CSP:
+        constraints:
+          energy_cap_equals: 500000
+          resource: file=Solar.csv:SA_WSTR1
+          resource_unit: energy_per_cap
+      Coal:
+        constraints:
+          energy_cap_equals: 3778000
+      Hydro_Large:
+        constraints:
+          energy_cap_equals: 324000
+          resource: file=Hydro.csv:Hydro_Large_WSTR
+          resource_unit: energy_per_cap
+      Hydro_Small:
+        constraints:
+          energy_cap_equals: 10000
+          resource: file=Hydro.csv:Hydro_Small_WSTR
+          resource_unit: energy_per_cap
+      PV:
+        constraints:
+          energy_cap_equals: 1654960
+          resource: file=Solar.csv:SA_WSTR1
+          resource_unit: energy_per_cap
+      PV_added:
+        constraints:
+          energy_cap_equals: 0.0
+          resource: file=Solar.csv:SA_WSTR2
+          resource_unit: energy_per_cap
+      Wind:
+        constraints:
+          energy_cap_equals: 1046600
+          resource: file=Wind.csv:SA_WSTR
+          resource_unit: energy_per_cap
+      demand_power:
+        constraints:
+          resource: file=Demand.csv:WSTR

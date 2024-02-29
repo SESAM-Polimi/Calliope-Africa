@@ -1,0 +1,136 @@
+
+
+scenarios:
+
+    Energy: ["Energy_constraint"]
+
+overrides:
+        
+    Energy_constraint:
+        group_constraints:
+
+
+######################## MINIMUM PRODUCITON CONSTRAINTS ############################################
+            Coal_Energy_min:
+                techs: ['Coal']
+                carrier_prod_min: 
+                    power: 0
+                    
+            Nuclear_Energy_min:
+                techs: ['Nuclear']
+                carrier_prod_min: 
+                    power: 0
+                    
+            CSP_Energy_min:
+                techs: ['CSP']
+                carrier_prod_min: 
+                    power: 0
+                    
+            Bioenergy_Energy_min:
+                techs: ['Bioenergy']
+                carrier_prod_min: 
+                    power: 0
+                                                            
+            Hydro_Large_Energy_min:
+                techs: ['Hydro_Large']
+                carrier_prod_min: 
+                    power: 0
+
+            Hydro_Small_Energy_min:
+                techs: ['Hydro_Small']
+                carrier_prod_min: 
+                    power: 0
+
+            PV_Energy_min:
+                techs: ['PV']
+                carrier_prod_min: 
+                    power: 0
+                    
+            PV_added_Energy_min:
+                techs: ['PV_added']
+                carrier_prod_min: 
+                    power: 0
+
+            OCGT_Energy_min:
+                techs: ['OCGT']
+                carrier_prod_min: 
+                    power: 0
+
+
+            Wind_Energy_min:
+                techs: ['Wind']
+                carrier_prod_min: 
+                    power: 0
+
+            Wind_added_Energy_min:
+                techs: ['Wind_added']
+                carrier_prod_min: 
+                    power: 0
+
+#################  MAXIMUM PRODUCTION CONSTRAINTS ##########################################
+
+            Coal_Energy_max:
+                techs: ['Coal']
+                carrier_prod_max: 
+                    power: 0
+                    
+            Nuclear_Energy_max:
+                techs: ['Nuclear']
+                carrier_prod_max: 
+                    power: 0
+                    
+            CSP_Energy_max:
+                techs: ['CSP']
+                carrier_prod_max: 
+                    power: 0
+                    
+            Bioenergy_Energy_max:
+                techs: ['Bioenergy']
+                carrier_prod_max: 
+                    power: 0
+                                                            
+            Hydro_Large_Energy_max:
+                techs: ['Hydro_Large']
+                carrier_prod_max: 
+                    power: 0
+
+            Hydro_Small_Energy_max:
+                techs: ['Hydro_Small']
+                carrier_prod_max: 
+                    power: 0
+
+            PV_Energy_max:
+                techs: ['PV']
+                carrier_prod_max: 
+                    power: 0
+                    
+            PV_added_Energy_max:
+                techs: ['PV_added']
+                carrier_prod_max: 
+                    power: 0
+
+            OCGT_Energy_max:
+                techs: ['OCGT']
+                carrier_prod_max: 
+                    power: 0
+
+
+            Wind_Energy_max:
+                techs: ['Wind']
+                carrier_prod_max: 
+                    power: 0
+
+            Wind_added_Energy_max:
+                techs: ['Wind_added']
+                carrier_prod_max: 
+                    power: 0
+ 
+      
+        
+
+    
+        
+        
+        
+        
+        

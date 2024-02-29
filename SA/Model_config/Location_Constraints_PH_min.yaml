@@ -1,0 +1,203 @@
+
+# Location Definition #
+
+# In this model, SOUTH AFRICA is divided into 4 different regions which are:
+
+        #1. Capitol Region: CPTL
+        #2. Northen Region: NRTN 
+        #3. Western Region: WSTR
+        #4. Coast Region: CSTR
+
+# Parameters:
+
+    # lat: Latitude of the location
+    # lon: Longtitude of the location 
+    # energy_cap_equals: Real Capacity [kW]
+
+# Defining the locations 
+
+locations:
+
+################################### CPTL ##################################                                                   
+    SA_CPTL:
+        coordinates:
+            lat: -26.2321            
+            lon: 28.0737      
+        
+        # Available Technologies
+        techs:
+                     
+            Coal:
+                constraints:
+                     energy_cap_equals: 927000  
+                       
+            demand_power:
+                constraints:
+                    resource: file=Demand.csv:CPTL
+                    
+                    
+################################### WSTR ##################################                                                                                                   
+    SA_WSTR:
+    
+        coordinates:
+            lat: -29.3871           
+            lon: 21.0918 
+         
+        techs:
+                      
+            Coal:
+                constraints:
+                    energy_cap_equals: 3778000
+                    
+            PV:
+                constraints:
+                    energy_cap_equals: 1654960 
+                    resource: file=Solar.csv:SA_WSTR1
+                    resource_unit: energy_per_cap          # Resource Unit: [kW/kW]
+
+            PV_added:
+                constraints:
+                    energy_cap_equals: 0 
+                    resource: file=Solar.csv:SA_WSTR2
+                    resource_unit: energy_per_cap     
+            CSP:
+                constraints:
+                    energy_cap_equals: 500000 
+                    resource: file=Solar.csv:SA_WSTR1 
+                    resource_unit: energy_per_cap          # Resource Unit: [kW/kW]
+                    
+            Wind:
+                constraints:
+                    energy_cap_equals: 1046600 
+                    resource: file=Wind.csv:SA_WSTR
+                    resource_unit: energy_per_cap          # Resource Unit: [kW/kW]
+
+            Hydro_Large:
+                constraints:
+                    energy_cap_equals: 324000
+                    resource: file=Hydro.csv:Hydro_Large_WSTR
+                    resource_unit: energy_per_cap          # Resource Unit: [kW/kW]
+
+
+            Hydro_Small:
+                constraints:
+                    energy_cap_equals: 10000
+                    resource: file=Hydro.csv:Hydro_Small_WSTR
+                    resource_unit: energy_per_cap          # Resource Unit: [kW/kW]
+
+
+            demand_power:
+                constraints:
+                    resource: file=Demand.csv:WSTR
+                    
+################################### NRTN ##################################                                                                                                                                                      
+    SA_NRTN:
+ 
+        coordinates:
+            lat: -24.0186            
+            lon: 29.4361          
+
+        techs:
+        
+            Coal:
+                constraints:
+                    energy_cap_equals: 32888000
+
+            PV:
+                constraints:
+                    energy_cap_equals: 392830 
+                    resource: file=Solar.csv:SA_NRTN
+                    resource_unit: energy_per_cap          # Resource Unit: [kW/kW]
+
+            Bioenergy:
+                constraints:
+                    energy_cap_equals: 44000
+                    
+            demand_power:
+                constraints:
+                    resource: file=Demand.csv:NRTN
+
+################################### CSTR ##################################                                                                                                                                                      
+    SA_CSTR:
+ 
+        coordinates:
+            lat: -33.0854           
+            lon: 24.0965          
+
+        techs:
+            OCGT:
+                constraints:
+                    energy_cap_equals: 3414000
+
+            Nuclear:
+                constraints:
+                    energy_cap_equals: 1940000
+
+            PV:
+                constraints:
+                    energy_cap_equals: 203420 
+                    resource: file=Solar.csv:SA_CSTR
+                    resource_unit: energy_per_cap          # Resource Unit: [kW/kW]
+                    
+            Wind:
+                constraints:
+                    energy_cap_equals: 1969900 
+                    resource: file=Wind.csv:SA_CSTR1
+                    resource_unit: energy_per_cap          # Resource Unit: [kW/kW]
+
+            Wind_added:
+                constraints:
+                    energy_cap_equals: 0
+                    resource: file=Wind.csv:SA_CSTR1
+                    resource_unit: energy_per_cap          # Resource Unit: [kW/kW]
+                                        
+            Bioenergy:
+                constraints:
+                    energy_cap_equals: 23500
+
+            Hydro_Large:
+                constraints:
+                    energy_cap_equals: 402000
+                    resource: file=Hydro.csv:Hydro_Large_CSTR
+                    resource_unit: energy_per_cap          # Resource Unit: [kW/kW]
+
+
+            Hydro_Small:
+                constraints:
+                    energy_cap_equals: 2100
+                    resource: file=Hydro.csv:Hydro_Small_CSTR
+                    resource_unit: energy_per_cap
+
+            PHES1:                                   # Drakensberg (1981)
+                constraints:
+                    energy_cap_equals: 1000000               # https://www.eskom.co.za/wp-content/uploads/2021/04/EskomGenerationDivMapREV81.pdf
+                    storage_cap_equals: 43136660.62          # Calculated from the volume of the basin and hydraulic head, assuming water density to be equal to 997 kg/m^3, https://web.archive.org/web/20060923094828/http://www.eskom.co.za/content/Drakensburg%20FA%20Pg%2001-06.pdf and https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9486173
+
+            PHES2:                                   # Palmiet (1988) 
+                constraints:
+                    energy_cap_equals: 400000                # https://www.eskom.co.za/wp-content/uploads/2021/04/EskomGenerationDivMapREV81.pdf 
+                    storage_cap_equals: 14975356.75          # Calculated from the volume of the basin and hydraulic head, assuming water density to be equal to 997 kg/m^3, https://www.power-technology.com/marketdata/palmiet-south-africa/
+
+            PHES3:                                   # Ingula (2016)  
+                constraints:
+                    energy_cap_equals: 1332000               # https://www.eskom.co.za/wp-content/uploads/2021/04/EskomGenerationDivMapREV81.pdf
+                    storage_cap_equals: 29211302.4           # Calculated from the volume of the basin and hydraulic head, assuming water density to be equal to 997 kg/m^3, https://www.hydroreview.com/world-regions/the-1-332-mw-ingula-pumped-storage-project-in-south-africa-puts-first-unit-online/#gref
+
+            PHES4:                                   # Steenbras (1979)  
+                constraints:
+                    energy_cap_equals: 160000                # https://www.capetown.gov.za/general/steenbras-dams#Heading2
+                    storage_cap_equals: 23733979.44          # Calculated from the volume of the basin and hydraulic head, assuming water density to be equal to 997 kg/m^3, https://www.capetown.gov.za/Family%20and%20home/residential-utility-services/residential-water-and-sanitation-services/this-weeks-dam-levels and http://globalenergyobservatory.org/geoid/42532         
+
+            PHES_added:
+                constraints:
+                    energy_cap_max: 150000000
+                    energy_cap_per_storage_cap_equals: 0.16666666667                    
+
+
+            demand_power:
+                constraints:
+                    resource: file=Demand.csv:CSTR
+
+
+
+                    

@@ -1,0 +1,181 @@
+
+# Transmission Grid and the connections Definition #
+
+# Parameters and Units:
+
+    # energy_cap_equals:  Capacity of Grid          [kW]
+    # distance:           Distance Between 2 Nodes  [hundreds of km]   
+
+techs:
+
+############################### High Voltage(132) Grid ############################### 
+    hvdc_132:
+        essentials:
+            name: 'High Voltage Grid_132'
+            parent: transmission
+            carrier: power
+            color: '#00BFFF'
+        constraints:
+            energy_eff_per_distance: 0.92 #https://data.worldbank.org/indicator/EG.ELC.LOSS.ZS?locations=ZA
+        costs:
+            monetary:
+                om_prod: 0.0076   # https://doi.org/10.5281/zenodo.5242926 
+
+############################### High Voltage(275-400) Grid ############################### 
+    hvdc_275:
+        essentials:
+            name: 'High Voltage Grid_275-400'
+            parent: transmission
+            carrier: power
+            color: '#00BFFF'
+        constraints:
+            energy_eff_per_distance: 0.92 #https://data.worldbank.org/indicator/EG.ELC.LOSS.ZS?locations=ZA
+        costs:
+            monetary:
+                om_prod: 0.0076   # https://doi.org/10.5281/zenodo.5242926 
+
+############################### High Voltage(275-400) Grid ############################### 
+    hvdc_400:
+        essentials:
+            name: 'High Voltage Grid_275-400'
+            parent: transmission
+            carrier: power
+            color: '#00BFFF'
+        constraints:
+            energy_eff_per_distance: 0.92 #https://data.worldbank.org/indicator/EG.ELC.LOSS.ZS?locations=ZA
+        costs:
+            monetary:
+                om_prod: 0.0076   # https://doi.org/10.5281/zenodo.5242926 
+
+
+############################### High Voltage(132) Grid ############################### 
+    hvdc_765:
+        essentials:
+            name: 'High Voltage Grid_765'
+            parent: transmission
+            carrier: power
+            color: '#00BFFF'
+        constraints:
+            energy_eff_per_distance: 0.92  #https://data.worldbank.org/indicator/EG.ELC.LOSS.ZS?locations=ZA
+        costs:
+            monetary:
+                om_prod: 0.0076   # https://doi.org/10.5281/zenodo.5242926 
+                
+links:                             
+                
+# Connection of Nodes
+# As the country is divided into 4 regions, the distance and capacity between two nodes could be different in different directions
+# due to the fact that there are different counties are located in every region and not all of them are connected
+# As a result, an average capacity and distance is considered for the connection of every two nodes.
+                
+                                                        
+    SA_CSTR,SA_WSTR:
+        techs:
+            hvdc_132:
+                constraints:
+                    energy_cap_equals: 211200
+                distance: 19.94
+
+            hvdc_275:
+                constraints:
+                    energy_cap_equals: 275000
+                distance: 1.06
+
+            hvdc_400:
+                constraints:
+                    energy_cap_equals: 7680000
+                distance: 21.49
+
+            hvdc_765:
+                constraints:
+                    energy_cap_equals: 20204415
+                distance: 8.82                             
+
+    SA_WSTR,SA_CPTL:
+
+        techs:
+            hvdc_132:
+                constraints:
+                    energy_cap_equals: 422400
+                distance: 8.37
+
+
+            hvdc_275:
+                constraints:
+                    energy_cap_equals: 1100000
+                distance: 4.72
+
+            hvdc_400:
+                constraints:
+                    energy_cap_equals: 1280000
+                distance: 7.55
+
+            hvdc_765:
+                constraints:
+                  energy_cap_equals: 5772690
+                distance: 4.71
+ 
+    SA_NRTN,SA_CPTL:
+        techs:
+            hvdc_132:
+                constraints:
+                    energy_cap_equals: 7392000
+                distance: 4.02
+
+            hvdc_275:
+                constraints:
+                    energy_cap_equals: 33000000
+                distance: 5.7
+
+            hvdc_400:
+                constraints:
+                    energy_cap_equals: 14720000
+                distance: 20.19
+
+
+            hvdc_765:
+                constraints:
+                    energy_cap_equals: 5772690
+                distance: 1.2
+                                            
+
+    SA_NRTN,SA_CSTR:
+        techs:
+
+            hvdc_132:
+                constraints:
+                    energy_cap_equals: 105600 
+                distance: 2.55
+
+            hvdc_275:
+                constraints:
+                    energy_cap_equals: 275000
+                distance: 2.55
+
+            hvdc_400:
+                constraints:
+                    energy_cap_equals: 640000
+                distance: 6.93
+
+    SA_WSTR,SA_NRTN:
+        techs:
+
+            hvdc_400:
+                constraints:
+                    energy_cap_equals: 640000
+                distance: 4.18    
+                                  
+            hvdc_765:
+                constraints:
+                    energy_cap_equals: 8659035
+                distance: 4.18    
+                                   
+                
+                
+                        
+
+
+
+
+
+ 

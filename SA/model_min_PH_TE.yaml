@@ -1,0 +1,61 @@
+
+# Model configuration: all settings that affect the built model
+
+########################################################################
+#                              IMPORTS                                 #
+# All the files that define the model configuration should be imported #
+########################################################################
+
+import: 
+    - 'Model_config/Location_Constraints_PH_min_new.yaml'
+    - 'Model_config/Transmission_links_exp.yaml'
+    - 'Model_config/Technologies.yaml'
+    - 'Model_config/Overrides_updated.yaml'
+   
+
+   
+    
+########################################################################
+#                                MODEL                                 #
+#                      General settings of the model                   #
+########################################################################
+
+model:
+
+    name: 'South Africa 4 Nodes Model (2022)'    # Defining the name of the model
+    calliope_version: 0.6.10                     # What version of Calliope this model is intended for
+    timeseries_dateformat: '%Y/%m/%d %H:%M'      # Time series data path
+    timeseries_data_path: 'Timeseries'           # Time series data path
+    subset_time: ['2019-01-01', '2019-12-31']    # shows the a subset of time to represent the results, 3 days, real:['2019-01-01', '2019-12-31'] 
+
+########################################################################
+#                                RUN                                   #
+#          All settings that affect how the built model is run         #
+########################################################################
+
+run:
+
+    mode: plan  # Choices: plan, operate
+
+    operation:
+        horizon: 48
+        window: 24
+                
+        ####################################
+        #        Defining the solver       #
+        #         glpk: free solver        #             
+        ####################################
+        
+    solver: gurobi        
+    ensure_feasibility: true   # Switches on the "unmet demand" constraint        
+    bigM: 1e6                  # Sets the scale of unmet demand, which cannot be too high,
+                               # otherwise the optimisation will not converge
+    zero_threshold: 1e-20      # Any value coming out of the backend that is smaller than this, will be set to zero        
+        
+
+    
+        
+        
+        
+        
+        
