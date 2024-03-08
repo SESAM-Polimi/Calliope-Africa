@@ -1,0 +1,126 @@
+overrides:
+  Energy_constraint:
+    group_constraints:
+      Bioenergy_Energy_max:
+        carrier_prod_max:
+          power: 0.0
+        techs:
+        - Bioenergy
+      Bioenergy_Energy_min:
+        carrier_prod_min:
+          power: 0.0
+        techs:
+        - Bioenergy
+      CCGT_Energy_max:
+        carrier_prod_max:
+          power: 54138869562.476326
+        techs:
+        - CCGT
+      CCGT_Energy_min:
+        carrier_prod_min:
+          power: 51497949096.01407
+        techs:
+        - CCGT
+      GST_Energy_max:
+        carrier_prod_max:
+          power: 1925144.336939297
+        techs:
+        - GST
+      GST_Energy_min:
+        carrier_prod_min:
+          power: 1831234.8570885998
+        techs:
+        - GST
+      Hydro_Large_Energy_max:
+        carrier_prod_max:
+          power: 24028241845.241886
+        techs:
+        - Hydro_Large
+      Hydro_Large_Energy_min:
+        carrier_prod_min:
+          power: 22856132486.937405
+        techs:
+        - Hydro_Large
+      ISCC_Energy_max:
+        carrier_prod_max:
+          power: 1235454026.3472972
+        techs:
+        - ISCC
+      ISCC_Energy_min:
+        carrier_prod_min:
+          power: 1175187976.2815754
+        techs:
+        - ISCC
+      OCGT_Energy_max:
+        carrier_prod_max:
+          power: 0.0
+        techs:
+        - OCGT
+      OCGT_Energy_min:
+        carrier_prod_min:
+          power: 0.0
+        techs:
+        - OCGT
+      OCGT_Oil_Energy_max:
+        carrier_prod_max:
+          power: 1325141746.972655
+        techs:
+        - OCGT_Oil
+      OCGT_Oil_Energy_min:
+        carrier_prod_min:
+          power: 1260500686.1447208
+        techs:
+        - OCGT_Oil
+      PV_Energy_max:
+        carrier_prod_max:
+          power: 3589437268.45
+        techs:
+        - PV
+      PV_Energy_min:
+        carrier_prod_min:
+          power: 3414342767.5499997
+        techs:
+        - PV
+      PV_added_Energy_max:
+        carrier_prod_max:
+          power: 101144488749.99998
+        techs:
+        - PV_added
+      PV_added_Energy_min:
+        carrier_prod_min:
+          power: 96210611250.0
+        techs:
+        - PV_added
+      Wind1_Energy_max:
+        carrier_prod_max:
+          power: 373922584.722
+        techs:
+        - Wind1
+      Wind1_Energy_min:
+        carrier_prod_min:
+          power: 355682458.638
+        techs:
+        - Wind1
+      Wind2_Energy_max:
+        carrier_prod_max:
+          power: 5732903043.09
+        techs:
+        - Wind2
+      Wind2_Energy_min:
+        carrier_prod_min:
+          power: 5453249236.110001
+        techs:
+        - Wind2
+      Wind_added_Energy_max:
+        carrier_prod_max:
+          power: 0.0
+        techs:
+        - Wind_added
+      Wind_added_Energy_min:
+        carrier_prod_min:
+          power: 0.0
+        techs:
+        - Wind_added
+scenarios:
+  Energy:
+  - Energy_constraint

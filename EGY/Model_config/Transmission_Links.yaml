@@ -1,0 +1,214 @@
+################### TRANSMISSION LINKS  #####################
+  
+# energy_cap_equals: Installed transmission capacity [kW]
+# energy_eff_per_distance: Energy efficiency per distance [1/(10s km)]
+# distance: Length of transmission line [10s km]
+
+techs:
+
+############################### High Voltage 132 kV Grid ############################### 
+
+    132_kV:
+        essentials:
+            name: 'High Voltage Grid 132 kV'
+            parent: transmission
+            carrier: power
+        constraints:
+            lifetime: 40                                     # https://portal.ct.gov/lib/csc/lifecycle-2001.pdf 
+        costs:
+            monetary:
+                om_prod: 0.0076                              # https://doi.org/10.5281/zenodo.5242926
+
+############################### High Voltage 220 kV Grid ############################### 
+
+    220_kV:
+        essentials:
+            name: 'High Voltage Grid 220 kV'
+            parent: transmission
+            carrier: power
+        constraints:
+            lifetime: 40                                     # https://portal.ct.gov/lib/csc/lifecycle-2001.pdf 
+        costs:
+            monetary:
+                om_prod: 0.0076                              # https://doi.org/10.5281/zenodo.5242926
+
+############################### High Voltage 500 kV Grid ############################### 
+
+    500_kV:
+        essentials:
+            name: 'High Voltage Grid 500 kV'
+            parent: transmission
+            carrier: power
+        constraints:
+            lifetime: 40                                     # https://portal.ct.gov/lib/csc/lifecycle-2001.pdf
+        costs:
+            monetary:
+                om_prod: 0.0076                              # https://doi.org/10.5281/zenodo.5242926 
+
+
+############################### TRANSMISSION ###############################
+
+links:
+
+    EGY_CN,EGY_UE:
+
+        techs:
+            132_kV:
+                constraints:
+                    energy_cap_equals: 950400         
+                    energy_eff_per_distance: 0.965
+                distance: 0.68
+
+            220_kV:
+                constraints:
+                    energy_cap_equals: 3432000    
+                    energy_eff_per_distance: 0.965
+                distance: 13.82
+
+            500_kV:
+                constraints:
+                    energy_cap_equals: 3000000
+                    energy_eff_per_distance: 0.965
+                distance: 0.5
+
+    EGY_CN,EGY_ME:
+
+        techs:
+            132_kV:
+                constraints:
+                    energy_cap_equals: 0        
+
+            220_kV:
+                constraints:
+                    energy_cap_equals: 4004000
+                    energy_eff_per_distance: 0.965
+                distance: 6.02
+
+            500_kV:
+                constraints:
+                    energy_cap_equals: 6000000     
+                    energy_eff_per_distance: 0.965
+                distance: 3.25
+
+    EGY_UE,EGY_ME:
+
+        techs:
+            132_kV:
+                constraints:
+                    energy_cap_equals: 0        
+            220_kV:
+                constraints:
+                    energy_cap_equals: 0        
+        
+            500_kV:
+                constraints:
+                    energy_cap_equals: 3000000  
+                    energy_eff_per_distance: 0.965
+                distance: 1.77
+
+    EGY_CR,EGY_ME:
+
+        techs:
+        
+            132_kV:
+                constraints:
+                    energy_cap_equals: 0        
+            220_kV:
+                constraints:
+                    energy_cap_equals: 0      
+            500_kV:
+                constraints:
+                    energy_cap_equals: 6000000
+                    energy_eff_per_distance: 0.965
+                distance: 2.61
+
+    EGY_CN,EGY_CR:
+
+        techs:
+            132_kV:
+                constraints:
+                    energy_cap_equals: 0        
+
+            220_kV:
+                constraints:
+                    energy_cap_equals: 2288000
+                    energy_eff_per_distance: 0.965
+                distance: 2.81
+
+            500_kV:
+                constraints:
+                    energy_cap_equals: 7500000   
+                    energy_eff_per_distance: 0.965
+                distance: 1.43
+
+    EGY_CR,EGY_NE:
+        techs:
+
+            132_kV:
+                constraints:
+                    energy_cap_equals: 0        
+
+            220_kV:
+                constraints:
+                    energy_cap_equals: 3432000   
+                    energy_eff_per_distance: 0.965
+                distance: 2.67
+
+            500_kV:
+                constraints:
+                    energy_cap_equals: 7500000
+                    energy_eff_per_distance: 0.965
+                distance: 5
+
+    EGY_CN,EGY_NE:
+
+        techs:
+            132_kV:
+                constraints:
+                    energy_cap_equals: 0        
+            500_kV:
+                constraints:
+                    energy_cap_equals: 0        
+            220_kV:
+                constraints:
+                    energy_cap_equals: 4400000
+                    energy_eff_per_distance: 0.965
+                distance: 1.99
+
+    EGY_AL,EGY_NE:
+
+        techs:
+            132_kV:
+                constraints:
+                    energy_cap_equals: 0        
+
+            220_kV:
+                constraints:
+                    energy_cap_equals: 6050000
+                    energy_eff_per_distance: 0.965
+                distance: 2.58
+
+            500_kV:
+                constraints:
+                    energy_cap_equals: 3000000   
+                    energy_eff_per_distance: 0.965
+                distance: 2.96
+                
+    EGY_AL,EGY_CR:
+
+        techs:
+            132_kV:
+                constraints:
+                    energy_cap_equals: 0        
+
+            500_kV:
+                constraints:
+                    energy_cap_equals: 3000000   
+                    energy_eff_per_distance: 0.965
+                distance: 1.6
+            
+            220_kV:
+                constraints:
+                    energy_cap_equals: 1144000   
+                    energy_eff_per_distance: 0.965
+                distance: 1.6

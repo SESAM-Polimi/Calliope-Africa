@@ -1,0 +1,142 @@
+locations:
+  EGY_AL:
+    coordinates:
+      lat: 31.2
+      lon: 29.9
+    techs:
+      CCGT:
+        constraints:
+          energy_cap_equals: 1740000
+      Demand_power:
+        constraints:
+          resource: file=Demand.csv:EGY_AL
+      GST:
+        constraints:
+          energy_cap_equals: 1832500
+  EGY_CN:
+    coordinates:
+      lat: 30.0
+      lon: 32.6
+    techs:
+      Bioenergy:
+        constraints:
+          energy_cap_equals: 45000
+      CCGT:
+        constraints:
+          energy_cap_equals: 8000000
+      Demand_power:
+        constraints:
+          resource: file=Demand.csv:EGY_CN
+      GST:
+        constraints:
+          energy_cap_equals: 7400000
+      Hydro_Large:
+        constraints:
+          energy_cap_equals: 2842000
+          resource: file=Hydro.csv:Hydro_CN
+          resource_unit: energy_per_cap
+      OCGT:
+        constraints:
+          energy_cap_equals: 2500000
+      OCGT_Oil:
+        constraints:
+          energy_cap_equals: 769000
+      PHES:
+        constraints:
+          energy_cap_equals: 0
+          storage_cap_equals: 0
+      PV_added:
+        constraints:
+          energy_cap_equals: 0.0
+          resource: file=Solar.csv:EGY_CN
+          resource_unit: energy_per_cap
+      Wind1:
+        constraints:
+          energy_cap_equals: 140220
+          resource: file=Wind.csv:CN_Wind_Small
+          resource_unit: energy_per_cap
+      Wind2:
+        constraints:
+          energy_cap_equals: 1499100
+          resource: file=Wind.csv:CN_Wind_Large
+          resource_unit: energy_per_cap
+      Wind_added:
+        constraints:
+          energy_cap_equals: 10000000.0
+          resource: file=Wind.csv:CN_Wind_Large_new
+          resource_unit: energy_per_cap
+  EGY_CR:
+    coordinates:
+      lat: 30.0
+      lon: 31.2
+    techs:
+      Bioenergy:
+        constraints:
+          energy_cap_equals: 16000
+      CCGT:
+        constraints:
+          energy_cap_equals: 12999000
+      Demand_power:
+        constraints:
+          resource: file=Demand.csv:EGY_CR
+      GST:
+        constraints:
+          energy_cap_equals: 4014000
+      Hydro_Large:
+        constraints:
+          energy_cap_equals: 31735
+          resource: file=Hydro.csv:Hydro_CR
+          resource_unit: energy_per_cap
+      ISCC:
+        constraints:
+          energy_cap_equals: 140000
+      OCGT:
+        constraints:
+          energy_cap_equals: 1005000
+      OCGT_Oil:
+        constraints:
+          energy_cap_equals: 150000
+  EGY_ME:
+    coordinates:
+      lat: 27.8
+      lon: 30.7
+    techs:
+      Bioenergy:
+        constraints:
+          energy_cap_equals: 6000
+      CCGT:
+        constraints:
+          energy_cap_equals: 300000
+      Demand_power:
+        constraints:
+          resource: file=Demand.csv:EGY_ME
+  EGY_NE:
+    coordinates:
+      lat: 31.0
+      lon: 31.3
+    techs:
+      CCGT:
+        constraints:
+          energy_cap_equals: 12178000
+      Demand_power:
+        constraints:
+          resource: file=Demand.csv:EGY_NE
+      GST:
+        constraints:
+          energy_cap_equals: 7260000
+      OCGT:
+        constraints:
+          energy_cap_equals: 1325000
+  EGY_UE:
+    coordinates:
+      lat: 25.4
+      lon: 30.6
+    techs:
+      Demand_power:
+        constraints:
+          resource: file=Demand.csv:EGY_UE
+      PV:
+        constraints:
+          energy_cap_equals: 1826000
+          resource: file=Solar.csv:EGY_UE
+          resource_unit: energy_per_cap
