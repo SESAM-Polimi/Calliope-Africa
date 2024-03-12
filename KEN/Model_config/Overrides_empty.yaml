@@ -1,0 +1,186 @@
+
+
+scenarios:
+
+    Energy: ["Energy_constraint"]
+
+overrides:
+        
+    Energy_constraint:
+        group_constraints:
+
+
+######################## MINIMUM PRODUCITON CONSTRAINTS ############################################
+
+
+            Diesel_Engine_Energy_min:
+                techs: ['Diesel_Engine']
+                carrier_prod_min: 
+                    power: 0
+
+
+            HFO_Energy_min:
+                techs: ['HFO']
+                carrier_prod_min: 
+                    power: 0
+
+
+            OCGT_Oil_Energy_min:
+                techs: ['OCGT_Oil']
+                carrier_prod_min: 
+                    power: 0                    
+
+            Hydro_Large1_Energy_min:
+                techs: ['Hydro_Large1']
+                carrier_prod_min: 
+                    power: 0
+
+            Hydro_Large2_Energy_min:
+                techs: ['Hydro_Large2']
+                carrier_prod_min: 
+                    power: 0
+                    
+            Hydro_Large3_Energy_min:
+                techs: ['Hydro_Large3']
+                carrier_prod_min: 
+                    power: 0
+
+            Hydro_Large4_Energy_min:
+                techs: ['Hydro_Large4']
+                carrier_prod_min: 
+                    power: 0
+  
+            Hydro_Small_Energy_min:
+                techs: ['Hydro_Small']
+                carrier_prod_min: 
+                    power: 0
+                                        
+            PV_Energy_min:
+                techs: ['PV']
+                carrier_prod_min: 
+                    power: 0
+                    
+            PV_added_Energy_min:
+                techs: ['PV_added']
+                carrier_prod_min: 
+                    power: 0
+
+            Wind1_Energy_min:
+                techs: ['Wind1']
+                carrier_prod_min: 
+                    power: 0
+                    
+            Wind2_Energy_min:
+                techs: ['Wind2']
+                carrier_prod_min: 
+                    power: 0           
+                             
+            Wind3_Energy_min:
+                techs: ['Wind3']
+                carrier_prod_min: 
+                    power: 0                    
+
+
+            Wind_added_Energy_min:
+                techs: ['Wind_added']
+                carrier_prod_min: 
+                    power: 0
+
+            Bioenergy_Energy_min:
+                techs: ['Bioenergy']
+                carrier_prod_min: 
+                    power: 0
+  
+            Geothermal_Energy_min:
+                techs: ['Geothermal']
+                carrier_prod_min: 
+                     power: 0          
+                              
+#################  MAXIMUM PRODUCTION CONSTRAINTS ##########################################
+
+            Diesel_Engine_Energy_max:
+                techs: ['Diesel_Engine']
+                carrier_prod_max: 
+                    power: 0
+
+
+            HFO_Energy_max:
+                techs: ['HFO']
+                carrier_prod_max: 
+                    power: 0
+
+
+            OCGT_Oil_Energy_max:
+                techs: ['OCGT_Oil']
+                carrier_prod_max: 
+                    power: 0                    
+
+            Hydro_Large1_Energy_max:
+                techs: ['Hydro_Large1']
+                carrier_prod_max: 
+                    power: 0
+
+            Hydro_Large2_Energy_max:
+                techs: ['Hydro_Large2']
+                carrier_prod_max: 
+                    power: 0
+                    
+            Hydro_Large3_Energy_max:
+                techs: ['Hydro_Large3']
+                carrier_prod_max: 
+                    power: 0
+
+            Hydro_Large4_Energy_max:
+                techs: ['Hydro_Large4']
+                carrier_prod_max: 
+                    power: 0
+  
+            Hydro_Small_Energy_max:
+                techs: ['Hydro_Small']
+                carrier_prod_max: 
+                    power: 0
+                                        
+            PV_Energy_max:
+                techs: ['PV']
+                carrier_prod_max: 
+                    power: 0
+                    
+            PV_added_Energy_max:
+                techs: ['PV_added']
+                carrier_prod_max: 
+                    power: 0
+
+            Wind1_Energy_max:
+                techs: ['Wind1']
+                carrier_prod_max: 
+                    power: 0
+                    
+            Wind2_Energy_max:
+                techs: ['Wind2']
+                carrier_prod_max: 
+                    power: 0           
+                             
+            Wind3_Energy_max:
+                techs: ['Wind3']
+                carrier_prod_max: 
+                    power: 0                    
+
+
+            Wind_added_Energy_max:
+                techs: ['Wind_added']
+                carrier_prod_max: 
+                    power: 0
+
+            Bioenergy_Energy_max:
+                techs: ['Bioenergy']
+                carrier_prod_max: 
+                    power: 0
+  
+            Geothermal_Energy_max:
+                techs: ['Geothermal']
+                carrier_prod_max: 
+                     power: 0        
+        
+        
+        
+        
