@@ -95,6 +95,24 @@ techs:
                 om_prod: 0.0076                              # https://doi.org/10.5281/zenodo.5242926 
 
 
+############################### High Voltage 500 kV Grid ############################### 
+
+    500_kV:
+        essentials:
+            name: 'High Voltage Grid 400 kV'
+            parent: transmission
+            carrier: power
+            color: '#000000'
+        constraints:
+            lifetime: 40                                     # https://portal.ct.gov/lib/csc/lifecycle-2001.pdf
+        costs:
+            monetary:
+                om_prod: 0.0076                              # https://doi.org/10.5281/zenodo.5242926 
+
+
+
+
+
 ############################### High Voltage 500-533 kV DC Grid ############################### 
 
     500-533_kV_DC:
