@@ -12,7 +12,6 @@ import:
     - 'NAPP/Transmission_links_NAPP.yaml'
     - 'SAPP/Transmission_links_SAPP.yaml'
     - 'WAPP/Transmission_links_WAPP.yaml'
-    - 'overrides.yaml'
     
 
 model:
@@ -22,7 +21,7 @@ model:
 
     timeseries_data_path: 'Timeseries'
     timeseries_dateformat: '%d/%m/%Y %H:%M'
-    subset_time: ['2019-01-01', '2019-12-31']     
+    subset_time: ['2019-01-01', '2019-01-01']     
    
 
 run:
