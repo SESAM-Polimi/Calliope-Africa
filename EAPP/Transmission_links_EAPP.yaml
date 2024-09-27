@@ -14,7 +14,7 @@ links:
                     energy_eff_per_distance: 0.988              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
                 distance: 28.3                                  # https://www.afdb.org/en/documents/multinational-ethiopia-djibouti-second-power-interconnection-project-project-appraisal-report
 
-    EGY,SDN:
+    EGY_UE,SDN:
         techs:
             220-275_kV:
                 constraints:

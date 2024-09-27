@@ -13,5 +13,5 @@ model.run()
 
 
 #%%
-model.to_csv('', dropna=True) 
-model.to_netcdf('')
+model.to_csv('results', dropna=True) 
+model.to_netcdf('results.nc')

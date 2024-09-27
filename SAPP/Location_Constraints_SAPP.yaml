@@ -414,74 +414,141 @@ locations:
                     
 #################### South Africa ####################
 
-    ZAF:
-
+    SA_CPTL:
         coordinates:
-            lat: -30.559482
-            lon: 22.937506
+            lat: -26.2321            
+            lon: 28.0737      
+        
+        # Available Technologies
+        techs:
+                     
+            Coal_pp:
+                constraints:
+                     energy_cap_equals: 927000  
+                       
+            Demand_power:
+                constraints:
+                    resource: file=Demand_ZA.csv:CPTL
+                    
+                    
+################################### WSTR ##################################                                                                                                   
+    SA_WSTR:
+    
+        coordinates:
+            lat: -29.3871           
+            lon: 21.0918 
+         
+        techs:
+                      
+            Coal_pp:
+                constraints:
+                    energy_cap_equals: 3778000
+                    
+            PV1:
+                constraints:
+                    energy_cap_equals: 1654960 
+                    resource: file=Solar_ZA.csv:SA_WSTR1
+                    resource_unit: energy_per_cap          # Resource Unit: [kW/kW]
+
+            CSP1:
+                constraints:
+                    energy_cap_equals: 500000 
+                    resource: file=Solar_ZA.csv:SA_WSTR1 
+                    resource_unit: energy_per_cap          # Resource Unit: [kW/kW]
+                    
+            Wind1:
+                constraints:
+                    energy_cap_equals: 1046600 
+                    resource: file=Wind_ZA.csv:SA_WSTR
+                    resource_unit: energy_per_cap          # Resource Unit: [kW/kW]
+
+            Hydro_Large1:
+                constraints:
+                    energy_cap_equals: 324000
+                    resource: file=Hydro_ZA.csv:Hydro_Large_WSTR
+                    resource_unit: energy_per_cap          # Resource Unit: [kW/kW]
+
+            Hydro_Small1:
+                constraints:
+                    energy_cap_equals: 10000
+                    resource: file=Hydro_ZA.csv:Hydro_Small_WSTR
+                    resource_unit: energy_per_cap          # Resource Unit: [kW/kW]
+
+
+            Demand_power:
+                constraints:
+                    resource: file=Demand_ZA.csv:WSTR
+                    
+################################### NRTN ##################################                                                                                                                                                      
+    SA_NRTN:
+ 
+        coordinates:
+            lat: -24.0186            
+            lon: 29.4361          
 
         techs:
-
-            Coal_pp:           
-                constraints:
-                    energy_cap_equals: 37593000     
-
-            OCGT_pp:                 
-                constraints:
-                    energy_cap_equals: 1005000    
-
-            OCGT_Diesel_pp:                    
-                constraints:
-                    energy_cap_equals: 2067000       
-
-            OCGT_Oil_pp:              
-                constraints:
-                    energy_cap_equals: 342000     
-
-            Nuclear:              
-                constraints:
-                    energy_cap_equals: 1940000         
-
-            Hydro_Large1:                                    # Vanderkloof (1977), Dam
-                constraints:                                 
-                    energy_cap_equals: 240000                # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
-                    resource: file=Hydro_SAPP.csv:ZAF1       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
-                    resource_unit: energy_per_cap
-
-            Hydro_Large2:                                    # Kruisvallei (2010), Ror
-                constraints:                                  
-                    energy_cap_equals: 42000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
-                    resource: file=Hydro_SAPP.csv:ZAF3       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
-                    resource_unit: energy_per_cap
-
-            Hydro_Large3:                                    # Stortemelk (2010), Ror
-                constraints:                                 
-                    energy_cap_equals: 42000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
-                    resource: file=Hydro_SAPP.csv:ZAF4       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
-                    resource_unit: energy_per_cap
         
-            Hydro_Large4:                                    # Gariep (1971), Dam
-                constraints:                                 
-                    energy_cap_equals: 360000                # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
-                    resource: file=Hydro_SAPP.csv:ZAF6       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
-                    resource_unit: energy_per_cap
+            Coal_pp:
+                constraints:
+                    energy_cap_equals: 32888000
 
-            Hydro_Large5:                                    # Collywobbles (2010), Dam
-                constraints:                                 
-                    energy_cap_equals: 42000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
-                    resource: file=Hydro_SAPP.csv:ZAF7       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
-                    resource_unit: energy_per_cap
-    
-            Hydro_Small1:                                    # Ncora (1972), Ror
-                constraints:                                 
-                    energy_cap_equals: 2100                  # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
-                    resource: file=Hydro_SAPP.csv:ZAF2       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
-                    resource_unit: energy_per_cap
+            PV1:
+                constraints:
+                    energy_cap_equals: 392830 
+                    resource: file=Solar_ZA.csv:SA_NRTN
+                    resource_unit: energy_per_cap          # Resource Unit: [kW/kW]
 
-            Hydro_Small2:                                    # Neusberg HEP (2015), Ror
-                constraints:                                 
-                    energy_cap_equals: 10000                 # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
-                    resource: file=Hydro_SAPP.csv:ZAF5       # https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower
+            Bioenergy:
+                constraints:
+                    energy_cap_equals: 44000
+                    
+            Demand_power:
+                constraints:
+                    resource: file=Demand_ZA.csv:NRTN
+
+################################### CSTR ##################################                                                                                                                                                      
+    SA_CSTR:
+ 
+        coordinates:
+            lat: -33.0854           
+            lon: 24.0965          
+
+        techs:
+            OCGT_pp:
+                constraints:
+                    energy_cap_equals: 3414000
+
+            Nuclear:
+                constraints:
+                    energy_cap_equals: 1940000
+
+            PV1:
+                constraints:
+                    energy_cap_equals: 203420 
+                    resource: file=Solar_ZA.csv:SA_CSTR
+                    resource_unit: energy_per_cap          # Resource Unit: [kW/kW]
+                    
+            Wind1:
+                constraints:
+                    energy_cap_equals: 1969900 
+                    resource: file=Wind_ZA.csv:SA_CSTR1
+                    resource_unit: energy_per_cap          # Resource Unit: [kW/kW]
+                                        
+            Bioenergy:
+                constraints:
+                    energy_cap_equals: 23500
+
+            Hydro_Large1:
+                constraints:
+                    energy_cap_equals: 402000
+                    resource: file=Hydro_ZA.csv:Hydro_Large_CSTR
+                    resource_unit: energy_per_cap          # Resource Unit: [kW/kW]
+
+
+            Hydro_Small1:
+                constraints:
+                    energy_cap_equals: 2100
+                    resource: file=Hydro_ZA.csv:Hydro_Small_CSTR
                     resource_unit: energy_per_cap
 
             Hydro_Pumped1:                                   # Drakensberg (1981)
@@ -504,531 +571,10 @@ locations:
                     energy_cap_equals: 160000                # https://www.capetown.gov.za/general/steenbras-dams#Heading2
                     storage_cap_equals: 23733979.44          # Calculated from the volume of the basin and hydraulic head, assuming water density to be equal to 997 kg/m^3, https://www.capetown.gov.za/Family%20and%20home/residential-utility-services/residential-water-and-sanitation-services/this-weeks-dam-levels and http://globalenergyobservatory.org/geoid/42532         
 
-            PV1:                                             # Adams (2017)
-                constraints:
-                    energy_cap_equals: 80000                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF1              
-                    resource_unit: energy_per_cap
 
-            PV2:                                             # Aries (2014)
-                constraints:
-                    energy_cap_equals: 9650                  # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF2              
-                    resource_unit: energy_per_cap
-
-            PV3:                                             # Aggeneys (2020)
-                constraints:
-                    energy_cap_equals: 40000                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF3              
-                    resource_unit: energy_per_cap
-
-            PV4:                                             # Aurora (2014)
-                constraints:
-                    energy_cap_equals: 9000                  # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF4              
-                    resource_unit: energy_per_cap
-
-            PV5:                                             # Bellatrix (-)
-                constraints:
-                    energy_cap_equals: 5000                  # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF5              
-                    resource_unit: energy_per_cap
-
-            PV6:                                             # Bokamoso (2020)
-                constraints:
-                    energy_cap_equals: 67900                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF6             
-                    resource_unit: energy_per_cap
-
-            PV7:                                             # Boshoff (2014)
-                constraints:
-                    energy_cap_equals: 60000                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF7             
-                    resource_unit: energy_per_cap
-
-            PV8:                                             # De Aar (2014)
-                constraints:
-                    energy_cap_equals: 45600                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS 
-                    resource: file=Solar_SAPP.csv:ZAF8              
-                    resource_unit: energy_per_cap
-
-            PV9:                                             # De Wildt (2021)
-                constraints:
-                    energy_cap_equals: 50000                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS 
-                    resource: file=Solar_SAPP.csv:ZAF9              
-                    resource_unit: energy_per_cap
-
-            PV10:                                            # Dreunberg (2014)
-                constraints:
-                    energy_cap_equals: 69600                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS 
-                    resource: file=Solar_SAPP.csv:ZAF10              
-                    resource_unit: energy_per_cap
-
-            PV11:                                            # Droogfontein I (2014)
-                constraints:
-                    energy_cap_equals: 45600                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS 
-                    resource: file=Solar_SAPP.csv:ZAF11              
-                    resource_unit: energy_per_cap
-
-            PV12:                                            # Droogfontein II (2020)
-                constraints:
-                    energy_cap_equals: 75000                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS 
-                    resource: file=Solar_SAPP.csv:ZAF12            
-                    resource_unit: energy_per_cap
-
-            PV13:                                            # Dyason Klip (2021)
-                constraints:
-                    energy_cap_equals: 150000                # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF13              
-                    resource_unit: energy_per_cap              
-
-            PV14:                                            # Greefspan 1 (2014)
-                constraints:
-                    energy_cap_equals: 9900                  # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF14              
-                    resource_unit: energy_per_cap
-
-            PV15:                                            # Greefspan 2 (2020)
-                constraints:
-                    energy_cap_equals: 55000                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF15              
-                    resource_unit: energy_per_cap
-
-            PV16:                                            # Herbert (2014)
-                constraints:
-                    energy_cap_equals: 19980                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF16              
-                    resource_unit: energy_per_cap
-
-            PV17:                                            # Jasper (2014)
-                constraints:
-                    energy_cap_equals: 75000                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF17             
-                    resource_unit: energy_per_cap
-
-            PV18:                                            # Kalkbult (2013)
-                constraints:
-                    energy_cap_equals: 72500                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF18             
-                    resource_unit: energy_per_cap
-
-            PV19:                                            # Kathu (2014)
-                constraints:
-                    energy_cap_equals: 75000                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF19              
-                    resource_unit: energy_per_cap
-
-            PV20:                                            # Konkoonsies II (2020)
-                constraints:
-                    energy_cap_equals: 75000                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF20              
-                    resource_unit: energy_per_cap
-
-            PV21:                                            # Konkoonsies (2014)
-                constraints:
-                    energy_cap_equals: 9650                  # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF21              
-                    resource_unit: energy_per_cap
-
-            PV22:                                            # Lesedi (2014)
-                constraints:
-                    energy_cap_equals: 64000                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF22              
-                    resource_unit: energy_per_cap
-
-            PV23:                                            # Letsatsi (2014)
-                constraints:
-                    energy_cap_equals: 64000                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF23            
-                    resource_unit: energy_per_cap
-
-            PV24:                                            # Linde (2014)
-                constraints:
-                    energy_cap_equals: 36800                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF24              
-                    resource_unit: energy_per_cap
-
-            PV25:                                            # Mulilo De Aar (2017)
-                constraints:
-                    energy_cap_equals: 10000                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF25              
-                    resource_unit: energy_per_cap
-
-            PV26:                                            # Mulilo Sonnedix Prieska (2016)
-                constraints:
-                    energy_cap_equals: 75000                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF26              
-                    resource_unit: energy_per_cap
-
-            PV27:                                            # Mulilo Prieska 1 (2016)
-                constraints:
-                    energy_cap_equals: 75000                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF27              
-                    resource_unit: energy_per_cap
-
-            PV28:                                            # Mulilo Prieska 2 (2013)
-
-                constraints:
-                    energy_cap_equals: 19120                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF28              
-                    resource_unit: energy_per_cap
-
-            PV29:                                            # Paleisheuwel, Electra Capital (2016)
-
-                constraints:
-                    energy_cap_equals: 75000                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF29              
-                    resource_unit: energy_per_cap
-
-            PV30:                                            # Pulida (2017)
-                constraints:
-                    energy_cap_equals: 75000                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF30             
-                    resource_unit: energy_per_cap
-
-            PV31:                                            # RustMo1 (2013)
-                constraints:
-                    energy_cap_equals: 6930                  # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF31            
-                    resource_unit: energy_per_cap
-
-            PV32:                                            # Sirius (2020)
-                constraints:
-                    energy_cap_equals: 75000                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF32              
-                    resource_unit: energy_per_cap
-
-            PV33:                                            # Sishen (2014)
-                constraints:
-                    energy_cap_equals: 74000                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF33              
-                    resource_unit: energy_per_cap
-
-            PV34:                                            # SlimSun Swartland (2014)
-                constraints:
-                    energy_cap_equals: 5000                  # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF34              
-                    resource_unit: energy_per_cap
-
-            PV35:                                            # Solar Capital De Aar (2014)
-                constraints:
-                    energy_cap_equals: 85260                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF35              
-                    resource_unit: energy_per_cap
-
-            PV36:                                            # Solar Capital De Aar 3 (2016)
-                constraints:
-                    energy_cap_equals: 90000                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF36            
-                    resource_unit: energy_per_cap
-
-            PV37:                                            # Soutpan (2014)
-                constraints:
-                    energy_cap_equals: 28000                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF37              
-                    resource_unit: energy_per_cap
-
-            PV38:                                            # Tom Burke (2016)
-                constraints:
-                    energy_cap_equals: 60000                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF38              
-                    resource_unit: energy_per_cap
-
-            PV39:                                            # Touwsrivier (2014)
-                constraints:
-                    energy_cap_equals: 36000                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF39              
-                    resource_unit: energy_per_cap
-
-            PV40:                                            # Upington (2014)
-                constraints:
-                    energy_cap_equals: 8900                  # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF40              
-                    resource_unit: energy_per_cap
-
-            PV41:                                            # Vredendal (2014)
-                constraints:
-                    energy_cap_equals: 8820                  # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF41              
-                    resource_unit: energy_per_cap
-
-            PV42:                                            # Waterloo (2020)
-                constraints:
-                    energy_cap_equals: 75000                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF42              
-                    resource_unit: energy_per_cap
-
-            PV43:                                            # Witkop (2014)
-                constraints:
-                    energy_cap_equals: 30000                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF43            
-                    resource_unit: energy_per_cap
-
-            PV44:                                            # Zeerust (2021)
-                constraints:
-                    energy_cap_equals: 75000                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    resource: file=Solar_SAPP.csv:ZAF44             
-                    resource_unit: energy_per_cap
-
-            CSP1:                                            # Bokpoort (2016)
-                constraints:
-                    energy_cap_equals: 50000                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    storage_cap_equals: 465000               # https://acwapower.com/en/projects/bokpoort-csp-ipp/
-                    resource_area_equals: 588600             # https://solarpaces.nrel.gov/project/bokpoort
-                    resource: file=Solar_SAPP.csv:ZAF45             
-                    resource_unit: energy_per_area
-
-            CSP2:                                            # Ilanga (2018)
-                constraints:
-                    energy_cap_equals: 100000                # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    storage_cap_equals: 450000               # https://solarpaces.nrel.gov/project/ilanga-i
-                    resource_area_equals: 869800             # https://solarpaces.nrel.gov/project/ilanga-i
-                    resource: file=Solar_SAPP.csv:ZAF46             
-                    resource_unit: energy_per_area
-
-            CSP3:                                            # Kathu (2018)
-                constraints:
-                    energy_cap_equals: 100000                # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    storage_cap_equals: 450000               # https://www.kathusolarpark.co.za/
-                    resource_area_equals: 1047000            # https://www.energy.sener/es/proyectos/planta-termosolar-ccp-de-kathu
-                    resource: file=Solar_SAPP.csv:ZAF47            
-                    resource_unit: energy_per_area 
-
-            CSP4:                                            # KaXu (2015)
-                constraints:
-                    energy_cap_equals: 100000                # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    storage_cap_equals: 250000               # https://solarpaces.nrel.gov/project/kaxu-solar-one
-                    resource_area_equals: 800000             # https://solarpaces.nrel.gov/project/kaxu-solar-one
-                    resource: file=Solar_SAPP.csv:ZAF48            
-                    resource_unit: energy_per_area
-
-            CSP5:                                            # Khi (2016)
-                constraints:
-                    energy_cap_equals: 50000                 # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    storage_cap_equals: 100000               # https://solarpaces.nrel.gov/project/khi-solar-one
-                    resource_area_equals: 576800             # https://solarpaces.nrel.gov/project/khi-solar-one
-                    resource: file=Solar_SAPP.csv:ZAF49             
-                    resource_unit: energy_per_area   
-
-            CSP6:                                            # Xina One (2018)
-                constraints:
-                    energy_cap_equals: 100000                # http://redis.energy.gov.za/power-producers/ and  https://www.wiki-solar.org/map/continent/index.html?Southern_Africa?0?f-fS
-                    storage_cap_equals: 550000               # https://solarpaces.nrel.gov/project/xina-solar-one
-                    resource_area_equals: 850000             # https://solarpaces.nrel.gov/project/xina-solar-one
-                    resource: file=Solar_SAPP.csv:ZAF50           
-                    resource_unit: energy_per_area  
-
-            Wind1:                                           # Amakhala Emoyeni (2016)
-                constraints:
-                    energy_cap_equals: 134400                # https://www.thewindpower.net/windfarms_list_en.php?country=ZA                 
-                    resource: file=Wind_SAPP.csv:ZAF1              
-                    resource_unit: energy_per_cap
-
-            Wind2:                                           # Chaba (2015)
-                constraints:
-                    energy_cap_equals: 21525                 # https://www.thewindpower.net/windfarms_list_en.php?country=ZA                  
-                    resource: file=Wind_SAPP.csv:ZAF2              
-                    resource_unit: energy_per_cap
-
-            Wind3:                                           # Coega (2010)
-                constraints:
-                    energy_cap_equals: 1800                  # https://www.thewindpower.net/windfarms_list_en.php?country=ZA                 
-                    resource: file=Wind_SAPP.csv:ZAF3              
-                    resource_unit: energy_per_cap
-
-            Wind4:                                           # Cookhouse (2014)
-                constraints:
-                    energy_cap_equals: 138600                # https://www.thewindpower.net/windfarms_list_en.php?country=ZA                 
-                    resource: file=Wind_SAPP.csv:ZAF4              
-                    resource_unit: energy_per_cap
-
-            Wind5:                                           # Darling 1 (2008)
-                constraints:
-                    energy_cap_equals: 13000                 # https://www.thewindpower.net/windfarms_list_en.php?country=ZA            
-                    resource: file=Wind_SAPP.csv:ZAF5              
-                    resource_unit: energy_per_cap
-
-            Wind6:                                           # Darling 2 (2008)
-                constraints:
-                    energy_cap_equals: 250                   # https://www.thewindpower.net/windfarms_list_en.php?country=ZA              
-                    resource: file=Wind_SAPP.csv:ZAF6              
-                    resource_unit: energy_per_cap
-
-            Wind7:                                           # Dassieklip (2014)
-                constraints:
-                    energy_cap_equals: 27000                 # https://www.thewindpower.net/windfarms_list_en.php?country=ZA                 
-                    resource: file=Wind_SAPP.csv:ZAF7              
-                    resource_unit: energy_per_cap
-
-            Wind8:                                           # Dorper (2015)
-                constraints:
-                    energy_cap_equals: 100000                # https://www.thewindpower.net/windfarms_list_en.php?country=ZA                
-                    resource: file=Wind_SAPP.csv:ZAF8              
-                    resource_unit: energy_per_cap
-
-            Wind9:                                           # Excelsior (2020)
-                constraints:
-                    energy_cap_equals: 32500                 # https://www.thewindpower.net/windfarms_list_en.php?country=ZA                
-                    resource: file=Wind_SAPP.csv:ZAF9              
-                    resource_unit: energy_per_cap
-
-            Wind10:                                          # Garob (2021)
-                constraints:
-                    energy_cap_equals: 144900                # https://www.thewindpower.net/windfarms_list_en.php?country=ZA               
-                    resource: file=Wind_SAPP.csv:ZAF10              
-                    resource_unit: energy_per_cap
-
-            Wind11:                                          # Gibson Bay (2017)
-                constraints:
-                    energy_cap_equals: 111000                # https://www.thewindpower.net/windfarms_list_en.php?country=ZA              
-                    resource: file=Wind_SAPP.csv:ZAF11              
-                    resource_unit: energy_per_cap
-
-            Wind12:                                          # Golden Valley (2020)
-                constraints:
-                    energy_cap_equals: 120000                # https://www.thewindpower.net/windfarms_list_en.php?country=ZA                 
-                    resource: file=Wind_SAPP.csv:ZAF12              
-                    resource_unit: energy_per_cap
-
-            Wind13:                                          # Gouda (2015)
-                constraints:                  
-                    energy_cap_equals: 138000                # https://www.thewindpower.net/windfarms_list_en.php?country=ZA                                    
-                    resource: file=Wind_SAPP.csv:ZAF13              
-                    resource_unit: energy_per_cap
-
-            Wind14:                                          # Grassridge Wind Farm (2015)
-                constraints:
-                    energy_cap_equals: 60000                 # https://www.thewindpower.net/windfarms_list_en.php?country=ZA                  
-                    resource: file=Wind_SAPP.csv:ZAF14              
-                    resource_unit: energy_per_cap
-
-            Wind15:                                          # Hopefield (2014)
-                constraints:
-                    energy_cap_equals: 66600                 # https://www.thewindpower.net/windfarms_list_en.php?country=ZA                
-                    resource: file=Wind_SAPP.csv:ZAF15              
-                    resource_unit: energy_per_cap
-
-            Wind16:                                          # Jeffrey's Bay (2014)
-                constraints:
-                    energy_cap_equals: 138000                # https://www.thewindpower.net/windfarms_list_en.php?country=ZA                
-                    resource: file=Wind_SAPP.csv:ZAF16              
-                    resource_unit: energy_per_cap
-
-            Wind17:                                          # Karoo, Nobelsfontein (2014)
-                constraints:
-                    energy_cap_equals: 73800                 # https://www.thewindpower.net/windfarms_list_en.php?country=ZA                 
-                    resource: file=Wind_SAPP.csv:ZAF17              
-                    resource_unit: energy_per_cap
-
-            Wind18:                                          # Kangnas (2020)
-                constraints:
-                    energy_cap_equals: 140300                # https://www.thewindpower.net/windfarms_list_en.php?country=ZA                 
-                    resource: file=Wind_SAPP.csv:ZAF18              
-                    resource_unit: energy_per_cap
-
-            Wind19:                                          # Khobab (2017)
-                constraints:
-                    energy_cap_equals: 140300                # https://www.thewindpower.net/windfarms_list_en.php?country=ZA                 
-                    resource: file=Wind_SAPP.csv:ZAF19              
-                    resource_unit: energy_per_cap
-
-            Wind20:                                          # Loeriesfontein 2 (2017)
-                constraints:
-                    energy_cap_equals: 140300                # https://www.thewindpower.net/windfarms_list_en.php?country=ZA                  
-                    resource: file=Wind_SAPP.csv:ZAF20              
-                    resource_unit: energy_per_cap
-
-            Wind21:                                          # Longyuan Mulilo De Aar Maanhaarberg (2017)
-                constraints:
-                    energy_cap_equals: 94500                 # https://www.thewindpower.net/windfarms_list_en.php?country=ZA                 
-                    resource: file=Wind_SAPP.csv:ZAF21              
-                    resource_unit: energy_per_cap
-
-            Wind22:                                          # Longyuan Mulilo Green Energy De Aar 2 North (2017)
-                constraints:
-                    energy_cap_equals: 144000                # https://www.thewindpower.net/windfarms_list_en.php?country=ZA                 
-                    resource: file=Wind_SAPP.csv:ZAF22              
-                    resource_unit: energy_per_cap
-
-            Wind23:                                          # Nojoli (2016)
-                constraints:
-                    energy_cap_equals: 88000                 # https://www.thewindpower.net/windfarms_list_en.php?country=ZA               
-                    resource: file=Wind_SAPP.csv:ZAF23              
-                    resource_unit: energy_per_cap
-
-            Wind24:                                          # Nouport (2016)
-                constraints:
-                    energy_cap_equals: 80500                 # https://www.thewindpower.net/windfarms_list_en.php?country=ZA               
-                    resource: file=Wind_SAPP.csv:ZAF24              
-                    resource_unit: energy_per_cap
-
-            Wind25:                                          # Nxuba (2020)
-                constraints:
-                    energy_cap_equals: 148000                # https://www.thewindpower.net/windfarms_list_en.php?country=ZA                  
-                    resource: file=Wind_SAPP.csv:ZAF25              
-                    resource_unit: energy_per_cap
-
-            Wind26:                                          # Oyster Bay (2021)
-                constraints:
-                    energy_cap_equals: 147600                # https://www.thewindpower.net/windfarms_list_en.php?country=ZA                 
-                    resource: file=Wind_SAPP.csv:ZAF26              
-                    resource_unit: energy_per_cap
-
-            Wind27:                                          # Perdekraal East (2020)
-                constraints:
-                    energy_cap_equals: 110400                # https://www.thewindpower.net/windfarms_list_en.php?country=ZA                
-                    resource: file=Wind_SAPP.csv:ZAF27              
-                    resource_unit: energy_per_cap
-
-            Wind28:                                          # Red Cap (2015)
-                constraints:
-                    energy_cap_equals: 80000                 # https://www.thewindpower.net/windfarms_list_en.php?country=ZA                
-                    resource: file=Wind_SAPP.csv:ZAF28              
-                    resource_unit: energy_per_cap
-
-            Wind29:                                          # Sere (2015)
-                constraints:
-                    energy_cap_equals: 105800                # https://www.thewindpower.net/windfarms_list_en.php?country=ZA                  
-                    resource: file=Wind_SAPP.csv:ZAF29              
-                    resource_unit: energy_per_cap
-
-            Wind30:                                          # Tsitsikamma Community (2016)
-                constraints:
-                    energy_cap_equals: 95325                 # https://www.thewindpower.net/windfarms_list_en.php?country=ZA                
-                    resource: file=Wind_SAPP.csv:ZAF30              
-                    resource_unit: energy_per_cap
-
-            Wind31:                                          # Van Stadens (2014)
-                constraints:
-                    energy_cap_equals: 27000                 # https://www.thewindpower.net/windfarms_list_en.php?country=ZA               
-                    resource: file=Wind_SAPP.csv:ZAF31              
-                    resource_unit: energy_per_cap
-
-            Wind32:                                          # Waainek (2015)
-                constraints:
-                    energy_cap_equals: 24600                 # https://www.thewindpower.net/windfarms_list_en.php?country=ZA                
-                    resource: file=Wind_SAPP.csv:ZAF32              
-                    resource_unit: energy_per_cap
-
-            Wind33:                                          # Wesley-Ciskei (2021)
-                constraints:
-                    energy_cap_equals: 34500                 # https://www.thewindpower.net/windfarms_list_en.php?country=ZA                 
-                    resource: file=Wind_SAPP.csv:ZAF33              
-                    resource_unit: energy_per_cap
-
-            Wind34:                                          # West Coast 1 (2015)
-                constraints:
-                    energy_cap_equals: 94000                 # https://www.thewindpower.net/windfarms_list_en.php?country=ZA                 
-                    resource: file=Wind_SAPP.csv:ZAF34              
-                    resource_unit: energy_per_cap     
-
-            Bioenergy:           
-                constraints:                                 
-                    energy_cap_equals: 67500    
-                     
             Demand_power:
                 constraints:
-                    resource: file=Demand_SAPP.csv:ZAF        # https://doi.org/10.5281/zenodo.5242926
+                    resource: file=Demand_ZA.csv:CSTR
 
 
 #################### Zambia ####################

@@ -127,6 +127,19 @@ techs:
             monetary:
                 om_prod: 0.0076                              # https://doi.org/10.5281/zenodo.5242926 
 
+############################### High Voltage 765 kV DC Grid ############################### 
+
+    765_kV_DC:
+        essentials:
+            name: 'High Voltage Grid 500-533 kV DC'
+            parent: transmission
+            carrier: power
+            color: '#C90076'
+        constraints:
+            lifetime: 40                                     # https://portal.ct.gov/lib/csc/lifecycle-2001.pdf
+        costs:
+            monetary:
+                om_prod: 0.0076                              # https://doi.org/10.5281/zenodo.5242926 
 
 ############################### New Transmission line AC ############################### 
 

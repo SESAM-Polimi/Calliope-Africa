@@ -6,7 +6,7 @@
                                   
 links:
 
-    BWA,ZAF:
+    BWA,SA_NRTN:
         techs:
             132-161_kV:
                 constraints:
@@ -42,7 +42,7 @@ links:
                     energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
                 distance: 15.5                                  # Calculated using Google Earth Pro, knowing the approximate position of the substations. Approximated.
 
-    SWZ,ZAF:
+    SWZ,SA_NRTN:
         techs:  
             132-161_kV:
                 constraints:
@@ -56,7 +56,7 @@ links:
                     energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
                 distance: 13.0                                  # Calculated using Google Earth Pro, knowing the approximate position of the substations. Approximated.
 
-    LSO,ZAF:
+    LSO,SA_WSTR:
         techs:                             
             132-161_kV:
                 constraints:
@@ -72,7 +72,7 @@ links:
                     energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
                 distance: 24.5                                  # Calculated using Google Earth Pro, knowing the approximate position of the substations. Approximated.
                               
-    MOZ_S,ZAF:
+    MOZ_S,SA_NRTN:
         techs:
             70-110_kV:
                 constraints:
@@ -92,7 +92,7 @@ links:
                     energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
                 distance: 30.0                                  # Calculated using Google Earth Pro, knowing the approximate position of the substations. Approximated.                                  
 
-    MOZ_NC,ZAF:
+    MOZ_NC,SA_NRTN:
         techs:
 
             500-533_kV_DC:
@@ -101,7 +101,7 @@ links:
                     energy_eff_per_distance: 0.9995             # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
                 distance: 142.0                                 # Calculated using Google Earth Pro, knowing the approximate position of the substations. Approximated.                                  
 
-    NAM,ZAF:
+    NAM,SA_WSTR:
         techs:
             220-275_kV: 
                 constraints:
@@ -123,7 +123,7 @@ links:
                     energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
                 distance: 97.0                                  # https://www.globaltransmission.info/archive.php?id=32396
 
-    ZAF,ZWE:
+    SA_NRTN,ZWE:
         techs:
             132-161_kV:
                 constraints:
@@ -137,4 +137,97 @@ links:
                 constraints:
                     energy_cap_equals: 856000                   # https://www.sapp.co.zw/transfer-limits
                     energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
-                distance: 23.0                                  # Calculated using Google Earth Pro, knowing the approximate position of the substations. Approximated.
+                distance: 23.0                                  # Calculated using Google Earth Pro, knowing the approximate position of the substations. Approximated.ùù
+
+
+    SA_CSTR,SA_WSTR:
+        techs:
+            132-161_kV:
+                constraints:
+                    energy_cap_equals: 211200
+                distance: 19.94
+
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 275000
+                distance: 1.06
+
+            400_kV:
+                constraints:
+                    energy_cap_equals: 6400000
+                distance: 21.49
+
+            765_kV_DC:
+                constraints:
+                    energy_cap_equals: 2886345
+                distance: 8.82                             
+
+    SA_WSTR,SA_CPTL:
+
+        techs:
+            132-161_kV:
+                constraints:
+                    energy_cap_equals: 422400
+                distance: 8.37
+
+
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 1100000
+                distance: 4.72
+
+            400_kV:
+                constraints:
+                    energy_cap_equals: 640000
+                distance: 7.55
+
+            765_kV_DC:
+                constraints:
+                  energy_cap_equals: 2886345
+                distance: 4.71
+ 
+    SA_NRTN,SA_CPTL:
+        techs:
+            132-161_kV:
+                constraints:
+                    energy_cap_equals: 7392000
+                distance: 4.02
+
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 33000000
+                distance: 5.7
+
+            400_kV:
+                constraints:
+                    energy_cap_equals: 12160000
+                distance: 20.19
+
+
+            765_kV_DC:
+                constraints:
+                    energy_cap_equals: 28863450
+                distance: 1.2
+                                            
+
+    SA_NRTN,SA_CSTR:
+        techs:
+
+            132-161_kV:
+                constraints:
+                    energy_cap_equals: 105600 
+                distance: 2.55
+
+            400_kV:
+                constraints:
+                    energy_cap_equals: 640000
+                distance: 6.93
+
+    SA_WSTR,SA_NRTN:
+        techs:
+            765_kV_DC:
+                constraints:
+                    energy_cap_equals: 5772690
+                distance: 4.18    
+                                   
+            

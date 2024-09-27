@@ -1,20 +1,20 @@
 
 #%% remove column from df
 import pandas as pd
-Tech = 'Hydro'
-pp = 'WAPP'
+Tech = 'Demand'
+pp = 'SAPP'
 path = 'Timeseries/'+Tech+'_'+pp+'.csv'
 df = pd.read_csv(path)
 # Drop all columns that contain 'EGY' in their column name
-columns_to_drop = df.filter(like='NGA').columns
+columns_to_drop = df.filter(like='ZAF').columns
 df.drop(columns=columns_to_drop, axis=1, inplace=True)
 df.to_csv(path, index=False)
 
 
 # %% fix date format
 import pandas as pd
-tech = 'Hydro'
-path = 'Timeseries/'+ tech +'_NGA.csv'
+tech = 'Wind'
+path = 'Timeseries/'+ tech +'_ZA.csv'
 df = pd.read_csv(path)
 df['date'] = pd.to_datetime(df['date']).dt.strftime('%d/%m/%Y %H:%M')
 df.to_csv(path, index=False)
