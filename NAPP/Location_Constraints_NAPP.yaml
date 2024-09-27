@@ -2,10 +2,11 @@
 # the ISO 3166-1 Alpha-3 code
 
 #1. Algeria: DZA
-#2. Libya: LBY
-#3. Mauritania: MRT
-#4. Morocco: MAR
-#5. Tunisia: TUN
+#2. Egtop: EGY
+#3. Libya: LBY
+#4. Mauritania: MRT
+#5. Morocco: MAR
+#6. Tunisia: TUN
 
 # energy_cap_equals: Installed energy capacity [kW]
 # storage_cap_equals: Storage capacity [kWh]

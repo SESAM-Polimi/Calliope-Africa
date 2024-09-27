@@ -2,19 +2,18 @@
 # the ISO 3166-1 Alpha-3 code
 
 #1. Djibouti: DJI
-#2. Egypt: EGY
-#3. Eritrea: ERI
-#4. Ethiopia: ETH
-#5. Kenya Nairobi Region: KEN_NBOR
-#6. Kenya Coast Region: KEN_CSTR
-#7. Kenya Western Region: KEN_WSTR
-#8. Kenya Mount Kenya Region: KEN_MTKR
-#9. Rwanda: RWA
-#10. Somalia: SOM
-#11. South Sudan: SSD
-#12. Sudan: SDN
-#13. Tanzania: TZA
-#14. Uganda: UGA
+#2. Eritrea: ERI
+#3. Ethiopia: ETH
+#4. Kenya Nairobi Region: KEN_NBOR
+#5. Kenya Coast Region: KEN_CSTR
+#6. Kenya Western Region: KEN_WSTR
+#7. Kenya Mount Kenya Region: KEN_MTKR
+#8. Rwanda: RWA
+#9. Somalia: SOM
+#10. South Sudan: SSD
+#11. Sudan: SDN
+#12. Tanzania: TZA
+#13. Uganda: UGA
 
 # energy_cap_equals: Installed energy capacity [kW]
 

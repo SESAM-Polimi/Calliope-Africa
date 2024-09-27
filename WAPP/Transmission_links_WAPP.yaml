@@ -90,48 +90,52 @@ links:
                     energy_eff_per_distance: 0.965              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
                 distance: 16.2                                  # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
 
-    NGA_CNW,NGA_E:
+    NGA_E,NGA_S:
         techs:
             300-330_kV:
                 constraints:
-                    energy_cap_equals: 720000                   # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
-                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
-                distance: 19.6                                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+                    energy_cap_equals: 825000
+                distance: 13.472               
+                                 
 
-    NGA_CNW,NGA_S:
+
+    NGA_CNW,NGA_E: 
         techs:
             132-161_kV:
                 constraints:
-                    energy_cap_equals: 91000                    # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
-                    energy_eff_per_distance: 0.965              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
-                distance: 18.3                                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
-
+                    energy_cap_equals: 99000
+                distance: 11.2       
             300-330_kV:
                 constraints:
-                    energy_cap_equals: 1554000                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
-                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
-                distance: 19.5                                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+                    energy_cap_equals: 412500
+                distance: 8.928  
+           
 
     NGA_CNW,NGA_W:
         techs:
-            300-330_kV:
+            132-161_kV: 
                 constraints:
-                    energy_cap_equals: 2160000                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
-                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
-                distance: 15.7                                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+                    energy_cap_equals: 99000
+                distance: 0.71568             
+            300-330_kV: 
+                constraints:
+                    energy_cap_equals: 2062500 
+                distance: 11.152                     
+                
 
-    NGA_E,NGA_S:
+    NGA_S,NGA_W: 
         techs:
             132-161_kV:
                 constraints:
-                    energy_cap_equals: 91000                    # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
-                    energy_eff_per_distance: 0.965              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
-                distance: 15.6                                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
-
-    NGA_S,NGA_W:
-        techs:
+                    energy_cap_equals: 49500
+                distance: 1.7272           
+                
             300-330_kV:
                 constraints:
-                    energy_cap_equals: 2331000                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
-                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
-                distance: 28.0                                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pd
+                    energy_cap_equals: 825000
+                distance: 7.888           
+
+
+
+
+ 

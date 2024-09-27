@@ -1,28 +1,20 @@
 
-#%% remove EGY from demand
+#%% remove column from df
 import pandas as pd
-
-demand = pd.read_csv('Timeseries/Demand_EAPP.csv')
-
-demand.drop('EGY',axis=1, inplace=True)
-
-demand.to_csv('Timeseries/Demand_EAPP.csv', index=False)
-
-
-
-# %%
-
 Tech = 'Hydro'
-pp = 'EAPP'
+pp = 'WAPP'
 path = 'Timeseries/'+Tech+'_'+pp+'.csv'
 df = pd.read_csv(path)
 # Drop all columns that contain 'EGY' in their column name
-columns_to_drop = df.filter(like='EGY').columns
+columns_to_drop = df.filter(like='NGA').columns
 df.drop(columns=columns_to_drop, axis=1, inplace=True)
 df.to_csv(path, index=False)
-# %%
+
+
+# %% fix date format
 import pandas as pd
-path = 'Timeseries/Hydro_EGY.csv'
+tech = 'Hydro'
+path = 'Timeseries/'+ tech +'_NGA.csv'
 df = pd.read_csv(path)
 df['date'] = pd.to_datetime(df['date']).dt.strftime('%d/%m/%Y %H:%M')
 df.to_csv(path, index=False)
