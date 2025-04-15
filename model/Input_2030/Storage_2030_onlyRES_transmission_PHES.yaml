@@ -1,0 +1,155 @@
+locations:
+
+############################## WAPP ###############################
+
+    BEN:
+        techs:
+
+            PHES:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 0
+                    energy_cap_per_storage_cap_equals: 0.16666666667
+
+    BFA:
+        techs:
+
+            PHES:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 0
+                    energy_cap_per_storage_cap_equals: 0.16666666667
+
+    CIV:
+        techs:
+
+            PHES:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 20000000
+                    energy_cap_per_storage_cap_equals: 0.16666666667
+    GMB:
+        techs:
+
+            PHES:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 0
+                    energy_cap_per_storage_cap_equals: 0.16666666667
+
+    GHA:
+        techs:
+
+            PHES:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 26600000
+                    energy_cap_per_storage_cap_equals: 0.16666666667
+
+    GIN:
+        techs:
+
+            PHES:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 434300000
+                    energy_cap_per_storage_cap_equals: 0.16666666667
+
+    GNB:
+        techs:
+
+            PHES:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 0
+                    energy_cap_per_storage_cap_equals: 0.16666666667
+
+    LBR:
+        techs:
+
+            PHES:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 1300000
+                    energy_cap_per_storage_cap_equals: 0.16666666667
+
+    MLI:
+        techs:
+
+            PHES:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 37300000
+                    energy_cap_per_storage_cap_equals: 0.16666666667
+
+    NER:
+        techs:
+
+            PHES:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 144300000
+                    energy_cap_per_storage_cap_equals: 0.16666666667
+
+    NGA_CNW:
+        techs:
+
+            PHES:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 0
+                    energy_cap_per_storage_cap_equals: 0.16666666667
+
+    NGA_E:
+        techs:
+
+            PHES:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 600000000
+                    energy_cap_per_storage_cap_equals: 0.16666666667
+
+    NGA_S:
+        techs:
+
+            PHES:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 0
+                    energy_cap_per_storage_cap_equals: 0.16666666667
+
+    NGA_W:
+        techs:
+
+            PHES:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 0
+                    energy_cap_per_storage_cap_equals: 0.16666666667
+
+    SEN:
+        techs:
+
+            PHES:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 600000
+                    energy_cap_per_storage_cap_equals: 0.16666666667
+
+    SLE:
+        techs:
+
+            PHES:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 28600000
+                    energy_cap_per_storage_cap_equals: 0.16666666667
+
+    TGO:
+        techs:
+
+            PHES:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 64300000
+                    energy_cap_per_storage_cap_equals: 0.16666666667

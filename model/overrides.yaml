@@ -1,0 +1,253 @@
+scenarios:
+
+# 2040 Autarky
+    2040_onlyRES_autarky_BESS: ["new_demand_2040", "Input2035_onlyRES_autarky_BESS"]
+
+    2040_onlyRES_autarky_PHES: ["new_demand_2040",  "Input2035_onlyRES_autarky_PHES"]
+
+    2040_onlyRES_autarky_NoStorage: ["new_demand_2040", "Input2035_onlyRES_autarky_NoStorage"]
+
+    2040_RES+GT_autarky_BESS: ["new_demand_2040", "Input2035_RES+GT_autarky_BESS"]
+
+    2040_RES+GT_autarky_PHES: ["new_demand_2040", "Input2035_RES+GT_autarky_PHES"]
+
+    2040_RES+GT_autarky_NoStorage: ["new_demand_2040", "Input2035_RES+GT_autarky_NoStorage"]
+
+# 2040 Existing and planned connections    
+    2040_onlyRES_transmission_BESS: ["new_demand_2040", "transmission",  "Input2035_onlyRES_transmission_BESS"]
+
+    2040_onlyRES_transmission_PHES: ["new_demand_2040", "transmission",  "Input2035_onlyRES_transmission_PHES"]
+
+    2040_onlyRES_transmission_NoStorage: ["new_demand_2040", "transmission", "Input2035_onlyRES_transmission_NoStorage"]
+
+    2040_RES+GT_transmission_BESS: ["new_demand_2040", "transmission",  "Input2035_RES+GT_transmission_BESS"]
+
+    2040_RES+GT_transmission_PHES: ["new_demand_2040", "transmission",  "Input2035_RES+GT_transmission_PHES"]
+
+    2040_RES+GT_transmission_NoStorage: ["new_demand_2040", "transmission", "Input2035_RES+GT_transmission_NoStorage"]
+
+# 2040 Free transmission expansion
+    2040_onlyRES_transmission_exp_BESS: ["new_demand_2040", "Input2035_onlyRES_transmission_exp_BESS"]
+
+    2040_onlyRES_transmission_exp_PHES: ["new_demand_2040", "Input2035_onlyRES_transmission_exp_PHES"]
+
+    2040_onlyRES_transmission_exp_NoStorage: ["new_demand_2040","Input2035_onlyRES_transmission_exp_NoStorage"]
+
+    2040_RES+GT_transmission_exp_BESS: ["new_demand_2040","Input2035_RES+GT_transmission_exp_BESS"]
+
+    2040_RES+GT_transmission_exp_PHES: ["new_demand_2040","Input2035_RES+GT_transmission_exp_PHES"]
+
+    2040_RES+GT_transmission_exp_NoStorage: ["new_demand_2040","Input2035_RES+GT_transmission_exp_NoStorage"]
+
+# 2035 Autarky
+    2035_onlyRES_autarky_BESS: ["new_demand_2035", "Input2030_onlyRES_autarky_BESS"]
+
+    2035_onlyRES_autarky_PHES: ["new_demand_2035",  "Input2030_onlyRES_autarky_PHES"]
+
+    2035_onlyRES_autarky_NoStorage: ["new_demand_2035", "Input2030_onlyRES_autarky_NoStorage"]
+
+    2035_RES+GT_autarky_BESS: ["new_demand_2035", "Input2030_RES+GT_autarky_BESS"]
+
+    2035_RES+GT_autarky_PHES: ["new_demand_2035", "Input2030_RES+GT_autarky_PHES"]
+
+    2035_RES+GT_autarky_NoStorage: ["new_demand_2035", "Input2030_RES+GT_autarky_NoStorage"]
+
+# 2035 Existing and planned connections    
+    2035_onlyRES_transmission_BESS: ["new_demand_2035", "transmission",  "Input2030_onlyRES_transmission_BESS"]
+
+    2035_onlyRES_transmission_PHES: ["new_demand_2035", "transmission",  "Input2030_onlyRES_transmission_PHES"]
+
+    2035_onlyRES_transmission_NoStorage: ["new_demand_2035", "transmission", "Input2030_onlyRES_transmission_NoStorage"]
+
+    2035_RES+GT_transmission_BESS: ["new_demand_2035", "transmission",  "Input2030_RES+GT_transmission_BESS"]
+
+    2035_RES+GT_transmission_PHES: ["new_demand_2035", "transmission",  "Input2030_RES+GT_transmission_PHES"]
+
+    2035_RES+GT_transmission_NoStorage: ["new_demand_2035", "transmission", "Input2030_RES+GT_transmission_NoStorage"]
+
+# 2035 Free transmission expansion
+    2035_onlyRES_transmission_exp_BESS: ["new_demand_2035", "Input2030_onlyRES_transmission_exp_BESS"]
+
+    2035_onlyRES_transmission_exp_PHES: ["new_demand_2035", "Input2030_onlyRES_transmission_exp_PHES"]
+
+    2035_onlyRES_transmission_exp_NoStorage: ["new_demand_2035","Input2030_onlyRES_transmission_exp_NoStorage"]
+
+    2035_RES+GT_transmission_exp_BESS: ["new_demand_2035","Input2030_RES+GT_transmission_exp_BESS"]
+
+    2035_RES+GT_transmission_exp_PHES: ["new_demand_2035","Input2030_RES+GT_transmission_exp_PHES"]
+
+    2035_RES+GT_transmission_exp_NoStorage: ["new_demand_2035","Input2030_RES+GT_transmission_exp_NoStorage"]
+
+# 2030 Autarky
+    2030_onlyRES_autarky_BESS: ["new_demand_2030", "new_BESS"]
+
+    2030_onlyRES_autarky_PHES: ["new_demand_2030", "new_PHES"]
+
+    2030_onlyRES_autarky_NoStorage: ["new_demand_2030"]
+
+    2030_RES+GT_autarky_BESS: ["new_demand_2030", "new_OCGT_loc", "new_BESS"]
+
+    2030_RES+GT_autarky_PHES: ["new_demand_2030", "new_OCGT_loc", "new_PHES"]
+
+    2030_RES+GT_autarky_NoStorage: ["new_demand_2030", "new_OCGT_loc"]
+
+# 2030 Existing and planned connections    
+    2030_onlyRES_transmission_BESS: ["new_demand_2030", "transmission", "new_BESS"]
+
+    2030_onlyRES_transmission_PHES: ["new_demand_2030", "transmission", "new_PHES"]
+
+    2030_onlyRES_transmission_NoStorage: ["new_demand_2030", "transmission"]
+
+    2030_RES+GT_transmission_BESS: ["new_demand_2030", "transmission", "new_OCGT_loc", "new_BESS"]
+
+    2030_RES+GT_transmission_PHES: ["new_demand_2030", "transmission", "new_OCGT_loc", "new_PHES"]
+
+    2030_RES+GT_transmission_NoStorage: ["new_demand_2030", "transmission", "new_OCGT_loc"]
+
+# 2030 Free transmission expansion
+    2030_onlyRES_transmission_exp_BESS: ["new_demand_2030", "transmission_exp", "new_BESS"]
+
+    2030_onlyRES_transmission_exp_PHES: ["new_demand_2030", "transmission_exp", "new_PHES"]
+
+    2030_onlyRES_transmission_exp_NoStorage: ["new_demand_2030", "transmission_exp"]
+
+    2030_RES+GT_transmission_exp_BESS: ["new_demand_2030", "transmission_exp", "new_OCGT_loc", "new_BESS"]
+
+    2030_RES+GT_transmission_exp_PHES: ["new_demand_2030", "transmission_exp", "new_OCGT_loc", "new_PHES"]
+
+    2030_RES+GT_transmission_exp_NoStorage: ["new_demand_2030", "transmission_exp", "new_OCGT_loc"]
+
+overrides:
+
+    new_demand_2030:
+        import: [new_WAPP_demand_2030.yaml]
+
+    new_demand_2035:
+        import: [new_WAPP_demand_2035.yaml]
+
+    new_demand_2040:
+        import: [new_WAPP_demand_2040.yaml]
+
+    new_demand_AC:
+        import: [new_demand_AC.yaml]
+
+    transmission:
+        import: [Transmission_links_WAPP_existing+planned.yaml]  
+
+    transmission_exp:
+        import: [new_transmission.yaml]  
+
+    new_OCGT_loc:
+         import: [new_OCGT_loc.yaml]
+
+    new_BESS:
+        import: [Storage_BESS.yaml]
+        
+    new_PHES:
+        import: [Storage_PHES.yaml]          
+
+    Input2030_onlyRES_autarky_NoStorage:
+        import: [Input_2030/Updated_Location_Constraints_WAPP_2030_onlyRES_autarky_NoStorage.yaml]
+
+    Input2030_onlyRES_autarky_BESS:
+        import: [Input_2030/Updated_Location_Constraints_WAPP_2030_onlyRES_autarky_BESS.yaml, Input_2030/Storage_2030_onlyRES_autarky_BESS.yaml]
+    Input2030_onlyRES_autarky_PHES:
+        import: [Input_2030/Updated_Location_Constraints_WAPP_2030_onlyRES_autarky_PHES.yaml, Input_2030/Storage_2030_onlyRES_autarky_PHES.yaml]
+
+    Input2030_onlyRES_transmission_NoStorage:
+        import: [Input_2030/Updated_Location_Constraints_WAPP_2030_onlyRES_transmission_NoStorage.yaml]
+
+    Input2030_onlyRES_transmission_BESS:
+        import: [Input_2030/Updated_Location_Constraints_WAPP_2030_onlyRES_transmission_BESS.yaml, Input_2030/Storage_2030_onlyRES_transmission_BESS.yaml]
+
+    Input2030_onlyRES_transmission_PHES:
+        import: [Input_2030/Updated_Location_Constraints_WAPP_2030_onlyRES_transmission_PHES.yaml, Input_2030/Storage_2030_onlyRES_transmission_PHES.yaml]
+
+    Input2030_onlyRES_transmission_exp_NoStorage:
+        import: [Input_2030/Updated_Location_Constraints_WAPP_2030_onlyRES_transmission_exp_NoStorage.yaml, Input_2030/Updated_Transmission_WAPP_2030_onlyRES_transmission_exp_NoStorage.yaml]
+
+    Input2030_onlyRES_transmission_exp_BESS:
+        import: [Input_2030/Updated_Location_Constraints_WAPP_2030_onlyRES_transmission_exp_BESS.yaml, Input_2030/Storage_2030_onlyRES_transmission_exp_BESS.yaml, Input_2030/Updated_Transmission_WAPP_2030_onlyRES_transmission_exp_BESS.yaml]
+
+    Input2030_onlyRES_transmission_exp_PHES:
+        import: [Input_2030/Updated_Location_Constraints_WAPP_2030_onlyRES_transmission_exp_PHES.yaml, Input_2030/Storage_2030_onlyRES_transmission_exp_PHES.yaml, Input_2030/Updated_Transmission_WAPP_2030_onlyRES_transmission_exp_PHES.yaml]
+
+    Input2030_RES+GT_autarky_NoStorage:
+        import: [Input_2030/Updated_Location_Constraints_WAPP_2030_RES+GT_autarky_NoStorage.yaml, Input_2030/OCGT_2030_RES+GT_autarky_NoStorage.yaml]
+        
+    Input2030_RES+GT_autarky_BESS:
+        import: [Input_2030/Updated_Location_Constraints_WAPP_2030_RES+GT_autarky_BESS.yaml, Input_2030/Storage_2030_RES+GT_autarky_BESS.yaml, Input_2030/OCGT_2030_RES+GT_autarky_BESS.yaml]
+
+    Input2030_RES+GT_autarky_PHES:
+        import: [Input_2030/Updated_Location_Constraints_WAPP_2030_RES+GT_autarky_PHES.yaml, Input_2030/Storage_2030_RES+GT_autarky_PHES.yaml, Input_2030/OCGT_2030_RES+GT_autarky_PHES.yaml]
+
+    Input2030_RES+GT_transmission_NoStorage:
+        import: [Input_2030/Updated_Location_Constraints_WAPP_2030_RES+GT_transmission_NoStorage.yaml, Input_2030/OCGT_2030_RES+GT_transmission_NoStorage.yaml]
+
+    Input2030_RES+GT_transmission_BESS:
+        import: [Input_2030/Updated_Location_Constraints_WAPP_2030_RES+GT_transmission_BESS.yaml, Input_2030/Storage_2030_RES+GT_transmission_BESS.yaml, Input_2030/OCGT_2030_RES+GT_transmission_BESS.yaml]
+
+    Input2030_RES+GT_transmission_PHES:
+        import: [Input_2030/Updated_Location_Constraints_WAPP_2030_RES+GT_transmission_PHES.yaml, Input_2030/Storage_2030_RES+GT_transmission_PHES.yaml, Input_2030/OCGT_2030_RES+GT_transmission_PHES.yaml]
+
+    Input2030_RES+GT_transmission_exp_NoStorage:
+        import: [Input_2030/Updated_Location_Constraints_WAPP_2030_RES+GT_transmission_exp_NoStorage.yaml, Input_2030/OCGT_2030_RES+GT_transmission_exp_NoStorage.yaml , Input_2030/Updated_Transmission_WAPP_2030_RES+GT_transmission_exp_NoStorage.yaml]
+
+    Input2030_RES+GT_transmission_exp_BESS:
+        import: [Input_2030/Updated_Location_Constraints_WAPP_2030_RES+GT_transmission_exp_BESS.yaml, Input_2030/Storage_2030_RES+GT_transmission_exp_BESS.yaml, Input_2030/OCGT_2030_RES+GT_transmission_exp_BESS.yaml, Input_2030/Updated_Transmission_WAPP_2030_RES+GT_transmission_exp_BESS.yaml]
+
+    Input2030_RES+GT_transmission_exp_PHES:
+        import: [Input_2030/Updated_Location_Constraints_WAPP_2030_RES+GT_transmission_exp_PHES.yaml, Input_2030/Storage_2030_RES+GT_transmission_exp_PHES.yaml, Input_2030/OCGT_2030_RES+GT_transmission_exp_PHES.yaml, Input_2030/Updated_Transmission_WAPP_2030_RES+GT_transmission_exp_PHES.yaml]        
+
+    Input2035_onlyRES_autarky_NoStorage:
+        import: [Input_2035/Updated_Location_Constraints_WAPP_2035_onlyRES_autarky_NoStorage.yaml]
+
+    Input2035_onlyRES_autarky_BESS:
+        import: [Input_2035/Updated_Location_Constraints_WAPP_2035_onlyRES_autarky_BESS.yaml, Input_2035/Storage_2035_onlyRES_autarky_BESS.yaml]
+    Input2035_onlyRES_autarky_PHES:
+        import: [Input_2035/Updated_Location_Constraints_WAPP_2035_onlyRES_autarky_PHES.yaml, Input_2035/Storage_2035_onlyRES_autarky_PHES.yaml]
+
+    Input2035_onlyRES_transmission_NoStorage:
+        import: [Input_2035/Updated_Location_Constraints_WAPP_2035_onlyRES_transmission_NoStorage.yaml]
+
+    Input2035_onlyRES_transmission_BESS:
+        import: [Input_2035/Updated_Location_Constraints_WAPP_2035_onlyRES_transmission_BESS.yaml, Input_2035/Storage_2035_onlyRES_transmission_BESS.yaml]
+
+    Input2035_onlyRES_transmission_PHES:
+        import: [Input_2035/Updated_Location_Constraints_WAPP_2035_onlyRES_transmission_PHES.yaml, Input_2035/Storage_2035_onlyRES_transmission_PHES.yaml]
+
+    Input2035_onlyRES_transmission_exp_NoStorage:
+        import: [Input_2035/Updated_Location_Constraints_WAPP_2035_onlyRES_transmission_exp_NoStorage.yaml, Input_2035/Updated_Transmission_WAPP_2035_onlyRES_transmission_exp_NoStorage.yaml]
+
+    Input2035_onlyRES_transmission_exp_BESS:
+        import: [Input_2035/Updated_Location_Constraints_WAPP_2035_onlyRES_transmission_exp_BESS.yaml, Input_2035/Storage_2035_onlyRES_transmission_exp_BESS.yaml, Input_2035/Updated_Transmission_WAPP_2035_onlyRES_transmission_exp_BESS.yaml]
+
+    Input2035_onlyRES_transmission_exp_PHES:
+        import: [Input_2035/Updated_Location_Constraints_WAPP_2035_onlyRES_transmission_exp_PHES.yaml, Input_2035/Storage_2035_onlyRES_transmission_exp_PHES.yaml, Input_2035/Updated_Transmission_WAPP_2035_onlyRES_transmission_exp_PHES.yaml]
+
+    Input2035_RES+GT_autarky_NoStorage:
+        import: [Input_2035/Updated_Location_Constraints_WAPP_2035_RES+GT_autarky_NoStorage.yaml, Input_2035/OCGT_2035_RES+GT_autarky_NoStorage.yaml]
+        
+    Input2035_RES+GT_autarky_BESS:
+        import: [Input_2035/Updated_Location_Constraints_WAPP_2035_RES+GT_autarky_BESS.yaml, Input_2035/Storage_2035_RES+GT_autarky_BESS.yaml, Input_2035/OCGT_2035_RES+GT_autarky_BESS.yaml]
+
+    Input2035_RES+GT_autarky_PHES:
+        import: [Input_2035/Updated_Location_Constraints_WAPP_2035_RES+GT_autarky_PHES.yaml, Input_2035/Storage_2035_RES+GT_autarky_PHES.yaml, Input_2035/OCGT_2035_RES+GT_autarky_PHES.yaml]
+
+    Input2035_RES+GT_transmission_NoStorage:
+        import: [Input_2035/Updated_Location_Constraints_WAPP_2035_RES+GT_transmission_NoStorage.yaml, Input_2035/OCGT_2035_RES+GT_transmission_NoStorage.yaml]
+
+    Input2035_RES+GT_transmission_BESS:
+        import: [Input_2035/Updated_Location_Constraints_WAPP_2035_RES+GT_transmission_BESS.yaml, Input_2035/Storage_2035_RES+GT_transmission_BESS.yaml, Input_2035/OCGT_2035_RES+GT_transmission_BESS.yaml]
+
+    Input2035_RES+GT_transmission_PHES:
+        import: [Input_2035/Updated_Location_Constraints_WAPP_2035_RES+GT_transmission_PHES.yaml, Input_2035/Storage_2035_RES+GT_transmission_PHES.yaml, Input_2035/OCGT_2035_RES+GT_transmission_PHES.yaml]
+
+    Input2035_RES+GT_transmission_exp_NoStorage:
+        import: [Input_2035/Updated_Location_Constraints_WAPP_2035_RES+GT_transmission_exp_NoStorage.yaml, Input_2035/OCGT_2035_RES+GT_transmission_exp_NoStorage.yaml , Input_2035/Updated_Transmission_WAPP_2035_RES+GT_transmission_exp_NoStorage.yaml]
+
+    Input2035_RES+GT_transmission_exp_BESS:
+        import: [Input_2035/Updated_Location_Constraints_WAPP_2035_RES+GT_transmission_exp_BESS.yaml, Input_2035/Storage_2035_RES+GT_transmission_exp_BESS.yaml, Input_2035/OCGT_2035_RES+GT_transmission_exp_BESS.yaml, Input_2035/Updated_Transmission_WAPP_2035_RES+GT_transmission_exp_BESS.yaml]
+
+    Input2035_RES+GT_transmission_exp_PHES:
+        import: [Input_2035/Updated_Location_Constraints_WAPP_2035_RES+GT_transmission_exp_PHES.yaml, Input_2035/Storage_2035_RES+GT_transmission_exp_PHES.yaml, Input_2035/OCGT_2035_RES+GT_transmission_exp_PHES.yaml, Input_2035/Updated_Transmission_WAPP_2035_RES+GT_transmission_exp_PHES.yaml]        

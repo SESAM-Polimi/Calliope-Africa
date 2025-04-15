@@ -1,0 +1,158 @@
+links:
+
+    BEN,NGA_W:
+        techs:
+            300-330_kV:
+                constraints:
+                    energy_cap_equals: 0                   
+
+    BEN,TGO:
+        techs:
+            132-161_kV:
+                constraints:
+                    energy_cap_equals: 0                   
+
+            300-330_kV:
+                constraints:
+                    energy_cap_equals: 0                  
+
+    BFA,CIV:
+        techs:
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 0                   
+
+    BFA,GHA:
+        techs:
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 0                   
+
+    CIV,GHA:
+        techs:
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 0                 
+
+    CIV,LBR:
+        techs:
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 0                  
+
+    CIV,MLI:
+        techs:
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 0
+
+    GMB, SEN:
+        techs:
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 0
+
+    GHA,TGO:
+        techs:
+            132-161_kV:
+                constraints:
+                    energy_cap_equals: 0
+
+            300-330_kV:
+                constraints:
+                    energy_cap_equals: 0
+
+    GIN, GNB:
+        techs:
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 0
+
+
+    GIN, LBR:
+        techs:
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 0
+
+    GIN, SEN:
+        techs:
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 0
+
+    GIN, SLE:
+        techs:
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 0
+
+    GNB, SEN:
+        techs:
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 0
+
+    LBR, SLE:
+        techs:
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 0
+
+    MLI,SEN:
+        techs:
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 0
+
+    NER,NGA_CNW:
+        techs:
+            132-161_kV:
+                constraints:
+                    energy_cap_equals: 0
+                    
+    NGA_CNW,NGA_E:
+        techs:
+            300-330_kV:
+                constraints:
+                    energy_cap_equals: 720000                   # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 19.6                                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+
+    NGA_CNW,NGA_S:
+        techs:
+            132-161_kV:
+                constraints:
+                    energy_cap_equals: 91000                    # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+                    energy_eff_per_distance: 0.965              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 18.3                                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+
+            300-330_kV:
+                constraints:
+                    energy_cap_equals: 1554000                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 19.5                                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+
+    NGA_CNW,NGA_W:
+        techs:
+            300-330_kV:
+                constraints:
+                    energy_cap_equals: 2160000                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 15.7                                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+
+    NGA_E,NGA_S:
+        techs:
+            300-330_kV:
+                constraints:
+                    energy_cap_equals: 777000                    # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+                    energy_eff_per_distance: 0.99              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 24.65                                 # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+
+    NGA_S,NGA_W:
+        techs:
+            300-330_kV:
+                constraints:
+                    energy_cap_equals: 1554000                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 28.0                                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pd    

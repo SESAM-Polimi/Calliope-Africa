@@ -1,0 +1,555 @@
+# WAPP Transmission Grid#
+
+#Update: October 2024
+
+# energy_cap_equals: Installed transmission capacity [kW]
+# energy_eff_per_distance: Energy efficiency per distance [1/(10s km)]
+# distance: Length of transmission line [10s km]
+
+links:
+
+    BEN,NGA_W:
+        techs:
+            300-330_kV:                                         # Coastal Backbone
+                constraints:
+                    energy_cap_equals: 1378000                  # Doubled the original https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 7.5                                   # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+
+            300-330_kV_planned:                                 #  Ajengule (Nigeria)- Sakete (Benin) Interconnection Reinforcement Project
+                constraints:
+                    energy_cap_equals: 700000                       # Assumption based on similar transmission line
+                    energy_eff_per_distance: 0.99                   # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 13.0                                      # http://pipes.ecowapp.org/en/project/implementation/330-kv-nigeria-benin-interconnection-reinforcement-project
+
+            300-330_kV_new:
+                constraints:
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 7.5                                   # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+
+    BEN,NGA_CNW:
+        techs:
+            300-330_kV_planned:                                 # WAPP Median Backbone
+                constraints:
+                    energy_cap_equals: 900000                   # https://www.ecowapp.org/sites/default/files/volume_4.pdf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 23.0                                  # Approximated by measuring distance between substations on Google Earth http://pipes.ecowapp.org/en/project/preparatory-studies/nigeria-%E2%80%93-benin-%E2%80%93-togo-%E2%80%93-ghana-c%C3%B4te-divoire-interconnection-project-wapp
+
+            300-330_kV_new:
+                constraints:
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 23.0                                   # Approximated by http://pipes.ecowapp.org/en/project/preparatory-studies/nigeria-%E2%80%93-benin-%E2%80%93-togo-%E2%80%93-ghana-c%C3%B4te-divoire-interconnection-project-wapp
+
+    BEN,NER:
+        techs:
+            300-330_kV_planned:                                 # North Core (Nigeria-Niger-Benin-Burkina)
+                constraints:
+                    energy_cap_equals: 900000                   # https://mapafrica.afdb.org/en/projects/46002-P-Z1-FA0-146
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 9.5                                   # Approximated by measuring distance between substations on Google Earth
+
+            300-330_kV_new:
+                constraints:
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 9.5                                   # Approximated by measuring distance between substations on Google Earth
+
+    BEN,BFA:
+        techs:
+            300-330_kV_new:
+                constraints:
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.99                   # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 11.2                                       # Approximated by measuring distance between substations on Google Earth
+
+    BEN,TGO:
+        techs:
+            132-161_kV:
+                constraints:
+                    energy_cap_equals: 345000                   # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+                    energy_eff_per_distance: 0.92               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 6.5                                   # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+
+            300-330_kV:                                         # Coastal Backbone
+                constraints:
+                    energy_cap_equals: 1310400                  # Doubled the original https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 20.8                                  # https://www.au-pida.org/view-project/2006/
+
+            300-330_kV_planned:                                 # WAPP Median Backbone
+                constraints:
+                    energy_cap_equals: 900000                   # https://www.ecowapp.org/sites/default/files/volume_4.pdf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 15.7                                  # Approximated by measuring distance between substations Kara - Parakou on Google Earth http://pipes.ecowapp.org/en/project/preparatory-studies/nigeria-%E2%80%93-benin-%E2%80%93-togo-%E2%80%93-ghana-c%C3%B4te-divoire-interconnection-project-wapp
+
+            300-330_kV_new:
+                constraints:
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 20.8                                  # https://www.au-pida.org/view-project/2006/
+
+    BFA,CIV:
+        techs:
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 327000                   # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+                    energy_eff_per_distance: 0.988              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 22.2                                  # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+
+            300-330_kV_planned:                                 # Bobo - Ferkéssedougou to connect Western and Median Backbone
+                constraints:
+                    energy_cap_equals: 900000                   # Estimated, this line will connect Western and Median backbone
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 22.2                                  # https://www.ecowapp.org/sites/default/files/volume_4.pdf
+
+            300-330_kV_new:
+                constraints:
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 22.2                                  # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+
+    BFA,GHA:
+        techs:
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 100000                   # https://energymin.gov.gh/president-akufo-addo-inaugurates-225kv-bolgatanga-ouagadougou-power-interconnection-project
+                    energy_eff_per_distance: 0.988              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 18.8                                  # http://pipes.ecowapp.org/en/project/finalised-projects/225-kv-bolgatanga-ghana-ouagadougou-burkina-faso-interconnection-project
+
+            300-330_kV_new:
+                constraints:
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 18.8                                  # http://pipes.ecowapp.org/en/project/finalised-projects/225-kV_new-bolgatanga-ghana-ouagadougou-burkina-faso-interconnection-project
+
+    BFA,NER:
+        techs:
+            300-330_kV_planned:                                 # North Core (Nigeria-Niger-Benin-Burkina)
+                constraints:
+                    energy_cap_equals: 900000                   # https://mapafrica.afdb.org/en/projects/46002-P-Z1-FA0-146
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 41.5                                  # Approximated by measuring distance between substations on Google Earth
+
+            300-330_kV_new:
+                constraints:
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 41.5                                   # https://www.ecowapp.org/en/news/launch-north-core-330-kV_new-nigeria-niger-benintogo-burkina-faso-power-interconnection-project Distance Niamey-Ouagadougou
+
+    BFA,MLI:
+        techs:
+            300-330_kV_new:
+                constraints:
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 15.0                                  # Approximated by measuring distance between substations on Google Earth
+
+    BFA,TGO:
+        techs:
+            300-330_kV_new:
+                constraints:
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 6.3                                    # Approximated by measuring distance between substations on Google Earth
+
+            300-330_kV_installed_2030:
+                constraints:
+                    energy_cap_equals: 58969.42489898617
+                    energy_eff_per_distance: 0.99
+                distance: 6.3
+            300-330_kV_installed_2035:
+                constraints:
+                    energy_cap_equals: 2392.2891638104843
+                    energy_eff_per_distance: 0.99
+                distance: 6.3
+    CIV,GHA:
+        techs:
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 327000                   # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+                    energy_eff_per_distance: 0.988              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 22.0                                  # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+
+            300-330_kV_planned:                                 # WAPP Median Backbone
+                constraints:
+                    energy_cap_equals: 900000                   # https://www.ecowapp.org/sites/default/files/volume_4.pdf  
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 41.9                                  # Approximated by measuring distance between substations Daboya - Ferkessédougou on Google Earth http://pipes.ecowapp.org/en/project/preparatory-studies/nigeria-%E2%80%93-benin-%E2%80%93-togo-%E2%80%93-ghana-c%C3%B4te-divoire-interconnection-project-wapp
+
+            300-330_kV_planned_2:                               # Côte d’Ivoire - Ghana Interconnection Reinforcement Project
+                constraints:
+                    energy_cap_equals: 700000                   # Estimated 700 MW Côte d’Ivoire - Ghana Interconnection Reinforcement Project
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 29.6                                 # http://pipes.ecowapp.org/en/project/under-implementation/330-kv-c%C3%B4te-d%E2%80%99ivoire-ghana-interconnection-reinforcement-project
+
+            300-330_kV_new:
+                constraints:
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 22.0                                  # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+
+    CIV,GIN:
+        techs:
+            220-275_kV_planned:                                 # Fomi (Guinea) - Boundiali (Cote d'Ivorie)
+                constraints:
+                    energy_cap_equals: 200000                   # https://www.ecowapp.org/sites/default/files/volume_4.pdf
+                    energy_eff_per_distance: 0.988              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 38.0                                  # https://www.ecowapp.org/sites/default/files/volume_4.pdf
+
+            300-330_kV_new:
+                constraints:
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 38.0                                  # https://www.ecowapp.org/sites/default/files/volume_4.pdf
+
+    CIV,LBR:
+        techs:
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 290000                   # https://www.afdb.org/fileadmin/uploads/afdb/Documents/Project-and-Operations/Multinational_-_C%C3%B4te_d%E2%80%99Ivoire-Liberia-Sierra_Leone_and_Guinea_Electricity_Networks_Interconnection_Project__CLSG__-_Appraisal_Report.pdf
+                    energy_eff_per_distance: 0.988              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 22.0                                  # https://documents1.worldbank.org/curated/en/099200005192271443/pdf/P1132660895af20e50b6f10801f377a93d0.pdf
+
+            220-275_kV_planned:                                 # San Pedro - Buchanan
+                constraints:
+                    energy_cap_equals: 220000                   # https://www.ecowapp.org/en/tenders/feasibility-study-225kv-wapp-c%C3%B4te-d%E2%80%99ivoire-liberia-transmission-interconnection
+                    energy_eff_per_distance: 0.988              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 65.0                                  # https://www.ecowapp.org/en/tenders/feasibility-study-225kv-wapp-c%C3%B4te-d%E2%80%99ivoire-liberia-transmission-interconnection
+
+            300-330_kV_new:
+                constraints:
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 22.0                                  # https://documents1.worldbank.org/curated/en/099200005192271443/pdf/P1132660895af20e50b6f10801f377a93d0.pdf
+
+    CIV,MLI:
+        techs:
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 319700                   # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+                    energy_eff_per_distance: 0.988              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 37.0                                  # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+
+            220-275_kV_planned:                                 # Tengrela - Bougoni
+                constraints:
+                    energy_cap_equals: 300000                   # Estimated
+                    energy_eff_per_distance: 0.988              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 4.0                                  # https://www.ecowapp.org/sites/default/files/volume_4.pdf
+
+            300-330_kV_new:
+                constraints:
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 37.0                                  # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+
+    GMB, SEN:
+        techs:
+            220-275_kV:                                         # OMVG line
+                constraints:
+                    energy_cap_equals: 660000                   # Doubled the original https://www.pe-omvg.org/sites/default/files/2020-12/201103_EN_Depliant%202%20volets_Etat%20avancement%20chantiers_420x297mm_PRINT_ANG.pdf
+                    energy_eff_per_distance: 0.988              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 8.4                                   # https://www.pe-omvg.org/sites/default/files/2020-12/201103_EN_Depliant%202%20volets_Etat%20avancement%20chantiers_420x297mm_PRINT_ANG.pdf
+
+            300-330_kV_new:
+                constraints:
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 8.4                                   # https://www.pe-omvg.org/sites/default/files/2020-12/201103_EN_Depliant%202%20volets_Etat%20avancement%20chantiers_420x297mm_PRINT_ANG.pdf
+
+    GHA,TGO:
+        techs:
+            132-161_kV:
+                constraints:
+                    energy_cap_equals: 438000                   # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+                    energy_eff_per_distance: 0.929              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 9.1                                   # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+
+            300-330_kV:                                         # Coastal Backbone
+                constraints:
+                    energy_cap_equals: 1310400                  # Doubled the original https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power 
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 14.0                                  # https://www.au-pida.org/view-project/2006/
+
+            300-330_kV_planned:                                 # WAPP Median Backbone
+                constraints:
+                    energy_cap_equals: 900000                   # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power 
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 13.5                                  # Approximated by measuring distance between substations Kara - Yendi on Google Earth http://pipes.ecowapp.org/en/project/preparatory-studies/nigeria-%E2%80%93-benin-%E2%80%93-togo-%E2%80%93-ghana-c%C3%B4te-divoire-interconnection-project-wapp
+
+            300-330_kV_new:
+                constraints:
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 14.0                                  # https://www.au-pida.org/view-project/2006/
+
+    GIN, GNB:
+        techs:
+            220-275_kV:                                         # OMVG line
+                constraints:
+                    energy_cap_equals: 660000                   # Doubled the original https://www.pe-omvg.org/sites/default/files/2020-12/201103_EN_Depliant%202%20volets_Etat%20avancement%20chantiers_420x297mm_PRINT_ANG.pdf
+                    energy_eff_per_distance: 0.988              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 9.8                                   # https://www.pe-omvg.org/sites/default/files/2020-12/201103_EN_Depliant%202%20volets_Etat%20avancement%20chantiers_420x297mm_PRINT_ANG.pdf
+
+            300-330_kV_new:
+                constraints:
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 9.8                                   # https://www.pe-omvg.org/sites/default/files/2020-12/201103_EN_Depliant%202%20volets_Etat%20avancement%20chantiers_420x297mm_PRINT_ANG.pdf
+
+    GIN, LBR:
+        techs:
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 290000                   # https://www.afdb.org/fileadmin/uploads/afdb/Documents/Project-and-Operations/Multinational_-_C%C3%B4te_d%E2%80%99Ivoire-Liberia-Sierra_Leone_and_Guinea_Electricity_Networks_Interconnection_Project__CLSG__-_Appraisal_Report.pdf
+                    energy_eff_per_distance: 0.988              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 4.9                                   # https://documents1.worldbank.org/curated/en/099200005192271443/pdf/P1132660895af20e50b6f10801f377a93d0.pdf
+
+            300-330_kV_new:
+                constraints:
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 4.9                                   # https://documents1.worldbank.org/curated/en/099200005192271443/pdf/P1132660895af20e50b6f10801f377a93d0.pdf
+
+    GIN, MLI:
+        techs:
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 330000                   # https://www.afdb.org/fileadmin/uploads/afdb/Documents/Project-and-Operations/Multinational_-_225_KV_Guinea-Mali_Electricity_Interconnection_Project.pdf
+                    energy_eff_per_distance: 0.988              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 71.4                                  # https://mapafrica.afdb.org/en/projects/46002-P-Z1-FA0-149
+
+            220-275_kV_planned:                                 # Manantali - Linsan
+                constraints:
+                    energy_cap_equals: 300000                   # https://www.ecowapp.org/sites/default/files/volume_4.pdf
+                    energy_eff_per_distance: 0.988              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 23.5                                  # Approximated by measuring distance between substations on Google Earth
+
+            300-330_kV_planned:                                 # Western Backbone Tobene-Linsan-Sikasso
+                constraints:
+                    energy_cap_equals: 325000                   # https://www.ecowapp.org/sites/default/files/volume_4.pdf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 53.3                                  # https://www.ecowapp.org/sites/default/files/volume_4.pdf
+
+            300-330_kV_new:
+                constraints:
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 71.4                                  # https://mapafrica.afdb.org/en/projects/46002-P-Z1-FA0-149
+
+    GIN, SEN:
+        techs:
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 330000                   # https://www.pe-omvg.org/sites/default/files/2020-12/201103_EN_Depliant%202%20volets_Etat%20avancement%20chantiers_420x297mm_PRINT_ANG.pdf
+                    energy_eff_per_distance: 0.988              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 5.9                                   # https://www.pe-omvg.org/sites/default/files/2020-12/201103_EN_Depliant%202%20volets_Etat%20avancement%20chantiers_420x297mm_PRINT_ANG.pdf
+
+            300-330_kV_planned:                                 # Western Backbone Tobene-Linsan-Sikasso
+                constraints:
+                    energy_cap_equals: 650000                   # https://www.ecowapp.org/sites/default/files/volume_4.pdf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 53.3                                  # https://www.ecowapp.org/sites/default/files/volume_4.pdf
+
+            300-330_kV_new:
+                constraints:
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 5.9                                   # https://www.pe-omvg.org/sites/default/files/2020-12/201103_EN_Depliant%202%20volets_Etat%20avancement%20chantiers_420x297mm_PRINT_ANG.pdf
+
+    GIN, SLE:
+        techs:
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 290000                   # https://www.afdb.org/fileadmin/uploads/afdb/Documents/Project-and-Operations/Multinational_-_C%C3%B4te_d%E2%80%99Ivoire-Liberia-Sierra_Leone_and_Guinea_Electricity_Networks_Interconnection_Project__CLSG__-_Appraisal_Report.pdf
+                    energy_eff_per_distance: 0.988              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 16.0                                  # https://documents1.worldbank.org/curated/en/099200005192271443/pdf/P1132660895af20e50b6f10801f377a93d0.pdf
+
+            300-330_kV_new:
+                constraints:
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 16.0                                  # https://documents1.worldbank.org/curated/en/099200005192271443/pdf/P1132660895af20e50b6f10801f377a93d0.pdf
+
+    GNB, SEN:
+        techs:
+            220-275_kV:                                         # OMVG line
+                constraints:
+                    energy_cap_equals: 660000                   # Doubled the original ://www.pe-omvg.org/sites/default/files/2020-12/201103_EN_Depliant%202%20volets_Etat%20avancement%20chantiers_420x297mm_PRINT_ANG.pdf
+                    energy_eff_per_distance: 0.988              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 7.3                                   # https://www.pe-omvg.org/sites/default/files/2020-12/201103_EN_Depliant%202%20volets_Etat%20avancement%20chantiers_420x297mm_PRINT_ANG.pdf
+
+            300-330_kV_new:
+                constraints:
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 7.3                                   # https://www.pe-omvg.org/sites/default/files/2020-12/201103_EN_Depliant%202%20volets_Etat%20avancement%20chantiers_420x297mm_PRINT_ANG.pdf
+
+    LBR, SLE:
+        techs:
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 290000                   # https://www.afdb.org/fileadmin/uploads/afdb/Documents/Project-and-Operations/Multinational_-_C%C3%B4te_d%E2%80%99Ivoire-Liberia-Sierra_Leone_and_Guinea_Electricity_Networks_Interconnection_Project__CLSG__-_Appraisal_Report.pdf
+                    energy_eff_per_distance: 0.988              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 11.5                                  # https://documents1.worldbank.org/curated/en/099200005192271443/pdf/P1132660895af20e50b6f10801f377a93d0.pdf
+
+            300-330_kV_new:
+                constraints:
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 11.5                                  # https://documents1.worldbank.org/curated/en/099200005192271443/pdf/P1132660895af20e50b6f10801f377a93d0.pdf
+
+    MLI,SEN:
+        techs:
+            220-275_kV:
+                constraints:
+                    energy_cap_equals: 683000                   # https://www.gtai.de/resource/blob/28022/ef87761de9c74fe0a054356fb800ce37/pro201706145021-data.pdf
+                    energy_eff_per_distance: 0.988              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 28.8                                 # https://www.ecowapp.org/sites/default/files/volume_2.pdf
+
+            300-330_kV_planned:                                 # Western Backbone Tobene-Linsan-Sikasso
+                constraints:
+                    energy_cap_equals: 500000                   # https://www.ecowapp.org/sites/default/files/volume_4.pdf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 53.3                                  # https://www.ecowapp.org/sites/default/files/volume_4.pdf
+
+            300-330_kV_new:
+                constraints:
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 28.8                                 # https://www.ecowapp.org/sites/default/files/volume_2.pdf
+
+    MLI,NER:
+        techs:
+            300-330_kV_new:
+                constraints:
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 38.0                                   # Approximated by measuring distance between substations on Google Earth
+
+    NER,NGA_CNW:
+        techs:
+            132-161_kV:
+                constraints:
+                    energy_cap_equals: 169000                   # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+                    energy_eff_per_distance: 0.965              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 16.2                                  # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+
+            300-330_kV_planned:                                 # DOUBLE CIRCUIT LINE SALKADAMNA – KATSINA
+                constraints:
+                    energy_cap_equals: 700000                   # Estimated
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 500                                  # https://www.ecowapp.org/sites/default/files/volume_4.pdf
+
+            300-330_kV_planned_2:                               # North Core (Nigeria-Niger-Benin-Burkina)
+                constraints:
+                    energy_cap_equals: 900000                   # https://mapafrica.afdb.org/en/projects/46002-P-Z1-FA0-146
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 7.6                                   # Approximated by measuring distance between substations on Google Earth
+
+            300-330_kV_new:
+                constraints:
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 16.2                                  # https://www.irena.org/publications/2018/Nov/Planning-and-prospects-for-renewable-power
+
+    NER,NGA_E:
+        techs:
+            300-330_kV_new:
+                constraints:
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 17.0                                   # Approximated by measuring distance between substations on Google Earth
+
+            300-330_kV_installed_2035:
+                constraints:
+                    energy_cap_equals: 97361.60199274428
+                    energy_eff_per_distance: 0.99
+                distance: 17.0
+    NGA_CNW,NGA_E:
+        techs:
+            300-330_kV:
+                constraints:
+                    energy_cap_equals: 720000                   # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 19.6                                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+
+            300-330_kV_new:
+                constraints:
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 19.6                                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+
+    NGA_CNW,NGA_S:
+        techs:
+            132-161_kV:
+                constraints:
+                    energy_cap_equals: 91000                    # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+                    energy_eff_per_distance: 0.965              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 18.3                                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+
+            300-330_kV:
+                constraints:
+                    energy_cap_equals: 1554000                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 19.5                                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+
+            300-330_kV_new:
+                constraints:
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 19.5                                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+
+            300-330_kV_installed_2035:
+                constraints:
+                    energy_cap_equals: 153323.39033721012
+                    energy_eff_per_distance: 0.99
+                distance: 19.5
+    NGA_CNW,NGA_W:
+        techs:
+            300-330_kV:
+                constraints:
+                    energy_cap_equals: 2160000                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 15.7                                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+
+            300-330_kV_new:
+                constraints:
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 15.7                                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+
+    NGA_E,NGA_S:
+        techs:
+            300-330_kV:
+                constraints:
+                    energy_cap_equals: 777000                    # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 24.65                                 # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+
+            300-330_kV_planned:                             # Eastern Backbone
+                constraints:
+                    energy_cap_equals: 777000                   # https://www.ecowapp.org/sites/default/files/volume_4.pdf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 10.0                                  # Approximated
+
+            300-330_kV_new:
+                constraints:
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.99              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 24.65                                 # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+
+    NGA_S,NGA_W:
+        techs:
+            300-330_kV:
+                constraints:
+                    energy_cap_equals: 1554000                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pdf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 28.0                                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pd
+
+            300-330_kV_new:
+                constraints:
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.99               # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 28.0                                  # https://www.ecowapp.org/sites/default/files/mp_wapp_volume_1.pd                

@@ -1,0 +1,877 @@
+# The West African Power Pool is divided into 14 regions, which are the countries in the Power Pool, named according to
+# the ISO 3166-1 Alpha-3 code. Nigeria is divided in 4 regions.
+
+#Update: October 2024
+
+#1. Benin: BEN
+#2. Burkina Faso: BFA
+#3. Côte d'Ivoire: CIV
+#4. The Gambia: GMB
+#5. Ghana: GHA
+#6. Guinea: GIN
+#7. Guinea-Bissau: GNB
+#8. Liberia: LBR
+#9. Mali: MLI
+#10. Niger: NER
+#11. Center and North-West Nigeria (Kaduna, Kano, Abuja DISCOs): NGA_CNW
+#12. East Nigeria (Yola, Jos DISCOs): NGA_E
+#13. South Nigeria (Benin, Enugu, Portharcourt DISCOs): NGA_S
+#14. West Nigeria (Ikeja, Ibadan, Eko DISCOs): NGA_W
+#15. Senegal: SEN
+#16. Sierra Leone: SLE
+#17. Togo: TGO
+
+# energy_cap_equals: Installed energy capacity [kW]
+# energy_cap_max: Available energy capacity [kW]
+
+locations:
+
+#################### Benin ####################
+
+    BEN:
+
+        techs:
+
+            PV_BEN_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 17317514.03127649
+                    resource: file=Solar_WAPP_MSR.csv:BEN1
+                    resource_unit: energy_per_cap
+
+            Wind_BEN_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 1115640.342385498
+                    resource: file=Wind_WAPP_MSR.csv:BEN1
+                    resource_unit: energy_per_cap
+
+#################### Burkina Faso ####################
+
+            PV_BEN_MSR1_2030_installed:
+                constraints:
+                    energy_cap_equals: 145296.84381430436
+                    resource: file=Solar_WAPP_MSR.csv:BEN1
+                    resource_unit: energy_per_cap
+            Wind_BEN_MSR1_2030_installed:
+                constraints:
+                    energy_cap_equals: 305052.5646320507
+                    resource: file=Wind_WAPP_MSR.csv:BEN1
+                    resource_unit: energy_per_cap
+            PV_BEN_MSR1_2035_installed:
+                constraints:
+                    energy_cap_equals: 183444.91120920316
+                    resource: file=Solar_WAPP_MSR.csv:BEN1
+                    resource_unit: energy_per_cap
+            Wind_BEN_MSR1_2035_installed:
+                constraints:
+                    energy_cap_equals: 142049.65092245172
+                    resource: file=Wind_WAPP_MSR.csv:BEN1
+                    resource_unit: energy_per_cap
+    BFA:
+
+        techs:
+
+
+            PV_BFA_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 44271779.44359611
+                    resource: file=Solar_WAPP_MSR.csv:BFA1
+                    resource_unit: energy_per_cap
+
+            Wind_BFA_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 11902728.77588675
+                    resource: file=Wind_WAPP_MSR.csv:BFA1
+                    resource_unit: energy_per_cap
+
+            Wind_BFA_MSR2:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 27806308.418380294
+                    resource: file=Wind_WAPP_MSR.csv:BFA2
+                    resource_unit: energy_per_cap
+
+#################### Cote d'Ivoire ####################
+
+            Wind_BFA_MSR1_2030_installed:
+                constraints:
+                    energy_cap_equals: 115935.66415452
+                    resource: file=Wind_WAPP_MSR.csv:BFA1
+                    resource_unit: energy_per_cap
+            Wind_BFA_MSR2_2030_installed:
+                constraints:
+                    energy_cap_equals: 78806.33101893649
+                    resource: file=Wind_WAPP_MSR.csv:BFA2
+                    resource_unit: energy_per_cap
+            PV_BFA_MSR1_2035_installed:
+                constraints:
+                    energy_cap_equals: 105237.73465389384
+                    resource: file=Solar_WAPP_MSR.csv:BFA1
+                    resource_unit: energy_per_cap
+            Wind_BFA_MSR1_2035_installed:
+                constraints:
+                    energy_cap_equals: 28498.36362873194
+                    resource: file=Wind_WAPP_MSR.csv:BFA1
+                    resource_unit: energy_per_cap
+            Wind_BFA_MSR2_2035_installed:
+                constraints:
+                    energy_cap_equals: 129184.24097077228
+                    resource: file=Wind_WAPP_MSR.csv:BFA2
+                    resource_unit: energy_per_cap
+    CIV:
+
+        techs:
+
+            PV_CIV_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 675312.9545364352
+                    resource: file=Solar_WAPP_MSR.csv:CIV1
+                    resource_unit: energy_per_cap
+
+            PV_CIV_MSR2:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 29695935.57441
+                    resource: file=Solar_WAPP_MSR.csv:CIV2
+                    resource_unit: energy_per_cap
+
+            PV_CIV_MSR3:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 0
+                    resource: file=Solar_WAPP_MSR.csv:CIV3
+                    resource_unit: energy_per_cap
+
+            PV_CIV_MSR4:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 19083272.92702
+                    resource: file=Solar_WAPP_MSR.csv:CIV4
+                    resource_unit: energy_per_cap
+
+            Wind_CIV_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 0
+                    resource: file=Wind_WAPP_MSR.csv:CIV1
+                    resource_unit: energy_per_cap
+
+#################### The Gambia ####################
+
+            PV_CIV_MSR1_2030_installed:
+                constraints:
+                    energy_cap_equals: 104378.32986944178
+                    resource: file=Solar_WAPP_MSR.csv:CIV1
+                    resource_unit: energy_per_cap
+            PV_CIV_MSR3_2030_installed:
+                constraints:
+                    energy_cap_equals: 2624655.38556
+                    resource: file=Solar_WAPP_MSR.csv:CIV3
+                    resource_unit: energy_per_cap
+            Wind_CIV_MSR1_2030_installed:
+                constraints:
+                    energy_cap_equals: 24827.632220000003
+                    resource: file=Wind_WAPP_MSR.csv:CIV1
+                    resource_unit: energy_per_cap
+            PV_CIV_MSR1_2035_installed:
+                constraints:
+                    energy_cap_equals: 1155521.823804123
+                    resource: file=Solar_WAPP_MSR.csv:CIV1
+                    resource_unit: energy_per_cap
+    GMB:
+
+        techs:
+
+            PV_GMB_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 1641712.9163175207
+                    resource: file=Solar_WAPP_MSR.csv:GMB1
+                    resource_unit: energy_per_cap
+
+            Wind_GMB_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 182020.87884787188
+                    resource: file=Wind_WAPP_MSR.csv:GMB1
+                    resource_unit: energy_per_cap
+
+#################### Ghana ####################
+
+            PV_GMB_MSR1_2030_installed:
+                constraints:
+                    energy_cap_equals: 30233.539594165923
+                    resource: file=Solar_WAPP_MSR.csv:GMB1
+                    resource_unit: energy_per_cap
+            Wind_GMB_MSR1_2030_installed:
+                constraints:
+                    energy_cap_equals: 35681.14819171916
+                    resource: file=Wind_WAPP_MSR.csv:GMB1
+                    resource_unit: energy_per_cap
+            PV_GMB_MSR1_2035_installed:
+                constraints:
+                    energy_cap_equals: 29854.488128303616
+                    resource: file=Solar_WAPP_MSR.csv:GMB1
+                    resource_unit: energy_per_cap
+            Wind_GMB_MSR1_2035_installed:
+                constraints:
+                    energy_cap_equals: 3161.2486004089697
+                    resource: file=Wind_WAPP_MSR.csv:GMB1
+                    resource_unit: energy_per_cap
+    GHA:
+
+        techs:
+
+            PV_GHA_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 15956091.235207396
+                    resource: file=Solar_WAPP_MSR.csv:GHA1
+                    resource_unit: energy_per_cap
+
+            PV_GHA_MSR2:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 22516920.41525
+                    resource: file=Solar_WAPP_MSR.csv:GHA2
+                    resource_unit: energy_per_cap
+
+            Wind_GHA_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 885969.5538196061
+                    resource: file=Wind_WAPP_MSR.csv:GHA1
+                    resource_unit: energy_per_cap
+
+            Wind_GHA_MSR2:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 0
+                    resource: file=Wind_WAPP_MSR.csv:GHA2
+                    resource_unit: energy_per_cap
+
+#################### Guinea ####################
+
+            PV_GHA_MSR1_2035_installed:
+                constraints:
+                    energy_cap_equals: 369299.90215260105
+                    resource: file=Solar_WAPP_MSR.csv:GHA1
+                    resource_unit: energy_per_cap
+            Wind_GHA_MSR1_2035_installed:
+                constraints:
+                    energy_cap_equals: 3573006.484170394
+                    resource: file=Wind_WAPP_MSR.csv:GHA1
+                    resource_unit: energy_per_cap
+            Wind_GHA_MSR2_2035_installed:
+                constraints:
+                    energy_cap_equals: 864336.32606
+                    resource: file=Wind_WAPP_MSR.csv:GHA2
+                    resource_unit: energy_per_cap
+    GIN:
+
+        techs:
+
+            PV_GIN_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 11155199.51473
+                    resource: file=Solar_WAPP_MSR.csv:GIN1
+                    resource_unit: energy_per_cap
+
+            PV_GIN_MSR2:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 28616953.215360004
+                    resource: file=Solar_WAPP_MSR.csv:GIN2
+                    resource_unit: energy_per_cap
+
+            Wind_GIN_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 44655.37309
+                    resource: file=Wind_WAPP_MSR.csv:GIN1
+                    resource_unit: energy_per_cap
+
+#################### Guinea-Bissau ####################
+
+    GNB:
+
+        techs:
+
+            PV_GNB_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 4644383.833402641
+                    resource: file=Solar_WAPP_MSR.csv:GNB1
+                    resource_unit: energy_per_cap
+
+#################### Liberia ####################
+
+            PV_GNB_MSR1_2030_installed:
+                constraints:
+                    energy_cap_equals: 42178.95556545368
+                    resource: file=Solar_WAPP_MSR.csv:GNB1
+                    resource_unit: energy_per_cap
+            PV_GNB_MSR1_2035_installed:
+                constraints:
+                    energy_cap_equals: 14266.001621904314
+                    resource: file=Solar_WAPP_MSR.csv:GNB1
+                    resource_unit: energy_per_cap
+    LBR:
+
+        techs:
+
+            PV_LBR_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 15834846.03832
+                    resource: file=Solar_WAPP_MSR.csv:LBR1
+                    resource_unit: energy_per_cap
+
+#################### Mali ####################
+
+    MLI:
+
+        techs:
+
+            PV_MLI_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 26695481.66446621
+                    resource: file=Solar_WAPP_MSR.csv:MLI1
+                    resource_unit: energy_per_cap
+
+            PV_MLI_MSR2:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 48799670.089999996
+                    resource: file=Solar_WAPP_MSR.csv:MLI2
+                    resource_unit: energy_per_cap
+
+            PV_MLI_MSR3:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 60976096.910000004
+                    resource: file=Solar_WAPP_MSR.csv:MLI3
+                    resource_unit: energy_per_cap
+
+            PV_MLI_MSR4:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 49891107.129999995
+                    resource: file=Solar_WAPP_MSR.csv:MLI4
+                    resource_unit: energy_per_cap
+
+            PV_MLI_MSR5:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 20316289.98667121
+                    resource: file=Solar_WAPP_MSR.csv:MLI5
+                    resource_unit: energy_per_cap
+
+            Wind_MLI_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 58554145.83435632
+                    resource: file=Wind_WAPP_MSR.csv:MLI1
+                    resource_unit: energy_per_cap
+
+            Wind_MLI_MSR2:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 14838437.113773882
+                    resource: file=Wind_WAPP_MSR.csv:MLI2
+                    resource_unit: energy_per_cap
+
+            Wind_MLI_MSR3:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 62528777.260000005
+                    resource: file=Wind_WAPP_MSR.csv:MLI3
+                    resource_unit: energy_per_cap
+
+            Wind_MLI_MSR4:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 34292962.24494643
+                    resource: file=Wind_WAPP_MSR.csv:MLI4
+                    resource_unit: energy_per_cap
+
+            Wind_MLI_MSR5:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 13099627.090921434
+                    resource: file=Wind_WAPP_MSR.csv:MLI5
+                    resource_unit: energy_per_cap
+
+#################### Niger ####################
+
+            PV_MLI_MSR1_2030_installed:
+                constraints:
+                    energy_cap_equals: 217275.9445007795
+                    resource: file=Solar_WAPP_MSR.csv:MLI1
+                    resource_unit: energy_per_cap
+            PV_MLI_MSR5_2030_installed:
+                constraints:
+                    energy_cap_equals: 314408.98143883474
+                    resource: file=Solar_WAPP_MSR.csv:MLI5
+                    resource_unit: energy_per_cap
+            Wind_MLI_MSR1_2030_installed:
+                constraints:
+                    energy_cap_equals: 186881.3935435144
+                    resource: file=Wind_WAPP_MSR.csv:MLI1
+                    resource_unit: energy_per_cap
+            Wind_MLI_MSR2_2030_installed:
+                constraints:
+                    energy_cap_equals: 176526.3622218772
+                    resource: file=Wind_WAPP_MSR.csv:MLI2
+                    resource_unit: energy_per_cap
+            Wind_MLI_MSR4_2030_installed:
+                constraints:
+                    energy_cap_equals: 70253.83505356804
+                    resource: file=Wind_WAPP_MSR.csv:MLI4
+                    resource_unit: energy_per_cap
+            Wind_MLI_MSR5_2030_installed:
+                constraints:
+                    energy_cap_equals: 216974.36743553088
+                    resource: file=Wind_WAPP_MSR.csv:MLI5
+                    resource_unit: energy_per_cap
+            PV_MLI_MSR1_2035_installed:
+                constraints:
+                    energy_cap_equals: 19205.661033013243
+                    resource: file=Solar_WAPP_MSR.csv:MLI1
+                    resource_unit: energy_per_cap
+            PV_MLI_MSR5_2035_installed:
+                constraints:
+                    energy_cap_equals: 287759.45188995433
+                    resource: file=Solar_WAPP_MSR.csv:MLI5
+                    resource_unit: energy_per_cap
+            Wind_MLI_MSR1_2035_installed:
+                constraints:
+                    energy_cap_equals: 115499.8221001588
+                    resource: file=Wind_WAPP_MSR.csv:MLI1
+                    resource_unit: energy_per_cap
+            Wind_MLI_MSR2_2035_installed:
+                constraints:
+                    energy_cap_equals: 77649.68400423895
+                    resource: file=Wind_WAPP_MSR.csv:MLI2
+                    resource_unit: energy_per_cap
+            Wind_MLI_MSR5_2035_installed:
+                constraints:
+                    energy_cap_equals: 111829.27164303484
+                    resource: file=Wind_WAPP_MSR.csv:MLI5
+                    resource_unit: energy_per_cap
+    NER:
+
+        techs:
+            PV_NER_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 71838682.64
+                    resource: file=Solar_WAPP_MSR.csv:NER1
+                    resource_unit: energy_per_cap
+
+            PV_NER_MSR2:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 58936269.88
+                    resource: file=Solar_WAPP_MSR.csv:NER2
+                    resource_unit: energy_per_cap
+
+            PV_NER_MSR3:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 8244544.188316243
+                    resource: file=Solar_WAPP_MSR.csv:NER3
+                    resource_unit: energy_per_cap
+
+            PV_NER_MSR4:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 54877371.7
+                    resource: file=Solar_WAPP_MSR.csv:NER4
+                    resource_unit: energy_per_cap
+
+            Wind_NER_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 14951352.24039012
+                    resource: file=Wind_WAPP_MSR.csv:NER1
+                    resource_unit: energy_per_cap
+
+            Wind_NER_MSR2:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 61041336.90294426
+                    resource: file=Wind_WAPP_MSR.csv:NER2
+                    resource_unit: energy_per_cap
+
+            Wind_NER_MSR3:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 15024305.701312624
+                    resource: file=Wind_WAPP_MSR.csv:NER3
+                    resource_unit: energy_per_cap
+
+            Wind_NER_MSR4:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 12074629.26957509
+                    resource: file=Wind_WAPP_MSR.csv:NER4
+                    resource_unit: energy_per_cap
+
+            Wind_NER_MSR5:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 46201300.8336
+                    resource: file=Wind_WAPP_MSR.csv:NER5
+                    resource_unit: energy_per_cap
+
+            Wind_NER_MSR6:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 15646560.052565942
+                    resource: file=Wind_WAPP_MSR.csv:NER6
+                    resource_unit: energy_per_cap
+
+            Wind_NER_MSR7:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 8693975.69576
+                    resource: file=Wind_WAPP_MSR.csv:NER7
+                    resource_unit: energy_per_cap
+
+#################### Center and North-West Nigeria (Kaduna, Kano, Abuja DISCOs) ####################
+
+            PV_NER_MSR3_2030_installed:
+                constraints:
+                    energy_cap_equals: 38205.10476345437
+                    resource: file=Solar_WAPP_MSR.csv:NER3
+                    resource_unit: energy_per_cap
+            Wind_NER_MSR1_2030_installed:
+                constraints:
+                    energy_cap_equals: 33275.713099880246
+                    resource: file=Wind_WAPP_MSR.csv:NER1
+                    resource_unit: energy_per_cap
+            Wind_NER_MSR2_2030_installed:
+                constraints:
+                    energy_cap_equals: 17249.495845637102
+                    resource: file=Wind_WAPP_MSR.csv:NER2
+                    resource_unit: energy_per_cap
+            Wind_NER_MSR4_2030_installed:
+                constraints:
+                    energy_cap_equals: 71028.3452184438
+                    resource: file=Wind_WAPP_MSR.csv:NER4
+                    resource_unit: energy_per_cap
+            Wind_NER_MSR6_2030_installed:
+                constraints:
+                    energy_cap_equals: 112910.49241405976
+                    resource: file=Wind_WAPP_MSR.csv:NER6
+                    resource_unit: energy_per_cap
+            PV_NER_MSR3_2035_installed:
+                constraints:
+                    energy_cap_equals: 47056.58292030218
+                    resource: file=Solar_WAPP_MSR.csv:NER3
+                    resource_unit: energy_per_cap
+            Wind_NER_MSR3_2035_installed:
+                constraints:
+                    energy_cap_equals: 12735.587457375688
+                    resource: file=Wind_WAPP_MSR.csv:NER3
+                    resource_unit: energy_per_cap
+            Wind_NER_MSR4_2035_installed:
+                constraints:
+                    energy_cap_equals: 67737.08400646727
+                    resource: file=Wind_WAPP_MSR.csv:NER4
+                    resource_unit: energy_per_cap
+    NGA_CNW:
+
+
+        techs:
+
+            PV_NGA_CNW_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 4484133.0597600015
+                    resource: file=Solar_WAPP_MSR.csv:NGA_CNW1
+                    resource_unit: energy_per_cap
+
+            PV_NGA_CNW_MSR2:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 11073001.183060003
+                    resource: file=Solar_WAPP_MSR.csv:NGA_CNW2
+                    resource_unit: energy_per_cap
+
+            PV_NGA_CNW_MSR3:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 11236391.71277
+                    resource: file=Solar_WAPP_MSR.csv:NGA_CNW3
+                    resource_unit: energy_per_cap
+
+            PV_NGA_CNW_MSR4:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 25256684.09179
+                    resource: file=Solar_WAPP_MSR.csv:NGA_CNW4
+                    resource_unit: energy_per_cap
+
+            PV_NGA_CNW_MSR5:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 10021527.462266013
+                    resource: file=Solar_WAPP_MSR.csv:NGA_CNW5
+                    resource_unit: energy_per_cap
+
+            PV_NGA_CNW_MSR6:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 6160371.676220003
+                    resource: file=Solar_WAPP_MSR.csv:NGA_CNW6
+                    resource_unit: energy_per_cap
+
+            PV_NGA_CNW_MSR7:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 5559982.475249999
+                    resource: file=Solar_WAPP_MSR.csv:NGA_CNW7
+                    resource_unit: energy_per_cap
+
+            Wind_NGA_CNW_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 25798318.26070198
+                    resource: file=Wind_WAPP_MSR.csv:NGA_CNW1
+                    resource_unit: energy_per_cap
+
+            Wind_NGA_CNW_MSR2:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 9325950.04068033
+                    resource: file=Wind_WAPP_MSR.csv:NGA_CNW2
+                    resource_unit: energy_per_cap
+
+            Wind_NGA_CNW_MSR3:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 20013657.479150787
+                    resource: file=Wind_WAPP_MSR.csv:NGA_CNW3
+                    resource_unit: energy_per_cap
+
+#################### East Nigeria (Yola, Jos DISCOs) ####################
+
+            Wind_NGA_CNW_MSR2_2030_installed:
+                constraints:
+                    energy_cap_equals: 166098.9099830837
+                    resource: file=Wind_WAPP_MSR.csv:NGA_CNW2
+                    resource_unit: energy_per_cap
+            Wind_NGA_CNW_MSR3_2030_installed:
+                constraints:
+                    energy_cap_equals: 534110.966440018
+                    resource: file=Wind_WAPP_MSR.csv:NGA_CNW3
+                    resource_unit: energy_per_cap
+            PV_NGA_CNW_MSR5_2035_installed:
+                constraints:
+                    energy_cap_equals: 3394896.2397139864
+                    resource: file=Solar_WAPP_MSR.csv:NGA_CNW5
+                    resource_unit: energy_per_cap
+            Wind_NGA_CNW_MSR1_2035_installed:
+                constraints:
+                    energy_cap_equals: 207834.9389780205
+                    resource: file=Wind_WAPP_MSR.csv:NGA_CNW1
+                    resource_unit: energy_per_cap
+            Wind_NGA_CNW_MSR2_2035_installed:
+                constraints:
+                    energy_cap_equals: 1427596.9677065825
+                    resource: file=Wind_WAPP_MSR.csv:NGA_CNW2
+                    resource_unit: energy_per_cap
+            Wind_NGA_CNW_MSR3_2035_installed:
+                constraints:
+                    energy_cap_equals: 1440416.4724791916
+                    resource: file=Wind_WAPP_MSR.csv:NGA_CNW3
+                    resource_unit: energy_per_cap
+    NGA_E:
+
+
+        techs:
+
+            PV_NGA_E_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 35164124.31756999
+                    resource: file=Solar_WAPP_MSR.csv:NGA_E1
+                    resource_unit: energy_per_cap
+
+            PV_NGA_E_MSR2:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 17100440.252240002
+                    resource: file=Solar_WAPP_MSR.csv:NGA_E2
+                    resource_unit: energy_per_cap
+
+            PV_NGA_E_MSR3:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 20305090.007489998
+                    resource: file=Solar_WAPP_MSR.csv:NGA_E3
+                    resource_unit: energy_per_cap
+
+            Wind_NGA_E_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 6818180.6043946035
+                    resource: file=Wind_WAPP_MSR.csv:NGA_E1
+                    resource_unit: energy_per_cap
+
+            Wind_NGA_E_MSR2:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 16689143.926570002
+                    resource: file=Wind_WAPP_MSR.csv:NGA_E2
+                    resource_unit: energy_per_cap
+
+            Wind_NGA_E_MSR3:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 29845827.90484906
+                    resource: file=Wind_WAPP_MSR.csv:NGA_E3
+                    resource_unit: energy_per_cap
+
+            Wind_NGA_E_MSR4:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 6841176.921634341
+                    resource: file=Wind_WAPP_MSR.csv:NGA_E4
+                    resource_unit: energy_per_cap
+
+            Wind_NGA_E_MSR5:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 12931560.79978671
+                    resource: file=Wind_WAPP_MSR.csv:NGA_E5
+                    resource_unit: energy_per_cap
+
+#################### Senegal ####################
+
+            Wind_NGA_E_MSR1_2030_installed:
+                constraints:
+                    energy_cap_equals: 449983.3860770024
+                    resource: file=Wind_WAPP_MSR.csv:NGA_E1
+                    resource_unit: energy_per_cap
+            Wind_NGA_E_MSR4_2030_installed:
+                constraints:
+                    energy_cap_equals: 14240.657228498389
+                    resource: file=Wind_WAPP_MSR.csv:NGA_E4
+                    resource_unit: energy_per_cap
+            Wind_NGA_E_MSR5_2030_installed:
+                constraints:
+                    energy_cap_equals: 268442.00464521133
+                    resource: file=Wind_WAPP_MSR.csv:NGA_E5
+                    resource_unit: energy_per_cap
+            Wind_NGA_E_MSR1_2035_installed:
+                constraints:
+                    energy_cap_equals: 577833.3597083932
+                    resource: file=Wind_WAPP_MSR.csv:NGA_E1
+                    resource_unit: energy_per_cap
+            Wind_NGA_E_MSR3_2035_installed:
+                constraints:
+                    energy_cap_equals: 529542.9851109397
+                    resource: file=Wind_WAPP_MSR.csv:NGA_E3
+                    resource_unit: energy_per_cap
+            Wind_NGA_E_MSR4_2035_installed:
+                constraints:
+                    energy_cap_equals: 220741.3000271589
+                    resource: file=Wind_WAPP_MSR.csv:NGA_E4
+                    resource_unit: energy_per_cap
+            Wind_NGA_E_MSR5_2035_installed:
+                constraints:
+                    energy_cap_equals: 94578.14978808133
+                    resource: file=Wind_WAPP_MSR.csv:NGA_E5
+                    resource_unit: energy_per_cap
+    SEN:
+
+
+        techs:
+
+            PV_SEN_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 32171102.55897
+                    resource: file=Solar_WAPP_MSR.csv:SEN1
+                    resource_unit: energy_per_cap
+
+            Wind_SEN_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 24598088.82722015
+                    resource: file=Wind_WAPP_MSR.csv:SEN1
+                    resource_unit: energy_per_cap
+
+            Wind_SEN_MSR2:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 3952975.12031
+                    resource: file=Wind_WAPP_MSR.csv:SEN2
+                    resource_unit: energy_per_cap
+
+#################### Sierra Leone ####################
+
+            Wind_SEN_MSR1_2035_installed:
+                constraints:
+                    energy_cap_equals: 136379.40087986086
+                    resource: file=Wind_WAPP_MSR.csv:SEN1
+                    resource_unit: energy_per_cap
+    SLE:
+
+        techs:
+
+            PV_SLE_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 11465687.963809997
+                    resource: file=Solar_WAPP_MSR.csv:SLE1
+                    resource_unit: energy_per_cap
+
+#################### Togo ####################
+
+    TGO:
+
+        techs:
+
+            PV_TGO_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 8699132.494699275
+                    resource: file=Solar_WAPP_MSR.csv:TGO1
+                    resource_unit: energy_per_cap
+
+            Wind_TGO_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 302545.783349508
+                    resource: file=Wind_WAPP_MSR.csv:TGO1
+                    resource_unit: energy_per_cap
+            PV_TGO_MSR1_2030_installed:
+                constraints:
+                    energy_cap_equals: 158341.49618640472
+                    resource: file=Solar_WAPP_MSR.csv:TGO1
+                    resource_unit: energy_per_cap
+            Wind_TGO_MSR1_2030_installed:
+                constraints:
+                    energy_cap_equals: 319206.07804231654
+                    resource: file=Wind_WAPP_MSR.csv:TGO1
+                    resource_unit: energy_per_cap
+            PV_TGO_MSR1_2035_installed:
+                constraints:
+                    energy_cap_equals: 171277.9783643194
+                    resource: file=Solar_WAPP_MSR.csv:TGO1
+                    resource_unit: energy_per_cap
+            Wind_TGO_MSR1_2035_installed:
+                constraints:
+                    energy_cap_equals: 124975.64265817543
+                    resource: file=Wind_WAPP_MSR.csv:TGO1
+                    resource_unit: energy_per_cap
