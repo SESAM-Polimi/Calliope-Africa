@@ -1,0 +1,9 @@
+﻿ctrl,val,explanatory
+f_in,C:\Users\user\OneDrive - Politecnico di Milano\DallaRiva - CalliopePowerPools\04-Lavoro\01_Cluster RES\01_Cluster creation\WAPP_Best5%SolarPV_all_postRegion.xlsx,input path for merge
+iterations,1000,number of iterations for k-means clustering
+cluster_metric,euclidean,clustering type for k-means clustering. Euclidean is default but can have other types c.f. TimeSeriesKMeans package
+debug_out,0,whether to write out debugging file
+ctrl_country_in,ctrl_country.csv,path to control file with countries and number of clusters for each country
+tech,solar,wind solar or csp
+ctrl_param_in,ctrl_param.csv,path to control file with list of parameters and their mode of aggregation
+ctryf_writeout,0,if write out to separate country folders or not

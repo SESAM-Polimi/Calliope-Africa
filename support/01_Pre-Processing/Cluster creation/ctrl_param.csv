@@ -1,0 +1,8 @@
+﻿param,mode
+AreakM2,sum
+CapacityMW,sum
+TD_Dist_gf,wmean
+trCAPEX-kW,wmean
+Latitude,wmean
+Longitude,wmean
+IEC_Class,wmean_IEC

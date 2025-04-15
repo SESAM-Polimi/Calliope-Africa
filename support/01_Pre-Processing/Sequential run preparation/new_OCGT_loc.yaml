@@ -1,0 +1,140 @@
+locations:                
+
+############################## WAPP ###############################
+
+    BEN:
+        techs:
+
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0    
+                    energy_cap_max: inf   
+
+    BFA:
+        techs: 
+
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0      
+                    energy_cap_max: inf   
+
+    CIV:
+        techs:
+
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0      
+                    energy_cap_max: inf   
+
+    GMB:
+        techs:
+
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0      
+                    energy_cap_max: inf   
+
+    GHA:
+        techs:
+
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0      
+                    energy_cap_max: inf   
+
+    GIN:
+        techs:
+
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0      
+                    energy_cap_max: inf   
+
+    GNB:
+        techs:
+
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0      
+                    energy_cap_max: inf   
+
+    LBR:
+        techs:
+
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0      
+                    energy_cap_max: inf   
+
+    MLI:
+        techs: 
+
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0      
+                    energy_cap_max: inf   
+
+    NER:
+        techs:
+
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0      
+                    energy_cap_max: inf   
+
+    NGA_CNW:
+        techs:   
+
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0      
+                    energy_cap_max: inf  
+
+    NGA_E:
+        techs:
+
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0      
+                    energy_cap_max: inf  
+
+    NGA_S:
+        techs: 
+
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0      
+                    energy_cap_max: inf   
+
+    NGA_W:
+        techs:
+
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0      
+                    energy_cap_max: inf   
+
+    SEN:
+        techs:
+
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0      
+                    energy_cap_max: inf   
+
+    SLE:
+        techs:
+
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0      
+                    energy_cap_max: inf   
+
+    TGO:
+        techs: 
+
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0      
+                    energy_cap_max: inf  
+
