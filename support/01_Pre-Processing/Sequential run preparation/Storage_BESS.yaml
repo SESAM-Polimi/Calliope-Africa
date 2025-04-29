@@ -1,0 +1,155 @@
+locations:
+
+############################## WAPP ###############################
+
+    BEN:
+        techs:
+
+            BESS:
+                constraints:
+                    energy_cap_min: 0    
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25   
+
+    BFA:
+        techs: 
+
+            BESS:
+                constraints:
+                    energy_cap_min: 0    
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25  
+
+    CIV:
+        techs:
+
+            BESS:
+                constraints: 
+                    energy_cap_min: 0   
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25  
+    GMB:
+        techs:
+
+            BESS:
+                constraints:
+                    energy_cap_min: 0    
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25  
+
+    GHA:
+        techs:
+
+            BESS:
+                constraints:    
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25  
+
+    GIN:
+        techs:
+
+            BESS:
+                constraints:
+                    energy_cap_min: 0    
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25  
+
+    GNB:
+        techs:
+
+            BESS:
+                constraints:
+                    energy_cap_min: 0    
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25  
+
+    LBR:
+        techs:
+
+            BESS:
+                constraints:
+                    energy_cap_min: 0    
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25  
+
+    MLI:
+        techs: 
+
+            BESS:
+                constraints:
+                    energy_cap_min: 0    
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25  
+
+    NER:
+        techs:
+
+            BESS:
+                constraints:
+                    energy_cap_min: 0    
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25  
+
+    NGA_CNW:
+        techs:   
+
+            BESS:
+                constraints:
+                    energy_cap_min: 0    
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25  
+
+    NGA_E:
+        techs:
+
+            BESS:
+                constraints:
+                    energy_cap_min: 0    
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25  
+
+    NGA_S:
+        techs: 
+
+            BESS:
+                constraints:
+                    energy_cap_min: 0    
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25  
+
+    NGA_W:
+        techs:
+
+            BESS:
+                constraints:
+                    energy_cap_min: 0    
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25  
+
+    SEN:
+        techs:
+
+            BESS:
+                constraints:
+                    energy_cap_min: 0    
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25  
+
+    SLE:
+        techs:
+
+            BESS:
+                constraints:
+                    energy_cap_min: 0    
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25  
+
+    TGO:
+        techs: 
+
+            BESS:
+                constraints:
+                    energy_cap_min: 0    
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25  

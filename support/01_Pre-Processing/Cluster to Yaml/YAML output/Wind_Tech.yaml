@@ -1,0 +1,558 @@
+
+    Wind_BEN_MSR1:
+        essentials:
+            color: '#E32E18'
+            name: Wind Power Plant BEN 1
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1956.5236871547863
+            om_annual: 64.2
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    Wind_BFA_MSR1:
+        essentials:
+            color: '#E32E18'
+            name: Wind Power Plant BFA 1
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 2124.728166393837
+            om_annual: 64.2
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    Wind_BFA_MSR2:
+        essentials:
+            color: '#E32E18'
+            name: Wind Power Plant BFA 2
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 2079.170612554274
+            om_annual: 64.2
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    Wind_GMB_MSR1:
+        essentials:
+            color: '#E32E18'
+            name: Wind Power Plant GMB 1
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 2017.2460949590761
+            om_annual: 64.2
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    Wind_GHA_MSR1:
+        essentials:
+            color: '#E32E18'
+            name: Wind Power Plant GHA 1
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1964.749056911598
+            om_annual: 64.2
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    Wind_GHA_MSR2:
+        essentials:
+            color: '#E32E18'
+            name: Wind Power Plant GHA 2
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1931.1176296624012
+            om_annual: 64.2
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    Wind_GIN_MSR1:
+        essentials:
+            color: '#E32E18'
+            name: Wind Power Plant GIN 1
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 2154.846969184235
+            om_annual: 64.2
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    Wind_CIV_MSR1:
+        essentials:
+            color: '#E32E18'
+            name: Wind Power Plant CIV 1
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1932.1199877
+            om_annual: 64.2
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    Wind_MLI_MSR1:
+        essentials:
+            color: '#E32E18'
+            name: Wind Power Plant MLI 1
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 2761.2086789891873
+            om_annual: 64.2
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    Wind_MLI_MSR2:
+        essentials:
+            color: '#E32E18'
+            name: Wind Power Plant MLI 2
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 2629.7937988587164
+            om_annual: 64.2
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    Wind_MLI_MSR3:
+        essentials:
+            color: '#E32E18'
+            name: Wind Power Plant MLI 3
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 2626.320282096508
+            om_annual: 64.2
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    Wind_MLI_MSR4:
+        essentials:
+            color: '#E32E18'
+            name: Wind Power Plant MLI 4
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 2613.5179410544306
+            om_annual: 64.2
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    Wind_MLI_MSR5:
+        essentials:
+            color: '#E32E18'
+            name: Wind Power Plant MLI 5
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 2028.6003254385084
+            om_annual: 64.2
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    Wind_NER_MSR1:
+        essentials:
+            color: '#E32E18'
+            name: Wind Power Plant NER 1
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 2695.756439141031
+            om_annual: 64.2
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    Wind_NER_MSR2:
+        essentials:
+            color: '#E32E18'
+            name: Wind Power Plant NER 2
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 2268.631848001443
+            om_annual: 64.2
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    Wind_NER_MSR3:
+        essentials:
+            color: '#E32E18'
+            name: Wind Power Plant NER 3
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 2288.4171522526385
+            om_annual: 64.2
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    Wind_NER_MSR4:
+        essentials:
+            color: '#E32E18'
+            name: Wind Power Plant NER 4
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 2666.4618957730827
+            om_annual: 64.2
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    Wind_NER_MSR5:
+        essentials:
+            color: '#E32E18'
+            name: Wind Power Plant NER 5
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 2199.1889898896015
+            om_annual: 64.2
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    Wind_NER_MSR6:
+        essentials:
+            color: '#E32E18'
+            name: Wind Power Plant NER 6
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 2088.879824124764
+            om_annual: 64.2
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    Wind_NER_MSR7:
+        essentials:
+            color: '#E32E18'
+            name: Wind Power Plant NER 7
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 2187.6484351495506
+            om_annual: 64.2
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    Wind_NGA_E_MSR1:
+        essentials:
+            color: '#E32E18'
+            name: Wind Power Plant NGA_E 1
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1999.0285672385671
+            om_annual: 64.2
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    Wind_NGA_E_MSR2:
+        essentials:
+            color: '#E32E18'
+            name: Wind Power Plant NGA_E 2
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1962.3785676941804
+            om_annual: 64.2
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    Wind_NGA_E_MSR3:
+        essentials:
+            color: '#E32E18'
+            name: Wind Power Plant NGA_E 3
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 2092.268366636485
+            om_annual: 64.2
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    Wind_NGA_E_MSR4:
+        essentials:
+            color: '#E32E18'
+            name: Wind Power Plant NGA_E 4
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1952.6699510387818
+            om_annual: 64.2
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    Wind_NGA_E_MSR5:
+        essentials:
+            color: '#E32E18'
+            name: Wind Power Plant NGA_E 5
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1965.331398190237
+            om_annual: 64.2
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    Wind_NGA_CNW_MSR1:
+        essentials:
+            color: '#E32E18'
+            name: Wind Power Plant NGA_CNW 1
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1963.6663197844396
+            om_annual: 64.2
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    Wind_NGA_CNW_MSR2:
+        essentials:
+            color: '#E32E18'
+            name: Wind Power Plant NGA_CNW 2
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1945.9066478160391
+            om_annual: 64.2
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    Wind_NGA_CNW_MSR3:
+        essentials:
+            color: '#E32E18'
+            name: Wind Power Plant NGA_CNW 3
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1947.1904956081992
+            om_annual: 64.2
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    Wind_SEN_MSR1:
+        essentials:
+            color: '#E32E18'
+            name: Wind Power Plant SEN 1
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1923.9916389417199
+            om_annual: 64.2
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    Wind_SEN_MSR2:
+        essentials:
+            color: '#E32E18'
+            name: Wind Power Plant SEN 2
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1928.7550019361595
+            om_annual: 64.2
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    Wind_TGO_MSR1:
+        essentials:
+            color: '#E32E18'
+            name: Wind Power Plant TGO 1
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1976.2037430673004
+            om_annual: 64.2
+            interest_rate: 0.1
+            co2:
+            om_prod: 0

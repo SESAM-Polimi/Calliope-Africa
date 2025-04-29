@@ -1,0 +1,105 @@
+locations:                
+
+############################## WAPP ###############################
+
+    BEN:
+        techs:
+            Demand_power:
+                constraints:
+                    resource: file=Demand_WAPP_2040.csv:BEN       # https://doi.org/10.1016/j.energy.2021.120623 , https://www.iea.org/reports/africa-energy-outlook-2019 and https://databank.worldbank.org/source/population-estimates-and-projections
+
+    BFA:
+        techs:
+            Demand_power:
+                constraints:
+                    resource: file=Demand_WAPP_2040.csv:BFA       # https://doi.org/10.1016/j.energy.2021.120623 , https://www.iea.org/reports/africa-energy-outlook-2019 and https://databank.worldbank.org/source/population-estimates-and-projections
+
+    CIV:
+        techs:
+            Demand_power:
+                constraints:
+                    resource: file=Demand_WAPP_2040.csv:CIV       # https://doi.org/10.1016/j.energy.2021.120623 , https://www.iea.org/reports/africa-energy-outlook-2019 and https://databank.worldbank.org/source/population-estimates-and-projections
+
+    GMB:
+        techs:
+            Demand_power:
+                constraints:
+                    resource: file=Demand_WAPP_2040.csv:GMB       # https://doi.org/10.1016/j.energy.2021.120623 , https://www.iea.org/reports/africa-energy-outlook-2019 and https://databank.worldbank.org/source/population-estimates-and-projections
+
+    GHA:
+        techs:
+            Demand_power:
+                constraints:
+                    resource: file=Demand_WAPP_2040.csv:GHA       # https://doi.org/10.1016/j.energy.2021.120623 , https://www.iea.org/reports/africa-energy-outlook-2019 and https://databank.worldbank.org/source/population-estimates-and-projections
+
+    GIN:
+        techs:
+            Demand_power:
+                constraints:
+                    resource: file=Demand_WAPP_2040.csv:GIN       # https://doi.org/10.1016/j.energy.2021.120623 , https://www.iea.org/reports/africa-energy-outlook-2019 and https://databank.worldbank.org/source/population-estimates-and-projections
+
+    GNB:
+        techs:
+            Demand_power:
+                constraints:
+                    resource: file=Demand_WAPP_2040.csv:GNB       # https://doi.org/10.1016/j.energy.2021.120623 , https://www.iea.org/reports/africa-energy-outlook-2019 and https://databank.worldbank.org/source/population-estimates-and-projections
+
+    LBR:
+        techs:
+            Demand_power:
+                constraints:
+                    resource: file=Demand_WAPP_2040.csv:LBR       # https://doi.org/10.1016/j.energy.2021.120623 , https://www.iea.org/reports/africa-energy-outlook-2019 and https://databank.worldbank.org/source/population-estimates-and-projections
+
+    MLI:
+        techs:
+            Demand_power:
+                constraints:
+                    resource: file=Demand_WAPP_2040.csv:MLI       # https://doi.org/10.1016/j.energy.2021.120623 , https://www.iea.org/reports/africa-energy-outlook-2019 and https://databank.worldbank.org/source/population-estimates-and-projections
+
+    NER:
+        techs:
+            Demand_power:
+                constraints:
+                    resource: file=Demand_WAPP_2040.csv:NER       # https://doi.org/10.1016/j.energy.2021.120623 , https://www.iea.org/reports/africa-energy-outlook-2019 and https://databank.worldbank.org/source/population-estimates-and-projections
+
+    NGA_CNW:
+        techs:
+            Demand_power:
+                constraints:
+                    resource: file=Demand_WAPP_2040.csv:NGA_CNW   # https://nigerianstat.gov.ng/elibrary/read/1163 , https://doi.org/10.1016/j.energy.2021.120623 , https://www.iea.org/reports/africa-energy-outlook-2019 and https://databank.worldbank.org/source/population-estimates-and-projections
+
+    NGA_E:
+        techs:
+            Demand_power:
+                constraints:
+                    resource: file=Demand_WAPP_2040.csv:NGA_E      # https://nigerianstat.gov.ng/elibrary/read/1163 , https://doi.org/10.1016/j.energy.2021.120623 , https://www.iea.org/reports/africa-energy-outlook-2019 and https://databank.worldbank.org/source/population-estimates-and-projections
+
+    NGA_S:
+        techs:
+            Demand_power:
+                constraints:
+                    resource: file=Demand_WAPP_2040.csv:NGA_S     # https://nigerianstat.gov.ng/elibrary/read/1163 , https://doi.org/10.1016/j.energy.2021.120623 , https://www.iea.org/reports/africa-energy-outlook-2019 and https://databank.worldbank.org/source/population-estimates-and-projections
+
+    NGA_W:
+        techs:
+            Demand_power:
+                constraints:
+                    resource: file=Demand_WAPP_2040.csv:NGA_W     # https://nigerianstat.gov.ng/elibrary/read/1163 , https://doi.org/10.1016/j.energy.2021.120623 , https://www.iea.org/reports/africa-energy-outlook-2019 and https://databank.worldbank.org/source/population-estimates-and-projections
+
+    SEN:
+        techs:
+            Demand_power:
+                constraints:
+                    resource: file=Demand_WAPP_2040.csv:SEN       # https://doi.org/10.1016/j.energy.2021.120623 , https://www.iea.org/reports/africa-energy-outlook-2019 and https://databank.worldbank.org/source/population-estimates-and-projections
+
+    SLE:
+        techs:
+            Demand_power:
+                constraints:
+                    resource: file=Demand_WAPP_2040.csv:SLE       # https://doi.org/10.1016/j.energy.2021.120623 , https://www.iea.org/reports/africa-energy-outlook-2019 and https://databank.worldbank.org/source/population-estimates-and-projections
+
+    TGO:
+        techs:
+            Demand_power:
+                constraints:
+                    resource: file=Demand_WAPP_2040.csv:TGO       # https://doi.org/10.1016/j.energy.2021.120623 , https://www.iea.org/reports/africa-energy-outlook-2019 and https://databank.worldbank.org/source/population-estimates-and-projections

@@ -1,0 +1,219 @@
+locations:
+
+############################## WAPP ###############################
+
+    BEN:
+        techs:
+
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+
+            BESS_2030_installed:
+                constraints:
+                    energy_cap_equals: 162350.09502777355
+                    energy_cap_per_storage_cap_equals: 0.25
+            BESS_2035_installed:
+                constraints:
+                    energy_cap_equals: 594041.7429452679
+                    energy_cap_per_storage_cap_equals: 0.25
+    BFA:
+        techs:
+
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+
+            BESS_2030_installed:
+                constraints:
+                    energy_cap_equals: 42531.48277399576
+                    energy_cap_per_storage_cap_equals: 0.25
+            BESS_2035_installed:
+                constraints:
+                    energy_cap_equals: 101149.17443939358
+                    energy_cap_per_storage_cap_equals: 0.25
+    CIV:
+        techs:
+
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+            BESS_2030_installed:
+                constraints:
+                    energy_cap_equals: 1830610.60250608
+                    energy_cap_per_storage_cap_equals: 0.25
+            BESS_2035_installed:
+                constraints:
+                    energy_cap_equals: 9546270.637929045
+                    energy_cap_per_storage_cap_equals: 0.25
+    GMB:
+        techs:
+
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+
+    GHA:
+        techs:
+
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+
+            BESS_2035_installed:
+                constraints:
+                    energy_cap_equals: 1174383.6490477056
+                    energy_cap_per_storage_cap_equals: 0.25
+    GIN:
+        techs:
+
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+
+    GNB:
+        techs:
+
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+
+    LBR:
+        techs:
+
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+
+    MLI:
+        techs:
+
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+
+            BESS_2030_installed:
+                constraints:
+                    energy_cap_equals: 600666.719331721
+                    energy_cap_per_storage_cap_equals: 0.25
+            BESS_2035_installed:
+                constraints:
+                    energy_cap_equals: 947593.8730900264
+                    energy_cap_per_storage_cap_equals: 0.25
+    NER:
+        techs:
+
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+
+            BESS_2030_installed:
+                constraints:
+                    energy_cap_equals: 17516.52177717427
+                    energy_cap_per_storage_cap_equals: 0.25
+            BESS_2035_installed:
+                constraints:
+                    energy_cap_equals: 50035.30922525124
+                    energy_cap_per_storage_cap_equals: 0.25
+    NGA_CNW:
+        techs:
+
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+
+    NGA_E:
+        techs:
+
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+
+            BESS_2035_installed:
+                constraints:
+                    energy_cap_equals: 50933.99519260274
+                    energy_cap_per_storage_cap_equals: 0.25
+    NGA_S:
+        techs:
+
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+
+    NGA_W:
+        techs:
+
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+
+            BESS_2035_installed:
+                constraints:
+                    energy_cap_equals: 670911.413953219
+                    energy_cap_per_storage_cap_equals: 0.25
+    SEN:
+        techs:
+
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+
+            BESS_2035_installed:
+                constraints:
+                    energy_cap_equals: 18900.54799999995
+                    energy_cap_per_storage_cap_equals: 0.25
+    SLE:
+        techs:
+
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+
+    TGO:
+        techs:
+
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+            BESS_2030_installed:
+                constraints:
+                    energy_cap_equals: 427795.7773559297
+                    energy_cap_per_storage_cap_equals: 0.25
+            BESS_2035_installed:
+                constraints:
+                    energy_cap_equals: 681455.4003319336
+                    energy_cap_per_storage_cap_equals: 0.25

@@ -1,0 +1,164 @@
+locations:
+
+############################## WAPP ###############################
+
+    BEN:
+        techs:
+
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+
+            OCGT_pp_New_2030_installed:
+                constraints:
+                    energy_cap_equals: 223607.7455005168
+    BFA:
+        techs:
+
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+
+            OCGT_pp_New_2030_installed:
+                constraints:
+                    energy_cap_equals: 230801.12675294487
+    CIV:
+        techs:
+
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+
+            OCGT_pp_New_2030_installed:
+                constraints:
+                    energy_cap_equals: 993577.0130389202
+    GMB:
+        techs:
+
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+
+            OCGT_pp_New_2030_installed:
+                constraints:
+                    energy_cap_equals: 55379.891
+    GHA:
+        techs:
+
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+
+    GIN:
+        techs:
+
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+
+    GNB:
+        techs:
+
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+
+            OCGT_pp_New_2030_installed:
+                constraints:
+                    energy_cap_equals: 38270.71538
+    LBR:
+        techs:
+
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+
+    MLI:
+        techs:
+
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+
+            OCGT_pp_New_2030_installed:
+                constraints:
+                    energy_cap_equals: 519387.3530276233
+    NER:
+        techs:
+
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+
+            OCGT_pp_New_2030_installed:
+                constraints:
+                    energy_cap_equals: 108247.9951205348
+    NGA_CNW:
+        techs:
+
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+
+    NGA_E:
+        techs:
+
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+
+    NGA_S:
+        techs:
+
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+
+    NGA_W:
+        techs:
+
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+
+    SEN:
+        techs:
+
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+
+    SLE:
+        techs:
+
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+
+    TGO:
+        techs:
+
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+
+            OCGT_pp_New_2030_installed:
+                constraints:
+                    energy_cap_equals: 175047.14
