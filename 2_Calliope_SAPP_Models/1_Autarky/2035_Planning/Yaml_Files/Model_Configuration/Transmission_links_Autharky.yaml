@@ -1,0 +1,15 @@
+# No connections among countries
+# Only a very small connection between Mozambique's two regions (North-Central & Southern)
+
+###########################################################
+############### EXISTING TRANSMISSION LINKS ###############  
+###########################################################
+
+links: 
+    MOZ_NC,MOZ_S:
+        techs:
+            70-110_kV:                                        #110 KV line from Nhamatanda to Mavuzi Substation
+                constraints:
+                    energy_cap_equals: 38000       #kW              # Assumed this capacity from same V level of other lines from SAPP report
+                    energy_eff_per_distance: 0.965   # %/10 km      # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 7.64                                      # tens of km from QGIS (76.4 km)

@@ -1,0 +1,65 @@
+
+# Technology Definition for New OCGT and New  Energy Storage Systems (BESS & PHES)
+# Added Technologies for installed capacity in years 2030 and 2035 to update the model
+# Cost values updated for BESS and PHES besd on NREL 2024 website and especcialy the RTE (Round Trip Efficiency)
+
+techs: 
+######## New OCGT Power Plants ########
+    OCGT_pp_New:
+        essentials:
+            color: '#B7950B' 
+            name: 'Open Cycle Gas Turbine Power Plant New'
+            parent: supply                 
+            carrier_out: electricity                                
+        constraints:
+            energy_eff: 0.40                     # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf
+            resource: inf                                                    
+            lifetime: 30                         # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf                            
+            energy_cap_max_systemwide: inf
+        costs:
+            monetary:   
+                energy_cap: 1000                 # https://thundersaidenergy.com/downloads/gas-to-power-project-economics/ 
+                om_annual: 40                    # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf, 4% of the CAPEX
+                om_prod: 0.0053                  # https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values---> 0.0035 2007$ adjusted to 2024$ 
+                om_con: 0.0575                   # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct.pdf average value
+                interest_rate: 0.10
+            co2:
+                # om_prod: 0.528                   # https://iea-etsap.org/E-TechDS/PDF/E02-gas_fired_power-GS-AD-gct_FINAL.pdf
+                om_prod: 0.64                    # Life-cycle https://github.com/calliope-project/uk-calliope               
+    
+######## BESS Storage Systems ########
+    BESS_New:                                    #Li-ion utility-scale battery storage: 4h
+        essentials:
+            name: 'Battery Energy Storage'
+            parent: storage
+            carrier: electricity
+        constraints:
+            energy_efficiency:  0.85             # https://atb.nrel.gov/electricity/2024/utility-scale_battery_storage
+            storage_loss: 0
+            lifetime: 15                         # https://atb.nrel.gov/electricity/2024/utility-scale_battery_storage
+            storage_discharge_depth: 0.1         # https://atb.nrel.gov/electricity/2024/utility-scale_battery_storage
+            storage_initial: 0.2                 
+        costs:
+            monetary: 
+                energy_cap: 1774.915             # https://atb.nrel.gov/electricity/2024/utility-scale_battery_storage Conservative Scenario 2030
+                om_annual: 40.309                # https://atb.nrel.gov/electricity/2024/utility-scale_battery_storage Conservative Scenario 2030
+                interest_rate: 0.10
+
+######## PHES Storage Systems ########
+    PHES_New:
+        essentials:
+            name: 'Pumped Hydro Storage'
+            parent: storage
+            carrier: electricity
+        constraints:
+            energy_efficiency:  0.8              # https://atb.nrel.gov/electricity/2024/pumped_storage_hydropower
+            storage_loss: 0
+            lifetime: 40                         # https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2020/Jul/IRENA_Innovative_PHS_operation_2020.pdf
+            storage_discharge_depth: 0.2         # https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2017/Oct/IRENA_Electricity_Storage_Costs_2017.pdf?rev=a264707cb8034a52b6f6123d5f1b114      
+            storage_initial: 0.2                 
+        costs:
+            monetary:
+                energy_cap: 3794.006             # https://atb.nrel.gov/electricity/2024/pumped_storage_hydropower
+                om_annual: 20.15                 # https://atb.nrel.gov/electricity/2024/pumped_storage_hydropower
+                om_prod: 0.00058                 # https://atb.nrel.gov/electricity/2024/pumped_storage_hydropower
+                interest_rate: 0.10

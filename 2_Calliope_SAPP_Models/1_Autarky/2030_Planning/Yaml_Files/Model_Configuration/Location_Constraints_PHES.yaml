@@ -1,0 +1,120 @@
+# Location Constraints for SAPP Model with free PHES Installation
+# Update every year past model the energy_cap_min_use
+
+locations:
+################### Power Plants Angola ###########################                                                   
+    AGO:
+        techs:
+            PHES_New:
+                constraints:    
+                    energy_cap_min: 0
+                    storage_cap_max: 4706000000 #kWh
+                    energy_cap_per_storage_cap_equals: 0.16666666667
+
+################################# Power Plants Botswana #####################################                                                 
+    BWA:
+        techs:
+            PHES_New:
+                constraints:    
+                    energy_cap_min: 0
+                    storage_cap_max: 14000000 #kWh
+                    energy_cap_per_storage_cap_equals: 0.16666666667   
+
+################################### DRC Power Plants ##################################                                                                                                   
+    DRC:
+        techs:
+            PHES_New:
+                constraints:    
+                    energy_cap_min: 0
+                    storage_cap_max: 18794000000 #kWh
+                    energy_cap_per_storage_cap_equals: 0.16666666667   
+
+################################### LSO Power Plants ################################## 
+    LSO:
+        techs:
+            PHES_New:
+                constraints:    
+                    energy_cap_min: 0
+                    storage_cap_max: 1540000000 #kWh
+                    energy_cap_per_storage_cap_equals: 0.16666666667   
+
+################################### MOZ_NC Power Plants ################################## 
+    MOZ_NC: 
+        techs:
+            PHES_New:
+                constraints:    
+                    energy_cap_min: 0
+                    storage_cap_max: 1466000000 #kWh
+                    energy_cap_per_storage_cap_equals: 0.16666666667   
+
+################################### MOZ_S Power Plants ################################## 
+    MOZ_S: 
+        techs:
+            PHES_New:
+                constraints:    
+                    energy_cap_min: 0
+                    storage_cap_max: 16000000 #kWh
+                    energy_cap_per_storage_cap_equals: 0.16666666667   
+
+################################### MWI Power Plants ##################################     
+    MWI:
+        techs:
+            PHES_New:
+                constraints:    
+                    energy_cap_min: 0
+                    storage_cap_max: 1856000000 #kWh
+                    energy_cap_per_storage_cap_equals: 0.16666666667   
+
+################################### Namibia Power Plants ################################## 
+    NAM:
+        techs:
+            PHES_New:
+                constraints:    
+                    energy_cap_min: 0
+                    storage_cap_max: 1198000000 #kWh
+                    energy_cap_per_storage_cap_equals: 0.16666666667   
+
+################################### eSwatini Power Plants ################################## 
+    SWZ:
+        techs:
+            PHES_New:
+                constraints:    
+                    energy_cap_min: 0
+                    storage_cap_max: 446000000 #kWh
+                    energy_cap_per_storage_cap_equals: 0.16666666667   
+
+################################### Tanzania Power Plants ##################################                                                   
+    TZA: 
+        techs:
+            PHES_New:
+                constraints:    
+                    energy_cap_min: 0
+                    storage_cap_max: 10222000000 #kWh
+                    energy_cap_per_storage_cap_equals: 0.16666666667   
+
+################################### South Africa Power Plants ##################################                                                   
+    ZAF: 
+        techs:
+            PHES_New:
+                constraints:    
+                    energy_cap_min: 0
+                    storage_cap_max: 9324000000 #kWh
+                    energy_cap_per_storage_cap_equals: 0.16666666667   
+
+################################### Zambia Power Plants ##################################                                                   
+    ZMB: 
+        techs:
+            PHES_New:
+                constraints:    
+                    energy_cap_min: 0
+                    storage_cap_max: 764000000 #kWh
+                    energy_cap_per_storage_cap_equals: 0.16666666667   
+
+################################### Zimbabwe Power Plants ##################################                                                   
+    ZWE: 
+        techs:
+            PHES_New:
+                constraints:    
+                    energy_cap_min: 0
+                    storage_cap_max: 1156000000 #kWh
+                    energy_cap_per_storage_cap_equals: 0.16666666667   

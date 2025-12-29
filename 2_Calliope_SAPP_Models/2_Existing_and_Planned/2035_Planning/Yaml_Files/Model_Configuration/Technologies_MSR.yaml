@@ -1,0 +1,1805 @@
+
+#  Technology Definition for MSR clustered,only WIND and PV #
+
+techs:      
+############################### MSR - AGO ###############################
+    PV_AGO_MSR1:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR AGO1'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1209.4021138282
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_AGO_MSR2:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR AGO2'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1197.1449722419
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_AGO_MSR3:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR AGO3'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1247.2952583456
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_AGO_MSR4:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR AGO4'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1215.9498572804
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_AGO_MSR5:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR AGO5'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1207.2895517224
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_AGO_MSR6:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR AGO6'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1233.2311238198
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_AGO_MSR1:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR AGO1'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 2177.9825227362
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_AGO_MSR2:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR AGO2'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 2346.5332988482
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_AGO_MSR3:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR AGO3'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 2062.4022499294
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+
+############################### MSR - BWA ###############################
+    PV_BWA_MSR1:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR BWA1'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1182.7280655695
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_BWA_MSR2:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR BWA2'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1201.0956825063
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_BWA_MSR3:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR BWA3'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1185.9985418288
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_BWA_MSR1:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR BWA1'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1939.6716284718
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_BWA_MSR2:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR BWA2'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1970.4224204396
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_BWA_MSR3:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR BWA3'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1953.5108805589
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+
+############################### MSR - DRC ###############################
+    PV_DRC_MSR1:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR DRC1'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1215.1138278170
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_DRC_MSR2:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR DRC2'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1339.0732174426
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_DRC_MSR3:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR DRC3'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1305.2796787598
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_DRC_MSR4:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR DRC4'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1224.9537702199
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_DRC_MSR5:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR DRC5'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1241.2772673635
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_DRC_MSR6:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR DRC6'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1213.6289870113
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_DRC_MSR7:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR DRC7'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1286.7265172617
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_DRC_MSR8:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR DRC8'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1281.1160777576
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_DRC_MSR1:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR DRC1'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1948.5080211884
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_DRC_MSR2:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR DRC2'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 2006.0221136565
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+
+############################### MSR - LSO ###############################
+    PV_LSO_MSR1:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR LSO1'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1171.0429661862
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_LSO_MSR1:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR LSO1'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1928.5985552026
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_LSO_MSR2:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR LSO2'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1919.3561776664
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+############################### MSR - MOZ_NC ###############################
+    PV_MOZ_NC_MSR1:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR MOZ_NC1'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1188.7408379222
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_MOZ_NC_MSR2:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR MOZ_NC2'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1191.2303044593
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_MOZ_NC_MSR3:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR MOZ_NC3'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1189.8587543506
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_MOZ_NC_MSR4:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR MOZ_NC4'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1191.0624123822
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_MOZ_NC_MSR5:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR MOZ_NC5'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1172.9260718265
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_MOZ_NC_MSR6:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR MOZ_NC6'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1184.9810001974
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_MOZ_NC_MSR1:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR MOZ_NC1'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1954.5228422291
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_MOZ_NC_MSR2:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR MOZ_NC2'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1984.7851304968
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_MOZ_NC_MSR3:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR MOZ_NC3'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1992.5502518567
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_MOZ_NC_MSR4:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR MOZ_NC4'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 2006.0332652184
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+############################### MSR - MOZ_S ###############################
+    PV_MOZ_S_MSR1:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR MOZ_S1'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1187.8254698869
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_MOZ_S_MSR2:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR MOZ_S2'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1171.1685840806
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_MOZ_S_MSR1:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR MOZ_S1'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 2003.2035634813
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_MOZ_S_MSR2:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR MOZ_S2'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1952.9653703507
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_MOZ_S_MSR3:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR MOZ_S3'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1976.6540808912
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+############################### MSR - MWI ###############################
+    PV_MWI_MSR1:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR MWI1'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1191.8546928148
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_MWI_MSR2:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR MWI2'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1231.9599781587
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_MWI_MSR3:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR MWI3'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1178.6325226007
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_MWI_MSR4:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR MWI4'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1206.5039010290
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_MWI_MSR1:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR MWI1'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1914.3738624582
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_MWI_MSR2:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR MWI2'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1952.5542216421
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_MWI_MSR3:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR MWI3'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1869.8081014438
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+############################### MSR - NAM ###############################
+    PV_NAM_MSR1:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR NAM1'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1189.2204766192
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_NAM_MSR2:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR NAM2'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1191.4872789013
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_NAM_MSR3:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR NAM3'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1202.7285678124
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_NAM_MSR1:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR NAM1'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1877.5622846570
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_NAM_MSR2:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR NAM2'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1997.0283444695
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_NAM_MSR3:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR NAM3'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1889.6545260294
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_NAM_MSR4:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR NAM4'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1963.6815345143
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_NAM_MSR5:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR NAM5'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1961.7978004616
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_NAM_MSR6:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR NAM6'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1943.5659457443
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_NAM_MSR7:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR NAM7'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1996.1123559985
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+############################### MSR - SWZ ###############################
+    PV_SWZ_MSR1:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR SWZ1'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1185.7952330994
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_SWZ_MSR1:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR SWZ1'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1923.0913180166
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_SWZ_MSR2:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR SWZ2'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1921.8420351565
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+############################### MSR - TZA ###############################
+    PV_TZA_MSR1:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR TZA1'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1199.0789973345
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_TZA_MSR2:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR TZA2'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1202.5271704139
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_TZA_MSR3:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR TZA3'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1216.7087843377
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_TZA_MSR4:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR TZA4'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1201.5585409749
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_TZA_MSR5:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR TZA5'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1203.1035475189
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_TZA_MSR6:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR TZA6'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1185.6406776939
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_TZA_MSR1:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR TZA1'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1905.1208921068
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_TZA_MSR2:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR TZA2'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1992.2884560223
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_TZA_MSR3:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR TZA3'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1817.3195653762
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_TZA_MSR4:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR TZA4'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1991.4390822393
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_TZA_MSR5:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR TZA5'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1887.0676460841
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_TZA_MSR6:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR TZA6'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1949.6186752021
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+############################### MSR - ZAF ###############################
+    PV_ZAF_MSR1:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR ZAF1'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1169.0759729981
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_ZAF_MSR2:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR ZAF2'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1169.1995263179
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_ZAF_MSR3:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR ZAF3'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1179.2103610463
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_ZAF_MSR4:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR ZAF4'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1177.1887277727
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_ZAF_MSR5:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR ZAF5'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1190.5469989043
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_ZAF_MSR1:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR ZAF1'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1741.7220794029
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_ZAF_MSR2:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR ZAF2'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1790.3638114539
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_ZAF_MSR3:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR ZAF3'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1888.0302725143
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_ZAF_MSR4:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR ZAF4'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1872.7962373204
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_ZAF_MSR5:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR ZAF5'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1928.2341460017
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_ZAF_MSR6:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR ZAF6'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1864.3974755725
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_ZAF_MSR7:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR ZAF7'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1870.8634274870
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_ZAF_MSR8:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR ZAF8'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1806.0065559282
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+############################### MSR - ZMB ###############################
+    PV_ZMB_MSR1:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR ZMB1'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1177.3678647325
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_ZMB_MSR2:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR ZMB2'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1181.1257867119
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_ZMB_MSR3:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR ZMB3'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1182.4607861635
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_ZMB_MSR4:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR ZMB4'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1175.7388334310
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_ZMB_MSR5:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR ZMB5'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1172.0163576316
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_ZMB_MSR6:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR ZMB6'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1190.5445884338
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_ZMB_MSR1:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR ZMB1'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1982.8632982648
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_ZMB_MSR2:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR ZMB2'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1947.8610262369
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_ZMB_MSR3:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR ZMB3'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1931.7232447249
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+############################### MSR - ZWE ###############################
+    PV_ZWE_MSR1:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR ZWE1'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1183.5531155038
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_ZWE_MSR2:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR ZWE2'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1168.1463784189
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_ZWE_MSR3:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR ZWE3'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1172.6799449799
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    PV_ZWE_MSR4:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant MSR ZWE4'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1172.2570477036
+                om_annual: 20
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_ZWE_MSR1:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR ZWE1'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1918.6287205665
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_ZWE_MSR2:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR ZWE2'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1937.2678769897
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_ZWE_MSR3:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR ZWE3'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1902.1097145998
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+    Wind_ZWE_MSR4:
+        essentials:
+            color: '#E32E18'
+            name: 'Wind Power Plant MSR ZWE4'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1944.1220487378
+                om_annual: 28
+                interest_rate: 0.1
+            co2:
+                om_prod: 0

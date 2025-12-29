@@ -1,0 +1,268 @@
+
+# Set links among border countries to make the model able to add possible interconnections
+# Chosse the 400kV lines as is the most used tech in the SAPP 2017 Master PLan
+# Considered same technology specifications as used previously
+# Calculated the distances from the two closest 400kV(or higher) lines substations on QGIS Model, as a straight line or following similar lines
+
+techs:
+    400_kV_New:
+        essentials:
+            name: 'High Voltage Grid 400 kV'
+            parent: transmission
+            carrier: electricity
+            color: '#000000'
+        constraints:
+            lifetime: 40                                     # https://portal.ct.gov/lib/csc/lifecycle-2001.pdf
+        costs:
+            monetary:
+                energy_cap: 17.350                           # https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf , Arithmetic average, considering two substations (one at each endpoint).
+                energy_cap_per_distance: 40.64               # https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf , Double circuit
+                om_prod: 0.0076                              # https://doi.org/10.5281/zenodo.5242926
+                interest_rate: 0.10  
+###########################################################
+######### UNLIMITED FUTURE TRANSMISSION LINKS ############# 
+###########################################################
+
+links:
+    MOZ_NC,MOZ_S:
+        techs:
+            400_kV_New: # 400 kV Songo-Vilanculos Substations
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf                  
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 90.2                                  # 902 km, calculated from QGIS 
+    
+    AGO,DRC:
+        techs:
+            400_kV_New: # 400 kV Soyo-Inga Substations
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf                  
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 16                                    # 160 km, calculated from QGIS 
+
+    AGO,NAM:
+        techs:
+            400_kV_New: # 400 kV Huambo-Ruacana Substations
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf                  
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 53.8                                  # 538 km, calculated from QGIS 
+
+    AGO,ZMB:
+        techs:
+            400_kV_New: # 400 kV Huambo-Kalumbila Substations
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf                  
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 105                                   # 1050 km, calculated from QGIS 
+    
+    BWA,NAM:
+        techs:
+            400_kV_New: # 400 kV Maun-Otjwarongo Substations
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf                  
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 74.5                                  # 745 km, calculated from QGIS 
+    
+    BWA,ZAF:
+        techs:
+            400_kV_New: # 400 kV Phokoje-Matimba Substations
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf                  
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 20                                    # 200 km, already existing line 
+    
+    BWA,ZMB:
+        techs:
+            400_kV_New: # 400 kV Maun-Victoria Falls Substations
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf                  
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 33.95                                 # 339.5 km, QGIS 
+    
+    BWA,ZWE:
+        techs:
+            400_kV_New: # 400 kV Phokoje-Insukamini Substations
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf                  
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 21.1                                  # 211 km, existing line 
+    
+    DRC,TZA:
+        techs:
+            400_kV_New: # 400 kV Kolwezi-Dodoma Substations
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf                  
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 123                                   # 1230 km, QGIS 
+    
+    DRC,ZMB:
+        techs:
+            400_kV_New: # 400 kV Kolwezi-Kalumbila Substations
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf                  
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 18.1                                  # 181 km, QGIS 
+    
+    LSO,ZAF:
+        techs:
+            400_kV_New: # 400 kV Liqhobong-Drakensberg Substations
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf                  
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 6.64                                  # 66.4 km, QGIS 
+    
+    MOZ_NC,MWI:
+        techs:
+            400_kV_New: # 400 kV Cahora Bassa-Phombeya Substations
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf                  
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 21.8                                  # 218 km, planned future line 
+    
+    MOZ_NC,TZA:
+        techs:
+            400_kV_New: # 400 kV Matambo-Julius Nyerere Substations
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf                  
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 105.4                                 # 1054 km, QGIS 
+    
+    MOZ_NC,ZMB:
+        techs:
+            400_kV_New: # 400 kV Cahora Bassa-Leoprad's Hill Substations
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf                  
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 45                                    # 450 km, QGIS 
+    
+    MOZ_NC,ZWE:
+        techs:
+            400_kV_New: # 400 kV Cahora Bassa-Bindura Substations
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf                  
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 25.2                                  # 252 km, QGIS 
+    
+    MOZ_S,SWZ:
+        techs:
+            400_kV_New: # 400 kV Maputo-Edwaleni II Substations
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf                  
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 14.4                                  # 144 km, QGIS 
+    
+    MOZ_S,ZAF:
+        techs:
+            400_kV_New: # 400 kV Maputo-Arnot Substations
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf                  
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 28.6                                  # 286 km, QGIS 
+    
+    MOZ_S,ZWE:
+        techs:
+            400_kV_New: # 400 kV Vilanculos-Triangles Substations
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf                  
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 40.2                                  # 402 km, QGIS 
+    
+    MWI,TZA:
+        techs:
+            400_kV_New: # 400 kV Nkhoma-Julius Nyerere Substations
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf                  
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 80.5                                  # 805 km, QGIS 
+    
+    MWI,ZMB:
+        techs:
+            400_kV_New: # 400 kV Nkhoma-Chipata West Substations
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf                  
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 16.9                                  # 169 km, QGIS 
+    
+    NAM,ZMB:
+        techs:
+            400_kV_New: # 400 kV ZambesiConverter-Mukuni Substations
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf                  
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 21.7                                  # 217 km, QGIS 
+    
+    NAM,ZWE:
+        techs:
+            400_kV_New: # 400 kV ZambesiConverter-Hwange Substations
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf                  
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 25.7                                  # 257 km, QGIS 
+    
+    NAM,ZAF:
+        techs:
+            400_kV_New: # 400 kV Kokerboom-Aries Substations
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf                  
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 44.2                                  # 442 km, QGIS 
+    
+    SWZ,ZAF:
+        techs:
+            400_kV_New: # 400 kV Camden-Edwaleni Substations
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf                  
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 13.3                                  # 442 km, QGIS 
+    
+    TZA,ZMB:
+        techs:
+            400_kV_New: # 400 kV Kasana South-Dodoma Substations
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf                  
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 67.1                                  # 671 km, QGIS 
+    
+    ZAF,ZWE:
+        techs:
+            400_kV_New: # 400 kV Nzhelele-Triangle Substations
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf                  
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 27.5                                  # 275 km, QGIS 
+    
+    ZMB,ZWE:
+        techs:
+            400_kV_New: # 400 kV Kariba North-Alaska Substations
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf                  
+                    energy_eff_per_distance: 0.995              # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_kV_new_Apr2014_GSOK.pdf
+                distance: 17.1                                  # 171 km, QGIS 

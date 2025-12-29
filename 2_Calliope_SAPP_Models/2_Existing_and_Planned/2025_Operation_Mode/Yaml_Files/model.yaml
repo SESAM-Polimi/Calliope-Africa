@@ -1,0 +1,52 @@
+# Model configuration: all settings that affect the built model
+
+########################################################################
+#                              IMPORTS                                 #
+# All the files that define the model configuration should be imported #
+########################################################################
+
+import: 
+    
+    - 'Model_config/Technologies_PP.yaml'
+    - 'Model_config/Technologies_Transmission_&_Demand.yaml'
+
+    - 'Model_config/Location_Constraints.yaml'
+    - 'Model_config/Transmission_links_Existing_and_Future.yaml'
+    
+########################################################################
+#                                MODEL                                 #
+#                      General settings of the model                   #
+########################################################################
+
+model:
+
+    name: 'SAPP Existing and Planned Tramsission 2025 Model'       # Defining the name of the model
+    calliope_version: 0.6.10                   # What version of Calliope this model is intended for
+    timeseries_data_path: 'Timeseries'         # Time series data path
+    timeseries_dateformat: '%Y/%m/%d %H:%M:%S' # Time series date format   
+    subset_time: ['2025-01-01', '2025-12-31']  # shows the a subset of time to represent the results
+
+########################################################################
+#                                RUN                                   #
+#          All settings that affect how the built model is run         #
+########################################################################
+
+run:
+    mode: operate  # Choices: plan, operate
+
+    operation:     # Activate if in Operate mode only
+        horizon: 48
+        window: 24
+
+    solver: gurobi
+    solver_options:
+        NumericFocus: 1
+    cyclic_storage: True
+    # backend: pyomo   #activate if in plan
+    symbolic_solver_labels: False
+
+    ensure_feasibility: True  # Switches on the "unmet demand" constraint        
+    bigM: 1e6                  # Sets the scale of unmet demand, which cannot be too high,
+                               # otherwise the optimisation will not converge
+    zero_threshold: 1e-20      # Any value coming out of the backend that is smaller than this, will be set to zero        
+    objective_options: {'cost_class': {'monetary': 1, 'co2': 0}, 'sense': minimize}

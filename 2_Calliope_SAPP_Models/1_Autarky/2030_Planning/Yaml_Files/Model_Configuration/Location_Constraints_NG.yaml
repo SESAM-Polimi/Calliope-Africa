@@ -1,0 +1,96 @@
+# Location Constraints for SAPP Model with free Natural Gas Installation
+# Considered OCGT
+# Update every year past model the energy_cap_min
+
+locations:
+################### Power Plants Angola ###########################                                                   
+    AGO:
+        techs:
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+################################# Power Plants Botswana #####################################                                                 
+    BWA:
+        techs:
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+################################### DRC Power Plants ##################################                                                                                                   
+    DRC:
+        techs:
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+################################### LSO Power Plants ################################## 
+    LSO:
+        techs:
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+################################### MOZ_NC Power Plants ################################## 
+    MOZ_NC: 
+        techs:
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+################################### MOZ_S Power Plants ################################## 
+    MOZ_S: 
+        techs:
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+################################### MWI Power Plants ##################################     
+    MWI:
+        techs:
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+################################### Namibia Power Plants ################################## 
+    NAM:
+        techs:
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+################################### eSwatini Power Plants ################################## 
+    SWZ:
+        techs:
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+################################### Tanzania Power Plants ##################################                                                   
+    TZA: 
+        techs:
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+################################### South Africa Power Plants ##################################                                                   
+    ZAF: 
+        techs:
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+################################### Zambia Power Plants ##################################                                                   
+    ZMB: 
+        techs:
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+################################### Zimbabwe Power Plants ##################################                                                   
+    ZWE: 
+        techs:
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf

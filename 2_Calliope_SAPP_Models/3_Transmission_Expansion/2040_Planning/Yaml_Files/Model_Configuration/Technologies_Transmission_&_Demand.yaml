@@ -1,0 +1,205 @@
+# Transmission Grid and the connections Definition #
+
+# Parameters and Units:
+    # energy_cap_equals:  Capacity of Grid          [kW]
+    # distance:           Distance Between 2 Nodes  [hundreds of km]
+
+##########################
+# DEMAND TECHNOLOGIES #
+##########################
+techs:
+#################################### Electricity ####################################
+    Demand_electricity:
+        essentials:
+            name: 'Electricity Demand'
+            color: '#baf5b5'
+            parent: demand
+            carrier: electricity
+
+#############################
+# TRANSMISSION TECHNOLOGIES #
+#############################
+
+############################### Mid Voltage 33 kV Grid ############################### 
+    33-40_kV1:
+        essentials:
+            name: 'Mid Voltage Grid 33 kV'
+            parent: transmission
+            carrier: electricity
+            color: '#4169E1'  
+        constraints:
+            lifetime: 40                                     # https://portal.ct.gov/lib/csc/lifecycle-2001.pdf
+        costs:
+            monetary:
+                om_prod: 0.0076                              # https://doi.org/10.5281/zenodo.5242926
+    33-40_kV2:
+        essentials:
+            name: 'Mid Voltage Grid 33 kV'
+            parent: transmission
+            carrier: electricity
+            color: '#4169E1'  
+        constraints:
+            lifetime: 40                                     # https://portal.ct.gov/lib/csc/lifecycle-2001.pdf
+        costs:
+            monetary:
+                om_prod: 0.0076                              # https://doi.org/10.5281/zenodo.5242926
+
+############################### High Voltage 66 kV Grid ############################### 
+    66_kV1:
+        essentials:
+            name: 'High Voltage Grid 66 kV'
+            parent: transmission
+            carrier: electricity
+            color: '#4169E1'  
+        constraints:
+            lifetime: 40                                     # https://portal.ct.gov/lib/csc/lifecycle-2001.pdf
+        costs:
+            monetary:
+                om_prod: 0.0076                              # https://doi.org/10.5281/zenodo.5242926
+    66_kV2:
+        essentials:
+            name: 'High Voltage Grid 66 kV'
+            parent: transmission
+            carrier: electricity
+            color: '#4169E1'  
+        constraints:
+            lifetime: 40                                     # https://portal.ct.gov/lib/csc/lifecycle-2001.pdf
+        costs:
+            monetary:
+                om_prod: 0.0076                              # https://doi.org/10.5281/zenodo.5242926
+    66_kV3:
+        essentials:
+            name: 'High Voltage Grid 66 kV'
+            parent: transmission
+            carrier: electricity
+            color: '#4169E1'  
+        constraints:
+            lifetime: 40                                     # https://portal.ct.gov/lib/csc/lifecycle-2001.pdf
+        costs:
+            monetary:
+                om_prod: 0.0076                              # https://doi.org/10.5281/zenodo.5242926
+
+############################### High Voltage 70-110 kV Grid ############################### 
+    70-110_kV:
+        essentials:
+            name: 'High Voltage Grid 70-110 kV'
+            parent: transmission
+            carrier: electricity
+            color: '#4169E1'  
+        constraints:
+            lifetime: 40                                     # https://portal.ct.gov/lib/csc/lifecycle-2001.pdf
+        costs:
+            monetary:
+                om_prod: 0.0076                              # https://doi.org/10.5281/zenodo.5242926
+
+############################### High Voltage 132-161 kV Grid ############################### 
+    132-161_kV1:
+        essentials:
+            name: 'High Voltage Grid 132-161 kV'
+            parent: transmission
+            carrier: electricity
+            color: '#8FCE00'
+        constraints:
+            lifetime: 40                                     # https://portal.ct.gov/lib/csc/lifecycle-2001.pdf 
+            energy_eff_per_distance: 0.951    # %/10 km      # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf         
+        costs:
+            monetary:
+                om_prod: 0.0076                              # https://doi.org/10.5281/zenodo.5242926
+    132-161_kV2:
+        essentials:
+            name: 'High Voltage Grid 132-161 kV'
+            parent: transmission
+            carrier: electricity
+            color: '#8FCE00'
+        constraints:
+            lifetime: 40                                     # https://portal.ct.gov/lib/csc/lifecycle-2001.pdf 
+        costs:
+            monetary:
+                om_prod: 0.0076                              # https://doi.org/10.5281/zenodo.5242926
+    132-161_kV3:
+        essentials:
+            name: 'High Voltage Grid 132-161 kV'
+            parent: transmission
+            carrier: electricity
+            color: '#8FCE00'
+        constraints:
+            lifetime: 40                                     # https://portal.ct.gov/lib/csc/lifecycle-2001.pdf 
+        costs:
+            monetary:
+                om_prod: 0.0076                              # https://doi.org/10.5281/zenodo.5242926
+
+############################### High Voltage 220-275 kV Grid ############################### 
+    220-275_kV1:
+        essentials:
+            name: 'High Voltage Grid 220-275 kV'
+            parent: transmission
+            carrier: electricity
+            color: '#E69138' 
+        constraints:
+            lifetime: 40                                     # https://portal.ct.gov/lib/csc/lifecycle-2001.pdf
+        costs:
+            monetary:
+                om_prod: 0.0076                              # https://doi.org/10.5281/zenodo.5242926 
+    220-275_kV2:
+        essentials:
+            name: 'High Voltage Grid 220-275 kV'
+            parent: transmission
+            carrier: electricity
+            color: '#E69138' 
+        constraints:
+            lifetime: 40                                     # https://portal.ct.gov/lib/csc/lifecycle-2001.pdf
+        costs:
+            monetary:
+                om_prod: 0.0076                              # https://doi.org/10.5281/zenodo.5242926 
+
+############################### High Voltage 300-330 kV Grid ############################### 
+    300-330_kV:
+        essentials:
+            name: 'High Voltage Grid 300-330 kV'
+            parent: transmission
+            carrier: electricity
+            color: '#F44336'
+        constraints:
+            lifetime: 40                                     # https://portal.ct.gov/lib/csc/lifecycle-2001.pdf
+        costs:
+            monetary:
+                om_prod: 0.0076                              # https://doi.org/10.5281/zenodo.5242926
+
+############################### High Voltage 350 kV DC Grid ############################### 
+    350_kV_DC:
+        essentials:
+            name: 'High Voltage Grid 350 kV DC'
+            parent: transmission
+            carrier: electricity
+            color: '#B45F06'
+        constraints:
+            lifetime: 40                                     # https://portal.ct.gov/lib/csc/lifecycle-2001.pdf
+        costs:
+            monetary:
+                om_prod: 0.0076                              # https://doi.org/10.5281/zenodo.5242926
+
+############################### High Voltage 400 kV Grid ############################### 
+    400_kV:
+        essentials:
+            name: 'High Voltage Grid 400 kV'
+            parent: transmission
+            carrier: electricity
+            color: '#000000'
+        constraints:
+            lifetime: 40                                     # https://portal.ct.gov/lib/csc/lifecycle-2001.pdf
+        costs:
+            monetary:
+                om_prod: 0.0076                              # https://doi.org/10.5281/zenodo.5242926 
+
+############################### High Voltage 500-533 kV DC Grid ############################### 
+    500-533_kV_DC:
+        essentials:
+            name: 'High Voltage Grid 500-533 kV DC'
+            parent: transmission
+            carrier: electricity
+            color: '#C90076'
+        constraints:
+            lifetime: 40                                     # https://portal.ct.gov/lib/csc/lifecycle-2001.pdf
+        costs:
+            monetary:
+                om_prod: 0.0076                              # https://doi.org/10.5281/zenodo.5242926

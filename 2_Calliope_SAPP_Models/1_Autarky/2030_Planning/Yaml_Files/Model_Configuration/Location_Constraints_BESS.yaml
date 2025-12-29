@@ -1,0 +1,120 @@
+# Location Constraints for SAPP Model with free BESS Technologies
+# Every five years of modelling add: energy_cap_min equal to previous model value
+
+locations:
+################### Power Plants Angola ###########################                                                   
+    AGO:
+        techs:
+            BESS_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+
+################################# Power Plants Botswana #####################################                                                 
+    BWA:
+        techs:
+            BESS_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+
+################################### DRC Power Plants ##################################                                                                                                   
+    DRC:
+        techs:
+            BESS_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+
+################################### LSO Power Plants ################################## 
+    LSO:
+        techs:
+            BESS_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+
+################################### MOZ_NC Power Plants ################################## 
+    MOZ_NC: 
+        techs:
+            BESS_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+
+################################### MOZ_S Power Plants ################################## 
+    MOZ_S: 
+        techs:
+            BESS_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+
+################################### MWI Power Plants ##################################     
+    MWI:
+        techs:
+            BESS_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+
+################################### Namibia Power Plants ################################## 
+    NAM:
+        techs:
+            BESS_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+
+################################### eSwatini Power Plants ################################## 
+    SWZ:
+        techs:
+            BESS_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+
+################################### Tanzania Power Plants ##################################                                                   
+    TZA: 
+        techs:
+            BESS_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+
+################################### South Africa Power Plants ##################################                                                   
+    ZAF: 
+        techs:
+            BESS_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+
+################################### Zambia Power Plants ##################################                                                   
+    ZMB: 
+        techs:
+            BESS_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+
+################################### Zimbabwe Power Plants ##################################                                                   
+    ZWE: 
+        techs:
+            BESS_New:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
