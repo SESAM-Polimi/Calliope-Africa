@@ -1,0 +1,61 @@
+########################################################################
+#                              IMPORTS                                 #
+# All the files that define the model configuration should be imported #
+########################################################################
+
+# NOTE: based on the modelling scenario, import each specific .yaml file
+import: 
+    
+    # - 'Model_config/Location_Constraints_BESS.yaml'
+    # - 'Model_config/Location_Constraints_Hydro_ALLorNULL.yaml'
+    # - 'Model_config/Location_Constraints_Hydro_Free.yaml'
+    # - 'Model_config/Location_Constraints_Hydro_Quarters.yaml'
+    - 'Model_config/Location_Constraints_MSR.yaml'
+    # - 'Model_config/Location_Constraints_NG.yaml'
+    # - 'Model_config/Location_Constraints_PHES.yaml'
+    - 'Model_config/Location_Constraints.yaml'
+    
+    # - 'Model_config/Technologies_Hydro.yaml'
+    - 'Model_config/Technologies_MSR.yaml'
+    # - 'Model_config/Technologies_NG_BESS_PHES.yaml'
+    - 'Model_config/Technologies_PP.yaml'
+    - 'Model_config/Technologies_Transmission_&_Demand.yaml'
+    
+    - 'Model_config/Transmission_links_Autharky.yaml' 
+    
+########################################################################
+#                                MODEL                                 #
+#                      General settings of the model                   #
+########################################################################
+
+model:
+
+    name: 'SAPP Autharky 2030 Model'           # Defining the name of the model
+    calliope_version: 0.6.10                   # What version of Calliope this model is intended for
+    timeseries_data_path: 'Timeseries'         # Time series data path
+    timeseries_dateformat: '%Y/%m/%d %H:%M:%S' # Time series date format   
+    subset_time: ['2030-01-01', '2030-12-31']  # shows the a subset of time to represent the results
+
+########################################################################
+#                                RUN                                   #
+#          All settings that affect how the built model is run         #
+########################################################################
+
+run:
+    mode: plan  # Choices: plan, operate
+
+    # operation:     # Activate if in Operate mode only
+    #     horizon: 48
+    #     window: 24
+
+    solver: gurobi
+    solver_options:
+        NumericFocus: 1
+    cyclic_storage: True
+    symbolic_solver_labels: False
+
+    ensure_feasibility: True  # Switches on the "unmet demand" constraint        
+    bigM: 1e6                  # Sets the scale of unmet demand, which cannot be too high,
+                               # otherwise the optimisation will not converge
+    zero_threshold: 1e-20      # Any value coming out of the backend that is smaller than this, will be set to zero        
+    objective_options: {'cost_class': {'monetary': 1, 'co2': 0}, 'sense': minimize}

@@ -1,0 +1,225 @@
+# All the existing connections between countries
+# Data found from: SAPP 2021 Report, SAPP 2017 Master Plan and Inframap
+# Distances obtained from the QGIS SAPP transmission lines model imported from InfraMap
+# When capacities were not available, considered them equal to the values suggested from: https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+
+techs:
+    Single_Line:
+        essentials:
+            name: 'High Voltage Averaged Transmission Line'
+            parent: transmission
+            carrier: electricity
+            color: '#C90076'
+        constraints:
+            lifetime: 40                                     # https://portal.ct.gov/lib/csc/lifecycle-2001.pdf
+        costs:
+            monetary:
+                om_prod: 0.0076                              # https://doi.org/10.5281/zenodo.5242926
+
+#################################################################################################################################
+links: 
+    MOZ_NC,MOZ_S:
+        techs:
+            Single_Line:                                        # Evaluated the sum of all the available lines
+                constraints:
+                    energy_cap_equals: 38000       #kW              # Assumed equal to all capacity sum
+                    energy_eff_per_distance: 0.7617  # %/km         # Weighted average of all the lines' total efficiency
+                distance: 1                                         # Assume equal to 1 km
+
+#################################################################################################################################    
+    AGO,DRC:
+        techs:
+            Single_Line:                                        # Evaluated the sum of all the available lines
+                constraints:
+                    energy_cap_equals: 1900000       #kW            # Assumed equal to all capacity sum
+                    energy_eff_per_distance: 0.8686    # %/km       # Weighted average of all the lines' total efficiency
+                distance: 1                                         # Assume equal to 1 km
+
+#################################################################################################################################    
+    AGO,NAM:
+        techs:
+            Single_Line:                                        # Evaluated the sum of all the available lines
+                constraints:
+                    energy_cap_equals: 869000       #kW            # Assumed equal to all capacity sum
+                    energy_eff_per_distance: 0.8548    # %/km       # Weighted average of all the lines' total efficiency
+                distance: 1                                         # Assume equal to 1 km
+            
+#################################################################################################################################    
+    BWA,NAM:
+        techs:
+            Single_Line:                                        # Evaluated the sum of all the available lines
+                constraints:
+                    energy_cap_equals: 156000       #kW            # Assumed equal to all capacity sum
+                    energy_eff_per_distance: 0.3392    # %/km       # Weighted average of all the lines' total efficiency
+                distance: 1                                         # Assume equal to 1 km
+
+#################################################################################################################################    
+    BWA,ZWE:
+        techs:
+            Single_Line:                                        # Evaluated the sum of all the available lines
+                constraints:
+                    energy_cap_equals: 820000       #kW            # Assumed equal to all capacity sum
+                    energy_eff_per_distance: 0.8753    # %/km       # Weighted average of all the lines' total efficiency
+                distance: 1                                         # Assume equal to 1 km
+            
+#################################################################################################################################
+    BWA,ZAF:
+        techs:
+            Single_Line:                                        # Evaluated the sum of all the available lines
+                constraints:
+                    energy_cap_equals: 1015000       #kW            # Assumed equal to all capacity sum
+                    energy_eff_per_distance: 0.7652    # %/km       # Weighted average of all the lines' total efficiency
+                distance: 1                                         # Assume equal to 1 km
+
+#################################################################################################################################
+    BWA,ZMB:
+        techs:
+            Single_Line:                                        # Evaluated the sum of all the available lines
+                constraints:
+                    energy_cap_equals: 89000       #kW            # Assumed equal to all capacity sum
+                    energy_eff_per_distance: 0.9509    # %/km       # Weighted average of all the lines' total efficiency
+                distance: 1                                         # Assume equal to 1 km
+
+#################################################################################################################################
+    DRC,ZMB:
+        techs:
+            Single_Line:                                        # Evaluated the sum of all the available lines
+                constraints:
+                    energy_cap_equals: 827000       #kW            # Assumed equal to all capacity sum
+                    energy_eff_per_distance: 0.8545    # %/km       # Weighted average of all the lines' total efficiency
+                distance: 1                                         # Assume equal to 1 km
+
+#################################################################################################################################
+    SWZ,MOZ_S:
+        techs:
+            Single_Line:                                        # Evaluated the sum of all the available lines
+                constraints:
+                    energy_cap_equals: 1133000       #kW            # Assumed equal to all capacity sum
+                    energy_eff_per_distance: 0.9371    # %/km       # Weighted average of all the lines' total efficiency
+                distance: 1                                         # Assume equal to 1 km
+
+#################################################################################################################################
+    SWZ,ZAF:
+        techs:
+            Single_Line:                                        # Evaluated the sum of all the available lines
+                constraints:
+                    energy_cap_equals: 1436000      #kW            # Assumed equal to all capacity sum
+                    energy_eff_per_distance: 0.8526    # %/km       # Weighted average of all the lines' total efficiency
+                distance: 1                                         # Assume equal to 1 km
+
+#################################################################################################################################
+    LSO,ZAF:
+        techs:
+            Single_Line:                                        # Evaluated the sum of all the available lines
+                constraints:
+                    energy_cap_equals: 269000      #kW            # Assumed equal to all capacity sum
+                    energy_eff_per_distance: 0.7016    # %/km       # Weighted average of all the lines' total efficiency
+                distance: 1                                         # Assume equal to 1 km
+
+#################################################################################################################################
+    MWI,ZMB:
+        techs:
+            Single_Line:                                        # Evaluated the sum of all the available lines
+                constraints:
+                    energy_cap_equals: 52000      #kW            # Assumed equal to all capacity sum
+                    energy_eff_per_distance: 0.4453    # %/km       # Weighted average of all the lines' total efficiency
+                distance: 1                                         # Assume equal to 1 km
+
+#################################################################################################################################
+    MOZ_NC,ZAF:
+        techs:
+            Single_Line:                                        # Evaluated the sum of all the available lines
+                constraints:
+                    energy_cap_equals: 700000      #kW            # Assumed equal to all capacity sum
+                    energy_eff_per_distance: 0.9654    # %/km       # Weighted average of all the lines' total efficiency
+                distance: 1                                         # Assume equal to 1 km
+
+#################################################################################################################################
+    MOZ_NC,ZWE:
+        techs:
+            Single_Line:                                        # Evaluated the sum of all the available lines
+                constraints:
+                    energy_cap_equals: 220000      #kW            # Assumed equal to all capacity sum
+                    energy_eff_per_distance: 0.7763    # %/km       # Weighted average of all the lines' total efficiency
+                distance: 1                                         # Assume equal to 1 km
+
+#################################################################################################################################
+    MOZ_S,ZWE:
+        techs:
+            Single_Line:                                        # Evaluated the sum of all the available lines
+                constraints:
+                    energy_cap_equals: 38000      #kW            # Assumed equal to all capacity sum
+                    energy_eff_per_distance: 0.5395    # %/km       # Weighted average of all the lines' total efficiency
+                distance: 1                                         # Assume equal to 1 km
+
+#################################################################################################################################
+    MOZ_S,ZAF:
+        techs:
+            Single_Line:                                        # Evaluated the sum of all the available lines
+                constraints:
+                    energy_cap_equals: 2307000      #kW            # Assumed equal to all capacity sum
+                    energy_eff_per_distance: 0.9002    # %/km       # Weighted average of all the lines' total efficiency
+                distance: 1                                         # Assume equal to 1 km
+
+#################################################################################################################################
+    NAM,ZMB:
+        techs:
+            Single_Line:                                        # Evaluated the sum of all the available lines
+                constraints:
+                    energy_cap_equals: 510000      #kW            # Assumed equal to all capacity sum
+                    energy_eff_per_distance: 0.7937    # %/km       # Weighted average of all the lines' total efficiency
+                distance: 1                                         # Assume equal to 1 km
+
+#################################################################################################################################
+    NAM,ZAF:
+        techs:
+            Single_Line:                                        # Evaluated the sum of all the available lines
+                constraints:
+                    energy_cap_equals: 842000      #kW            # Assumed equal to all capacity sum
+                    energy_eff_per_distance: 0.7387    # %/km       # Weighted average of all the lines' total efficiency
+                distance: 1                                         # Assume equal to 1 km
+
+#################################################################################################################################
+    ZAF,ZWE:
+        techs:
+            Single_Line:                                        # Evaluated the sum of all the available lines
+                constraints:
+                    energy_cap_equals: 315000      #kW            # Assumed equal to all capacity sum
+                    energy_eff_per_distance: 0.8721    # %/km       # Weighted average of all the lines' total efficiency
+                distance: 1                                         # Assume equal to 1 km
+
+#################################################################################################################################
+    TZA,ZMB:
+        techs:
+            Single_Line:                                        # Evaluated the sum of all the available lines
+                constraints:
+                    energy_cap_equals: 89000      #kW            # Assumed equal to all capacity sum
+                    energy_eff_per_distance: 0.6282    # %/km       # Weighted average of all the lines' total efficiency
+                distance: 1                                         # Assume equal to 1 km
+
+#################################################################################################################################
+    ZMB,ZWE:
+        techs:
+            Single_Line:                                        # Evaluated the sum of all the available lines
+                constraints:
+                    energy_cap_equals: 2014000      #kW            # Assumed equal to all capacity sum
+                    energy_eff_per_distance: 0.8309    # %/km       # Weighted average of all the lines' total efficiency
+                distance: 1                                         # Assume equal to 1 km
+
+#################################################################################################################################
+    MWI,MOZ_NC:
+        techs:
+            Single_Line:                                        # Evaluated the sum of all the available lines
+                constraints:
+                    energy_cap_equals: 1500000      #kW            # Assumed equal to all capacity sum
+                    energy_eff_per_distance: 0.8652    # %/km       # Weighted average of all the lines' total efficiency
+                distance: 1                                         # Assume equal to 1 km
+    
+#################################################################################################################################
+    DRC,ZAF:
+        techs:
+            Single_Line:                                        # Evaluated the sum of all the available lines
+                constraints:
+                    energy_cap_equals: 3000000       #kW            # Assumed equal to all capacity sum
+                    energy_eff_per_distance: 0.9231    # %/km       # Weighted average of all the lines' total efficiency
+                distance: 1                                         # Assume equal to 1 km

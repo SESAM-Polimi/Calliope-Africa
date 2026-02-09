@@ -1,0 +1,92 @@
+locations:
+    AGO:
+        techs:
+            PHES_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_per_storage_cap_equals: 0.16666666667
+                    storage_cap_max: 4706000000.0
+    BWA:
+        techs:
+            PHES_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_per_storage_cap_equals: 0.16666666667
+                    storage_cap_max: 14000000.0
+    DRC:
+        techs:
+            PHES_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_per_storage_cap_equals: 0.16666666667
+                    storage_cap_max: 18794000000.0
+    LSO:
+        techs:
+            PHES_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_per_storage_cap_equals: 0.16666666667
+                    storage_cap_max: 1540000000.0
+    MOZ_NC:
+        techs:
+            PHES_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_per_storage_cap_equals: 0.16666666667
+                    storage_cap_max: 1466000000.0
+    MOZ_S:
+        techs:
+            PHES_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_per_storage_cap_equals: 0.16666666667
+                    storage_cap_max: 16000000.0
+    MWI:
+        techs:
+            PHES_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_per_storage_cap_equals: 0.16666666667
+                    storage_cap_max: 1856000000.0
+    NAM:
+        techs:
+            PHES_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_per_storage_cap_equals: 0.16666666667
+                    storage_cap_max: 1198000000.0
+    SWZ:
+        techs:
+            PHES_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_per_storage_cap_equals: 0.16666666667
+                    storage_cap_max: 446000000.0
+    TZA:
+        techs:
+            PHES_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_per_storage_cap_equals: 0.16666666667
+                    storage_cap_max: 10222000000.0
+    ZAF:
+        techs:
+            PHES_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_per_storage_cap_equals: 0.16666666667
+                    storage_cap_max: 9324000000.0
+    ZMB:
+        techs:
+            PHES_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_per_storage_cap_equals: 0.16666666667
+                    storage_cap_max: 764000000.0
+    ZWE:
+        techs:
+            PHES_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_per_storage_cap_equals: 0.16666666667
+                    storage_cap_max: 1156000000.0

@@ -1,0 +1,79 @@
+locations:
+    AGO:
+        techs:
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 1839127.881192974
+                    energy_cap_max: inf
+    BWA:
+        techs:
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: inf
+    DRC:
+        techs:
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 803500.7562871643
+                    energy_cap_max: inf
+    LSO:
+        techs:
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 90090.53617283244
+                    energy_cap_max: inf
+    MOZ_NC:
+        techs:
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 1517758.930283125
+                    energy_cap_max: inf
+    MOZ_S:
+        techs:
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: inf
+    MWI:
+        techs:
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 307180.2674703697
+                    energy_cap_max: inf
+    NAM:
+        techs:
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: inf
+    SWZ:
+        techs:
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 22202.43717331209
+                    energy_cap_max: inf
+    TZA:
+        techs:
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: inf
+    ZAF:
+        techs:
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 38600307.9
+                    energy_cap_max: inf
+    ZMB:
+        techs:
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 2221883.46543461
+                    energy_cap_max: inf
+    ZWE:
+        techs:
+            OCGT_pp_New:
+                constraints:
+                    energy_cap_min: 143032.69876829
+                    energy_cap_max: inf

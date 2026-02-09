@@ -1,0 +1,657 @@
+locations:
+    AGO:
+        techs:
+            PV_AGO_MSR1:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 6788493.41138
+                    resource: file=Solar_SAPP_MSR.csv:AGO1
+                    resource_unit: energy_per_cap
+            PV_AGO_MSR2:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 37826493.94598
+                    resource: file=Solar_SAPP_MSR.csv:AGO2
+                    resource_unit: energy_per_cap
+            PV_AGO_MSR3:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 53856017.78098
+                    resource: file=Solar_SAPP_MSR.csv:AGO3
+                    resource_unit: energy_per_cap
+            PV_AGO_MSR4:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 37839685.46454
+                    resource: file=Solar_SAPP_MSR.csv:AGO4
+                    resource_unit: energy_per_cap
+            PV_AGO_MSR5:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 37828726.09457
+                    resource: file=Solar_SAPP_MSR.csv:AGO5
+                    resource_unit: energy_per_cap
+            PV_AGO_MSR6:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 32112878.73944
+                    resource: file=Solar_SAPP_MSR.csv:AGO6
+                    resource_unit: energy_per_cap
+            Wind_AGO_MSR1:
+                constraints:
+                    energy_cap_min: 5818478.79860564
+                    energy_cap_max: 8332105.41769
+                    resource: file=Wind_SAPP_MSR.csv:AGO1
+                    resource_unit: energy_per_cap
+            Wind_AGO_MSR2:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 50790394.41195001
+                    resource: file=Wind_SAPP_MSR.csv:AGO2
+                    resource_unit: energy_per_cap
+            Wind_AGO_MSR3:
+                constraints:
+                    energy_cap_min: 2312482.12307
+                    energy_cap_max: 2312482.12307
+                    resource: file=Wind_SAPP_MSR.csv:AGO3
+                    resource_unit: energy_per_cap
+    BWA:
+        techs:
+            PV_BWA_MSR1:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 24559629.92389
+                    resource: file=Solar_SAPP_MSR.csv:BWA1
+                    resource_unit: energy_per_cap
+            PV_BWA_MSR2:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 40200047.82177
+                    resource: file=Solar_SAPP_MSR.csv:BWA2
+                    resource_unit: energy_per_cap
+            PV_BWA_MSR3:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 29946836.79419
+                    resource: file=Solar_SAPP_MSR.csv:BWA3
+                    resource_unit: energy_per_cap
+            Wind_BWA_MSR1:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 9379202.596960003
+                    resource: file=Wind_SAPP_MSR.csv:BWA1
+                    resource_unit: energy_per_cap
+            Wind_BWA_MSR2:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 48949243.25801
+                    resource: file=Wind_SAPP_MSR.csv:BWA2
+                    resource_unit: energy_per_cap
+            Wind_BWA_MSR3:
+                constraints:
+                    energy_cap_min: 1011526.427625487
+                    energy_cap_max: 25642083.40436
+                    resource: file=Wind_SAPP_MSR.csv:BWA3
+                    resource_unit: energy_per_cap
+    DRC:
+        techs:
+            PV_DRC_MSR1:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 64869587.50599
+                    resource: file=Solar_SAPP_MSR.csv:DRC1
+                    resource_unit: energy_per_cap
+            PV_DRC_MSR2:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 34667330.51103
+                    resource: file=Solar_SAPP_MSR.csv:DRC2
+                    resource_unit: energy_per_cap
+            PV_DRC_MSR3:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 33301813.17866
+                    resource: file=Solar_SAPP_MSR.csv:DRC3
+                    resource_unit: energy_per_cap
+            PV_DRC_MSR4:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 60244500.46244
+                    resource: file=Solar_SAPP_MSR.csv:DRC4
+                    resource_unit: energy_per_cap
+            PV_DRC_MSR5:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 33699418.71852
+                    resource: file=Solar_SAPP_MSR.csv:DRC5
+                    resource_unit: energy_per_cap
+            PV_DRC_MSR6:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 71284044.11572
+                    resource: file=Solar_SAPP_MSR.csv:DRC6
+                    resource_unit: energy_per_cap
+            PV_DRC_MSR7:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 34169967.64956
+                    resource: file=Solar_SAPP_MSR.csv:DRC7
+                    resource_unit: energy_per_cap
+            PV_DRC_MSR8:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 53202165.04685
+                    resource: file=Solar_SAPP_MSR.csv:DRC8
+                    resource_unit: energy_per_cap
+            Wind_DRC_MSR1:
+                constraints:
+                    energy_cap_min: 326289.65645
+                    energy_cap_max: 326289.65645
+                    resource: file=Wind_SAPP_MSR.csv:DRC1
+                    resource_unit: energy_per_cap
+            Wind_DRC_MSR2:
+                constraints:
+                    energy_cap_min: 1513627.80454
+                    energy_cap_max: 1513627.80454
+                    resource: file=Wind_SAPP_MSR.csv:DRC2
+                    resource_unit: energy_per_cap
+    LSO:
+        techs:
+            PV_LSO_MSR1:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 4992772.93495
+                    resource: file=Solar_SAPP_MSR.csv:LSO1
+                    resource_unit: energy_per_cap
+            Wind_LSO_MSR1:
+                constraints:
+                    energy_cap_min: 480787.17668
+                    energy_cap_max: 480787.17668
+                    resource: file=Wind_SAPP_MSR.csv:LSO1
+                    resource_unit: energy_per_cap
+            Wind_LSO_MSR2:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 1089820.85676
+                    resource: file=Wind_SAPP_MSR.csv:LSO2
+                    resource_unit: energy_per_cap
+    MOZ_NC:
+        techs:
+            PV_MOZ_NC_MSR1:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 63908742.50878
+                    resource: file=Solar_SAPP_MSR.csv:MOZ_NC1
+                    resource_unit: energy_per_cap
+            PV_MOZ_NC_MSR2:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 10191280.70407
+                    resource: file=Solar_SAPP_MSR.csv:MOZ_NC2
+                    resource_unit: energy_per_cap
+            PV_MOZ_NC_MSR3:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 24503433.37927
+                    resource: file=Solar_SAPP_MSR.csv:MOZ_NC3
+                    resource_unit: energy_per_cap
+            PV_MOZ_NC_MSR4:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 11803877.45126
+                    resource: file=Solar_SAPP_MSR.csv:MOZ_NC4
+                    resource_unit: energy_per_cap
+            PV_MOZ_NC_MSR5:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 3274303.0284
+                    resource: file=Solar_SAPP_MSR.csv:MOZ_NC5
+                    resource_unit: energy_per_cap
+            PV_MOZ_NC_MSR6:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 12426967.19551
+                    resource: file=Solar_SAPP_MSR.csv:MOZ_NC6
+                    resource_unit: energy_per_cap
+            Wind_MOZ_NC_MSR1:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 15754555.56593
+                    resource: file=Wind_SAPP_MSR.csv:MOZ_NC1
+                    resource_unit: energy_per_cap
+            Wind_MOZ_NC_MSR2:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 2351929.84003
+                    resource: file=Wind_SAPP_MSR.csv:MOZ_NC2
+                    resource_unit: energy_per_cap
+            Wind_MOZ_NC_MSR3:
+                constraints:
+                    energy_cap_min: 2778370.504957948
+                    energy_cap_max: 4911864.952719999
+                    resource: file=Wind_SAPP_MSR.csv:MOZ_NC3
+                    resource_unit: energy_per_cap
+            Wind_MOZ_NC_MSR4:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 20155831.44639
+                    resource: file=Wind_SAPP_MSR.csv:MOZ_NC4
+                    resource_unit: energy_per_cap
+    MOZ_S:
+        techs:
+            PV_MOZ_S_MSR1:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 1906752.83486
+                    resource: file=Solar_SAPP_MSR.csv:MOZ_S1
+                    resource_unit: energy_per_cap
+            PV_MOZ_S_MSR2:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 2062600.4385
+                    resource: file=Solar_SAPP_MSR.csv:MOZ_S2
+                    resource_unit: energy_per_cap
+            Wind_MOZ_S_MSR1:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 11688124.79112
+                    resource: file=Wind_SAPP_MSR.csv:MOZ_S1
+                    resource_unit: energy_per_cap
+            Wind_MOZ_S_MSR2:
+                constraints:
+                    energy_cap_min: 6418758.30802
+                    energy_cap_max: 6418758.30802
+                    resource: file=Wind_SAPP_MSR.csv:MOZ_S2
+                    resource_unit: energy_per_cap
+            Wind_MOZ_S_MSR3:
+                constraints:
+                    energy_cap_min: 4134594.773670383
+                    energy_cap_max: 15180066.53379
+                    resource: file=Wind_SAPP_MSR.csv:MOZ_S3
+                    resource_unit: energy_per_cap
+    MWI:
+        techs:
+            PV_MWI_MSR1:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 2414938.62477
+                    resource: file=Solar_SAPP_MSR.csv:MWI1
+                    resource_unit: energy_per_cap
+            PV_MWI_MSR2:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 7806429.50821
+                    resource: file=Solar_SAPP_MSR.csv:MWI2
+                    resource_unit: energy_per_cap
+            PV_MWI_MSR3:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 4116297.5737
+                    resource: file=Solar_SAPP_MSR.csv:MWI3
+                    resource_unit: energy_per_cap
+            PV_MWI_MSR4:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 4512730.72705
+                    resource: file=Solar_SAPP_MSR.csv:MWI4
+                    resource_unit: energy_per_cap
+            Wind_MWI_MSR1:
+                constraints:
+                    energy_cap_min: 1647717.652336289
+                    energy_cap_max: 6710921.590320001
+                    resource: file=Wind_SAPP_MSR.csv:MWI1
+                    resource_unit: energy_per_cap
+            Wind_MWI_MSR2:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 5051134.479300001
+                    resource: file=Wind_SAPP_MSR.csv:MWI2
+                    resource_unit: energy_per_cap
+            Wind_MWI_MSR3:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 5749532.216100001
+                    resource: file=Wind_SAPP_MSR.csv:MWI3
+                    resource_unit: energy_per_cap
+    NAM:
+        techs:
+            PV_NAM_MSR1:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 50176179.67709
+                    resource: file=Solar_SAPP_MSR.csv:NAM1
+                    resource_unit: energy_per_cap
+            PV_NAM_MSR2:
+                constraints:
+                    energy_cap_min: 12726815.22936493
+                    energy_cap_max: 53198948.57292
+                    resource: file=Solar_SAPP_MSR.csv:NAM2
+                    resource_unit: energy_per_cap
+            PV_NAM_MSR3:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 31747010.99351
+                    resource: file=Solar_SAPP_MSR.csv:NAM3
+                    resource_unit: energy_per_cap
+            Wind_NAM_MSR1:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 9656891.488070002
+                    resource: file=Wind_SAPP_MSR.csv:NAM1
+                    resource_unit: energy_per_cap
+            Wind_NAM_MSR2:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 17781767.54281
+                    resource: file=Wind_SAPP_MSR.csv:NAM2
+                    resource_unit: energy_per_cap
+            Wind_NAM_MSR3:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 17741138.71249
+                    resource: file=Wind_SAPP_MSR.csv:NAM3
+                    resource_unit: energy_per_cap
+            Wind_NAM_MSR4:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 52341146.87654
+                    resource: file=Wind_SAPP_MSR.csv:NAM4
+                    resource_unit: energy_per_cap
+            Wind_NAM_MSR5:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 12526549.97702
+                    resource: file=Wind_SAPP_MSR.csv:NAM5
+                    resource_unit: energy_per_cap
+            Wind_NAM_MSR6:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 11110711.11163
+                    resource: file=Wind_SAPP_MSR.csv:NAM6
+                    resource_unit: energy_per_cap
+            Wind_NAM_MSR7:
+                constraints:
+                    energy_cap_min: 172760.68957
+                    energy_cap_max: 172760.68957
+                    resource: file=Wind_SAPP_MSR.csv:NAM7
+                    resource_unit: energy_per_cap
+    SWZ:
+        techs:
+            PV_SWZ_MSR1:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 1336777.26132
+                    resource: file=Solar_SAPP_MSR.csv:SWZ1
+                    resource_unit: energy_per_cap
+            Wind_SWZ_MSR1:
+                constraints:
+                    energy_cap_min: 301159.66175
+                    energy_cap_max: 301159.66175
+                    resource: file=Wind_SAPP_MSR.csv:SWZ1
+                    resource_unit: energy_per_cap
+            Wind_SWZ_MSR2:
+                constraints:
+                    energy_cap_min: 831268.6291499999
+                    energy_cap_max: 831268.6291499999
+                    resource: file=Wind_SAPP_MSR.csv:SWZ2
+                    resource_unit: energy_per_cap
+    TZA:
+        techs:
+            PV_TZA_MSR1:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 29080803.03309
+                    resource: file=Solar_SAPP_MSR.csv:TZA1
+                    resource_unit: energy_per_cap
+            PV_TZA_MSR2:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 32750725.92949
+                    resource: file=Solar_SAPP_MSR.csv:TZA2
+                    resource_unit: energy_per_cap
+            PV_TZA_MSR3:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 23846477.78297
+                    resource: file=Solar_SAPP_MSR.csv:TZA3
+                    resource_unit: energy_per_cap
+            PV_TZA_MSR4:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 39623228.84918
+                    resource: file=Solar_SAPP_MSR.csv:TZA4
+                    resource_unit: energy_per_cap
+            PV_TZA_MSR5:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 19994781.43336
+                    resource: file=Solar_SAPP_MSR.csv:TZA5
+                    resource_unit: energy_per_cap
+            PV_TZA_MSR6:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 10681204.26973
+                    resource: file=Solar_SAPP_MSR.csv:TZA6
+                    resource_unit: energy_per_cap
+            Wind_TZA_MSR1:
+                constraints:
+                    energy_cap_min: 10815392.22272935
+                    energy_cap_max: 19158591.62209
+                    resource: file=Wind_SAPP_MSR.csv:TZA1
+                    resource_unit: energy_per_cap
+            Wind_TZA_MSR2:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 37599041.52766
+                    resource: file=Wind_SAPP_MSR.csv:TZA2
+                    resource_unit: energy_per_cap
+            Wind_TZA_MSR3:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 25232183.46919
+                    resource: file=Wind_SAPP_MSR.csv:TZA3
+                    resource_unit: energy_per_cap
+            Wind_TZA_MSR4:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 6284404.31323
+                    resource: file=Wind_SAPP_MSR.csv:TZA4
+                    resource_unit: energy_per_cap
+            Wind_TZA_MSR5:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 26773514.98954
+                    resource: file=Wind_SAPP_MSR.csv:TZA5
+                    resource_unit: energy_per_cap
+            Wind_TZA_MSR6:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 23280140.03829
+                    resource: file=Wind_SAPP_MSR.csv:TZA6
+                    resource_unit: energy_per_cap
+    ZAF:
+        techs:
+            PV_ZAF_MSR1:
+                constraints:
+                    energy_cap_min: 1086031.685239055
+                    energy_cap_max: 5853680.48762
+                    resource: file=Solar_SAPP_MSR.csv:ZAF1
+                    resource_unit: energy_per_cap
+            PV_ZAF_MSR2:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 36062135.833
+                    resource: file=Solar_SAPP_MSR.csv:ZAF2
+                    resource_unit: energy_per_cap
+            PV_ZAF_MSR3:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 74021612.4485
+                    resource: file=Solar_SAPP_MSR.csv:ZAF3
+                    resource_unit: energy_per_cap
+            PV_ZAF_MSR4:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 42475953.0048
+                    resource: file=Solar_SAPP_MSR.csv:ZAF4
+                    resource_unit: energy_per_cap
+            PV_ZAF_MSR5:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 43551939.08791
+                    resource: file=Solar_SAPP_MSR.csv:ZAF5
+                    resource_unit: energy_per_cap
+            Wind_ZAF_MSR1:
+                constraints:
+                    energy_cap_min: 1354283.79905
+                    energy_cap_max: 1354283.79905
+                    resource: file=Wind_SAPP_MSR.csv:ZAF1
+                    resource_unit: energy_per_cap
+            Wind_ZAF_MSR2:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 25084684.62017
+                    resource: file=Wind_SAPP_MSR.csv:ZAF2
+                    resource_unit: energy_per_cap
+            Wind_ZAF_MSR3:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 38125980.70347001
+                    resource: file=Wind_SAPP_MSR.csv:ZAF3
+                    resource_unit: energy_per_cap
+            Wind_ZAF_MSR4:
+                constraints:
+                    energy_cap_min: 6255034.64174373
+                    energy_cap_max: 17655311.59686
+                    resource: file=Wind_SAPP_MSR.csv:ZAF4
+                    resource_unit: energy_per_cap
+            Wind_ZAF_MSR5:
+                constraints:
+                    energy_cap_min: 3339540.226097515
+                    energy_cap_max: 50181666.94252
+                    resource: file=Wind_SAPP_MSR.csv:ZAF5
+                    resource_unit: energy_per_cap
+            Wind_ZAF_MSR6:
+                constraints:
+                    energy_cap_min: 3112827.861945991
+                    energy_cap_max: 22409776.14757
+                    resource: file=Wind_SAPP_MSR.csv:ZAF6
+                    resource_unit: energy_per_cap
+            Wind_ZAF_MSR7:
+                constraints:
+                    energy_cap_min: 3535282.68905
+                    energy_cap_max: 3535282.68905
+                    resource: file=Wind_SAPP_MSR.csv:ZAF7
+                    resource_unit: energy_per_cap
+            Wind_ZAF_MSR8:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 21103227.91257
+                    resource: file=Wind_SAPP_MSR.csv:ZAF8
+                    resource_unit: energy_per_cap
+    ZMB:
+        techs:
+            PV_ZMB_MSR1:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 29199827.63682
+                    resource: file=Solar_SAPP_MSR.csv:ZMB1
+                    resource_unit: energy_per_cap
+            PV_ZMB_MSR2:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 18618141.41135
+                    resource: file=Solar_SAPP_MSR.csv:ZMB2
+                    resource_unit: energy_per_cap
+            PV_ZMB_MSR3:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 26000020.99168
+                    resource: file=Solar_SAPP_MSR.csv:ZMB3
+                    resource_unit: energy_per_cap
+            PV_ZMB_MSR4:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 27407284.38722001
+                    resource: file=Solar_SAPP_MSR.csv:ZMB4
+                    resource_unit: energy_per_cap
+            PV_ZMB_MSR5:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 14366781.78324
+                    resource: file=Solar_SAPP_MSR.csv:ZMB5
+                    resource_unit: energy_per_cap
+            PV_ZMB_MSR6:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 8321947.799849999
+                    resource: file=Solar_SAPP_MSR.csv:ZMB6
+                    resource_unit: energy_per_cap
+            Wind_ZMB_MSR1:
+                constraints:
+                    energy_cap_min: 19245769.09558853
+                    energy_cap_max: 20970061.02504
+                    resource: file=Wind_SAPP_MSR.csv:ZMB1
+                    resource_unit: energy_per_cap
+            Wind_ZMB_MSR2:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 37066073.93037
+                    resource: file=Wind_SAPP_MSR.csv:ZMB2
+                    resource_unit: energy_per_cap
+            Wind_ZMB_MSR3:
+                constraints:
+                    energy_cap_min: 4411268.535498325
+                    energy_cap_max: 18464387.76732
+                    resource: file=Wind_SAPP_MSR.csv:ZMB3
+                    resource_unit: energy_per_cap
+    ZWE:
+        techs:
+            PV_ZWE_MSR1:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 11310432.621
+                    resource: file=Solar_SAPP_MSR.csv:ZWE1
+                    resource_unit: energy_per_cap
+            PV_ZWE_MSR2:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 17190736.65562
+                    resource: file=Solar_SAPP_MSR.csv:ZWE2
+                    resource_unit: energy_per_cap
+            PV_ZWE_MSR3:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 23944293.53707
+                    resource: file=Solar_SAPP_MSR.csv:ZWE3
+                    resource_unit: energy_per_cap
+            PV_ZWE_MSR4:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 11350597.4508
+                    resource: file=Solar_SAPP_MSR.csv:ZWE4
+                    resource_unit: energy_per_cap
+            Wind_ZWE_MSR1:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 17889012.83852
+                    resource: file=Wind_SAPP_MSR.csv:ZWE1
+                    resource_unit: energy_per_cap
+            Wind_ZWE_MSR2:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 19511636.33062
+                    resource: file=Wind_SAPP_MSR.csv:ZWE2
+                    resource_unit: energy_per_cap
+            Wind_ZWE_MSR3:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: 5678428.69901
+                    resource: file=Wind_SAPP_MSR.csv:ZWE3
+                    resource_unit: energy_per_cap
+            Wind_ZWE_MSR4:
+                constraints:
+                    energy_cap_min: 13466871.88946
+                    energy_cap_max: 13466871.88946
+                    resource: file=Wind_SAPP_MSR.csv:ZWE4
+                    resource_unit: energy_per_cap

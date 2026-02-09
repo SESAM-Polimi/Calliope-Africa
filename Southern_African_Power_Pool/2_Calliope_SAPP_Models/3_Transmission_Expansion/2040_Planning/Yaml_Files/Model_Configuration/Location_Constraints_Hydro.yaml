@@ -1,0 +1,415 @@
+locations:
+    AGO:
+        techs:
+            Hydro_Large_New_1:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 100000.0
+                    resource: file=Hydro_SAPP_New.csv:AO1
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_2:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 45000.0
+                    resource: file=Hydro_SAPP_New.csv:AO2
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_3:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 18750.0
+                    resource: file=Hydro_SAPP_New.csv:AO3
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_4:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 40000.0
+                    resource: file=Hydro_SAPP_New.csv:AO4
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_5:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 112500.0
+                    resource: file=Hydro_SAPP_New.csv:AO5
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_6:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 50000.0
+                    resource: file=Hydro_SAPP_New.csv:AO6
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_7:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 112500.0
+                    resource: file=Hydro_SAPP_New.csv:AO7
+                    resource_unit: energy_per_cap
+    DRC:
+        techs:
+            Hydro_Large_New_1:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 2762500.0
+                    resource: file=Hydro_SAPP_New.csv:DRC1
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_2:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 1856000.0
+                    resource: file=Hydro_SAPP_New.csv:DRC2
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_3:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 5500.0
+                    resource: file=Hydro_SAPP_New.csv:DRC3
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_4:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 37500.0
+                    resource: file=Hydro_SAPP_New.csv:DRC4
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_5:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 172000.0
+                    resource: file=Hydro_SAPP_New.csv:DRC5
+                    resource_unit: energy_per_cap
+    LSO:
+        techs:
+            Hydro_Large_New_1:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 27500.0
+                    resource: file=Hydro_SAPP_New.csv:LSO1
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_2:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 20000.0
+                    resource: file=Hydro_SAPP_New.csv:LSO2
+                    resource_unit: energy_per_cap
+    MOZ_NC:
+        techs:
+            Hydro_Large_New_1:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 15000.0
+                    resource: file=Hydro_SAPP_New.csv:MOZ_NC1
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_2:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 50000.0
+                    resource: file=Hydro_SAPP_New.csv:MOZ_NC2
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_3:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 311250.0
+                    resource: file=Hydro_SAPP_New.csv:MOZ_NC3
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_4:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 150000.0
+                    resource: file=Hydro_SAPP_New.csv:MOZ_NC4
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_5:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 30000.0
+                    resource: file=Hydro_SAPP_New.csv:MOZ_NC5
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_6:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 37500.0
+                    resource: file=Hydro_SAPP_New.csv:MOZ_NC6
+                    resource_unit: energy_per_cap
+    MOZ_S:
+        techs:
+            Hydro_Large_New_1:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 250000.0
+                    resource: file=Hydro_SAPP_New.csv:MOZ_S1
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_2:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 12500.0
+                    resource: file=Hydro_SAPP_New.csv:MOZ_S2
+                    resource_unit: energy_per_cap
+    MWI:
+        techs:
+            Hydro_Large_New_1:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 10150.0
+                    resource: file=Hydro_SAPP_New.csv:MWI1
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_2:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 10100.0
+                    resource: file=Hydro_SAPP_New.csv:MWI2
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_3:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 24000.0
+                    resource: file=Hydro_SAPP_New.csv:MWI3
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_4:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 54750.0
+                    resource: file=Hydro_SAPP_New.csv:MWI4
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_5:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 28000.0
+                    resource: file=Hydro_SAPP_New.csv:MWI5
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_6:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 77250.0
+                    resource: file=Hydro_SAPP_New.csv:MWI6
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_7:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 22500.0
+                    resource: file=Hydro_SAPP_New.csv:MWI7
+                    resource_unit: energy_per_cap
+    NAM:
+        techs:
+            Hydro_Large_New_1:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 75000.0
+                    resource: file=Hydro_SAPP_New.csv:NAM1
+                    resource_unit: energy_per_cap
+    SWZ:
+        techs:
+            Hydro_Large_New_1:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 30000.0
+                    resource: file=Hydro_SAPP_New.csv:SWZ1
+                    resource_unit: energy_per_cap
+    TZA:
+        techs:
+            Hydro_Large_New_1:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 29500.0
+                    resource: file=Hydro_SAPP_New.csv:TZA1
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_2:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 40000.0
+                    resource: file=Hydro_SAPP_New.csv:TZA2
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_3:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 90000.0
+                    resource: file=Hydro_SAPP_New.csv:TZA3
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_4:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 130000.0
+                    resource: file=Hydro_SAPP_New.csv:TZA4
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_5:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 11245.0
+                    resource: file=Hydro_SAPP_New.csv:TZA5
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_6:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 22025.0
+                    resource: file=Hydro_SAPP_New.csv:TZA6
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_7:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 19875.0
+                    resource: file=Hydro_SAPP_New.csv:TZA7
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_8:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 36500.0
+                    resource: file=Hydro_SAPP_New.csv:TZA8
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_9:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 45000.0
+                    resource: file=Hydro_SAPP_New.csv:TZA9
+                    resource_unit: energy_per_cap
+    ZMB:
+        techs:
+            Hydro_Large_New_1:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 7500.0
+                    resource: file=Hydro_SAPP_New.csv:ZMB1
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_10:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 41750.0
+                    resource: file=Hydro_SAPP_New.csv:ZMB10
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_11:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 4700.0
+                    resource: file=Hydro_SAPP_New.csv:ZMB11
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_12:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 150000.0
+                    resource: file=Hydro_SAPP_New.csv:ZMB12
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_13:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 10000.0
+                    resource: file=Hydro_SAPP_New.csv:ZMB13
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_14:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 45000.0
+                    resource: file=Hydro_SAPP_New.csv:ZMB14
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_15:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 11190.0
+                    resource: file=Hydro_SAPP_New.csv:ZMB15
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_2:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 8500.0
+                    resource: file=Hydro_SAPP_New.csv:ZMB2
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_3:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 24000.0
+                    resource: file=Hydro_SAPP_New.csv:ZMB3
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_4:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 7500.0
+                    resource: file=Hydro_SAPP_New.csv:ZMB4
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_5:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 81500.0
+                    resource: file=Hydro_SAPP_New.csv:ZMB5
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_6:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 13750.0
+                    resource: file=Hydro_SAPP_New.csv:ZMB6
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_7:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 56500.0
+                    resource: file=Hydro_SAPP_New.csv:ZMB7
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_8:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 3050.0
+                    resource: file=Hydro_SAPP_New.csv:ZMB8
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_9:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 16250.0
+                    resource: file=Hydro_SAPP_New.csv:ZMB9
+                    resource_unit: energy_per_cap
+    ZWE:
+        techs:
+            Hydro_Large_New_1:
+                constraints:
+                    units_max: 4
+                    units_equals: 0
+                    energy_cap_per_unit: 150000.0
+                    resource: file=Hydro_SAPP_New.csv:ZWE1
+                    resource_unit: energy_per_cap

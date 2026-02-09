@@ -1,0 +1,434 @@
+# All the existing connections between countries
+# Data found from: SAPP 2021 Report, SAPP 2017 Master Plan and Inframap
+# Distances obtained from the QGIS SAPP transmission lines model imported from InfraMap
+# When capacities were not available, considered them equal to the values suggested from: https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+
+#######################################################################
+############### EXISTING AND PLANNED TRANSMISSION LINKS ###############  
+#######################################################################
+
+links: 
+    MOZ_NC,MOZ_S:
+        techs:
+            70-110_kV:                                        #110 KV line from Nhamatanda to Mavuzi Substation
+                constraints:
+                    energy_cap_equals: 38000       #kW              # Assumed this capacity from same V level of other lines from SAPP report
+                    energy_eff_per_distance: 0.965   # %/10 km      # Assumption based on https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                distance: 7.64                                      # tens of km from QGIS (76.4 km)
+#################################################################################################################################    
+    #### 2025 ####
+    AGO,DRC:
+        techs:
+            400_kV1: # 400 kV Nzeto-Inga I (2025), SAPP 2021 Report
+                constraints:
+                    energy_cap_equals: 300000       #kW        
+                    energy_eff_per_distance: 0.995  #%/10km    
+                distance: 19                                   # Tens of km (190 km)
+            400_kV2: # 400 kV Nzeto-Inga II (2025), SAPP 2021 Report
+                constraints:
+                    energy_cap_equals: 800000       #kW        
+                    energy_eff_per_distance: 0.995  #%/10km    
+                distance: 19                                   # Tens of km (190 km)
+            220-275_kV1: # 220 kV Cabinda-Inga (2025), SAPP 2021 Report
+                constraints:
+                    energy_cap_equals: 200000       #kW        
+                    energy_eff_per_distance: 0.988  #%/10km    
+                distance: 16                                   # Tens of km (160 km)
+            220-275_kV2: # 220 kV Luachimo-Kanaga (2025), SAPP 2021 Report
+                constraints:
+                    energy_cap_equals: 200000       #kW        
+                    energy_eff_per_distance: 0.988  #%/10km    
+                distance: 41.1                                   # Tens of km (411 km)
+    #### 2035 ####
+            # 400_kV3: # 400 kV Soyo-Inga 2 (2033), SAPP 2021 Report
+            #     constraints:
+            #         energy_cap_equals: 400000       #kW        
+            #         energy_eff_per_distance: 0.995  #%/10km    
+            #     distance: 19                                   # Tens of km (190 km)
+#################################################################################################################################    
+    AGO,NAM:
+        techs:
+            132-161_kV1: # 132 kV Ondjiva-Helao Nafidi
+                constraints:
+                    energy_cap_equals: 130000       #kW        # Assumed from https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                    energy_eff_per_distance: 0.951  #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 5.4                                  # Tens of km from QGIS (54 km)
+            66_kV1: # 66 kV Callueque-Etunda
+                constraints:
+                    energy_cap_equals: 89000        #kW        # Assumed from https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                    energy_eff_per_distance: 0.962  #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 1.7                                  # Tens of km from QGIS (17 km)
+    #### 2030 ####
+            # 400_kV1: # 400 kV Cahama-Kunene (2029), SAPP 2021 Report
+            #     constraints:
+            #         energy_cap_equals: 250000       #kW        
+            #         energy_eff_per_distance: 0.995  #%/10km    
+            #     distance: 33                                   # Tens of km (330 km)
+            # 400_kV2: # 400 kV  Cahama-Baynes-Kunene (2029), SAPP 2021 Report
+            #     constraints:
+            #         energy_cap_equals: 400000       #kW        
+            #         energy_eff_per_distance: 0.995  #%/10km    
+            #     distance: 27.5                                   # Tens of km (275 km)
+#################################################################################################################################    
+    BWA,NAM:
+        techs:
+            132-161_kV1: # 132 kV Ghanzi-Omaere
+                constraints:
+                    energy_cap_equals: 130000       #kW        # Assumed from https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                    energy_eff_per_distance: 0.951  #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 27                                   # Tens of km from QGIS (270 km)
+            33-40_kV1: # 33 kV Mohembo-Bagani
+                constraints:
+                    energy_cap_equals: 26000        #kW        # Assumed from https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                    energy_eff_per_distance: 0.89   #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 2.5                                  # Tens of km from QGIS (25 km)
+#################################################################################################################################    
+    BWA,ZWE:
+        techs:
+            400_kV1: # 400 kV Phokoje-Insukamini
+                constraints:
+                    energy_cap_equals: 220000       #kW        # From SAPP website (applicable transfer limit) https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.995  #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 21.1                                 # Tens of km from QGIS (211 km)
+            220-275_kV1: # 220 kV Francistown-Marvel
+                constraints:
+                    energy_cap_equals: 200000       #kW        # From SAPP website (applicable transfer limit) https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.988  #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 18.5                                 # Tens of km from QGIS (185 km)
+    #### 2035 ####
+            # 400_kV2: # 400 kV Isang-Mahikeng (2031), SAPP 2021 Report
+            #     constraints:
+            #         energy_cap_equals: 400000       #kW        
+            #         energy_eff_per_distance: 0.995  #%/10km    
+            #     distance: 21.1                                   # Tens of km (211 km)
+#################################################################################################################################
+    BWA,ZAF:
+        techs:
+            400_kV1: # 400 kV Phokoje-Matimba
+                constraints:
+                    energy_cap_equals: 190000       #kW        # From SAPP website (applicable transfer limit) https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.995  #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 20                                   # Tens of km from QGIS (200 km)
+            132-161_kV1: # 132 kV (Gaborone-Northan) 1
+                constraints:
+                    energy_cap_equals: 70000        #kW        # From SAPP website (applicable transfer limit) https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.951  #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 14                                   # Tens of km from QGIS (140 km)
+            132-161_kV2: # 132 kV (Gaborone-Northan) 2
+                constraints:
+                    energy_cap_equals: 245000       #kW        # From SAPP website (applicable transfer limit) https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.951  #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 15.3                                 # Tens of km from QGIS (153 km)
+            132-161_kV3: # 132 kV Tsabong-ZAF
+                constraints:
+                    energy_cap_equals: 110000       #kW        # From SAPP website (applicable transfer limit) https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.951  #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 9.5                                  # Tens of km from QGIS (95 km)
+    #### 2030 ####
+            # 400_kV2: # 400 kV Victoria Falls-Pandmatenga (2028), SAPP 2021 Report
+            #     constraints:
+            #         energy_cap_equals: 400000       #kW        
+            #         energy_eff_per_distance: 0.995  #%/10km    
+            #     distance: 5.9                                   # Tens of km (59 km)
+#################################################################################################################################
+    BWA,ZMB:
+        techs:
+            66_kV1: # 66 kV Kazangula
+                constraints:
+                    energy_cap_equals: 89000        #kW        # Assumed from https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                    energy_eff_per_distance: 0.962  #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 1.3                                  # Tens of km from QGIS (13 km)
+#################################################################################################################################
+    DRC,ZMB:
+        techs:
+            220-275_kV1: # 220 kV Luano-Karavia 1
+                constraints:
+                    energy_cap_equals: 247000       #kW        # From SAPP website (applicable transfer limit) https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.988  #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 13.5                                 # Tens of km from QGIS (135 km)
+            220-275_kV2: # 220 kV Luano-Karavia 2
+                constraints:
+                    energy_cap_equals: 247000       #kW        # From SAPP website (applicable transfer limit) https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.988  #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 13.5                                 # Tens of km from QGIS (135 km)
+
+            300-330_kV1: # 330 kV Kolwezi-Solwezi
+                constraints:
+                    energy_cap_equals: 333000       #kW        # From SAPP website (applicable transfer limit) https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.99   #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 14.8                                 # Tens of km from QGIS (148 km)   
+    #### 2040 ####
+            # 500-533_kV_DC2: # 533 HVDC Inga-Luano (2036), SAPP Master Plan 2017
+            #     constraints:
+            #         energy_cap_equals: 2000000        #kW        
+            #         energy_eff_per_distance: 0.9995   #%/10km    
+            #     distance: 66                                     # Tens of km (660 km)  
+#################################################################################################################################
+    SWZ,MOZ_S:
+        techs:
+            400_kV1: # 400 kV Edwaleni II-Maputo
+                constraints:
+                    energy_cap_equals: 1000000       #kW        # From SAPP website (applicable transfer limit) https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.995  #%/10km     # Assumption based on SAPP 2021 Report
+                distance: 14.4                                  # Tens of km from QGIS (144 km)
+            220-275_kV1: # 275 kV Komatipoort-Influene
+                constraints:
+                    energy_cap_equals: 133000       #kW        # From SAPP website (applicable transfer limit) https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.988  #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 10.2                                 # Tens of km from QGIS (102 km)
+#################################################################################################################################
+    SWZ,ZAF:
+        techs:
+            400_kV1: # 400 kV Camden - Edwaleni
+                constraints:
+                    energy_cap_equals: 1100000      #kW        # From SAPP website (applicable transfer limit) https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.995  #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 13.3                                 # Tens of km from QGIS (133 km)
+            132-161_kV1: # 132 kV Nhalangano-Normandie
+                constraints:
+                    energy_cap_equals: 76000        #kW        # From SAPP website (applicable transfer limit) https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.951  #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 3.2                                  # Tens of km from QGIS (32 km)
+            132-161_kV2: # 132 kV Mbabane-Hendrina 1
+                constraints:
+                    energy_cap_equals: 130000       #kW        # Assumed from https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                    energy_eff_per_distance: 0.951  #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 15                                   # Tens of km from QGIS (150 km)
+            132-161_kV3: # 132 kV Mbabane-Hendrina 2
+                constraints:
+                    energy_cap_equals: 130000       #kW        # Assumed from https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                    energy_eff_per_distance: 0.951  #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 12.5                                 # Tens of km from QGIS (125 km)
+#################################################################################################################################
+    LSO,ZAF:
+        techs:
+            132-161_kV1: # 132 kV Tweespruit-Maseru I
+                constraints:
+                    energy_cap_equals: 90000        #kW        # From SAPP website (applicable transfer limit) https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.951  #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 5.5                                  # Tens of km from QGIS (55 km)
+            132-161_kV2: # 132 kV Tweespruit-Maseru II
+                constraints:
+                    energy_cap_equals: 90000        #kW        # From SAPP website (applicable transfer limit) https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.951  #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 5.5                                  # Tens of km from QGIS (55 km)
+            70-110_kV: # 88 kV Muela-Clarens
+                constraints:
+                    energy_cap_equals: 89000        #kW        # Assumed from https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                    energy_eff_per_distance: 0.92   #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 6.4                                  # Tens of km from QGIS (64 km)    
+#################################################################################################################################
+    MWI,ZMB:
+        techs:
+            33-40_kV1: # 33kV Mchinji-Chipata
+                constraints:
+                    energy_cap_equals: 26000        #kW        # Assumed from https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                    energy_eff_per_distance: 0.89   #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 3.9                                  # Tens of km from QGIS (39 km)
+            33-40_kV2: # 33kV Ekwendeni-Chama
+                constraints:
+                    energy_cap_equals: 26000        #kW        # Assumed from https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                    energy_eff_per_distance: 0.89   #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 11.7                                 # Tens of km from QGIS (117 km)
+#################################################################################################################################
+    MOZ_NC,ZAF:
+        techs:
+            500-533_kV_DC1: # 533 HVDC Songo-Apollo I
+                constraints:
+                    energy_cap_equals: 700000        #kW        # From SAPP website (applicable transfer limit) https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.9995  #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 70.45                                 # Tens of km from QGIS (704.5 km)
+#################################################################################################################################
+    MOZ_NC,ZWE:
+        techs:
+            300-330_kV1: # 330 kV Cahora Bassa(Songo)-Bindura
+                constraints:
+                    energy_cap_equals: 220000       #kW        # From SAPP website (applicable transfer limit) https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.99   #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 25.2                                 # Tens of km from QGIS (252 km)
+    #### 2040 ####
+            # 400_kV1: # 400 kV Songo-Bindura I (2037), SAPP 2017 Master Plan
+            #     constraints:
+            #         energy_cap_equals: 300000       #kW        
+            #         energy_eff_per_distance: 0.995  #%/10km    
+            #     distance: 25.2                                   # Tens of km (252 km)
+            # 400_kV2: # 400 kV Songo-Bindura II (2038), SAPP 2017 Master Plan
+            #     constraints:
+            #         energy_cap_equals: 400000       #kW        
+            #         energy_eff_per_distance: 0.995  #%/10km    
+            #     distance: 25.2                                   # Tens of km (252 km)
+#################################################################################################################################
+    MOZ_S,ZWE:
+        techs:
+            70-110_kV: # 110 kV Chicamba-Mutare
+                constraints:
+                    energy_cap_equals: 38000        #kW        # From SAPP website (applicable transfer limit) https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.92   #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 7.4                                  # Tens of km from QGIS (74 km)
+#################################################################################################################################
+    MOZ_S,ZAF:
+        techs:
+            400_kV1: # 400 kV Maputo-Arnot
+                constraints:
+                    energy_cap_equals: 1100000      #kW        # From SAPP website (applicable transfer limit) https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.995  #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 28.6                                 # Tens of km from QGIS (39 km)
+            220-275_kV1: # 275 kV Ressano Garcia-Komatipoort
+                constraints:
+                    energy_cap_equals: 440000       #kW        # Assumed from https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                    energy_eff_per_distance: 0.988  #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 1.2                                  # Tens of km from QGIS (12 km)
+            70-110_kV: # 110 kV Corumana-Komatipoort
+                constraints:
+                    energy_cap_equals: 67000        #kW        # From SAPP website (applicable transfer limit) https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.92   #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 3.9                                  # Tens of km from QGIS (39 km)
+    #### 2030 ####
+            # 400_kV2: # 400 kV Marathon-Maputo (2030), SAPP 2017 Master Plan
+            #     constraints:
+            #         energy_cap_equals: 700000       #kW        
+            #         energy_eff_per_distance: 0.995  #%/10km    
+            #     distance: 17.4                                   # Tens of km (174 km)
+#################################################################################################################################
+    NAM,ZMB:
+        techs:
+            220-275_kV1: # 220 kV Livingstone -Sesheke-Zambezi
+                constraints:
+                    energy_cap_equals: 180000       #kW        # From SAPP website (applicable transfer limit) https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.988  #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 23.4                                 # Tens of km from QGIS (234 km)
+            220-275_kV2: # 220 kV Livingstone -Sesheke-Zambezi-Gerus
+                constraints:
+                    energy_cap_equals: 180000       #kW        # From SAPP website (applicable transfer limit) https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.988  #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 23.4                                 # Tens of km from QGIS (234 km)   
+    #### 2035 ####
+            # 400_kV1: # 400 kV Zambezi-Livingstone (2035), SAPP 2021 Report
+            #     constraints:
+            #         energy_cap_equals: 150000       #kW        
+            #         energy_eff_per_distance: 0.995  #%/10km    
+            #     distance: 23.4                                   # Tens of km (234 km)  
+#################################################################################################################################
+    NAM,ZAF:
+        techs:
+            400_kV1: # 400 kV Kokerboom-Aries
+                constraints:
+                    energy_cap_equals: 380000      #kW        # From SAPP website (applicable transfer limit) https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.995  #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 44.2                                 # Tens of km from QGIS (442 km)
+            220-275_kV1: # 220 kV Kokerboom-Aggeneis
+                constraints:
+                    energy_cap_equals: 195000       #kW        # From SAPP website (applicable transfer limit) https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.988  #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 34.3                                 # Tens of km from QGIS (343 km)
+            66_kV1: # 66 kV Nabas-Rietfontein
+                constraints:
+                    energy_cap_equals: 89000        #kW        # Assumed from https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                    energy_eff_per_distance: 0.962  #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 11.1                                 # Tens of km from QGIS (111 km)
+            66_kV2: # 66 kV Obib-Oranjemund
+                constraints:
+                    energy_cap_equals: 89000        #kW        # Assumed from https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                    energy_eff_per_distance: 0.962  #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 4.7                                  # Tens of km from QGIS (47 km)
+            66_kV3: # 66 kV Oranjemund-Oranjemund
+                constraints:
+                    energy_cap_equals: 89000        #kW        # Assumed from https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                    energy_eff_per_distance: 0.962  #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 11.7                                  # Tens of km from QGIS (117 km)    
+#################################################################################################################################
+    ZAF,ZWE:
+        techs:
+            132-161_kV1: # 132 kV Musina-Beitbridge
+                constraints:
+                    energy_cap_equals: 15000        #kW        # From SAPP website (applicable transfer limit) https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.951  #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 2.35                                 # Tens of km from QGIS (23.5 km)    
+    #### 2025 ####
+            400_kV1: # 400 kV Nzhelele-Triangle (2025), SAPP 2021 Report
+                constraints:
+                    energy_cap_equals: 300000       #kW        
+                    energy_eff_per_distance: 0.995  #%/10km    
+                distance: 27.5                                   # Tens of km (275 km)
+#################################################################################################################################
+    TZA,ZMB:
+        techs:
+            66_kV1: # 66 kV Mbala-Sumbawanga
+                constraints:
+                    energy_cap_equals: 89000        #kW        # Assumed from https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                    energy_eff_per_distance: 0.962  #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 12                                   # Tens of km from QGIS (120 km)
+#################################################################################################################################
+    ZMB,ZWE:
+        techs:
+            300-330_kV1: # 330 kV Kariba North-Alaska I
+                constraints:
+                    energy_cap_equals: 428000       #kW        # From SAPP website (applicable transfer limit) https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.99   #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 17.1                                 # Tens of km from QGIS (171 km)
+            300-330_kV2: # 330 kV Kariba North-Alaska II
+                constraints:
+                    energy_cap_equals: 428000       #kW        # From SAPP website (applicable transfer limit) https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.99   #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 17.1                                 # Tens of km from QGIS (171 km)
+            132-161_kV1: # 132 kV Chiurundu
+                constraints:
+                    energy_cap_equals: 130000       #kW        # Assumed from https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                    energy_eff_per_distance: 0.951  #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 1.2                                  # Tens of km from QGIS (12 km)
+            70-110_kV: # 88 kV Livingstone - Hwange
+                constraints:
+                    energy_cap_equals: 250000       #kW        # From SAPP website (applicable transfer limit) https://www.sapp.co.zw/transfer-limits
+                    energy_eff_per_distance: 0.92   #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 11.2                                 # Tens of km from QGIS (112 km)
+            66_kV1: # 66 kV Victoria Falls
+                constraints:
+                    energy_cap_equals: 89000        #kW        # Assumed from https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                    energy_eff_per_distance: 0.962  #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 0.6                                  # Tens of km from QGIS (6 km)
+            66_kV2: # 66 kV Victoria Falls
+                constraints:
+                    energy_cap_equals: 89000        #kW        # Assumed from https://iea-etsap.org/E-TechDS/PDF/E12_el-t&d_KV_Apr2014_GSOK.pdf
+                    energy_eff_per_distance: 0.962  #%/10km    # Assumption based on SAPP 2021 Report
+                distance: 0.6                                  # Tens of km from QGIS (6 km)
+    #### 2030 ####
+            # 400_kV1: # 400 kV Mukuni-Hwange (Construction)
+            #     constraints:
+            #         energy_cap_equals: 300000       #kW        
+            #         energy_eff_per_distance: 0.995  #%/10km    
+            #     distance: 11.9                                   # Tens of km (119 km) 
+    #### 2035 ####
+            # 400_kV2: # 400 kV Zambezi-Livingstone (2033), SAPP 2021 Report
+            #     constraints:
+            #         energy_cap_equals: 300000       #kW        
+            #         energy_eff_per_distance: 0.995  #%/10km    
+            #     distance: 17.1                                   # Tens of km (171 km)   
+#################################################################################################################################
+    #### 2030 ####
+    # MWI,MOZ_NC:
+    #     techs:
+    #         400_kV1: # 400 kV Matambo - Phombeya (2026), SAPP 2017 Master Plan
+    #             constraints:
+    #                 energy_cap_equals: 200000       #kW        
+    #                 energy_eff_per_distance: 0.995  #%/10km    
+    #             distance: 21.8                                   # Tens of km (218 km)
+    #         400_kV2: # 400 kV  (2026), SAPP 2017 Master Plan
+    #             constraints:
+    #                 energy_cap_equals: 800000       #kW        
+    #                 energy_eff_per_distance: 0.995  #%/10km    
+    #             distance: 30                                   # Tens of km (300 km)
+    #### 2035 ####
+            # 400_kV3: # 400 kV Matambo - Mpatamanga (2033), SAPP 2017 Master Plan
+            #     constraints:
+            #         energy_cap_equals: 500000       #kW        
+            #         energy_eff_per_distance: 0.995  #%/10km    
+            #     distance: 30                                   # Tens of km (300 km)   
+#################################################################################################################################
+    #### 2035 ####
+    # DRC,ZAF:
+    #     techs:
+    #         500-533_kV_DC1: # 533 HVDC Inga-Guatengi/Limpopo (2032), SAPP Master Plan 2017
+    #             constraints:
+    #                 energy_cap_equals: 3000000        #kW        # From SAPP website (applicable transfer limit) https://www.sapp.co.zw/transfer-limits
+    #                 energy_eff_per_distance: 0.9995  #%/10km    # Assumption based on SAPP 2021 Report
+    #             distance: 160                                 # Tens of km from QGIS (1600 km)

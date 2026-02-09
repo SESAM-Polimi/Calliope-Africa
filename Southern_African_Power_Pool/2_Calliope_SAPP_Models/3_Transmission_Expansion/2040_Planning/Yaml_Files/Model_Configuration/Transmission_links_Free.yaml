@@ -1,0 +1,232 @@
+techs:
+    400_kV_New:
+        essentials:
+            name: High Voltage Grid 400 kV
+            parent: transmission
+            carrier: electricity
+            color: '#000000'
+        constraints:
+            lifetime: 40
+        costs:
+            monetary:
+                energy_cap: 17.35
+                energy_cap_per_distance: 40.64
+                om_prod: 0.0076
+                interest_rate: 0.1
+links:
+    AGO,DRC:
+        techs:
+            400_kV_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.995
+                distance: 16.0
+    AGO,NAM:
+        techs:
+            400_kV_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.995
+                distance: 53.8
+    AGO,ZMB:
+        techs:
+            400_kV_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.995
+                distance: 105.0
+    BWA,NAM:
+        techs:
+            400_kV_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.995
+                distance: 74.5
+    BWA,ZAF:
+        techs:
+            400_kV_New:
+                constraints:
+                    energy_cap_min: 77417.49190000002
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.995
+                distance: 20.0
+    BWA,ZMB:
+        techs:
+            400_kV_New:
+                constraints:
+                    energy_cap_min: 196725.208
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.995
+                distance: 33.95
+    BWA,ZWE:
+        techs:
+            400_kV_New:
+                constraints:
+                    energy_cap_min: 44864.83400000003
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.995
+                distance: 21.1
+    DRC,TZA:
+        techs:
+            400_kV_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.995
+                distance: 123.0
+    DRC,ZMB:
+        techs:
+            400_kV_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.995
+                distance: 18.1
+    LSO,ZAF:
+        techs:
+            400_kV_New:
+                constraints:
+                    energy_cap_min: 163995.9300233543
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.995
+                distance: 6.64
+    MOZ_NC,MOZ_S:
+        techs:
+            400_kV_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.995
+                distance: 90.2
+    MOZ_NC,MWI:
+        techs:
+            400_kV_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.995
+                distance: 21.8
+    MOZ_NC,TZA:
+        techs:
+            400_kV_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.995
+                distance: 105.4
+    MOZ_NC,ZMB:
+        techs:
+            400_kV_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.995
+                distance: 45.0
+    MOZ_NC,ZWE:
+        techs:
+            400_kV_New:
+                constraints:
+                    energy_cap_min: 291459.9301168768
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.995
+                distance: 25.2
+    MOZ_S,SWZ:
+        techs:
+            400_kV_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.995
+                distance: 14.4
+    MOZ_S,ZAF:
+        techs:
+            400_kV_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.995
+                distance: 28.6
+    MOZ_S,ZWE:
+        techs:
+            400_kV_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.995
+                distance: 40.2
+    MWI,TZA:
+        techs:
+            400_kV_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.995
+                distance: 80.5
+    MWI,ZMB:
+        techs:
+            400_kV_New:
+                constraints:
+                    energy_cap_min: 397734.1008649247
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.995
+                distance: 16.9
+    NAM,ZAF:
+        techs:
+            400_kV_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.995
+                distance: 44.2
+    NAM,ZMB:
+        techs:
+            400_kV_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.995
+                distance: 21.7
+    NAM,ZWE:
+        techs:
+            400_kV_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.995
+                distance: 25.7
+    SWZ,ZAF:
+        techs:
+            400_kV_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.995
+                distance: 13.3
+    TZA,ZMB:
+        techs:
+            400_kV_New:
+                constraints:
+                    energy_cap_min: 98487.81377838798
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.995
+                distance: 67.1
+    ZAF,ZWE:
+        techs:
+            400_kV_New:
+                constraints:
+                    energy_cap_min: 2099452.013618625
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.995
+                distance: 27.5
+    ZMB,ZWE:
+        techs:
+            400_kV_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: inf
+                    energy_eff_per_distance: 0.995
+                distance: 17.1

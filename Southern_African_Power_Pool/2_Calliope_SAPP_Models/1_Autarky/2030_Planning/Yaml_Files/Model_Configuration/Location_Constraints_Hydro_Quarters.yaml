@@ -1,0 +1,442 @@
+# Location Constraints for SAPP Model with Hydro Quarter Installation Possibility
+# For this case, the model able to install any quarter fraction in blocks of the plant's total capcity
+# The plants selected are all the Candidate Plants selected by IRENA: https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201
+# Selected Candidate Plants with Location Information and Monthly Profiles
+# Update every year past model the energy_cap_min_use (0.25,0.5,0.75,1)
+ 
+locations:
+################### Power Plants Angola ###########################                                                   
+    AGO:
+        techs:
+            Hydro_Large_New_1:                               # Cafula
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 100000                  
+                    resource: file=Hydro_SAPP_New.csv:AO1          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_2:                               # Jamba Ya Mina
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 45000                    
+                    resource: file=Hydro_SAPP_New.csv:AO2          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_3:                               # Jamba Ya Oma
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 18750                    
+                    resource: file=Hydro_SAPP_New.csv:AO3          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_4:                               # Lomaum II
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 40000                    
+                    resource: file=Hydro_SAPP_New.csv:AO4          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_5:                               # Tumuludo Casador
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 112500                    
+                    resource: file=Hydro_SAPP_New.csv:AO5          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_6:                               # Vuka Hydropower
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 50000                    
+                    resource: file=Hydro_SAPP_New.csv:AO6          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_7:                               # Zenzo I
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 112500                    
+                    resource: file=Hydro_SAPP_New.csv:AO7          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+        
+################################### DRC Power Plants ##################################                                                                                                   
+    DRC:
+        techs:
+            Hydro_Large_New_1:                               # Inga III
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 2762500                    
+                    resource: file=Hydro_SAPP_New.csv:DRC1          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_2:                               # Inga IV
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 1856000                    
+                    resource: file=Hydro_SAPP_New.csv:DRC2          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_3:                               # Nzoro
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 5500                    
+                    resource: file=Hydro_SAPP_New.csv:DRC3          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_4:                               # Sombwe
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 37500                    
+                    resource: file=Hydro_SAPP_New.csv:DRC4          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_5:                               # Wanie Rukula
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 172000                    
+                    resource: file=Hydro_SAPP_New.csv:DRC5          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            
+################################### LSO Power Plants ################################## 
+    LSO:
+        techs:
+            Hydro_Large_New_1:                               # Muela II
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 27500                    
+                    resource: file=Hydro_SAPP_New.csv:LSO1          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_2:                               # Oxbow
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 20000                    
+                    resource: file=Hydro_SAPP_New.csv:LSO2          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            
+################################### MOZ_NC Power Plants ################################## 
+    MOZ_NC: 
+        techs:
+            Hydro_Large_New_1:                               # Alto Malema
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 15000                    
+                    resource: file=Hydro_SAPP_New.csv:MOZ_NC1          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_2:                               # Boroma
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 50000                    
+                    resource: file=Hydro_SAPP_New.csv:MOZ_NC2          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_3:                               # HCB North Bank Preaking
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 311250                    
+                    resource: file=Hydro_SAPP_New.csv:MOZ_NC3          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_4:                               # Lupata
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 150000                    
+                    resource: file=Hydro_SAPP_New.csv:MOZ_NC4          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_5:                               # Lurio
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 30000                    
+                    resource: file=Hydro_SAPP_New.csv:MOZ_NC5          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_6:                               # Mugeba
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 37500                    
+                    resource: file=Hydro_SAPP_New.csv:MOZ_NC6          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            
+################################### MOZ_S Power Plants ################################## 
+    MOZ_S: 
+        techs:
+            Hydro_Large_New_1:                               # Massingir
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 250000                    
+                    resource: file=Hydro_SAPP_New.csv:MOZ_S1          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_2:                               # Tsate
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 12500                    
+                    resource: file=Hydro_SAPP_New.csv:MOZ_S2          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            
+################################### MWI Power Plants ##################################     
+    MWI:
+        techs:
+            Hydro_Large_New_1:                               # Chasombo
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 10150                    
+                    resource: file=Hydro_SAPP_New.csv:MWI1          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_2:                               # Chizuma
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 10100                    
+                    resource: file=Hydro_SAPP_New.csv:MWI2          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_3:                               # Hamilton Falls
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 24000                    
+                    resource: file=Hydro_SAPP_New.csv:MWI3          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_4:                               # Kholombizo
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 54750                    
+                    resource: file=Hydro_SAPP_New.csv:MWI4          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_5:                               # Malawi Kapichira III
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 28000                    
+                    resource: file=Hydro_SAPP_New.csv:MWI5          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_6:                               # Mpatamanga
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 77250                    
+                    resource: file=Hydro_SAPP_New.csv:MWI6          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_7:                               # Songwe
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 22500                    
+                    resource: file=Hydro_SAPP_New.csv:MWI7          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            
+################################### Namibia Power Plants ################################## 
+    NAM:
+        techs:
+            Hydro_Large_New_1:                               # Baynes (AGO-NAM)
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 75000                    
+                    resource: file=Hydro_SAPP_New.csv:NAM1          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            
+################################### eSwatini Power Plants ################################## 
+    SWZ:
+        techs:
+            Hydro_Large_New_1:                               # Ngwempisi
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 30000                    
+                    resource: file=Hydro_SAPP_New.csv:SWZ1          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            
+################################### Tanzania Power Plants ##################################                                                   
+    TZA: 
+        techs:
+            Hydro_Large_New_1:                               # Masigira
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 29500                    
+                    resource: file=Hydro_SAPP_New.csv:TZA1          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_2:                               # Mpanga
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 40000                    
+                    resource: file=Hydro_SAPP_New.csv:TZA2          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_3:                               # Ruhudji
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 90000                    
+                    resource: file=Hydro_SAPP_New.csv:TZA3          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_4:                               # Rumakali
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 130000                    
+                    resource: file=Hydro_SAPP_New.csv:TZA4          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_5:                               # Songwe Bipungu
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 11245                    
+                    resource: file=Hydro_SAPP_New.csv:TZA5          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_6:                               # Songwe Manolo
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 22025                   
+                    resource: file=Hydro_SAPP_New.csv:TZA6          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_7:                               # Songwe Sofre
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 19875                    
+                    resource: file=Hydro_SAPP_New.csv:TZA7          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_8:                               # Taveta
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 36500                    
+                    resource: file=Hydro_SAPP_New.csv:TZA8          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_9:                               # Upper Kihansi
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 45000                    
+                    resource: file=Hydro_SAPP_New.csv:TZA9          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            
+################################### Zambia Power Plants ##################################                                                   
+    ZMB: 
+        techs:
+            Hydro_Large_New_1:                               # Chavuma Hydro
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 7500                    
+                    resource: file=Hydro_SAPP_New.csv:ZMB1          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_2:                               # Kapombo Gorge
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 8500                    
+                    resource: file=Hydro_SAPP_New.csv:ZMB2          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_3:                               # Kabweulume
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 24000                    
+                    resource: file=Hydro_SAPP_New.csv:ZMB3          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_4:                               # Luchenene
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 7500                    
+                    resource: file=Hydro_SAPP_New.csv:ZMB4          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_5:                               # Lufubu Hydropower Cascade
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 81500                    
+                    resource: file=Hydro_SAPP_New.csv:ZMB5          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_6:                               # Lunsemfwa Ext
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 13750                    
+                    resource: file=Hydro_SAPP_New.csv:ZMB6          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_7:                               # Mambilima Falls
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 56500                    
+                    resource: file=Hydro_SAPP_New.csv:ZMB7          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_8:                               # Mbulumotuta
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 3050                    
+                    resource: file=Hydro_SAPP_New.csv:ZMB8          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_9:                               # Mkushi
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 16250                    
+                    resource: file=Hydro_SAPP_New.csv:ZMB9          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_10:                               # Mulembo/Lelya
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 41750                    
+                    resource: file=Hydro_SAPP_New.csv:ZMB10          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_11:                               # Mumburuma Re-engineered
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 4700                    
+                    resource: file=Hydro_SAPP_New.csv:ZMB11          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_12:                               # Mupata Gorge North (ZMB-ZWE)
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 150000                    
+                    resource: file=Hydro_SAPP_New.csv:ZMB12          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_13:                               # Mutinondo
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 10000                    
+                    resource: file=Hydro_SAPP_New.csv:ZMB13          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_14:                               # Ngonye Falls Hydropower Project
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 45000                    
+                    resource: file=Hydro_SAPP_New.csv:ZMB14          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+            Hydro_Large_New_15:                               # West Lunga II
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 11190                    
+                    resource: file=Hydro_SAPP_New.csv:ZMB15          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap
+
+################################### Zimbabwe Power Plants ##################################                                                   
+    ZWE: 
+        techs:
+            Hydro_Large_New_1:                               # Devil's Gorge South
+                constraints:    
+                    units_max: 4
+                    energy_cap_min_use: 0
+                    energy_cap_per_unit: 150000                    
+                    resource: file=Hydro_SAPP_New.csv:ZWE1          # https://globalatlas.irena.org/workspace?type=workspace&layergroup=Layer%2520group%25201 UPDATED and used mean values
+                    resource_unit: energy_per_cap

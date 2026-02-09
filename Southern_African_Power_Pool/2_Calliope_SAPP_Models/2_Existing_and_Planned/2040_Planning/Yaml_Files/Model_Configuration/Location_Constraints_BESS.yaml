@@ -1,0 +1,92 @@
+locations:
+    AGO:
+        techs:
+            BESS_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+    BWA:
+        techs:
+            BESS_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+    DRC:
+        techs:
+            BESS_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+    LSO:
+        techs:
+            BESS_New:
+                constraints:
+                    energy_cap_min: 42.37493000000541
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+    MOZ_NC:
+        techs:
+            BESS_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+    MOZ_S:
+        techs:
+            BESS_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+    MWI:
+        techs:
+            BESS_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+    NAM:
+        techs:
+            BESS_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+    SWZ:
+        techs:
+            BESS_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+    TZA:
+        techs:
+            BESS_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+    ZAF:
+        techs:
+            BESS_New:
+                constraints:
+                    energy_cap_min: 19078719.37162587
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+    ZMB:
+        techs:
+            BESS_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+    ZWE:
+        techs:
+            BESS_New:
+                constraints:
+                    energy_cap_min: 0.0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
